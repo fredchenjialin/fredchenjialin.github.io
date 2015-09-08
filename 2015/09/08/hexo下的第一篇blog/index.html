@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="BLOG">
 <meta property="og:description" content="我的第一篇blog自定义图标的问题很多人说将themes/主题名称/layout/_partial/head.ejs中的1&amp;lt;link href=&quot;&amp;lt;%- config.root %&amp;gt;favicon.png&quot; rel=&quot;icon&quot;&amp;gt;
 替换为1&amp;lt;link href=&quot;&amp;lt;%- config.root %&amp;gt;favicon.ico&quot; rel=&quot;icon&quot; type=">
-<meta property="og:updated_time" content="2015-09-08T14:24:37.441Z">
+<meta property="og:updated_time" content="2015-09-08T14:34:54.485Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo下的第一篇blog">
 <meta name="twitter:description" content="我的第一篇blog自定义图标的问题很多人说将themes/主题名称/layout/_partial/head.ejs中的1&amp;lt;link href=&quot;&amp;lt;%- config.root %&amp;gt;favicon.png&quot; rel=&quot;icon&quot;&amp;gt;
@@ -116,12 +116,12 @@ ga('send', 'pageview');
 <p>替换为<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link href=<span class="string">"&lt;%- config.root %&gt;favicon.ico"</span> rel=<span class="string">"icon"</span> <span class="built_in">type</span>=<span class="string">"image/x-ico"</span>&gt;</span><br></pre></td></tr></table></figure></p>
 <p>好像在hexo3下无效了，因为找不到类似的语句</p>
 <p>我的做法<br>在同样的位置现在的写法是<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (theme.favicon)&#123; %&gt;</span><br><span class="line">  &lt;link rel=<span class="string">"icon"</span> href=<span class="string">"&lt;%- theme.favicon %&gt;"</span>&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
-<p>所以在对应位置放一个favicon.ico的图标就可以了，在</p>
+<p>所以在对应位置放一个favicon.ico的图标就可以了，在主题目录的source文件夹下。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/08/hexo下的第一篇blog/" data-id="ciebcxd190001vcvgm5vcjlt7" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/09/08/hexo下的第一篇blog/" data-id="ciebgjxee0001dgvg14i71hhv" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
