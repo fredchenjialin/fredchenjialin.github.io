@@ -125,46 +125,32 @@ ga('send', 'pageview');
 </ul>
 </li>
 </ul>
-<h3 id="Low-Level_Kernel_Initialization">Low-Level Kernel Initialization</h3><ul>
-<li>入口 start() in <code>threads/start.S</code><blockquote>
-<p>start()</p>
-<blockquote>
-<ul>
+<hr>
+<h3 id="Low-Level_Kernel_Initialization">Low-Level Kernel Initialization</h3><p>入口 start() in threads/start.S</p>
+<h4 id="start()">start()</h4><ul>
 <li>获取机器的内存</li>
 <li>启用A20 line,做64M的内存映射（看不太懂）</li>
 <li>call main()</li>
 </ul>
-</blockquote>
-</blockquote>
-</li>
-</ul>
-<h3 id="High-Level_Kernel_Initialization">High-Level Kernel Initialization</h3><ul>
-<li>main()<blockquote>
-<ul>
-<li>call bss_init() - 清理BSS（被清为0的字段的传统名：在函数外未提供初始化的变量声明，variable goes into the BSS？）</li>
+<hr>
+<h3 id="High-Level_Kernel_Initialization">High-Level Kernel Initialization</h3><h4 id="调用main()">调用main()</h4><ul>
+<li>call bss_init()          - 清理BSS（被清为0的字段的传统名：在函数外未提供初始化的变量声明，variable goes into the BSS？）</li>
 <li>call read_command_line() - break the kernel command line into arguments</li>
-<li>call parse_options() - read any options at the beginning of the command line</li>
-<li>call thread_init() - 因为要用锁，所以就初始化</li>
+<li>call parse_options()     - read any options at the beginning of the command line</li>
+<li>call thread_init()       - 因为要用锁，所以就初始化</li>
 <li>initialize the console and print a startup message to the console</li>
-<li>call palloc_init() - initialize memory system by setting up the <a href="Page Allocator">kernel page allocator</a></li>
-<li>call molloc_init() - sets up the allocator that handles allocations of arbitrary-size <a href="Block Allocator">blocks</a> of memory</li>
-<li>call paging_init() - sets up a <a href="Page Table">page table</a> for the kernel<blockquote>
-<ul>
+<li>call palloc_init()       - initialize memory system by setting up the <a href="Page Allocator">kernel page allocator</a></li>
+<li>call molloc_init()       - sets up the allocator that handles allocations of arbitrary-size <a href="Block Allocator">blocks</a> of memory</li>
+<li>call paging_init()       - sets up a <a href="Page Table">page table</a> for the kernel<ul>
 <li>在第二节后面还有tss和gdt的初始化</li>
 </ul>
-</blockquote>
 </li>
-<li>call intr_init() - sets up the CPU’s interrupt descriptor table (IDT) to ready it for <a href="Interrupt Infrastructure">interrupt handling</a></li>
-<li>call timer_init() - handling timer interrupt</li>
-<li>call kbd_init() * handling keyboard interrupt</li>
-<li>call input_init() - sets up to merge serial and keyboard input into one stream<blockquote>
-<ul>
+<li>call intr_init()         - sets up the CPU’s interrupt descriptor table (IDT) to ready it for <a href="Interrupt Infrastructure">interrupt handling</a></li>
+<li>call timer_init()        - handling timer interrupt</li>
+<li>call kbd_init()          - handling keyboard interrupt</li>
+<li>call input_init()        - sets up to merge serial and keyboard input into one stream<ul>
 <li>在第二节后面还有用户程序的初始化exception_init() and syscall_init().</li>
 </ul>
-</blockquote>
-</li>
-</ul>
-</blockquote>
 </li>
 </ul>
 
