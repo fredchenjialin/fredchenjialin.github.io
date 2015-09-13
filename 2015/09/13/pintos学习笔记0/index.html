@@ -3,21 +3,63 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hello World | MPZ BLOG</title>
+  <title>pintos学习笔记0 | MPZ BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+  <meta name="description" content="LoadingLoader
+BIOS加载Loader（MBR）
+预留64字节给分区表
+128字节给内核命令行参数
+
+
+Loader读分区表找到内核
+找到可启动内核分区
+从分区读入内存128kB（或许更多，但是BIOS不提供超过1MB的大小）
+找到入口（内核的BLF header有个指针指向入口）
+Loader跳去入口
+每次运行内核时插入参数
+
+
+
+Low-Level Kernel Initiali">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://fredchenjialin.github.io/2015/09/08/hello-world/index.html">
+<meta property="og:title" content="pintos学习笔记0">
+<meta property="og:url" content="http://fredchenjialin.github.io/2015/09/13/pintos学习笔记0/index.html">
 <meta property="og:site_name" content="MPZ BLOG">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2015-09-08T09:21:08.572Z">
+<meta property="og:description" content="LoadingLoader
+BIOS加载Loader（MBR）
+预留64字节给分区表
+128字节给内核命令行参数
+
+
+Loader读分区表找到内核
+找到可启动内核分区
+从分区读入内存128kB（或许更多，但是BIOS不提供超过1MB的大小）
+找到入口（内核的BLF header有个指针指向入口）
+Loader跳去入口
+每次运行内核时插入参数
+
+
+
+Low-Level Kernel Initiali">
+<meta property="og:updated_time" content="2015-09-13T03:51:54.766Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="pintos学习笔记0">
+<meta name="twitter:description" content="LoadingLoader
+BIOS加载Loader（MBR）
+预留64字节给分区表
+128字节给内核命令行参数
+
+
+Loader读分区表找到内核
+找到可启动内核分区
+从分区读入内存128kB（或许更多，但是BIOS不提供超过1MB的大小）
+找到入口（内核的BLF header有个指针指向入口）
+Loader跳去入口
+每次运行内核时插入参数
+
+
+
+Low-Level Kernel Initiali">
 <meta name="twitter:creator" content="@coolwuxing">
   
     <link rel="alternative" href="/atom.xml" title="MPZ BLOG" type="application/atom+xml">
@@ -86,12 +128,16 @@ ga('send', 'pageview');
   </div>
 </div>
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-pintos学习笔记0" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/09/08/hello-world/" class="article-date">
-  <time datetime="2015-09-08T09:21:08.572Z" itemprop="datePublished">2015-09-08</time>
+    <a href="/2015/09/13/pintos学习笔记0/" class="article-date">
+  <time datetime="2015-09-13T02:14:48.000Z" itemprop="datePublished">2015-09-13</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Diary/">Diary</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -100,7 +146,7 @@ ga('send', 'pageview');
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      pintos学习笔记0
     </h1>
   
 
@@ -108,37 +154,83 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server_hello">Run server hello</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h2 id="Loading">Loading</h2><h3 id="Loader">Loader</h3><ul>
+<li>BIOS加载Loader（MBR）<ul>
+<li>预留64字节给分区表</li>
+<li>128字节给内核命令行参数</li>
+</ul>
+</li>
+<li>Loader读分区表找到内核<ul>
+<li>找到可启动内核分区</li>
+<li>从分区读入内存128kB（或许更多，但是BIOS不提供超过1MB的大小）</li>
+<li>找到入口（内核的BLF header有个指针指向入口）</li>
+<li>Loader跳去入口</li>
+<li>每次运行内核时插入参数</li>
+</ul>
+</li>
+</ul>
+<h3 id="Low-Level_Kernel_Initialization">Low-Level Kernel Initialization</h3><ul>
+<li>入口 start() in <code>threads/start.S</code><blockquote>
+<p>start()</p>
+<blockquote>
+<ul>
+<li>获取机器的内存</li>
+<li>启用A20 line,做64M的内存映射（看不太懂）</li>
+<li>call main()</li>
+</ul>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<h3 id="High-Level_Kernel_Initialization">High-Level Kernel Initialization</h3><ul>
+<li>main()<blockquote>
+<ul>
+<li>call bss_init() - 清理BSS（被清为0的字段的传统名：在函数外未提供初始化的变量声明，variable goes into the BSS？）</li>
+<li>call read_command_line() - break the kernel command line into arguments</li>
+<li>call parse_options() - read any options at the beginning of the command line</li>
+<li>call thread_init() - 因为要用锁，所以就初始化</li>
+<li>initialize the console and print a startup message to the console</li>
+<li>call palloc_init() - initialize memory system by setting up the <a href="Page Allocator">kernel page allocator</a></li>
+<li>call molloc_init() - sets up the allocator that handles allocations of arbitrary-size <a href="Block Allocator">blocks</a> of memory</li>
+<li>call paging_init() - sets up a <a href="Page Table">page table</a> for the kernel<blockquote>
+<ul>
+<li>在第二节后面还有tss和gdt的初始化</li>
+</ul>
+</blockquote>
+</li>
+<li>call intr_init() - sets up the CPU’s interrupt descriptor table (IDT) to ready it for <a href="Interrupt Infrastructure">interrupt handling</a></li>
+<li>call timer_init() - handling timer interrupt</li>
+<li>call kbd_init() - handling keyboard interrupt</li>
+<li>call input_init() - sets up to merge serial and keyboard input into one stream<blockquote>
+<ul>
+<li>在第二节后面还有用户程序的初始化exception_init() and syscall_init().</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+</li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/08/hello-world/" data-id="ciehyu4840009o8vgr8x8rl55" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/09/13/pintos学习笔记0/" data-id="ciehyu3wf0000o8vgwtoj60dz" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pintos/">pintos</a></li></ul>
+
     </footer>
   </div>
   
     
 <nav id="article-nav">
   
-    <a href="/2015/09/08/hexo下的第一篇blog/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          hexo下的第一篇blog
-        
-      </div>
-    </a>
   
+    <a href="/2015/09/08/hexo下的第一篇blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">hexo下的第一篇blog</div>
+    </a>
   
 </nav>
 
