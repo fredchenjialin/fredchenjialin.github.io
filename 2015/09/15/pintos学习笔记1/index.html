@@ -3,21 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>about | MPZ BLOG</title>
+  <title>pintos学习笔记1 | MPZ BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Multipluso，安徽人，本科西工大。软件工程专业，知道一些计算机常识，写过一点代码，搞过一些应用，上了一些不靠谱的课，水过一次机器人比赛目前是一个写不好算法，整不了数据结构，没做过pintos作业，没看完ML视频，没学过编译原理，没有可以搭建ss的vps全靠jecvay支援翻墙的没有脱离低级趣味的人。
-想法就是把上面没做到的赶紧做了，然后在研究生生涯里可以做做项目，搞搞机器视觉和自主决策，然">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://fredchenjialin.github.io/about/index.html">
+  <meta name="description" content="1，实现一个哈希函数1234// HASH_SIZE 哈希参数hashcode(&quot;abcd&quot;) = (ascii(a) * 333 + ascii(b) * 332 + ascii(c) *33 + ascii(d)) % HASH_SIZE                  = (97* 333 + 98 * 332 + 99 * 33 +100) % HASH_SIZE">
+<meta property="og:type" content="article">
+<meta property="og:title" content="pintos学习笔记1">
+<meta property="og:url" content="http://fredchenjialin.github.io/2015/09/15/pintos学习笔记1/index.html">
 <meta property="og:site_name" content="MPZ BLOG">
-<meta property="og:description" content="Multipluso，安徽人，本科西工大。软件工程专业，知道一些计算机常识，写过一点代码，搞过一些应用，上了一些不靠谱的课，水过一次机器人比赛目前是一个写不好算法，整不了数据结构，没做过pintos作业，没看完ML视频，没学过编译原理，没有可以搭建ss的vps全靠jecvay支援翻墙的没有脱离低级趣味的人。
-想法就是把上面没做到的赶紧做了，然后在研究生生涯里可以做做项目，搞搞机器视觉和自主决策，然">
-<meta property="og:updated_time" content="2015-09-13T05:48:12.311Z">
+<meta property="og:description" content="1，实现一个哈希函数1234// HASH_SIZE 哈希参数hashcode(&quot;abcd&quot;) = (ascii(a) * 333 + ascii(b) * 332 + ascii(c) *33 + ascii(d)) % HASH_SIZE                  = (97* 333 + 98 * 332 + 99 * 33 +100) % HASH_SIZE">
+<meta property="og:updated_time" content="2015-09-16T06:48:37.880Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="Multipluso，安徽人，本科西工大。软件工程专业，知道一些计算机常识，写过一点代码，搞过一些应用，上了一些不靠谱的课，水过一次机器人比赛目前是一个写不好算法，整不了数据结构，没做过pintos作业，没看完ML视频，没学过编译原理，没有可以搭建ss的vps全靠jecvay支援翻墙的没有脱离低级趣味的人。
-想法就是把上面没做到的赶紧做了，然后在研究生生涯里可以做做项目，搞搞机器视觉和自主决策，然">
+<meta name="twitter:title" content="pintos学习笔记1">
+<meta name="twitter:description" content="1，实现一个哈希函数1234// HASH_SIZE 哈希参数hashcode(&quot;abcd&quot;) = (ascii(a) * 333 + ascii(b) * 332 + ascii(c) *33 + ascii(d)) % HASH_SIZE                  = (97* 333 + 98 * 332 + 99 * 33 +100) % HASH_SIZE">
 <meta name="twitter:creator" content="@coolwuxing">
   
     <link rel="alternative" href="/atom.xml" title="MPZ BLOG" type="application/atom+xml">
@@ -88,12 +85,16 @@ ga('send', 'pageview');
   </div>
 </div>
       <div class="outer">
-        <section id="main"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-pintos学习笔记1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/about/index.html" class="article-date">
-  <time datetime="2015-09-13T04:57:05.000Z" itemprop="datePublished">2015-09-13</time>
+    <a href="/2015/09/15/pintos学习笔记1/" class="article-date">
+  <time datetime="2015-09-15T06:02:30.000Z" itemprop="datePublished">2015-09-15</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Diary/">Diary</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -102,7 +103,7 @@ ga('send', 'pageview');
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      pintos学习笔记1
     </h1>
   
 
@@ -110,27 +111,54 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Multipluso，安徽人，本科西工大。<br>软件工程专业，知道一些计算机常识，写过一点代码，搞过一些应用，上了一些不靠谱的课，水过一次机器人比赛<br>目前是一个写不好算法，整不了数据结构，没做过pintos作业，没看完ML视频，没学过编译原理，没有可以搭建ss的vps全靠<a href="http://jecvay.com" target="_blank" rel="external">jecvay</a>支援翻墙的没有脱离低级趣味的人。</p>
-<p>想法就是把上面没做到的赶紧做了，然后在研究生生涯里可以做做项目，搞搞机器视觉和自主决策，然后找个好下家，热爱生活，么么哒！！！</p>
-<p><a href="http://weibo.com/fredchenjialin" target="_blank" rel="external">微博</a><br><a href="https://github.com/fredchenjialin" target="_blank" rel="external">github</a><br><a href="http://www.multipluso.com/" target="_blank" rel="external">主站</a><br>邮箱: fredchenjialin#gmail</p>
+        <p>1，实现一个哈希函数<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// HASH_SIZE 哈希参数</span></span><br><span class="line">hashcode(<span class="string">"abcd"</span>) = (ascii(a) * <span class="number">333</span> + ascii(b) * <span class="number">332</span> + ascii(c) *<span class="number">33</span> + ascii(d)) % HASH_SIZE </span><br><span class="line">                 = (<span class="number">97</span>* <span class="number">333</span> + <span class="number">98</span> * <span class="number">332</span> + <span class="number">99</span> * <span class="number">33</span> +<span class="number">100</span>) % HASH_SIZE</span><br><span class="line">                 = <span class="number">3595978</span> % HASH_SIZE</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>注意超界—-模运算<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//(a+b)%c=(a%c+b%c)%c</span></span><br><span class="line"><span class="comment">//(a*b)%c=(a%c*b%c)%c</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">hashCode</span><span class="params">(<span class="built_in">string</span> str,<span class="keyword">int</span> HASH_SIZE)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> leng = str.length();</span><br><span class="line">    <span class="keyword">long</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">long</span> args = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = leng-<span class="number">1</span>;i &gt;= <span class="number">0</span>;i--)</span><br><span class="line">    &#123;</span><br><span class="line">        sum += (str[i]*args%HASH_SIZE);</span><br><span class="line">        args = args*<span class="number">33</span>%HASH_SIZE;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> sum%HASH_SIZE;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>2，一个vector的基本用法<br>3，最多的点过直线</p>
+<hr>
+<p>本来打算今天看thread的，被叫去打撸了。。。。</p>
+<p>今天看了《我是路人甲》，没什么感觉。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/about/index.html" data-id="ciemiqn4h000128vgsdf09bgz" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/09/15/pintos学习笔记1/" data-id="ciemiqn51000i28vggtqwoxi7" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/movie/">movie</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pintos/">pintos</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/每天三道题/">每天三道题</a></li></ul>
+
     </footer>
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/2015/09/16/pintos学习笔记1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          pintos学习笔记1
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/09/13/pintos学习笔记0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">pintos学习笔记0</div>
+    </a>
+  
+</nav>
+
   
 </article>
 
 
   <section id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="page-undefined" data-title="about" data-url="http://fredchenjialin.github.io/about/index.html"></div>
+    <div class="ds-thread" data-thread-key="post-pintos学习笔记1" data-title="pintos学习笔记1" data-url="http://fredchenjialin.github.io/2015/09/15/pintos学习笔记1/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">

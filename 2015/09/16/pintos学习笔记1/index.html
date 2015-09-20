@@ -3,21 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>about | MPZ BLOG</title>
+  <title>pintos学习笔记1 | MPZ BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Multipluso，安徽人，本科西工大。软件工程专业，知道一些计算机常识，写过一点代码，搞过一些应用，上了一些不靠谱的课，水过一次机器人比赛目前是一个写不好算法，整不了数据结构，没做过pintos作业，没看完ML视频，没学过编译原理，没有可以搭建ss的vps全靠jecvay支援翻墙的没有脱离低级趣味的人。
-想法就是把上面没做到的赶紧做了，然后在研究生生涯里可以做做项目，搞搞机器视觉和自主决策，然">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://fredchenjialin.github.io/about/index.html">
+  <meta name="description" content="今天我看了《煎饼侠》和《小森林》夏秋的前面一点点。《煎饼侠》找了挺多人，挺不可思议的，看过一个人写过大鹏。
+很喜欢《小森林》的感觉，像一个梦.
+Threadstruct thread123456789101112131415161718192021224 kB +---------------------------------+     |          kernel stack">
+<meta property="og:type" content="article">
+<meta property="og:title" content="pintos学习笔记1">
+<meta property="og:url" content="http://fredchenjialin.github.io/2015/09/16/pintos学习笔记1/index.html">
 <meta property="og:site_name" content="MPZ BLOG">
-<meta property="og:description" content="Multipluso，安徽人，本科西工大。软件工程专业，知道一些计算机常识，写过一点代码，搞过一些应用，上了一些不靠谱的课，水过一次机器人比赛目前是一个写不好算法，整不了数据结构，没做过pintos作业，没看完ML视频，没学过编译原理，没有可以搭建ss的vps全靠jecvay支援翻墙的没有脱离低级趣味的人。
-想法就是把上面没做到的赶紧做了，然后在研究生生涯里可以做做项目，搞搞机器视觉和自主决策，然">
-<meta property="og:updated_time" content="2015-09-13T05:48:12.311Z">
+<meta property="og:description" content="今天我看了《煎饼侠》和《小森林》夏秋的前面一点点。《煎饼侠》找了挺多人，挺不可思议的，看过一个人写过大鹏。
+很喜欢《小森林》的感觉，像一个梦.
+Threadstruct thread123456789101112131415161718192021224 kB +---------------------------------+     |          kernel stack">
+<meta property="og:updated_time" content="2015-09-16T09:33:37.310Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="Multipluso，安徽人，本科西工大。软件工程专业，知道一些计算机常识，写过一点代码，搞过一些应用，上了一些不靠谱的课，水过一次机器人比赛目前是一个写不好算法，整不了数据结构，没做过pintos作业，没看完ML视频，没学过编译原理，没有可以搭建ss的vps全靠jecvay支援翻墙的没有脱离低级趣味的人。
-想法就是把上面没做到的赶紧做了，然后在研究生生涯里可以做做项目，搞搞机器视觉和自主决策，然">
+<meta name="twitter:title" content="pintos学习笔记1">
+<meta name="twitter:description" content="今天我看了《煎饼侠》和《小森林》夏秋的前面一点点。《煎饼侠》找了挺多人，挺不可思议的，看过一个人写过大鹏。
+很喜欢《小森林》的感觉，像一个梦.
+Threadstruct thread123456789101112131415161718192021224 kB +---------------------------------+     |          kernel stack">
 <meta name="twitter:creator" content="@coolwuxing">
   
     <link rel="alternative" href="/atom.xml" title="MPZ BLOG" type="application/atom+xml">
@@ -88,12 +91,16 @@ ga('send', 'pageview');
   </div>
 </div>
       <div class="outer">
-        <section id="main"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-pintos学习笔记1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/about/index.html" class="article-date">
-  <time datetime="2015-09-13T04:57:05.000Z" itemprop="datePublished">2015-09-13</time>
+    <a href="/2015/09/16/pintos学习笔记1/" class="article-date">
+  <time datetime="2015-09-16T06:42:09.000Z" itemprop="datePublished">2015-09-16</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Diary/">Diary</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -102,7 +109,7 @@ ga('send', 'pageview');
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      pintos学习笔记1
     </h1>
   
 
@@ -110,27 +117,73 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Multipluso，安徽人，本科西工大。<br>软件工程专业，知道一些计算机常识，写过一点代码，搞过一些应用，上了一些不靠谱的课，水过一次机器人比赛<br>目前是一个写不好算法，整不了数据结构，没做过pintos作业，没看完ML视频，没学过编译原理，没有可以搭建ss的vps全靠<a href="http://jecvay.com" target="_blank" rel="external">jecvay</a>支援翻墙的没有脱离低级趣味的人。</p>
-<p>想法就是把上面没做到的赶紧做了，然后在研究生生涯里可以做做项目，搞搞机器视觉和自主决策，然后找个好下家，热爱生活，么么哒！！！</p>
-<p><a href="http://weibo.com/fredchenjialin" target="_blank" rel="external">微博</a><br><a href="https://github.com/fredchenjialin" target="_blank" rel="external">github</a><br><a href="http://www.multipluso.com/" target="_blank" rel="external">主站</a><br>邮箱: fredchenjialin#gmail</p>
+        <p>今天我看了《煎饼侠》和《小森林》夏秋的前面一点点。<br>《煎饼侠》找了挺多人，挺不可思议的，看过一个人写过大鹏。</p>
+<p>很喜欢《小森林》的感觉，像一个梦.</p>
+<h2 id="Thread">Thread</h2><h3 id="struct_thread">struct thread</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span> kB +---------------------------------+</span><br><span class="line">     |          kernel stack           |</span><br><span class="line">     |                |                |</span><br><span class="line">     |                |                |</span><br><span class="line">     |                V                |</span><br><span class="line">     |         grows downward          |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     +---------------------------------+</span><br><span class="line">     |              magic              |</span><br><span class="line">     |                :                |</span><br><span class="line">     |                :                |</span><br><span class="line">     |               name              |</span><br><span class="line">     |              status             |</span><br><span class="line">     |               tid               |</span><br><span class="line"><span class="number">0</span> kB +---------------------------------+</span><br></pre></td></tr></table></figure>
+<h4 id="tid">tid</h4><p>线程标识符<br>tid_t，int类型<br>从1开始，为了初始化进程</p>
+<h4 id="status">status</h4><ul>
+<li>THREAD_RUNNING<ul>
+<li>thread_ current()返回进行中的线程</li>
+</ul>
+</li>
+<li>THREAD_READY<ul>
+<li>doubly LinkedList</li>
+</ul>
+</li>
+<li>THREAD_BLOCKED<ul>
+<li>调用thread_unblock()进入THREAD_READY</li>
+</ul>
+</li>
+<li>THREAD_DYING</li>
+</ul>
+<h4 id="name">name</h4><p>name</p>
+<h4 id="stack">stack</h4><ul>
+<li>uint8_t *</li>
+<li>when the CPU switches to another thread,this member saves the thread’s stack pointer</li>
+<li>When an interrupt occurs, whether in the kernel or a user program, an struct intr_ frame is pushed onto the stack</li>
+</ul>
+<h4 id="int_priority">int priority</h4><ul>
+<li>ranging from PRI_MIN (0) to PRI_MAX (63).</li>
+</ul>
+<h4 id="struct_list_elem_allelem">struct list_elem allelem</h4><ul>
+<li>link the thread into the list of all threads</li>
+</ul>
+<h4 id="struct_list_elem_elem">struct list_elem elem</h4><ul>
+<li>put the thread into doubly linked lists, either ready<em>list (the list of threads ready to run) or a list of threads waiting on a semaphore in sema</em> down()</li>
+</ul>
+<h4 id="uint32_t_*_pagedir">uint32_t * pagedir</h4><h4 id="unsigned_magic">unsigned magic</h4><ul>
+<li>detect stack overﬂow</li>
+</ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/about/index.html" data-id="ciemiqn4h000128vgsdf09bgz" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/09/16/pintos学习笔记1/" data-id="ciemiqn4x000c28vg55td3dn1" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/movie/">movie</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pintos/">pintos</a></li></ul>
+
     </footer>
   </div>
   
     
+<nav id="article-nav">
+  
+  
+    <a href="/2015/09/15/pintos学习笔记1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">pintos学习笔记1</div>
+    </a>
+  
+</nav>
+
   
 </article>
 
 
   <section id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="page-undefined" data-title="about" data-url="http://fredchenjialin.github.io/about/index.html"></div>
+    <div class="ds-thread" data-thread-key="post-pintos学习笔记1" data-title="pintos学习笔记1" data-url="http://fredchenjialin.github.io/2015/09/16/pintos学习笔记1/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
