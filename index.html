@@ -86,6 +86,186 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-yi" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/09/24/yi/" class="article-date">
+  <time datetime="2015-09-24T01:10:42.000Z" itemprop="datePublished">2015-09-24</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Diary/">Diary</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/09/24/yi/">yi</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>09 蘇える巨神兵</p>
+<h3 id="简单的一遍编译器">简单的一遍编译器</h3><ul>
+<li>程序设计语言的定义<ul>
+<li>语法 上下文无关/BNF范式    </li>
+<li>语义 非形式化方法/启发性实例</li>
+</ul>
+</li>
+</ul>
+<h4 id="上下文无关">上下文无关</h4><ul>
+<li>stmt -&gt; if(expr) stmt else stmt<ul>
+<li>终结符集合</li>
+<li>非终结符集合</li>
+<li>产生式集合</li>
+<li>特殊的终结符 - 开始符号</li>
+</ul>
+</li>
+</ul>
+<h4 id="Exercise2-2">Exercise2.2</h4><h5 id="2-2-1">2.2.1</h5><p>S -&gt; SS+|SS*|a</p>
+<ol>
+<li>a是S，所以aa+是一个S，所以aa+a*是一个S </li>
+<li><img src="http://7nj2kj.com1.z0.glb.clouddn.com/e2.2.1.png" alt=""></li>
+<li>仅仅带有加减的后缀表达式</li>
+</ol>
+<h5 id="2-2-2">2.2.2</h5><ul>
+<li>a) S -&gt; 0S1 | 01<ul>
+<li>前面n个0，后面n个1，n&gt;=1</li>
+</ul>
+</li>
+<li>b) S -&gt; +SS | -SS | a<ul>
+<li>仅仅带有加减的前缀表达式</li>
+</ul>
+</li>
+<li>c) S -&gt; S(S)S| null<ul>
+<li>匹配任意范围和递归层数的括号</li>
+</ul>
+</li>
+<li>d) S -&gt; aSbS | bSaS | null<ul>
+<li>拥有相同数量的a和b</li>
+</ul>
+</li>
+<li>e) S -&gt; a | S+S | SS | S* |(S)<ul>
+<li>？</li>
+</ul>
+</li>
+</ul>
+<h5 id="2-2-4">2.2.4</h5><ul>
+<li>1.Arithmetic expressions in postfix notation.<ul>
+<li>E -&gt; E E operation | num</li>
+</ul>
+</li>
+<li>2.Left-associative lists of identifiers separated by commas.<ul>
+<li>list -&gt; list , id | id</li>
+</ul>
+</li>
+<li>3.Right-associative lists of identifiers separated by commas.<ul>
+<li>list -&gt; id , list | id</li>
+</ul>
+</li>
+<li>4.Arithmetic expressions of integers and identifiers with the four binary operators +, -, *, /.<ul>
+<li>d -&gt; d+g | d-g | g</li>
+<li>g -&gt; base*g | base/g | base</li>
+<li>base -&gt; id | num | *</li>
+</ul>
+</li>
+<li>5.Add unary plus and minus to the arithmetic operators of 4.<ul>
+<li>d -&gt; d+g | d-g | g</li>
+<li>g -&gt; g*tmp| g/tmp | tmp</li>
+<li>tmp -&gt; +base | -base | base</li>
+<li>base -&gt; id | num | *</li>
+</ul>
+</li>
+</ul>
+<h5 id="2-2-5">2.2.5</h5><ul>
+<li>num -&gt; 11 | 1001 | num0 | num num<ul>
+<li>证明以此构成的二进制数是可以被3整除的</li>
+</ul>
+</li>
+</ul>
+<p>sum<br>= Σ<sub>n</sub> (2<sup>1</sup> + 2<sup>0</sup>) * 2<sup>n</sup> + Σ<sub>m</sub> (2<sup>3</sup> + 2<sup>2</sup>) * 2<sup>m</sup><br>= Σ<sub>n</sub> 3 * 2 <sup>n</sup> + Σ<sub>m</sub> 9 * 2<sup>m</sup></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fredchenjialin.github.io/2015/09/24/yi/" data-id="ciexnig8t000c7svg364d1d9k" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MP3/">MP3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/yi/">yi</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编译原理/">编译原理</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-yi" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/09/23/yi/" class="article-date">
+  <time datetime="2015-09-23T12:49:48.000Z" itemprop="datePublished">2015-09-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Diary/">Diary</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/09/23/yi/">yi</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="编译原理">编译原理</h3><ul>
+<li>词法分析 - 分词</li>
+<li>层次分析 &amp; 语法分析 要求递归</li>
+<li>语义分析 - 检测，收集，类型检查</li>
+</ul>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/statement_Complier.jpg" alt="编译器的各个阶段"></p>
+<ul>
+<li>符号表管理</li>
+<li>发现错误继续运行 - 发现所有的错误</li>
+<li>代码生成 - 变量的寄存器分配</li>
+</ul>
+<h4 id="预处理器">预处理器</h4><ul>
+<li>宏处理</li>
+<li>文件包含</li>
+<li>“理性”预处理器</li>
+<li>语言扩充</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fredchenjialin.github.io/2015/09/23/yi/" data-id="ciexnig9d000k7svg5xsxmb4k" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/yi/">yi</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编译原理/">编译原理</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-小计" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/09/22/小计/" class="article-date">
@@ -118,7 +298,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/22/小计/" data-id="ciewizoj9000c5svgp763nk34" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/09/22/小计/" data-id="ciexnig9g000o7svgzwrka7w8" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/坚果/">坚果</a></li></ul>
@@ -162,7 +342,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/21/复试口语/" data-id="ciewizoj9000g5svg5fcfdmgx" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/09/21/复试口语/" data-id="ciexnig9l000s7svgbmls1f93" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/English/">English</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PostEdu/">PostEdu</a></li></ul>
@@ -206,7 +386,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/20/pintos学习笔记2/" data-id="ciewizoj9000m5svgg9fh8inf" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/09/20/pintos学习笔记2/" data-id="ciexnig9q000y7svgc5ckf2hl" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/movie/">movie</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pintos/">pintos</a></li></ul>
@@ -285,7 +465,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/16/pintos学习笔记1/" data-id="ciewizojo000s5svgm9dy5zau" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/09/16/pintos学习笔记1/" data-id="ciexnig9x00147svgbkqcvqps" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/movie/">movie</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pintos/">pintos</a></li></ul>
@@ -336,7 +516,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/15/pintos学习笔记1/" data-id="ciewizojo000w5svgp23jddcr" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/09/15/pintos学习笔记1/" data-id="ciexniga100187svg0qbp4omc" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/movie/">movie</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pintos/">pintos</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/每天三道题/">每天三道题</a></li></ul>
@@ -431,7 +611,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/13/pintos学习笔记0/" data-id="ciewizojo00125svgwytrvtyb" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/09/13/pintos学习笔记0/" data-id="ciexniga8001e7svgwciy9h0u" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pintos/">pintos</a></li></ul>
@@ -481,7 +661,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/08/hexo下的第一篇blog/" data-id="ciewizoit00025svgtvv57o1z" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/09/08/hexo下的第一篇blog/" data-id="ciexnig0g00027svg16q3chv3" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/多说评论框/">多说评论框</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
@@ -528,7 +708,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/08/hello-world/" data-id="ciewizoit000b5svglfunlnxi" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/09/08/hello-world/" data-id="ciexnig1j000b7svgpf75syya" class="article-share-link">Share</a>
       
       
     </footer>
@@ -547,7 +727,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><span class="category-list-count">7</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/hexo设置/">hexo设置</a><span class="category-list-count">1</span></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><span class="category-list-count">9</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/hexo设置/">hexo设置</a><span class="category-list-count">1</span></li></ul></li></ul>
     </div>
   </div>
 
@@ -556,7 +736,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/">English</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PostEdu/">PostEdu</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/movie/">movie</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pintos/">pintos</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/坚果/">坚果</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/多说评论框/">多说评论框</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日常/">日常</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/每天三道题/">每天三道题</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/">English</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MP3/">MP3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PostEdu/">PostEdu</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/movie/">movie</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pintos/">pintos</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yi/">yi</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/坚果/">坚果</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/多说评论框/">多说评论框</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日常/">日常</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/每天三道题/">每天三道题</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编译原理/">编译原理</a><span class="tag-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -565,7 +745,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/English/" style="font-size: 10px;">English</a> <a href="/tags/PostEdu/" style="font-size: 10px;">PostEdu</a> <a href="/tags/movie/" style="font-size: 15px;">movie</a> <a href="/tags/pintos/" style="font-size: 20px;">pintos</a> <a href="/tags/坚果/" style="font-size: 10px;">坚果</a> <a href="/tags/多说评论框/" style="font-size: 10px;">多说评论框</a> <a href="/tags/日常/" style="font-size: 10px;">日常</a> <a href="/tags/每天三道题/" style="font-size: 10px;">每天三道题</a>
+      <a href="/tags/English/" style="font-size: 10px;">English</a> <a href="/tags/MP3/" style="font-size: 10px;">MP3</a> <a href="/tags/PostEdu/" style="font-size: 10px;">PostEdu</a> <a href="/tags/movie/" style="font-size: 16.67px;">movie</a> <a href="/tags/pintos/" style="font-size: 20px;">pintos</a> <a href="/tags/yi/" style="font-size: 13.33px;">yi</a> <a href="/tags/坚果/" style="font-size: 10px;">坚果</a> <a href="/tags/多说评论框/" style="font-size: 10px;">多说评论框</a> <a href="/tags/日常/" style="font-size: 10px;">日常</a> <a href="/tags/每天三道题/" style="font-size: 10px;">每天三道题</a> <a href="/tags/编译原理/" style="font-size: 13.33px;">编译原理</a>
     </div>
   </div>
 
@@ -574,7 +754,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">8</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">10</span></li></ul>
     </div>
   </div>
 
@@ -586,6 +766,14 @@ ga('send', 'pageview');
       <ul>
         
           <li>
+            <a href="/2015/09/24/yi/">yi</a>
+          </li>
+        
+          <li>
+            <a href="/2015/09/23/yi/">yi</a>
+          </li>
+        
+          <li>
             <a href="/2015/09/22/小计/">小计</a>
           </li>
         
@@ -595,14 +783,6 @@ ga('send', 'pageview');
         
           <li>
             <a href="/2015/09/20/pintos学习笔记2/">pintos学习笔记2</a>
-          </li>
-        
-          <li>
-            <a href="/2015/09/16/pintos学习笔记1/">pintos学习笔记1</a>
-          </li>
-        
-          <li>
-            <a href="/2015/09/15/pintos学习笔记1/">pintos学习笔记1</a>
           </li>
         
       </ul>
