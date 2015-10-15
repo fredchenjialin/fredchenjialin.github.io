@@ -3,18 +3,39 @@
 <head>
   <meta charset="utf-8">
   
-  <title>pintos学习笔记1 | MPZ BLOG</title>
+  <title>小记 | MPZ BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1，实现一个哈希函数1234// HASH_SIZE 哈希参数hashcode(&quot;abcd&quot;) = (ascii(a) * 333 + ascii(b) * 332 + ascii(c) *33 + ascii(d)) % HASH_SIZE                  = (97* 333 + 98 * 332 + 99 * 33 +100) % HASH_SIZE">
+  <meta name="description" content="最近研究生的生涯逐渐迈向正轨，然而我自己的生活和心态还基本没有达到我想要达到的状态。先是列一下事项：
+事项---动作---优先级---目标---关键
+
+论文—白天研读—重中之重—看下十篇论文后可以有思想去尝试写论文—看框架，流程，和论文写什么
+英语六级—白天复习—重要—不低于425分—做真题，练听力
+ML—晚上回宿舍在线观看—必做—12月份拿到证书—坚持
+go语言写一个小型的论文记载网站
+Word">
 <meta property="og:type" content="article">
-<meta property="og:title" content="pintos学习笔记1">
-<meta property="og:url" content="http://fredchenjialin.github.io/2015/09/15/pintos学习笔记1/index.html">
+<meta property="og:title" content="小记">
+<meta property="og:url" content="http://fredchenjialin.github.io/2015/10/15/小记/index.html">
 <meta property="og:site_name" content="MPZ BLOG">
-<meta property="og:description" content="1，实现一个哈希函数1234// HASH_SIZE 哈希参数hashcode(&quot;abcd&quot;) = (ascii(a) * 333 + ascii(b) * 332 + ascii(c) *33 + ascii(d)) % HASH_SIZE                  = (97* 333 + 98 * 332 + 99 * 33 +100) % HASH_SIZE">
-<meta property="og:updated_time" content="2015-09-16T06:48:37.880Z">
+<meta property="og:description" content="最近研究生的生涯逐渐迈向正轨，然而我自己的生活和心态还基本没有达到我想要达到的状态。先是列一下事项：
+事项---动作---优先级---目标---关键
+
+论文—白天研读—重中之重—看下十篇论文后可以有思想去尝试写论文—看框架，流程，和论文写什么
+英语六级—白天复习—重要—不低于425分—做真题，练听力
+ML—晚上回宿舍在线观看—必做—12月份拿到证书—坚持
+go语言写一个小型的论文记载网站
+Word">
+<meta property="og:updated_time" content="2015-10-15T02:22:04.732Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="pintos学习笔记1">
-<meta name="twitter:description" content="1，实现一个哈希函数1234// HASH_SIZE 哈希参数hashcode(&quot;abcd&quot;) = (ascii(a) * 333 + ascii(b) * 332 + ascii(c) *33 + ascii(d)) % HASH_SIZE                  = (97* 333 + 98 * 332 + 99 * 33 +100) % HASH_SIZE">
+<meta name="twitter:title" content="小记">
+<meta name="twitter:description" content="最近研究生的生涯逐渐迈向正轨，然而我自己的生活和心态还基本没有达到我想要达到的状态。先是列一下事项：
+事项---动作---优先级---目标---关键
+
+论文—白天研读—重中之重—看下十篇论文后可以有思想去尝试写论文—看框架，流程，和论文写什么
+英语六级—白天复习—重要—不低于425分—做真题，练听力
+ML—晚上回宿舍在线观看—必做—12月份拿到证书—坚持
+go语言写一个小型的论文记载网站
+Word">
   
     <link rel="alternative" href="/atom.xml" title="MPZ BLOG" type="application/atom+xml">
   
@@ -84,10 +105,10 @@ ga('send', 'pageview');
   </div>
 </div>
       <div class="outer">
-        <section id="main"><article id="post-pintos学习笔记1" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-小记" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/09/15/pintos学习笔记1/" class="article-date">
-  <time datetime="2015-09-15T06:02:30.000Z" itemprop="datePublished">2015-09-15</time>
+    <a href="/2015/10/15/小记/" class="article-date">
+  <time datetime="2015-10-15T02:07:16.000Z" itemprop="datePublished">2015-10-15</time>
 </a>
     
   <div class="article-category">
@@ -102,7 +123,7 @@ ga('send', 'pageview');
         
   
     <h1 class="article-title" itemprop="name">
-      pintos学习笔记1
+      小记
     </h1>
   
 
@@ -110,23 +131,24 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1，实现一个哈希函数<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// HASH_SIZE 哈希参数</span></span><br><span class="line">hashcode(<span class="string">"abcd"</span>) = (ascii(a) * <span class="number">333</span> + ascii(b) * <span class="number">332</span> + ascii(c) *<span class="number">33</span> + ascii(d)) % HASH_SIZE </span><br><span class="line">                 = (<span class="number">97</span>* <span class="number">333</span> + <span class="number">98</span> * <span class="number">332</span> + <span class="number">99</span> * <span class="number">33</span> +<span class="number">100</span>) % HASH_SIZE</span><br><span class="line">                 = <span class="number">3595978</span> % HASH_SIZE</span><br></pre></td></tr></table></figure></p>
-<ul>
-<li>注意超界—-模运算<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//(a+b)%c=(a%c+b%c)%c</span></span><br><span class="line"><span class="comment">//(a*b)%c=(a%c*b%c)%c</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">hashCode</span><span class="params">(<span class="built_in">string</span> str,<span class="keyword">int</span> HASH_SIZE)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> leng = str.length();</span><br><span class="line">    <span class="keyword">long</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">long</span> args = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = leng-<span class="number">1</span>;i &gt;= <span class="number">0</span>;i--)</span><br><span class="line">    &#123;</span><br><span class="line">        sum += (str[i]*args%HASH_SIZE);</span><br><span class="line">        args = args*<span class="number">33</span>%HASH_SIZE;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> sum%HASH_SIZE;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
+        <h4 id="最近研究生的生涯逐渐迈向正轨，然而我自己的生活和心态还基本没有达到我想要达到的状态。">最近研究生的生涯逐渐迈向正轨，然而我自己的生活和心态还基本没有达到我想要达到的状态。</h4><pre><code><span class="comment">先是列一下事项：</span>
+<span class="comment">事项</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="comment">动作</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="comment">优先级</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="comment">目标</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="comment">关键</span>
+</code></pre><ul>
+<li>论文—白天研读—重中之重—看下十篇论文后可以有思想去尝试写论文—看框架，流程，和论文写什么</li>
+<li>英语六级—白天复习—重要—不低于425分—做真题，练听力</li>
+<li>ML—晚上回宿舍在线观看—必做—12月份拿到证书—坚持</li>
+<li>go语言写一个小型的论文记载网站</li>
+<li>WordPress主题—在平时累了或者周末研究前端—一般—写一个自己用的极简主义的theme—坚持和找威仔讨论</li>
+<li>研究生创新成果展—大概筹划—一般—展出别出岔子—每人做什么事情盯紧就好</li>
 </ul>
-<p>2，一个vector的基本用法<br>3，最多的点过直线</p>
-<hr>
-<p>本来打算今天看thread的，被叫去打撸了。。。。</p>
-<p>今天看了《我是路人甲》，没什么感觉。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/15/pintos学习笔记1/" data-id="cifrlpp0c002ao4vg825s0dna" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/10/15/小记/" data-id="cifrlpoy6000co4vg9x4f69zv" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/movie/">movie</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pintos/">pintos</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/每天三道题/">每天三道题</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计划/">计划</a></li></ul>
 
     </footer>
   </div>
@@ -134,19 +156,10 @@ ga('send', 'pageview');
     
 <nav id="article-nav">
   
-    <a href="/2015/09/16/pintos学习笔记1/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          pintos学习笔记1
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/09/13/pintos学习笔记0/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2015/10/12/机器学习2/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">pintos学习笔记0</div>
+      <div class="article-nav-title">机器学习2</div>
     </a>
   
 </nav>
@@ -157,7 +170,7 @@ ga('send', 'pageview');
 
   <section id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="post-pintos学习笔记1" data-title="pintos学习笔记1" data-url="http://fredchenjialin.github.io/2015/09/15/pintos学习笔记1/"></div>
+    <div class="ds-thread" data-thread-key="post-小记" data-title="小记" data-url="http://fredchenjialin.github.io/2015/10/15/小记/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
