@@ -164,7 +164,44 @@ ga('send', 'pageview');
     <div class="article-entry" itemprop="articleBody">
       
         <h4 id="本周开始讲了多变量的参数学习。">本周开始讲了多变量的参数学习。</h4><pre><code>不过我认为，这个东西也就和单变量一个样子。都是对cost <span class="function"><span class="keyword">function</span></span>取最小值，最后得到趋向于稳定的参数。
-</code></pre>
+</code></pre><h3 id="特征缩放_Feature_Scaling">特征缩放 Feature Scaling</h3><ol>
+<li>让所有的特征都处于相同的数量等级，有助于加快回归</li>
+<li>mean scaling ：（特征-平均值）/（最大-最小）</li>
+<li>学习速率决定了回归质量</li>
+</ol>
+<h3 id="标准方程">标准方程</h3><ol>
+<li>梯度下降和标准方程的比较（在特征规模上的差别）</li>
+</ol>
+<h4 id="一些题目">一些题目</h4><h4 id="week2-1">week2-1</h4><h4 id="week2-2">week2-2</h4><pre><code><span class="number">2</span>^<span class="number">6</span>=<span class="number">64</span>
+<span class="number">1</span>~=<span class="number">2</span> <span class="comment">%不等于</span>
+<span class="number">1</span>&amp;&amp;<span class="number">0</span> <span class="comment">%与</span>
+xor(<span class="number">1</span>,<span class="number">0</span>) <span class="comment">%异或</span>
+PS1(<span class="string">'&gt;&gt; '</span>); <span class="comment">%新起一行</span>
+<span class="built_in">pi</span> <span class="comment">%圆周率</span>
+<span class="built_in">disp</span>() <span class="comment">%显示</span>
+分号 换行
+<span class="built_in">ones</span>(x,y) <span class="comment">%x行y列 全1</span>
+<span class="built_in">rand</span>(x,y) <span class="comment">%      任意</span>
+hist <span class="comment">%线图</span>
+<span class="built_in">eye</span> <span class="comment">%单位矩阵</span>
+<span class="built_in">size</span>(矩阵,<span class="number">1</span>或者<span class="number">2</span>) <span class="comment">%1是 row 2 is col</span>
+<span class="built_in">size</span>(矩阵) <span class="comment">%vector with 2 var</span>
+<span class="built_in">length</span>(matrix) <span class="comment">%longest length</span>
+pwd <span class="comment">%working path</span>
+load filename Equal load(<span class="string">'filename'</span>)
+who show the all var
+whos show details of who
+save filename var encode
+: mean every element along that row/col
+<span class="matrix">[A B]</span> row combine
+<span class="matrix">[A ; B]</span> col combine
+A .^ <span class="number">2</span> each element of A ^<span class="number">2</span>
+sum(A) sum of A
+prod(A) product of A
+<span class="built_in">floor</span>(A) 
+<span class="built_in">ceil</span>(A) 
+</code></pre><p>PS:特征缩放那一题是帮助了更快迭代回归，而不是使每一步都更小花费</p>
+
       
     </div>
     <footer class="article-footer">
