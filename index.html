@@ -112,13 +112,18 @@ ga('send', 'pageview');
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="Logistic_Regression">Logistic Regression</h2><h4 id="特征方程">特征方程</h4><p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/1.png" alt="LinearOneVariable"></p>
-<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/CodeCogsEqn.gif" alt="LinearOneVariable"></p>
-<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/logisticCostF.png" alt="LinearOneVariable"></p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/CodeCogsEqn.gif" alt="CodeCogsEqn"></p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/logisticCostF.png" alt="logisticCostF"></p>
 <h4 id="Cost_Function">Cost Function</h4><p>若是延用原来的Cost Function，在梯度下降的时候会局限于很多的局部最优解，对全局最优解的寻找产生影响。</p>
 <p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/2.png" alt="LinearOneVariable"></p>
 <p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/3.png" alt="LinearOneVariable"></p>
 <h4 id="求导吧">求导吧</h4><p>首先，用个小技巧把两个情况合二为一。</p>
 <p>得到如下：<br><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/4.png" alt="LinearOneVariable"></p>
+<h4 id="正规化">正规化</h4><ul>
+<li>逻辑回归正规化公式<br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/regularizeRL.png" alt="regularizeRL"></li>
+<li>梯度下降正规化公式<br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/regularizeGR.png" alt="regularizeGR"></li>
+</ul>
+<h3 id="相关矩阵小技巧">相关矩阵小技巧</h3><p>如果我想要把两个矩阵的对应项相乘，那么是不是只有循环了，但是若是我们考虑一下最终的形式，多数情况下，我们不仅要相乘还有相加，所以不用循环。</p>
 
       
     </div>
