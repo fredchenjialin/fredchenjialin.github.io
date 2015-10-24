@@ -3,17 +3,45 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: yi | MPZ Diary</title>
+  <title>机器学习3 | MPZ Diary</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="使用Hexo搭建的一个Diary。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="MPZ Diary">
-<meta property="og:url" content="http://fredchenjialin.github.io/tags/yi/index.html">
+  <meta name="description" content="Logistic Regression特征方程
+
+
+Cost Function若是延用原来的Cost Function，在梯度下降的时候会局限于很多的局部最优解，对全局最优解的寻找产生影响。
+
+
+求导吧首先，用个小技巧把两个情况合二为一。
+得到如下：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="机器学习3">
+<meta property="og:url" content="http://fredchenjialin.github.io/2015/10/21/机器学习3/index.html">
 <meta property="og:site_name" content="MPZ Diary">
-<meta property="og:description" content="使用Hexo搭建的一个Diary。">
+<meta property="og:description" content="Logistic Regression特征方程
+
+
+Cost Function若是延用原来的Cost Function，在梯度下降的时候会局限于很多的局部最优解，对全局最优解的寻找产生影响。
+
+
+求导吧首先，用个小技巧把两个情况合二为一。
+得到如下：">
+<meta property="og:image" content="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/1.png">
+<meta property="og:image" content="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/CodeCogsEqn.gif">
+<meta property="og:image" content="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/logisticCostF.png">
+<meta property="og:image" content="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/2.png">
+<meta property="og:image" content="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/3.png">
+<meta property="og:image" content="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/4.png">
+<meta property="og:updated_time" content="2015-10-22T09:00:19.476Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MPZ Diary">
-<meta name="twitter:description" content="使用Hexo搭建的一个Diary。">
+<meta name="twitter:title" content="机器学习3">
+<meta name="twitter:description" content="Logistic Regression特征方程
+
+
+Cost Function若是延用原来的Cost Function，在梯度下降的时候会局限于很多的局部最优解，对全局最优解的寻找产生影响。
+
+
+求导吧首先，用个小技巧把两个情况合二为一。
+得到如下：">
   
     <link rel="alternative" href="/atom.xml" title="MPZ Diary" type="application/atom+xml">
   
@@ -83,78 +111,86 @@ ga('send', 'pageview');
   </div>
 </div>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/09/25/2015年9月25日周报2/" class="archive-article-date">
-  <time datetime="2015-09-25T10:55:14.000Z" itemprop="datePublished">Sep 25</time>
+        <section id="main"><article id="post-机器学习3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/10/21/机器学习3/" class="article-date">
+  <time datetime="2015-10-21T09:44:53.000Z" itemprop="datePublished">2015-10-21</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Diary/">Diary</a>►<a class="article-category-link" href="/categories/Diary/机器学习/">机器学习</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/09/25/2015年9月25日周报2/">2015年9月25日周报2</a>
+    <h1 class="article-title" itemprop="name">
+      机器学习3
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/09/24/yi/" class="archive-article-date">
-  <time datetime="2015-09-24T01:10:42.000Z" itemprop="datePublished">Sep 24</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/09/24/yi/">yi</a>
-    </h1>
-  
+        <h2 id="Logistic_Regression">Logistic Regression</h2><h4 id="特征方程">特征方程</h4><p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/1.png" alt="LinearOneVariable"></p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/CodeCogsEqn.gif" alt="LinearOneVariable"></p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/logisticCostF.png" alt="LinearOneVariable"></p>
+<h4 id="Cost_Function">Cost Function</h4><p>若是延用原来的Cost Function，在梯度下降的时候会局限于很多的局部最优解，对全局最优解的寻找产生影响。</p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/2.png" alt="LinearOneVariable"></p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/3.png" alt="LinearOneVariable"></p>
+<h4 id="求导吧">求导吧</h4><p>首先，用个小技巧把两个情况合二为一。</p>
+<p>得到如下：<br><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/4.png" alt="LinearOneVariable"></p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/09/23/yi/" class="archive-article-date">
-  <time datetime="2015-09-23T12:49:48.000Z" itemprop="datePublished">Sep 23</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/09/23/yi/">yi</a>
-    </h1>
-  
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fredchenjialin.github.io/2015/10/21/机器学习3/" data-id="cig4ixcp7000cp0vg204l0tp3" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ML/">ML</a></li></ul>
 
-    </header>
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/10/15/小记/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">小记</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
-</section>
+
+
+  <section id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="post-机器学习3" data-title="机器学习3" data-url="http://fredchenjialin.github.io/2015/10/21/机器学习3/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'fredchenjialin'};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+    <!-- 多说公共JS代码 end -->
+  </section>
+  </section>
         
           <aside id="sidebar">
   
