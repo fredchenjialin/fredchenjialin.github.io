@@ -87,10 +87,10 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
-    <article id="post-pintos学习笔记0" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-hi" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/09/13/pintos学习笔记0/" class="article-date">
-  <time datetime="2015-09-13T02:14:48.000Z" itemprop="datePublished">2015-09-13</time>
+    <a href="/2015/10/07/hi/" class="article-date">
+  <time datetime="2015-10-07T14:13:15.000Z" itemprop="datePublished">2015-10-07</time>
 </a>
     
   <div class="article-category">
@@ -105,7 +105,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/09/13/pintos学习笔记0/">pintos学习笔记0</a>
+      <a class="article-title" href="/2015/10/07/hi/">hi</a>
     </h1>
   
 
@@ -113,67 +113,17 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天看了一点点的pintos，做了半道网易的运营的<a href="http://multipluso.com/2015/09/wangyi-hiho0/" target="_blank" rel="external">题目</a></p>
-<p>打算写一点计划出来：</p>
-<ol>
-<li>每天三道lintcode上面的题目</li>
-<li>要看书（网络）</li>
-</ol>
-<hr>
-<h2 id="Loading">Loading</h2><h3 id="Loader">Loader</h3><ul>
-<li>BIOS加载Loader（MBR）<ul>
-<li>预留64字节给分区表</li>
-<li>128字节给内核命令行参数</li>
-</ul>
-</li>
-<li>Loader读分区表找到内核<ul>
-<li>找到可启动内核分区</li>
-<li>从分区读入内存128kB（或许更多，但是BIOS不提供超过1MB的大小）</li>
-<li>找到入口（内核的BLF header有个指针指向入口）</li>
-<li>Loader跳去入口</li>
-<li>每次运行内核时插入参数</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h3 id="Low-Level_Kernel_Initialization">Low-Level Kernel Initialization</h3><p>入口 start() in threads/start.S</p>
-<h4 id="start()">start()</h4><ul>
-<li>获取机器的内存</li>
-<li>启用A20 line,做64M的内存映射（看不太懂）</li>
-<li>call main()</li>
-</ul>
-<hr>
-<h3 id="High-Level_Kernel_Initialization">High-Level Kernel Initialization</h3><h4 id="调用main()">调用main()</h4><ul>
-<li>call bss_init()          - 清理BSS（被清为0的字段的传统名：在函数外未提供初始化的变量声明，variable goes into the BSS？）</li>
-<li>call read_command_line() - break the kernel command line into arguments</li>
-<li>call parse_options()     - read any options at the beginning of the command line</li>
-<li>call thread_init()       - 因为要用锁，所以就初始化</li>
-<li>initialize the console and print a startup message to the console</li>
-<li>call palloc_init()       - initialize memory system by setting up the <a href="Page Allocator">kernel page allocator</a></li>
-<li>call molloc_init()       - sets up the allocator that handles allocations of arbitrary-size <a href="Block Allocator">blocks</a> of memory</li>
-<li>call paging_init()       - sets up a <a href="Page Table">page table</a> for the kernel<ul>
-<li>在第二节后面还有tss和gdt的初始化</li>
-</ul>
-</li>
-<li>call intr_init()         - sets up the CPU’s interrupt descriptor table (IDT) to ready it for <a href="Interrupt Infrastructure">interrupt handling</a></li>
-<li>call timer_init()        - handling timer interrupt</li>
-<li>call kbd_init()          - handling keyboard interrupt</li>
-<li>call input_init()        - sets up to merge serial and keyboard input into one stream<ul>
-<li>在第二节后面还有用户程序的初始化exception_init() and syscall_init().</li>
-</ul>
-</li>
-<li>start the scheduler with thread_start(),call serial_init_queue() to switch to interrupt-driven serial port I/O</li>
-<li>call timer_calibrate() </li>
-<li>call ide_init() and filesys_init() to initialize the IDE disks and file system<h4 id="Boot_is_complete-">Boot is complete.</h4></li>
-</ul>
+        <p>今天看了会线性代数，感觉自己还可以看的下去。</p>
+<p>对比我的课本和mit的线性代数的课程内容，我发现了一些顺序上面的不同。</p>
+<p>mit的课程是先说方程，说消元，说矩阵，我的大学课本是先说行列式，说秩，说运算</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/13/pintos学习笔记0/" data-id="cigfuwfj80031p4vg4hbztjx2" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/10/07/hi/" data-id="cigfuwfhc0017p4vg82yolvly" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pintos/">pintos</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/线性代数/">线性代数</a></li></ul>
 
     </footer>
   </div>
@@ -182,14 +132,14 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-hexo下的第一篇blog" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-机器学习1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/09/08/hexo下的第一篇blog/" class="article-date">
-  <time datetime="2015-09-08T09:39:46.000Z" itemprop="datePublished">2015-09-08</time>
+    <a href="/2015/10/05/机器学习1/" class="article-date">
+  <time datetime="2015-10-05T09:14:27.000Z" itemprop="datePublished">2015-10-05</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/Diary/">Diary</a>►<a class="article-category-link" href="/categories/Diary/hexo设置/">hexo设置</a>
+    <a class="article-category-link" href="/categories/Diary/">Diary</a>►<a class="article-category-link" href="/categories/Diary/机器学习/">机器学习</a>
   </div>
 
   </div>
@@ -200,7 +150,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/09/08/hexo下的第一篇blog/">hexo下的第一篇blog</a>
+      <a class="article-title" href="/2015/10/05/机器学习1/">机器学习1</a>
     </h1>
   
 
@@ -208,22 +158,65 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="自定义图标的问题">自定义图标的问题</h2><p>很多人说将themes/主题名称/layout/_partial/head.ejs中的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link href=<span class="string">"&lt;%- config.root %&gt;favicon.png"</span> rel=<span class="string">"icon"</span>&gt;</span><br></pre></td></tr></table></figure></p>
-<p>替换为<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link href=<span class="string">"&lt;%- config.root %&gt;favicon.ico"</span> rel=<span class="string">"icon"</span> <span class="built_in">type</span>=<span class="string">"image/x-ico"</span>&gt;</span><br></pre></td></tr></table></figure></p>
-<p>好像在hexo3下无效了，因为找不到类似的语句</p>
-<p>我的做法<br>在同样的位置现在的写法是<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (theme.favicon)&#123; %&gt;</span><br><span class="line">  &lt;link rel=<span class="string">"icon"</span> href=<span class="string">"&lt;%- theme.favicon %&gt;"</span>&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
-<p>所以在对应位置放一个favicon.ico的图标就可以了，在主题目录的source文件夹下。</p>
-<h2 id="多说评论框设置">多说评论框设置</h2><p>先在_config.yml下添加duoshuo_shortname，在article.ejs中调用</p>
-<p>在主题/layout/_partial/article.ejs的最后一段替换如下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (!index &amp;&amp; post.comments &amp;&amp; config.duoshuo_shortname)&#123; %&gt;</span><br><span class="line">  &lt;section id=<span class="string">"comments"</span>&gt;</span><br><span class="line">    &lt;!-- 多说评论框 start --&gt;</span><br><span class="line">    &lt;div class=<span class="string">"ds-thread"</span> data-thread-key=<span class="string">"&lt;%= post.layout %&gt;-&lt;%= post.slug %&gt;"</span> data-title=<span class="string">"&lt;%= post.title %&gt;"</span> data-url=<span class="string">"&lt;%= page.permalink %&gt;"</span>&gt;&lt;/div&gt;</span><br><span class="line">    &lt;!-- 多说评论框 end --&gt;</span><br><span class="line">    &lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">    var duoshuoQuery = &#123;short_name:<span class="string">'&lt;%= config.duoshuo_shortname %&gt;'</span>&#125;;</span><br><span class="line">      (<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        var ds = document.createElement(<span class="string">'script'</span>);</span><br><span class="line">        ds.type = <span class="string">'text/javascript'</span>;ds.async = <span class="literal">true</span>;</span><br><span class="line">        ds.src = (document.location.protocol == <span class="string">'https:'</span> ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">'//static.duoshuo.com/embed.js'</span>;</span><br><span class="line">        ds.charset = <span class="string">'UTF-8'</span>;</span><br><span class="line">        (document.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>] </span><br><span class="line">         || document.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(ds);</span><br><span class="line">      &#125;)();</span><br><span class="line">      &lt;/script&gt;</span><br><span class="line">    &lt;!-- 多说公共JS代码 end --&gt;</span><br><span class="line">  &lt;/section&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
-<h2 id="个人页面添加">个人页面添加</h2><p>在主题/_config.yml中的menu中添加 About: /about</p>
+        <ol>
+<li><p>Introduction</p>
+<ul>
+<li><p>What is Machine Learning?</p>
+<p>Two definitions of Machine Learning are offered.<br>Arthur Samuel described it as:<br>“the field of study that gives computers the ability to learn without being explicitly programmed.” This is an older, informal definition.<br>Tom Mitchell provides a more modern definition:<br>“A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.”</p>
+<p>Example: playing checkers.<br>E = the experience of playing many games of checkers(玩的经验)<br>T = the task of playing checkers.(要做的事情)<br>P = the probability that the program will win the next game.(事情做成的机率)</p>
+</li>
+<li><p>Supervised Learning</p>
+<p>In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output.</p>
+<p>Supervised learning problems are categorized into “regression” and “classification” problems. In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a classification problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories.</p>
+<p>Example:</p>
+<p>Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a continuous output, so this is a regression problem.</p>
+<p>We could turn this example into a classification problem by instead making our output about whether the house “sells for more or less than the asking price.” Here we are classifying the houses based on price into two discrete categories.</p>
+</li>
+<li><p>Unsupervised Learning</p>
+<p>Unsupervised learning, on the other hand, allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don’t necessarily know the effect of the variables.</p>
+<p>We can derive this structure by clustering the data based on relationships among the variables in the data.</p>
+<p>With unsupervised learning there is no feedback based on the prediction results, i.e., there is no teacher to correct you. It’s not just about clustering. For example, associative memory is unsupervised learning.</p>
+<p>Example:</p>
+<p>Clustering: Take a collection of 1000 essays written on the US Economy, and find a way to automatically group these essays into a small number that are somehow similar or related by different variables, such as word frequency, sentence length, page count, and so on.</p>
+<p>Associative: Suppose a doctor over years of experience forms associations in his mind between patient characteristics and illnesses that they have. If a new patient shows up then based on this patient’s characteristics such as symptoms, family medical history, physical attributes, mental outlook, etc the doctor associates possible illness or illnesses based on what the doctor has seen before with similar patients. This is not the same as rule based reasoning as in expert systems. In this case we would like to estimate a mapping function from patient characteristics into illnesses.</p>
+</li>
+</ul>
+</li>
+<li><p>一元线性回归</p>
+<h3 id="最为主要的一些公式">最为主要的一些公式</h3><h5 id="一元线性函数">一元线性函数</h5><p> <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/LinearOneVariable.png" alt="LinearOneVariable"></p>
+<h5 id="花费函数，也就是用来逼近我们需要的俩个参数的函数">花费函数，也就是用来逼近我们需要的俩个参数的函数</h5><p> <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/CostFunction.png" alt="CostFunction"></p>
+<h5 id="目的函数，所以对他求导">目的函数，所以对他求导</h5><p> <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/GoalFunction.png" alt="GoalFunction"></p>
+</li>
+<li><p>梯度下降法求解目的函数</p>
+<h3 id="从一个猜测的初始值出发，不断的减小目的函数">从一个猜测的初始值出发，不断的减小目的函数</h3><h5 id="梯度下降算法">梯度下降算法</h5><p> <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/gradient_descent.png" alt=""></p>
+<h5 id="具体实现">具体实现</h5><p> <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/Gredientdescentalgorithm.png" alt=""></p>
+</li>
+<li><p>第一周顺利结束</p>
+<h3 id="感觉还不错，因为原来是看过的，但是还是有一点需要注意的。">感觉还不错，因为原来是看过的，但是还是有一点需要注意的。</h3><ol>
+<li>梯度下降参数α这个值因为考虑到下降速度的问题还是需要变化的，但是会有不够和过了的问题。</li>
+<li><p>还有如下的一些问题：</p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex1.png" alt="答案对"></p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex1_1.png" alt="答案错"></p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex2.png" alt="答案错"></p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex2_1.png" alt="答案错"></p>
+</li>
+</ol>
+</li>
+<li><p>补</p>
+<ol>
+<li>可以找到一个完全匹配的函数。</li>
+<li>即使找到一个完全匹配的函数，但是不可以说是100%预测成功。</li>
+</ol>
+</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/08/hexo下的第一篇blog/" data-id="cigfuwfg80002p4vgu8uh344p" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/10/05/机器学习1/" data-id="cigfuwfhm001bp4vgbaztairq" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/多说评论框/">多说评论框</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ML/">ML</a></li></ul>
 
     </footer>
   </div>
@@ -232,12 +225,16 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-第一次海淘Nexus5X——纪实" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/09/08/hello-world/" class="article-date">
-  <time datetime="2015-09-08T09:21:08.572Z" itemprop="datePublished">2015-09-08</time>
+    <a href="/2015/10/02/第一次海淘Nexus5X——纪实/" class="article-date">
+  <time datetime="2015-10-02T13:06:06.000Z" itemprop="datePublished">2015-10-02</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Diary/">Diary</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -246,7 +243,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/09/08/hello-world/">Hello World</a>
+      <a class="article-title" href="/2015/10/02/第一次海淘Nexus5X——纪实/">第一次海淘Nexus5X——纪实</a>
     </h1>
   
 
@@ -254,22 +251,66 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server_hello">Run server hello</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h3 id="本人第一次海淘，不具有代表性，仅仅给大家一个参考。">本人第一次海淘，不具有代表性，仅仅给大家一个参考。</h3><h2 id="海淘什么">海淘什么</h2><p>作为一个伪谷粉，对谷歌亲儿子简直是流口水。。</p>
+<p>在13年的时候，我在淘宝上面买了nexus 4，作为到目前为止nexus系列颜值最高的一台手机，4儿子给了我许许多多的第一次。</p>
+<h5 id="第一次用原生系统">第一次用原生系统</h5><h5 id="第一次刷机">第一次刷机</h5><h5 id="第一次用双面玻璃的手机">第一次用双面玻璃的手机</h5><h5 id="第一次对一个手机如此爱护，只让它被摔了三次（两次都碎了，衰！！！！）">第一次对一个手机如此爱护，只让它被摔了三次（两次都碎了，衰！！！！）</h5><h5 id="第一次感受到一种信仰的力量">第一次感受到一种信仰的力量</h5><p>所以这次nexus5x（应该算是7儿子了）一出，就立刻开始研究海淘。。</p>
+<h2 id="为什么是5X，不是6P">为什么是5X，不是6P</h2><p>了解的人都知道这一次的发布，一共有两部亲儿子，一个是LG代工的5X（因为LG还代工了4，5，6是MOTO），另一个是华为代工的6P，这也是nexus系列首次由国产手机厂商代工。</p>
+<p>但是就我认为，第一由华为打入国内市场或者帮助华为走向国际市场这样的事情是肯定在卖方的考虑范围之内的，有可能，我们入手的nexus就不是一个原生系统的手机了，另外，对华为比较抵触。第二，6P的后盖上有一个大黑条，我觉得不能接受，真是丑。（虽然，5X并不好看到哪里去，长得还有点像小米）</p>
+<h2 id="为什么是nexus系列">为什么是nexus系列</h2><p>因为在安卓机器中，原生系统是最靠近这个系统的体验的了。安卓系统的开源，使得这个系统的机器长相各异，形态各异，在原有的系统上加上了很多厂商的思想。<br>原生很方便，直接说道方便这个点不如说是简洁，我们可以随意刷机，随意掌握到很多系统级别的功能，可以感受到最新的系统所带来的改变；<br>原生很好看，我有些时候，会非常受不了厂商定制UI，甚至是android4.0之前的原生界面我都不太可以接受，在android material design被提出来之后，我觉得颜值提高了不少，心里大为开心；<br>原生很快，没有了厂商定制，快是自然而然的。</p>
+<h3 id="话痨模式关闭，下面讲讲海淘">话痨模式关闭，下面讲讲海淘</h3><h2 id="准备">准备</h2><p>第一次海淘，相信大家和我一样有很多地方不明白。</p>
+<p>海淘就是在境外找一个你“信任”的人帮你买东西，然后把东西寄给你。</p>
+<p>这其中的一些关键的点在于：</p>
+<ul>
+<li>东西哪里都可以买，为什么是境外？<ul>
+<li>因为有些东西不在中国卖，或者因为关税问题，卖的特别的贵。</li>
+</ul>
+</li>
+<li>谁值得我们信任？<ul>
+<li>如果是找同学帮忙买东西，自然是非常的方便，但是不是国外没有自己的同学或是认识的人嘛。</li>
+<li>所以就会去找一下比较负责口碑好的转运公司，这里的信任是比较单方向的，因为你找转运公司，公司肯定是要先收了你的钱才帮你办事情，而且事情砸了，多半是我们自己吃亏倒霉，所以一个靠谱的转运公司非常重要。</li>
+</ul>
+</li>
+<li>买东西我们怎么付钱？<ul>
+<li>因为是境外，涉及到了汇率和付款的方式，多半的海淘都是双币信用卡或者全币信用卡，有一个叫做全球付的。</li>
+</ul>
+</li>
+<li>寄东西到中国？<ul>
+<li>我们在买东西的时候填的是转运公司的地址，同时把我们在国内的地址发给转运公司就ok了。</li>
+</ul>
+</li>
+</ul>
+<h2 id="步骤">步骤</h2><ol>
+<li>确定买什么，在哪买</li>
+<li>确定一家转运公司</li>
+<li>向卖价提供转运公司的地址，想转运公司提供我们的地址</li>
+<li>等待发货</li>
+<li>向转运公司提交包裹信息寄到国内</li>
+<li>等待我们东西</li>
+</ol>
+<h3 id="目前我处于4这个状态">目前我处于4这个状态</h3><hr>
+<p>这两天知道了一件新鲜的事情，就是关于在google官网买东西的时候支付的一些细（keng）节（die）。</p>
+<p>我们想买google的手机，那么在下单的时候是一个预定的过程，可能google为了防止有人预定了不买和有人乱预定，所以就把预定和发货整成了两个步骤。<br>一是预订的时候用信用卡额度来交钱，但是这个钱仅仅是被冻结了而已，并不会从你的信用卡中扣走，二是在发货的时候，才会把钱扣走。</p>
+<p>了解的同学都知道，我是用全球付付款的，全球付是有一个即时到账的一个特性吧，所以，我在预定的时候，钱就已经被扣走了，那么，用虚拟信用卡买东西就是要交两倍的钱，但是最终会不会退回一份的钱还是一个未知数，静待变数~~</p>
+<p>希望一切顺利！！</p>
+<hr>
+<h3 id="我又回来了，带来了好消息">我又回来了，带来了好消息</h3><p>在20号那天我接到一封google store的email，满怀欣喜的以为是发货了，原来我被砍单了！！！！！！！！！！！！！！<br><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-nexus/kandan.png" alt="砍单"></p>
+<p>我的这个心里满满都是悲伤，于是我去哭了一晚上顺便把我的邮寄地址的名字和账户地址的名字改成了一样的又下了一次单（而且颜色还改成了骚骚的ice）</p>
+<p>谁知道！！</p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-nexus/success.png" alt="砍单"></p>
+<p>这是无心插柳柳成荫啊！！！本来我都要放弃了！！！</p>
+<p>so，赶紧去转运网站报备，填资料什么的。</p>
+<p>接下来就是考虑壳和贴膜的事情了。</p>
+<hr>
+<p>持续更新~</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/08/hello-world/" data-id="cigfuwfgi000bp4vgxhwdimrn" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/10/02/第一次海淘Nexus5X——纪实/" data-id="cigfuwfhm001fp4vg0n84ghud" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ML/">ML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Nexus5X/">Nexus5X</a></li></ul>
+
     </footer>
   </div>
   
@@ -279,7 +320,7 @@ ga('send', 'pageview');
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+      <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/4/">Next &raquo;</a>
     </nav>
   
 </section>
