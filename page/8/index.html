@@ -87,6 +87,101 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-pintos学习笔记0" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/09/13/pintos学习笔记0/" class="article-date">
+  <time datetime="2015-09-13T02:14:48.000Z" itemprop="datePublished">2015-09-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Diary/">Diary</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/09/13/pintos学习笔记0/">pintos学习笔记0</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天看了一点点的pintos，做了半道网易的运营的<a href="http://multipluso.com/2015/09/wangyi-hiho0/" target="_blank" rel="external">题目</a></p>
+<p>打算写一点计划出来：</p>
+<ol>
+<li>每天三道lintcode上面的题目</li>
+<li>要看书（网络）</li>
+</ol>
+<hr>
+<h2 id="Loading">Loading</h2><h3 id="Loader">Loader</h3><ul>
+<li>BIOS加载Loader（MBR）<ul>
+<li>预留64字节给分区表</li>
+<li>128字节给内核命令行参数</li>
+</ul>
+</li>
+<li>Loader读分区表找到内核<ul>
+<li>找到可启动内核分区</li>
+<li>从分区读入内存128kB（或许更多，但是BIOS不提供超过1MB的大小）</li>
+<li>找到入口（内核的BLF header有个指针指向入口）</li>
+<li>Loader跳去入口</li>
+<li>每次运行内核时插入参数</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="Low-Level_Kernel_Initialization">Low-Level Kernel Initialization</h3><p>入口 start() in threads/start.S</p>
+<h4 id="start()">start()</h4><ul>
+<li>获取机器的内存</li>
+<li>启用A20 line,做64M的内存映射（看不太懂）</li>
+<li>call main()</li>
+</ul>
+<hr>
+<h3 id="High-Level_Kernel_Initialization">High-Level Kernel Initialization</h3><h4 id="调用main()">调用main()</h4><ul>
+<li>call bss_init()          - 清理BSS（被清为0的字段的传统名：在函数外未提供初始化的变量声明，variable goes into the BSS？）</li>
+<li>call read_command_line() - break the kernel command line into arguments</li>
+<li>call parse_options()     - read any options at the beginning of the command line</li>
+<li>call thread_init()       - 因为要用锁，所以就初始化</li>
+<li>initialize the console and print a startup message to the console</li>
+<li>call palloc_init()       - initialize memory system by setting up the <a href="Page Allocator">kernel page allocator</a></li>
+<li>call molloc_init()       - sets up the allocator that handles allocations of arbitrary-size <a href="Block Allocator">blocks</a> of memory</li>
+<li>call paging_init()       - sets up a <a href="Page Table">page table</a> for the kernel<ul>
+<li>在第二节后面还有tss和gdt的初始化</li>
+</ul>
+</li>
+<li>call intr_init()         - sets up the CPU’s interrupt descriptor table (IDT) to ready it for <a href="Interrupt Infrastructure">interrupt handling</a></li>
+<li>call timer_init()        - handling timer interrupt</li>
+<li>call kbd_init()          - handling keyboard interrupt</li>
+<li>call input_init()        - sets up to merge serial and keyboard input into one stream<ul>
+<li>在第二节后面还有用户程序的初始化exception_init() and syscall_init().</li>
+</ul>
+</li>
+<li>start the scheduler with thread_start(),call serial_init_queue() to switch to interrupt-driven serial port I/O</li>
+<li>call timer_calibrate() </li>
+<li>call ide_init() and filesys_init() to initialize the IDE disks and file system<h4 id="Boot_is_complete-">Boot is complete.</h4></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fredchenjialin.github.io/2015/09/13/pintos学习笔记0/" data-id="cigglw34f00351wvge0zz7kbk" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pintos/">pintos</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hexo下的第一篇blog" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/09/08/hexo下的第一篇blog/" class="article-date">
@@ -125,7 +220,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/08/hexo下的第一篇blog/" data-id="cigfuwfg80002p4vgu8uh344p" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/09/08/hexo下的第一篇blog/" data-id="cigglw2v500021wvgrfkrfu4e" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/多说评论框/">多说评论框</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
@@ -172,7 +267,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/08/hello-world/" data-id="cigfuwfgi000bp4vgxhwdimrn" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/09/08/hello-world/" data-id="cigglw2vl000b1wvgfvd9t48x" class="article-share-link">Share</a>
       
       
     </footer>
@@ -195,7 +290,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><span class="category-list-count">22</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/hexo设置/">hexo设置</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/机器人运动学/">机器人运动学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/机器学习/">机器学习</a><span class="category-list-count">4</span></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><span class="category-list-count">23</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/hexo设置/">hexo设置</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/机器人运动学/">机器人运动学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/机器学习/">机器学习</a><span class="category-list-count">5</span></li></ul></li></ul>
     </div>
   </div>
 
@@ -204,7 +299,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/">English</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ML/">ML</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MP3/">MP3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nexus5X/">Nexus5X</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PostEdu/">PostEdu</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/movie/">movie</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pintos/">pintos</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yi/">yi</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/不一样的周报/">不一样的周报</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/周报/">周报</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/坚果/">坚果</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/多说评论框/">多说评论框</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日常/">日常</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/步态/">步态</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/每天三道题/">每天三道题</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编译原理/">编译原理</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/计划/">计划</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运动学/">运动学</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/">English</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ML/">ML</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MP3/">MP3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nexus5X/">Nexus5X</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PostEdu/">PostEdu</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/movie/">movie</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pintos/">pintos</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yi/">yi</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/不一样的周报/">不一样的周报</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/周报/">周报</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/坚果/">坚果</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/多说评论框/">多说评论框</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日常/">日常</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/步态/">步态</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/每天三道题/">每天三道题</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编译原理/">编译原理</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/计划/">计划</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运动学/">运动学</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -222,7 +317,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">13</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">13</span></li></ul>
     </div>
   </div>
 
@@ -232,6 +327,10 @@ ga('send', 'pageview');
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2015/11/01/机器学习5/">机器学习5</a>
+          </li>
         
           <li>
             <a href="/2015/10/31/机器学习4/">机器学习4</a>
@@ -247,10 +346,6 @@ ga('send', 'pageview');
         
           <li>
             <a href="/2015/10/21/机器学习3/">机器学习3</a>
-          </li>
-        
-          <li>
-            <a href="/2015/10/15/小记/">小记</a>
           </li>
         
       </ul>

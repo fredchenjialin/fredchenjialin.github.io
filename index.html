@@ -87,6 +87,76 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
+    <article id="post-机器学习5" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/11/01/机器学习5/" class="article-date">
+  <time datetime="2015-11-01T13:31:24.000Z" itemprop="datePublished">2015-11-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Diary/">Diary</a>►<a class="article-category-link" href="/categories/Diary/机器学习/">机器学习</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/01/机器学习5/">机器学习5</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="第一节里面讲了一个大而全的针对神经网络的cost_Function">第一节里面讲了一个大而全的针对神经网络的cost Function</h3><p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/costfunction.png" alt="costfunction"></p>
+<h3 id="Backpropagation_Algorithm">Backpropagation Algorithm</h3><ul>
+<li><p>想要求导偏导数是比较困难的。以下是前向传播的算法：<br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/Forwardpropagation.png" alt="Forwardpropagation"><br>  可以看出会比较繁琐。</p>
+</li>
+<li><p>然后这是后向传播<br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/backpropagation.png" alt="backpropagation"><br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/backpropagationAch.png" alt="backpropagation"></p>
+</li>
+</ul>
+<h3 id="NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下">NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下</h3><ul>
+<li>说到了一个梯度检验算法，用来证明你做的梯度下降是没有错的。</li>
+</ul>
+<h2 id="程序作业">程序作业</h2><h3 id="第一项_理解多种结果的逻辑回归分类并计算cost_function">第一项 理解多种结果的逻辑回归分类并计算cost function</h3><h4 id="多种化为传统">多种化为传统</h4><p>在原来的看法中，以0，1为例，我们将产生这两种结果的cost function定义如下：</p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/2.png" alt="LinearOneVariable"></p>
+<p>若是y有多种结果，我们可以假想为，若有n种结果</p>
+<ol>
+<li>第一个函数计算 （y == x）</li>
+<li>第二个函数计算 （y != x）</li>
+</ol>
+<p>如此实现了从多种到传统的过度。</p>
+<h4 id="函数整合">函数整合</h4><p>针对两个函数整合到一起的函数使用的是（y）和（1-y）的小技巧，实现了不是第一个函数就是第二个函数的功能。</p>
+<h4 id="举例假设">举例假设</h4><ol>
+<li>有5000个样例，10个分类，所以基本的特征函数产生有5000*10的矩阵A</li>
+<li>5000个样例有5000个label，针对这些label，处理成为（01）格式,得到5000*10的矩阵B<ul>
+<li>例如 y=5 处理为(0,0,0,0,1,0,0,0,0,0)</li>
+</ul>
+</li>
+<li><code>costFunction = -log(A) .<em> B + (-log(1-A)) .</em> (1-B);</code>（注意：这里是点乘）</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">costFunction = -log(A) .* B + (-log(<span class="number">1</span>-A)) .* (<span class="number">1</span>-B);</span><br></pre></td></tr></table></figure>
+<h3 id="反向传播">反向传播</h3>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fredchenjialin.github.io/2015/11/01/机器学习5/" data-id="cigglw31r000c1wvgqlkyfmlb" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ML/">ML</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-机器学习4" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/10/31/机器学习4/" class="article-date">
@@ -122,7 +192,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/10/31/机器学习4/" data-id="cigfuwfgs000cp4vgoonxngpb" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/10/31/机器学习4/" data-id="cigglw328000i1wvgh6rj95vk" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ML/">ML</a></li></ul>
@@ -164,63 +234,10 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/10/31/机器人运动学0/" data-id="cigfuwfgs000ip4vgr2nawtxe" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/10/31/机器人运动学0/" data-id="cigglw32c000m1wvgu094669t" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/步态/">步态</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/运动学/">运动学</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-2015年10月30日周报暨计划调整" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/10/31/2015年10月30日周报暨计划调整/" class="article-date">
-  <time datetime="2015-10-31T08:19:07.000Z" itemprop="datePublished">2015-10-31</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Diary/">Diary</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/31/2015年10月30日周报暨计划调整/">2015年10月30日周报暨计划调整</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>关于最近的一些想法，一直以来都想做一个自己撸的网站，前端加上后台。在反复浅尝辄止了多个框架，语言后，我发现我离最初的想法差的有点远了。</p>
-<p>最初我就是想玩玩效果（注：html5），整一整在网站上看着舒服而又高大上的网页（注：css），如果还有各种各种的动画就更好了（注：JS）。</p>
-<p>所以这么久了，一直没搞清自己在寻找着什么，所以我决定是搞css和js，更加偏重js，结合着算法来搞应该会比较有趣。</p>
-<p>那么现在的事情总结起来就是：</p>
-<ul>
-<li>机器学习</li>
-<li>步态算法</li>
-<li>JS+CSS</li>
-<li>ROS</li>
-<li>Linux视频+摄像头+图像</li>
-</ul>
-<h2 id="另外我还发现一点有一个轻量级的blog框架写东西，或者说是用一个好用的工具写技术日记真的要比写技术博客方便好多">另外我还发现一点有一个轻量级的blog框架写东西，或者说是用一个好用的工具写技术日记真的要比写技术博客方便好多</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/10/31/2015年10月30日周报暨计划调整/" data-id="cigfuwfh2000qp4vgkyvlbdxv" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/周报/">周报</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计划/">计划</a></li></ul>
 
     </footer>
   </div>
@@ -242,7 +259,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><span class="category-list-count">22</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/hexo设置/">hexo设置</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/机器人运动学/">机器人运动学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/机器学习/">机器学习</a><span class="category-list-count">4</span></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><span class="category-list-count">23</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/hexo设置/">hexo设置</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/机器人运动学/">机器人运动学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/机器学习/">机器学习</a><span class="category-list-count">5</span></li></ul></li></ul>
     </div>
   </div>
 
@@ -251,7 +268,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/">English</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ML/">ML</a><span class="tag-list-count">6</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MP3/">MP3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nexus5X/">Nexus5X</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PostEdu/">PostEdu</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/movie/">movie</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pintos/">pintos</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yi/">yi</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/不一样的周报/">不一样的周报</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/周报/">周报</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/坚果/">坚果</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/多说评论框/">多说评论框</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日常/">日常</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/步态/">步态</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/每天三道题/">每天三道题</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编译原理/">编译原理</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/计划/">计划</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运动学/">运动学</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/">English</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ML/">ML</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MP3/">MP3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nexus5X/">Nexus5X</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PostEdu/">PostEdu</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/movie/">movie</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pintos/">pintos</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yi/">yi</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/不一样的周报/">不一样的周报</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/周报/">周报</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/坚果/">坚果</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/多说评论框/">多说评论框</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日常/">日常</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/步态/">步态</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/每天三道题/">每天三道题</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编译原理/">编译原理</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/计划/">计划</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运动学/">运动学</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -269,7 +286,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">13</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">13</span></li></ul>
     </div>
   </div>
 
@@ -279,6 +296,10 @@ ga('send', 'pageview');
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2015/11/01/机器学习5/">机器学习5</a>
+          </li>
         
           <li>
             <a href="/2015/10/31/机器学习4/">机器学习4</a>
@@ -294,10 +315,6 @@ ga('send', 'pageview');
         
           <li>
             <a href="/2015/10/21/机器学习3/">机器学习3</a>
-          </li>
-        
-          <li>
-            <a href="/2015/10/15/小记/">小记</a>
           </li>
         
       </ul>

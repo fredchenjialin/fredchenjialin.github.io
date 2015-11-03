@@ -3,17 +3,53 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: Nexus5X | MPZ Diary</title>
+  <title>机器学习5 | MPZ Diary</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="使用Hexo搭建的一个Diary。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="MPZ Diary">
-<meta property="og:url" content="http://fredchenjialin.github.io/tags/Nexus5X/index.html">
+  <meta name="description" content="第一节里面讲了一个大而全的针对神经网络的cost Function
+Backpropagation Algorithm
+想要求导偏导数是比较困难的。以下是前向传播的算法：    可以看出会比较繁琐。
+
+然后这是后向传播    
+
+
+NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下
+说到了一个梯度检验算法，用来证明你做的梯度下降是没有错的。
+
+程序作业第一项 理解多种结果的逻辑">
+<meta property="og:type" content="article">
+<meta property="og:title" content="机器学习5">
+<meta property="og:url" content="http://fredchenjialin.github.io/2015/11/01/机器学习5/index.html">
 <meta property="og:site_name" content="MPZ Diary">
-<meta property="og:description" content="使用Hexo搭建的一个Diary。">
+<meta property="og:description" content="第一节里面讲了一个大而全的针对神经网络的cost Function
+Backpropagation Algorithm
+想要求导偏导数是比较困难的。以下是前向传播的算法：    可以看出会比较繁琐。
+
+然后这是后向传播    
+
+
+NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下
+说到了一个梯度检验算法，用来证明你做的梯度下降是没有错的。
+
+程序作业第一项 理解多种结果的逻辑">
+<meta property="og:image" content="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/costfunction.png">
+<meta property="og:image" content="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/Forwardpropagation.png">
+<meta property="og:image" content="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/backpropagation.png">
+<meta property="og:image" content="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/backpropagationAch.png">
+<meta property="og:image" content="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/2.png">
+<meta property="og:updated_time" content="2015-11-03T13:41:58.399Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MPZ Diary">
-<meta name="twitter:description" content="使用Hexo搭建的一个Diary。">
+<meta name="twitter:title" content="机器学习5">
+<meta name="twitter:description" content="第一节里面讲了一个大而全的针对神经网络的cost Function
+Backpropagation Algorithm
+想要求导偏导数是比较困难的。以下是前向传播的算法：    可以看出会比较繁琐。
+
+然后这是后向传播    
+
+
+NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下
+说到了一个梯度检验算法，用来证明你做的梯度下降是没有错的。
+
+程序作业第一项 理解多种结果的逻辑">
   
     <link rel="alternative" href="/atom.xml" title="MPZ Diary" type="application/atom+xml">
   
@@ -85,59 +121,106 @@ ga('send', 'pageview');
   </div>
 </div>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/10/02/第一次海淘Nexus5X——纪实/" class="archive-article-date">
-  <time datetime="2015-10-02T13:06:06.000Z" itemprop="datePublished">Oct 2</time>
+        <section id="main"><article id="post-机器学习5" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/11/01/机器学习5/" class="article-date">
+  <time datetime="2015-11-01T13:31:24.000Z" itemprop="datePublished">2015-11-01</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Diary/">Diary</a>►<a class="article-category-link" href="/categories/Diary/机器学习/">机器学习</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/10/02/第一次海淘Nexus5X——纪实/">第一次海淘Nexus5X——纪实</a>
+    <h1 class="article-title" itemprop="name">
+      机器学习5
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/10/02/machineLearning开课了！！/" class="archive-article-date">
-  <time datetime="2015-10-02T12:57:16.000Z" itemprop="datePublished">Oct 2</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/10/02/machineLearning开课了！！/">machineLearning开课了！！</a>
-    </h1>
-  
+        <h3 id="第一节里面讲了一个大而全的针对神经网络的cost_Function">第一节里面讲了一个大而全的针对神经网络的cost Function</h3><p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/costfunction.png" alt="costfunction"></p>
+<h3 id="Backpropagation_Algorithm">Backpropagation Algorithm</h3><ul>
+<li><p>想要求导偏导数是比较困难的。以下是前向传播的算法：<br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/Forwardpropagation.png" alt="Forwardpropagation"><br>  可以看出会比较繁琐。</p>
+</li>
+<li><p>然后这是后向传播<br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/backpropagation.png" alt="backpropagation"><br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/backpropagationAch.png" alt="backpropagation"></p>
+</li>
+</ul>
+<h3 id="NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下">NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下</h3><ul>
+<li>说到了一个梯度检验算法，用来证明你做的梯度下降是没有错的。</li>
+</ul>
+<h2 id="程序作业">程序作业</h2><h3 id="第一项_理解多种结果的逻辑回归分类并计算cost_function">第一项 理解多种结果的逻辑回归分类并计算cost function</h3><h4 id="多种化为传统">多种化为传统</h4><p>在原来的看法中，以0，1为例，我们将产生这两种结果的cost function定义如下：</p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/2.png" alt="LinearOneVariable"></p>
+<p>若是y有多种结果，我们可以假想为，若有n种结果</p>
+<ol>
+<li>第一个函数计算 （y == x）</li>
+<li>第二个函数计算 （y != x）</li>
+</ol>
+<p>如此实现了从多种到传统的过度。</p>
+<h4 id="函数整合">函数整合</h4><p>针对两个函数整合到一起的函数使用的是（y）和（1-y）的小技巧，实现了不是第一个函数就是第二个函数的功能。</p>
+<h4 id="举例假设">举例假设</h4><ol>
+<li>有5000个样例，10个分类，所以基本的特征函数产生有5000*10的矩阵A</li>
+<li>5000个样例有5000个label，针对这些label，处理成为（01）格式,得到5000*10的矩阵B<ul>
+<li>例如 y=5 处理为(0,0,0,0,1,0,0,0,0,0)</li>
+</ul>
+</li>
+<li><code>costFunction = -log(A) .<em> B + (-log(1-A)) .</em> (1-B);</code>（注意：这里是点乘）</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">costFunction = -log(A) .* B + (-log(<span class="number">1</span>-A)) .* (<span class="number">1</span>-B);</span><br></pre></td></tr></table></figure>
+<h3 id="反向传播">反向传播</h3>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fredchenjialin.github.io/2015/11/01/机器学习5/" data-id="cigglw31r000c1wvgqlkyfmlb" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ML/">ML</a></li></ul>
 
-    </header>
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/10/31/机器学习4/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">机器学习4</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
-</section>
+
+
+  <section id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="post-机器学习5" data-title="机器学习5" data-url="http://fredchenjialin.github.io/2015/11/01/机器学习5/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'fredchenjialin'};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+    <!-- 多说公共JS代码 end -->
+  </section>
+  </section>
         
           <aside id="sidebar">
   
