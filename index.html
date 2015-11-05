@@ -141,7 +141,15 @@ ga('send', 'pageview');
 <li><code>costFunction = -log(A) .<em> B + (-log(1-A)) .</em> (1-B);</code>（注意：这里是点乘）</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">costFunction = -log(A) .* B + (-log(<span class="number">1</span>-A)) .* (<span class="number">1</span>-B);</span><br></pre></td></tr></table></figure>
-<h3 id="反向传播">反向传播</h3>
+<h3 id="反向传播">反向传播</h3><p>反向传播花了我好长时间，一直想用程序的角度来解决处理矩阵的问题，然后发现多此一举。</p>
+<p>原来在反向传播中</p>
+<ul>
+<li>先做一遍正向的推导</li>
+<li>从后向前计算误差值（关键点是：如果不是处理成向量来做，那么每一层的误差据真是不一样的）</li>
+<li>计算梯度</li>
+<li>正规化</li>
+</ul>
+<h2 id="我认为即使我做完了这些题目也没有什么好开心的，因为还是学不到最关键的部分，像是为什么反向传播可以求得costFunction_的导数。">我认为即使我做完了这些题目也没有什么好开心的，因为还是学不到最关键的部分，像是为什么反向传播可以求得costFunction 的导数。</h2>
       
     </div>
     <footer class="article-footer">
