@@ -87,55 +87,10 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
-    <article id="post-hi" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-机器学习3" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/10/07/hi/" class="article-date">
-  <time datetime="2015-10-07T14:13:15.000Z" itemprop="datePublished">2015-10-07</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Diary/">Diary</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/07/hi/">hi</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>今天看了会线性代数，感觉自己还可以看的下去。</p>
-<p>对比我的课本和mit的线性代数的课程内容，我发现了一些顺序上面的不同。</p>
-<p>mit的课程是先说方程，说消元，说矩阵，我的大学课本是先说行列式，说秩，说运算</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/10/07/hi/" data-id="cigvukvdk001jykvg54k805u5" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/线性代数/">线性代数</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-机器学习1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/10/05/机器学习1/" class="article-date">
-  <time datetime="2015-10-05T09:14:27.000Z" itemprop="datePublished">2015-10-05</time>
+    <a href="/2015/10/21/机器学习3/" class="article-date">
+  <time datetime="2015-10-21T09:44:53.000Z" itemprop="datePublished">2015-10-21</time>
 </a>
     
   <div class="article-category">
@@ -150,7 +105,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/05/机器学习1/">机器学习1</a>
+      <a class="article-title" href="/2015/10/21/机器学习3/">机器学习3</a>
     </h1>
   
 
@@ -158,62 +113,24 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ol>
-<li><p>Introduction</p>
-<ul>
-<li><p>What is Machine Learning?</p>
-<p>Two definitions of Machine Learning are offered.<br>Arthur Samuel described it as:<br>“the field of study that gives computers the ability to learn without being explicitly programmed.” This is an older, informal definition.<br>Tom Mitchell provides a more modern definition:<br>“A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.”</p>
-<p>Example: playing checkers.<br>E = the experience of playing many games of checkers(玩的经验)<br>T = the task of playing checkers.(要做的事情)<br>P = the probability that the program will win the next game.(事情做成的机率)</p>
-</li>
-<li><p>Supervised Learning</p>
-<p>In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output.</p>
-<p>Supervised learning problems are categorized into “regression” and “classification” problems. In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a classification problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories.</p>
-<p>Example:</p>
-<p>Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a continuous output, so this is a regression problem.</p>
-<p>We could turn this example into a classification problem by instead making our output about whether the house “sells for more or less than the asking price.” Here we are classifying the houses based on price into two discrete categories.</p>
-</li>
-<li><p>Unsupervised Learning</p>
-<p>Unsupervised learning, on the other hand, allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don’t necessarily know the effect of the variables.</p>
-<p>We can derive this structure by clustering the data based on relationships among the variables in the data.</p>
-<p>With unsupervised learning there is no feedback based on the prediction results, i.e., there is no teacher to correct you. It’s not just about clustering. For example, associative memory is unsupervised learning.</p>
-<p>Example:</p>
-<p>Clustering: Take a collection of 1000 essays written on the US Economy, and find a way to automatically group these essays into a small number that are somehow similar or related by different variables, such as word frequency, sentence length, page count, and so on.</p>
-<p>Associative: Suppose a doctor over years of experience forms associations in his mind between patient characteristics and illnesses that they have. If a new patient shows up then based on this patient’s characteristics such as symptoms, family medical history, physical attributes, mental outlook, etc the doctor associates possible illness or illnesses based on what the doctor has seen before with similar patients. This is not the same as rule based reasoning as in expert systems. In this case we would like to estimate a mapping function from patient characteristics into illnesses.</p>
-</li>
+        <h2 id="Logistic_Regression">Logistic Regression</h2><h4 id="特征方程">特征方程</h4><p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/1.png" alt="LinearOneVariable"></p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/CodeCogsEqn.gif" alt="CodeCogsEqn"></p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/logisticCostF.png" alt="logisticCostF"></p>
+<h4 id="Cost_Function">Cost Function</h4><p>若是延用原来的Cost Function，在梯度下降的时候会局限于很多的局部最优解，对全局最优解的寻找产生影响。</p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/2.png" alt="LinearOneVariable"></p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/3.png" alt="LinearOneVariable"></p>
+<h4 id="求导吧">求导吧</h4><p>首先，用个小技巧把两个情况合二为一。</p>
+<p>得到如下：<br><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/4.png" alt="LinearOneVariable"></p>
+<h4 id="正规化">正规化</h4><ul>
+<li>逻辑回归正规化公式<br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/regularizeRL.png" alt="regularizeRL"></li>
+<li>梯度下降正规化公式<br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/regularizeGR.png" alt="regularizeGR"></li>
 </ul>
-</li>
-<li><p>一元线性回归</p>
-<h3 id="最为主要的一些公式">最为主要的一些公式</h3><h5 id="一元线性函数">一元线性函数</h5><p> <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/LinearOneVariable.png" alt="LinearOneVariable"></p>
-<h5 id="花费函数，也就是用来逼近我们需要的俩个参数的函数">花费函数，也就是用来逼近我们需要的俩个参数的函数</h5><p> <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/CostFunction.png" alt="CostFunction"></p>
-<h5 id="目的函数，所以对他求导">目的函数，所以对他求导</h5><p> <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/GoalFunction.png" alt="GoalFunction"></p>
-</li>
-<li><p>梯度下降法求解目的函数</p>
-<h3 id="从一个猜测的初始值出发，不断的减小目的函数">从一个猜测的初始值出发，不断的减小目的函数</h3><h5 id="梯度下降算法">梯度下降算法</h5><p> <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/gradient_descent.png" alt=""></p>
-<h5 id="具体实现">具体实现</h5><p> <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/Gredientdescentalgorithm.png" alt=""></p>
-</li>
-<li><p>第一周顺利结束</p>
-<h3 id="感觉还不错，因为原来是看过的，但是还是有一点需要注意的。">感觉还不错，因为原来是看过的，但是还是有一点需要注意的。</h3><ol>
-<li>梯度下降参数α这个值因为考虑到下降速度的问题还是需要变化的，但是会有不够和过了的问题。</li>
-<li><p>还有如下的一些问题：</p>
-<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex1.png" alt="答案对"></p>
-<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex1_1.png" alt="答案错"></p>
-<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex2.png" alt="答案错"></p>
-<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex2_1.png" alt="答案错"></p>
-</li>
-</ol>
-</li>
-<li><p>补</p>
-<ol>
-<li>可以找到一个完全匹配的函数。</li>
-<li>即使找到一个完全匹配的函数，但是不可以说是100%预测成功。</li>
-</ol>
-</li>
-</ol>
+<h3 id="相关矩阵小技巧">相关矩阵小技巧</h3><p>如果我想要把两个矩阵的对应项相乘，那么是不是只有循环了，但是若是我们考虑一下最终的形式，多数情况下，我们不仅要相乘还有相加，所以不用循环。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/10/05/机器学习1/" data-id="cigvukve0001nykvgvkciy43k" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/10/21/机器学习3/" data-id="cihit23h0001mdkvgg6r15w6y" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ML/">ML</a></li></ul>
@@ -225,10 +142,10 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-第一次海淘Nexus5X——纪实" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-小记" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/10/02/第一次海淘Nexus5X——纪实/" class="article-date">
-  <time datetime="2015-10-02T13:06:06.000Z" itemprop="datePublished">2015-10-02</time>
+    <a href="/2015/10/15/小记/" class="article-date">
+  <time datetime="2015-10-15T02:07:16.000Z" itemprop="datePublished">2015-10-15</time>
 </a>
     
   <div class="article-category">
@@ -243,7 +160,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/02/第一次海淘Nexus5X——纪实/">第一次海淘Nexus5X——纪实</a>
+      <a class="article-title" href="/2015/10/15/小记/">小记</a>
     </h1>
   
 
@@ -251,80 +168,104 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="本人第一次海淘，不具有代表性，仅仅给大家一个参考。">本人第一次海淘，不具有代表性，仅仅给大家一个参考。</h3><h2 id="海淘什么">海淘什么</h2><p>作为一个伪谷粉，对谷歌亲儿子简直是流口水。。</p>
-<p>在13年的时候，我在淘宝上面买了nexus 4，作为到目前为止nexus系列颜值最高的一台手机，4儿子给了我许许多多的第一次。</p>
-<h5 id="第一次用原生系统">第一次用原生系统</h5><h5 id="第一次刷机">第一次刷机</h5><h5 id="第一次用双面玻璃的手机">第一次用双面玻璃的手机</h5><h5 id="第一次对一个手机如此爱护，只让它被摔了三次（两次都碎了，衰！！！！）">第一次对一个手机如此爱护，只让它被摔了三次（两次都碎了，衰！！！！）</h5><h5 id="第一次感受到一种信仰的力量">第一次感受到一种信仰的力量</h5><p>所以这次nexus5x（应该算是7儿子了）一出，就立刻开始研究海淘。。</p>
-<h2 id="为什么是5X，不是6P">为什么是5X，不是6P</h2><p>了解的人都知道这一次的发布，一共有两部亲儿子，一个是LG代工的5X（因为LG还代工了4，5，6是MOTO），另一个是华为代工的6P，这也是nexus系列首次由国产手机厂商代工。</p>
-<p>但是就我认为，第一由华为打入国内市场或者帮助华为走向国际市场这样的事情是肯定在卖方的考虑范围之内的，有可能，我们入手的nexus就不是一个原生系统的手机了，另外，对华为比较抵触。第二，6P的后盖上有一个大黑条，我觉得不能接受，真是丑。（虽然，5X并不好看到哪里去，长得还有点像小米）</p>
-<h2 id="为什么是nexus系列">为什么是nexus系列</h2><p>因为在安卓机器中，原生系统是最靠近这个系统的体验的了。安卓系统的开源，使得这个系统的机器长相各异，形态各异，在原有的系统上加上了很多厂商的思想。<br>原生很方便，直接说道方便这个点不如说是简洁，我们可以随意刷机，随意掌握到很多系统级别的功能，可以感受到最新的系统所带来的改变；<br>原生很好看，我有些时候，会非常受不了厂商定制UI，甚至是android4.0之前的原生界面我都不太可以接受，在android material design被提出来之后，我觉得颜值提高了不少，心里大为开心；<br>原生很快，没有了厂商定制，快是自然而然的。</p>
-<h3 id="话痨模式关闭，下面讲讲海淘">话痨模式关闭，下面讲讲海淘</h3><h2 id="准备">准备</h2><p>第一次海淘，相信大家和我一样有很多地方不明白。</p>
-<p>海淘就是在境外找一个你“信任”的人帮你买东西，然后把东西寄给你。</p>
-<p>这其中的一些关键的点在于：</p>
-<ul>
-<li>东西哪里都可以买，为什么是境外？<ul>
-<li>因为有些东西不在中国卖，或者因为关税问题，卖的特别的贵。</li>
-</ul>
-</li>
-<li>谁值得我们信任？<ul>
-<li>如果是找同学帮忙买东西，自然是非常的方便，但是不是国外没有自己的同学或是认识的人嘛。</li>
-<li>所以就会去找一下比较负责口碑好的转运公司，这里的信任是比较单方向的，因为你找转运公司，公司肯定是要先收了你的钱才帮你办事情，而且事情砸了，多半是我们自己吃亏倒霉，所以一个靠谱的转运公司非常重要。</li>
-</ul>
-</li>
-<li>买东西我们怎么付钱？<ul>
-<li>因为是境外，涉及到了汇率和付款的方式，多半的海淘都是双币信用卡或者全币信用卡，有一个叫做全球付的。</li>
-</ul>
-</li>
-<li>寄东西到中国？<ul>
-<li>我们在买东西的时候填的是转运公司的地址，同时把我们在国内的地址发给转运公司就ok了。</li>
-</ul>
-</li>
-</ul>
-<h2 id="步骤">步骤</h2><ol>
-<li>确定买什么，在哪买</li>
-<li>确定一家转运公司</li>
-<li>向卖价提供转运公司的地址，想转运公司提供我们的地址</li>
-<li>等待发货</li>
-<li>向转运公司提交包裹信息寄到国内</li>
-<li>等待我们东西</li>
+        <h4 id="最近研究生的生涯逐渐迈向正轨，然而我自己的生活和心态还基本没有达到我想要达到的状态。">最近研究生的生涯逐渐迈向正轨，然而我自己的生活和心态还基本没有达到我想要达到的状态。</h4><pre><code><span class="comment">先是列一下事项：</span>
+<span class="comment">事项</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="comment">动作</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="comment">优先级</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="comment">目标</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="comment">关键</span>
+</code></pre><ol>
+<li>论文——白天研读——重中之重——看下十篇论文后可以有思想去尝试写论文——看框架，流程，和论文写什么</li>
+<li>英语六级——白天复习——重要——不低于425分——做真题，练听力</li>
+<li>ML——晚上回宿舍在线观看——必做——12月份拿到证书——坚持</li>
+<li>论文记载网站——平时研究或周末研究——一般——一个输入显示的网页——go语言</li>
+<li>WordPress主题——在平时累了或者周末研究前端——一般—写一个自己用的极简主义的theme——坚持和找威仔讨论</li>
+<li>研究生创新成果展——大概筹划——一般——展出别出岔子——每人做什么事情盯紧就好</li>
 </ol>
-<h3 id="目前我处于4这个状态">目前我处于4这个状态</h3><hr>
-<p>这两天知道了一件新鲜的事情，就是关于在google官网买东西的时候支付的一些细（keng）节（die）。</p>
-<p>我们想买google的手机，那么在下单的时候是一个预定的过程，可能google为了防止有人预定了不买和有人乱预定，所以就把预定和发货整成了两个步骤。<br>一是预订的时候用信用卡额度来交钱，但是这个钱仅仅是被冻结了而已，并不会从你的信用卡中扣走，二是在发货的时候，才会把钱扣走。</p>
-<p>了解的同学都知道，我是用全球付付款的，全球付是有一个即时到账的一个特性吧，所以，我在预定的时候，钱就已经被扣走了，那么，用虚拟信用卡买东西就是要交两倍的钱，但是最终会不会退回一份的钱还是一个未知数，静待变数~~</p>
-<p>希望一切顺利！！</p>
-<hr>
-<h3 id="我又回来了，带来了好消息">我又回来了，带来了好消息</h3><p>在20号那天我接到一封google store的email，满怀欣喜的以为是发货了，原来我被砍单了！！！！！！！！！！！！！！<br><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-nexus/kandan.png" alt="砍单"></p>
-<p>我的这个心里满满都是悲伤，于是我去哭了一晚上顺便把我的邮寄地址的名字和账户地址的名字改成了一样的又下了一次单（而且颜色还改成了骚骚的ice）</p>
-<p>谁知道！！</p>
-<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-nexus/success.png" alt="砍单"></p>
-<p>这是无心插柳柳成荫啊！！！本来我都要放弃了！！！</p>
-<p>so，赶紧去转运网站报备，填资料什么的。</p>
-<p>接下来就是考虑壳和贴膜的事情了。</p>
-<hr>
-<h3 id="卧槽，我的手机终于到了">卧槽，我的手机终于到了</h3><p>今天11月12号，我的手机历时一个多月终于到手了，非常开心。</p>
-<p>更新一下历程：</p>
-<ul>
-<li>10月02日 反复下单，最终成功一单，买的黑色的</li>
-<li>10月20日 通知我被砍单，我立即又下了一单，买的是冰晶蓝色</li>
-<li>10月22日 通知我发货了，o(<em>￣▽￣</em>)ブ</li>
-<li>10月25日 到达海外仓库，我用的是转运四方</li>
-<li>10月29日 发到洛杉矶后从洛杉矶的仓库出发</li>
-<li>10月30日 到达新加坡</li>
-<li>11月02日 离开新加坡，开始发往北京</li>
-<li>11月04日 到达北京</li>
-<li>11月05日 开始发往西安</li>
-<li>11月11日 到达西安</li>
-<li>11月12日 到手</li>
-</ul>
-<p>持续更新~</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/10/02/第一次海淘Nexus5X——纪实/" data-id="cigvukve0001rykvg8fhydrg1" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/10/15/小记/" data-id="cihit23h0001qdkvgc50cq51n" class="article-share-link">Share</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Nexus5X/">Nexus5X</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/计划/">计划</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-机器学习2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/10/12/机器学习2/" class="article-date">
+  <time datetime="2015-10-12T08:03:38.000Z" itemprop="datePublished">2015-10-12</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Diary/">Diary</a>►<a class="article-category-link" href="/categories/Diary/机器学习/">机器学习</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/10/12/机器学习2/">机器学习2</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="本周开始讲了多变量的参数学习。">本周开始讲了多变量的参数学习。</h4><pre><code>不过我认为，这个东西也就和单变量一个样子。都是对cost <span class="function"><span class="keyword">function</span></span>取最小值，最后得到趋向于稳定的参数。
+</code></pre><h3 id="特征缩放_Feature_Scaling">特征缩放 Feature Scaling</h3><ol>
+<li>让所有的特征都处于相同的数量等级，有助于加快回归</li>
+<li>mean scaling ：（特征-平均值）/（最大-最小）</li>
+<li>学习速率决定了回归质量</li>
+</ol>
+<h3 id="标准方程">标准方程</h3><ol>
+<li>梯度下降和标准方程的比较（在特征规模上的差别）</li>
+</ol>
+<h4 id="一些题目">一些题目</h4><h4 id="week2-1">week2-1</h4><h4 id="week2-2">week2-2</h4><pre><code><span class="number">2</span>^<span class="number">6</span>=<span class="number">64</span>
+<span class="number">1</span>~=<span class="number">2</span> <span class="comment">%不等于</span>
+<span class="number">1</span>&amp;&amp;<span class="number">0</span> <span class="comment">%与</span>
+xor(<span class="number">1</span>,<span class="number">0</span>) <span class="comment">%异或</span>
+PS1(<span class="string">'&gt;&gt; '</span>); <span class="comment">%新起一行</span>
+<span class="built_in">pi</span> <span class="comment">%圆周率</span>
+<span class="built_in">disp</span>() <span class="comment">%显示</span>
+分号 换行
+<span class="built_in">ones</span>(x,y) <span class="comment">%x行y列 全1</span>
+<span class="built_in">rand</span>(x,y) <span class="comment">%      任意</span>
+hist <span class="comment">%线图</span>
+<span class="built_in">eye</span> <span class="comment">%单位矩阵</span>
+<span class="built_in">size</span>(矩阵,<span class="number">1</span>或者<span class="number">2</span>) <span class="comment">%1是 row 2 is col</span>
+<span class="built_in">size</span>(矩阵) <span class="comment">%vector with 2 var</span>
+<span class="built_in">length</span>(matrix) <span class="comment">%longest length</span>
+pwd <span class="comment">%working path</span>
+load filename Equal load(<span class="string">'filename'</span>)
+who show the all var
+whos show details of who
+save filename var encode
+: mean every element along that row/col
+<span class="matrix">[A B]</span> row combine
+<span class="matrix">[A ; B]</span> col combine
+A .^ <span class="number">2</span> each element of A ^<span class="number">2</span>
+sum(A) sum of A
+prod(A) product of A
+<span class="built_in">floor</span>(A) 
+<span class="built_in">ceil</span>(A) 
+</code></pre><p>PS:特征缩放那一题是帮助了更快迭代回归，而不是使每一步都更小花费</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fredchenjialin.github.io/2015/10/12/机器学习2/" data-id="cihit23h0001tdkvgaxry827x" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ML/">ML</a></li></ul>
 
     </footer>
   </div>
@@ -335,7 +276,7 @@ ga('send', 'pageview');
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/3/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/5/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/3/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/5/">Next &raquo;</a>
     </nav>
   
 </section>
@@ -346,7 +287,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><span class="category-list-count">25</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/hexo设置/">hexo设置</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/机器人运动学/">机器人运动学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/机器学习/">机器学习</a><span class="category-list-count">6</span></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><span class="category-list-count">28</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/JavaScript/">JavaScript</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/hexo设置/">hexo设置</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/机器人运动学/">机器人运动学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/机器学习/">机器学习</a><span class="category-list-count">8</span></li></ul></li></ul>
     </div>
   </div>
 
@@ -355,7 +296,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/">English</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ML/">ML</a><span class="tag-list-count">7</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MP3/">MP3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nexus5X/">Nexus5X</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PostEdu/">PostEdu</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/movie/">movie</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pintos/">pintos</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yi/">yi</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/不一样的周报/">不一样的周报</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/周报/">周报</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/坚果/">坚果</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/多说评论框/">多说评论框</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日常/">日常</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/步态/">步态</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/每天三道题/">每天三道题</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编译原理/">编译原理</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/计划/">计划</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运动学/">运动学</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/">English</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ML/">ML</a><span class="tag-list-count">9</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MP3/">MP3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nexus5X/">Nexus5X</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PostEdu/">PostEdu</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/movie/">movie</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pintos/">pintos</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yi/">yi</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/不一样的周报/">不一样的周报</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/周报/">周报</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/坚果/">坚果</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/多说评论框/">多说评论框</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日常/">日常</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/步态/">步态</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/每天三道题/">每天三道题</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编译原理/">编译原理</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/计划/">计划</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运动学/">运动学</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -364,7 +305,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/English/" style="font-size: 10px;">English</a> <a href="/tags/ML/" style="font-size: 20px;">ML</a> <a href="/tags/MP3/" style="font-size: 10px;">MP3</a> <a href="/tags/Nexus5X/" style="font-size: 15px;">Nexus5X</a> <a href="/tags/PostEdu/" style="font-size: 10px;">PostEdu</a> <a href="/tags/movie/" style="font-size: 15px;">movie</a> <a href="/tags/pintos/" style="font-size: 17.5px;">pintos</a> <a href="/tags/yi/" style="font-size: 15px;">yi</a> <a href="/tags/不一样的周报/" style="font-size: 10px;">不一样的周报</a> <a href="/tags/周报/" style="font-size: 10px;">周报</a> <a href="/tags/坚果/" style="font-size: 10px;">坚果</a> <a href="/tags/多说评论框/" style="font-size: 10px;">多说评论框</a> <a href="/tags/日常/" style="font-size: 10px;">日常</a> <a href="/tags/步态/" style="font-size: 10px;">步态</a> <a href="/tags/每天三道题/" style="font-size: 10px;">每天三道题</a> <a href="/tags/线性代数/" style="font-size: 10px;">线性代数</a> <a href="/tags/编译原理/" style="font-size: 17.5px;">编译原理</a> <a href="/tags/计划/" style="font-size: 12.5px;">计划</a> <a href="/tags/运动学/" style="font-size: 10px;">运动学</a>
+      <a href="/tags/English/" style="font-size: 10px;">English</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/ML/" style="font-size: 20px;">ML</a> <a href="/tags/MP3/" style="font-size: 10px;">MP3</a> <a href="/tags/Nexus5X/" style="font-size: 15px;">Nexus5X</a> <a href="/tags/PostEdu/" style="font-size: 10px;">PostEdu</a> <a href="/tags/movie/" style="font-size: 15px;">movie</a> <a href="/tags/pintos/" style="font-size: 17.5px;">pintos</a> <a href="/tags/yi/" style="font-size: 15px;">yi</a> <a href="/tags/不一样的周报/" style="font-size: 10px;">不一样的周报</a> <a href="/tags/周报/" style="font-size: 10px;">周报</a> <a href="/tags/坚果/" style="font-size: 10px;">坚果</a> <a href="/tags/多说评论框/" style="font-size: 10px;">多说评论框</a> <a href="/tags/日常/" style="font-size: 10px;">日常</a> <a href="/tags/步态/" style="font-size: 10px;">步态</a> <a href="/tags/每天三道题/" style="font-size: 10px;">每天三道题</a> <a href="/tags/线性代数/" style="font-size: 10px;">线性代数</a> <a href="/tags/编译原理/" style="font-size: 17.5px;">编译原理</a> <a href="/tags/计划/" style="font-size: 12.5px;">计划</a> <a href="/tags/运动学/" style="font-size: 10px;">运动学</a>
     </div>
   </div>
 
@@ -373,7 +314,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">13</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">13</span></li></ul>
     </div>
   </div>
 
@@ -385,23 +326,23 @@ ga('send', 'pageview');
       <ul>
         
           <li>
+            <a href="/2015/11/28/机器学习8/">机器学习8</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/19/机器学习7/">机器学习7</a>
+          </li>
+        
+          <li>
+            <a href="/2015/11/16/JS补记/">JS补记</a>
+          </li>
+        
+          <li>
             <a href="/2015/11/12/机器学习6/">机器学习6</a>
           </li>
         
           <li>
             <a href="/2015/11/12/最近没学习/">最近没学习</a>
-          </li>
-        
-          <li>
-            <a href="/2015/11/01/机器学习5/">机器学习5</a>
-          </li>
-        
-          <li>
-            <a href="/2015/10/31/机器学习4/">机器学习4</a>
-          </li>
-        
-          <li>
-            <a href="/2015/10/31/机器人运动学0/">机器人运动学0</a>
           </li>
         
       </ul>
