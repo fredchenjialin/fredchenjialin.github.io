@@ -89,6 +89,85 @@ ga('send', 'pageview');
   
     <article id="post-pintos学习笔记1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
+    <a href="/2015/09/16/pintos学习笔记1/" class="article-date">
+  <time datetime="2015-09-16T06:42:09.000Z" itemprop="datePublished">2015-09-16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Diary/">Diary</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/09/16/pintos学习笔记1/">pintos学习笔记1</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天我看了《煎饼侠》和《小森林》夏秋的前面一点点。<br>《煎饼侠》找了挺多人，挺不可思议的，看过一个人写过大鹏。</p>
+<p>很喜欢《小森林》的感觉，像一个梦.</p>
+<h2 id="Thread">Thread</h2><h3 id="struct_thread">struct thread</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span> kB +---------------------------------+</span><br><span class="line">     |          kernel stack           |</span><br><span class="line">     |                |                |</span><br><span class="line">     |                |                |</span><br><span class="line">     |                V                |</span><br><span class="line">     |         grows downward          |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     +---------------------------------+</span><br><span class="line">     |              magic              |</span><br><span class="line">     |                :                |</span><br><span class="line">     |                :                |</span><br><span class="line">     |               name              |</span><br><span class="line">     |              status             |</span><br><span class="line">     |               tid               |</span><br><span class="line"><span class="number">0</span> kB +---------------------------------+</span><br></pre></td></tr></table></figure>
+<h4 id="tid">tid</h4><p>线程标识符<br>tid_t，int类型<br>从1开始，为了初始化进程</p>
+<h4 id="status">status</h4><ul>
+<li>THREAD_RUNNING<ul>
+<li>thread_ current()返回进行中的线程</li>
+</ul>
+</li>
+<li>THREAD_READY<ul>
+<li>doubly LinkedList</li>
+</ul>
+</li>
+<li>THREAD_BLOCKED<ul>
+<li>调用thread_unblock()进入THREAD_READY</li>
+</ul>
+</li>
+<li>THREAD_DYING</li>
+</ul>
+<h4 id="name">name</h4><p>name</p>
+<h4 id="stack">stack</h4><ul>
+<li>uint8_t *</li>
+<li>when the CPU switches to another thread,this member saves the thread’s stack pointer</li>
+<li>When an interrupt occurs, whether in the kernel or a user program, an struct intr_ frame is pushed onto the stack</li>
+</ul>
+<h4 id="int_priority">int priority</h4><ul>
+<li>ranging from PRI_MIN (0) to PRI_MAX (63).</li>
+</ul>
+<h4 id="struct_list_elem_allelem">struct list_elem allelem</h4><ul>
+<li>link the thread into the list of all threads</li>
+</ul>
+<h4 id="struct_list_elem_elem">struct list_elem elem</h4><ul>
+<li>put the thread into doubly linked lists, either ready<em>list (the list of threads ready to run) or a list of threads waiting on a semaphore in sema</em> down()</li>
+</ul>
+<h4 id="uint32_t_*_pagedir">uint32_t * pagedir</h4><h4 id="unsigned_magic">unsigned magic</h4><ul>
+<li>detect stack overﬂow</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://fredchenjialin.github.io/2015/09/16/pintos学习笔记1/" data-id="cimvdcq75003rmc0vhzvujeci" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/movie/">movie</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pintos/">pintos</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-pintos学习笔记1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
     <a href="/2015/09/15/pintos学习笔记1/" class="article-date">
   <time datetime="2015-09-15T06:02:30.000Z" itemprop="datePublished">2015-09-15</time>
 </a>
@@ -126,7 +205,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/15/pintos学习笔记1/" data-id="ciiwqxwx2003rkc0v4ehyzu6z" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/09/15/pintos学习笔记1/" data-id="cimvdcq7a003vmc0vywh25pza" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/movie/">movie</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pintos/">pintos</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/每天三道题/">每天三道题</a></li></ul>
@@ -221,60 +300,10 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/13/pintos学习笔记0/" data-id="ciiwqxwx8003xkc0vsn5xld7p" class="article-share-link">Share</a>
+      <a data-url="http://fredchenjialin.github.io/2015/09/13/pintos学习笔记0/" data-id="cimvdcq7d0041mc0v5xrjwmnc" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pintos/">pintos</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hexo下的第一篇blog" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/09/08/hexo下的第一篇blog/" class="article-date">
-  <time datetime="2015-09-08T09:39:46.000Z" itemprop="datePublished">2015-09-08</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Diary/">Diary</a>►<a class="article-category-link" href="/categories/Diary/hexo设置/">hexo设置</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/09/08/hexo下的第一篇blog/">hexo下的第一篇blog</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="自定义图标的问题">自定义图标的问题</h2><p>很多人说将themes/主题名称/layout/_partial/head.ejs中的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link href=<span class="string">"&lt;%- config.root %&gt;favicon.png"</span> rel=<span class="string">"icon"</span>&gt;</span><br></pre></td></tr></table></figure></p>
-<p>替换为<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link href=<span class="string">"&lt;%- config.root %&gt;favicon.ico"</span> rel=<span class="string">"icon"</span> <span class="built_in">type</span>=<span class="string">"image/x-ico"</span>&gt;</span><br></pre></td></tr></table></figure></p>
-<p>好像在hexo3下无效了，因为找不到类似的语句</p>
-<p>我的做法<br>在同样的位置现在的写法是<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (theme.favicon)&#123; %&gt;</span><br><span class="line">  &lt;link rel=<span class="string">"icon"</span> href=<span class="string">"&lt;%- theme.favicon %&gt;"</span>&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
-<p>所以在对应位置放一个favicon.ico的图标就可以了，在主题目录的source文件夹下。</p>
-<h2 id="多说评论框设置">多说评论框设置</h2><p>先在_config.yml下添加duoshuo_shortname，在article.ejs中调用</p>
-<p>在主题/layout/_partial/article.ejs的最后一段替换如下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (!index &amp;&amp; post.comments &amp;&amp; config.duoshuo_shortname)&#123; %&gt;</span><br><span class="line">  &lt;section id=<span class="string">"comments"</span>&gt;</span><br><span class="line">    &lt;!-- 多说评论框 start --&gt;</span><br><span class="line">    &lt;div class=<span class="string">"ds-thread"</span> data-thread-key=<span class="string">"&lt;%= post.layout %&gt;-&lt;%= post.slug %&gt;"</span> data-title=<span class="string">"&lt;%= post.title %&gt;"</span> data-url=<span class="string">"&lt;%= page.permalink %&gt;"</span>&gt;&lt;/div&gt;</span><br><span class="line">    &lt;!-- 多说评论框 end --&gt;</span><br><span class="line">    &lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">    var duoshuoQuery = &#123;short_name:<span class="string">'&lt;%= config.duoshuo_shortname %&gt;'</span>&#125;;</span><br><span class="line">      (<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        var ds = document.createElement(<span class="string">'script'</span>);</span><br><span class="line">        ds.type = <span class="string">'text/javascript'</span>;ds.async = <span class="literal">true</span>;</span><br><span class="line">        ds.src = (document.location.protocol == <span class="string">'https:'</span> ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">'//static.duoshuo.com/embed.js'</span>;</span><br><span class="line">        ds.charset = <span class="string">'UTF-8'</span>;</span><br><span class="line">        (document.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>] </span><br><span class="line">         || document.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(ds);</span><br><span class="line">      &#125;)();</span><br><span class="line">      &lt;/script&gt;</span><br><span class="line">    &lt;!-- 多说公共JS代码 end --&gt;</span><br><span class="line">  &lt;/section&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
-<h2 id="个人页面添加">个人页面添加</h2><p>在主题/_config.yml中的menu中添加 About: /about</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://fredchenjialin.github.io/2015/09/08/hexo下的第一篇blog/" data-id="ciiwqxwmg0002kc0vnh9lih8j" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/多说评论框/">多说评论框</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/日常/">日常</a></li></ul>
 
     </footer>
   </div>
@@ -296,7 +325,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Categories</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><span class="category-list-count">30</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/JavaScript/">JavaScript</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/hexo设置/">hexo设置</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/机器人运动学/">机器人运动学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/机器学习/">机器学习</a><span class="category-list-count">8</span></li></ul></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/">Diary</a><span class="category-list-count">31</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/JavaScript/">JavaScript</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/hexo设置/">hexo设置</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/机器人运动学/">机器人运动学</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Diary/机器学习/">机器学习</a><span class="category-list-count">8</span></li></ul></li></ul>
     </div>
   </div>
 
@@ -305,7 +334,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/">English</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ML/">ML</a><span class="tag-list-count">9</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MP3/">MP3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nexus5X/">Nexus5X</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PostEdu/">PostEdu</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/movie/">movie</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pintos/">pintos</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yi/">yi</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/不一样的周报/">不一样的周报</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/周报/">周报</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/坚果/">坚果</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/多说评论框/">多说评论框</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日常/">日常</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/步态/">步态</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/每天三道题/">每天三道题</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/消失的爱人/">消失的爱人</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编译原理/">编译原理</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/计划/">计划</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运动学/">运动学</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/English/">English</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ML/">ML</a><span class="tag-list-count">9</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MP3/">MP3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nexus5X/">Nexus5X</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/PostEdu/">PostEdu</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Software/">Software</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/movie/">movie</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pintos/">pintos</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yi/">yi</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/不一样的周报/">不一样的周报</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/周报/">周报</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/坚果/">坚果</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/多说评论框/">多说评论框</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/日常/">日常</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/步态/">步态</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/每天三道题/">每天三道题</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/消失的爱人/">消失的爱人</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线性代数/">线性代数</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编译原理/">编译原理</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/计划/">计划</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/运动学/">运动学</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -314,7 +343,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/English/" style="font-size: 10px;">English</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/ML/" style="font-size: 20px;">ML</a> <a href="/tags/MP3/" style="font-size: 10px;">MP3</a> <a href="/tags/Nexus5X/" style="font-size: 15px;">Nexus5X</a> <a href="/tags/PostEdu/" style="font-size: 10px;">PostEdu</a> <a href="/tags/movie/" style="font-size: 15px;">movie</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/pintos/" style="font-size: 17.5px;">pintos</a> <a href="/tags/yi/" style="font-size: 15px;">yi</a> <a href="/tags/不一样的周报/" style="font-size: 10px;">不一样的周报</a> <a href="/tags/周报/" style="font-size: 10px;">周报</a> <a href="/tags/坚果/" style="font-size: 10px;">坚果</a> <a href="/tags/多说评论框/" style="font-size: 10px;">多说评论框</a> <a href="/tags/日常/" style="font-size: 10px;">日常</a> <a href="/tags/步态/" style="font-size: 10px;">步态</a> <a href="/tags/每天三道题/" style="font-size: 10px;">每天三道题</a> <a href="/tags/消失的爱人/" style="font-size: 10px;">消失的爱人</a> <a href="/tags/线性代数/" style="font-size: 10px;">线性代数</a> <a href="/tags/编译原理/" style="font-size: 17.5px;">编译原理</a> <a href="/tags/计划/" style="font-size: 12.5px;">计划</a> <a href="/tags/运动学/" style="font-size: 10px;">运动学</a>
+      <a href="/tags/English/" style="font-size: 10px;">English</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/ML/" style="font-size: 20px;">ML</a> <a href="/tags/MP3/" style="font-size: 10px;">MP3</a> <a href="/tags/Nexus5X/" style="font-size: 15px;">Nexus5X</a> <a href="/tags/PostEdu/" style="font-size: 10px;">PostEdu</a> <a href="/tags/Software/" style="font-size: 10px;">Software</a> <a href="/tags/movie/" style="font-size: 15px;">movie</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/pintos/" style="font-size: 17.5px;">pintos</a> <a href="/tags/yi/" style="font-size: 15px;">yi</a> <a href="/tags/不一样的周报/" style="font-size: 10px;">不一样的周报</a> <a href="/tags/周报/" style="font-size: 10px;">周报</a> <a href="/tags/坚果/" style="font-size: 10px;">坚果</a> <a href="/tags/多说评论框/" style="font-size: 10px;">多说评论框</a> <a href="/tags/日常/" style="font-size: 10px;">日常</a> <a href="/tags/步态/" style="font-size: 10px;">步态</a> <a href="/tags/每天三道题/" style="font-size: 10px;">每天三道题</a> <a href="/tags/消失的爱人/" style="font-size: 10px;">消失的爱人</a> <a href="/tags/线性代数/" style="font-size: 10px;">线性代数</a> <a href="/tags/编译原理/" style="font-size: 17.5px;">编译原理</a> <a href="/tags/计划/" style="font-size: 12.5px;">计划</a> <a href="/tags/运动学/" style="font-size: 10px;">运动学</a>
     </div>
   </div>
 
@@ -323,7 +352,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">13</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/11/">November 2015</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/10/">October 2015</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">13</span></li></ul>
     </div>
   </div>
 
@@ -333,6 +362,10 @@ ga('send', 'pageview');
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/04/11/default-Software/">default-Software</a>
+          </li>
         
           <li>
             <a href="/2015/12/29/mysql小记/">mysql小记</a>
@@ -348,10 +381,6 @@ ga('send', 'pageview');
         
           <li>
             <a href="/2015/11/19/机器学习7/">机器学习7</a>
-          </li>
-        
-          <li>
-            <a href="/2015/11/16/JS补记/">JS补记</a>
           </li>
         
       </ul>
