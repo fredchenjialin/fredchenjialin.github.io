@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MPZ Diary</title>
+  <subtitle>By Github Page</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://fredchenjialin.github.io/"/>
+  <updated>2016-04-11T02:17:06.997Z</updated>
+  <id>http://fredchenjialin.github.io/</id>
+  
+  <author>
+    <name>Multipluso</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>default-Software</title>
+    <link href="http://fredchenjialin.github.io/2016/04/11/default-Software/"/>
+    <id>http://fredchenjialin.github.io/2016/04/11/default-Software/</id>
+    <published>2016-04-11T02:08:55.000Z</published>
+    <updated>2016-04-11T02:17:06.997Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;记录一下一些常用默认软件&quot;&gt;记录一下一些常用默认软件&lt;/h2&gt;&lt;h4 id=&quot;论文_Mendeley&quot;&gt;论文 Mendeley&lt;/h4&gt;&lt;h4 id=&quot;pdf_SumatraPDF&quot;&gt;pdf SumatraPDF&lt;/h4&gt;&lt;h4 id=&quot;编辑器_VScode&quot;&gt;编辑器 VScode&lt;/h4&gt;&lt;h4 id=&quot;快速编辑器_Notepad++&quot;&gt;快速编辑器 Notepad++&lt;/h4&gt;&lt;h4 id=&quot;字体美化_MacType&quot;&gt;字体美化 MacType&lt;/h4&gt;&lt;h4 id=&quot;远程连接_TeamViewer&quot;&gt;远程连接 TeamViewer&lt;/h4&gt;&lt;h4 id=&quot;Latex_Texmaker+CTex&quot;&gt;Latex Texmaker+CTex&lt;/h4&gt;&lt;h4 id=&quot;本地服务器集成_XAMPP&quot;&gt;本地服务器集成 XAMPP&lt;/h4&gt;&lt;h4 id=&quot;视频播放_potplayer&quot;&gt;视频播放 potplayer&lt;/h4&gt;&lt;h4 id=&quot;IDE_最著名的那一家Jetbrain&quot;&gt;IDE 最著名的那一家Jetbrain&lt;/h4&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;记录一下一些常用默认软件&quot;&gt;记录一下一些常用默认软件&lt;/h2&gt;&lt;h4 id=&quot;论文_Mendeley&quot;&gt;论文 Mendeley&lt;/h4&gt;&lt;h4 id=&quot;pdf_SumatraPDF&quot;&gt;pdf SumatraPDF&lt;/h4&gt;&lt;h4 id=&quot;编辑器_VScode&quot;&gt;编
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+    
+      <category term="Software" scheme="http://fredchenjialin.github.io/tags/Software/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mysql小记</title>
+    <link href="http://fredchenjialin.github.io/2015/12/29/mysql%E5%B0%8F%E8%AE%B0/"/>
+    <id>http://fredchenjialin.github.io/2015/12/29/mysql小记/</id>
+    <published>2015-12-29T08:12:38.000Z</published>
+    <updated>2015-12-29T08:38:37.037Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;随便记录几条mysql命令，我用的是xmapp中的mysql，炒鸡好用&quot;&gt;随便记录几条mysql命令，我用的是xmapp中的mysql，炒鸡好用&lt;/h2&gt;&lt;h3 id=&quot;关于登陆&quot;&gt;关于登陆&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;查询当前用户&lt;/p&gt;
+  &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;select user();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;或者&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;status;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;一般默认没有密码直接登录&lt;/p&gt;
+  &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mysql -uroot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;添加密码&lt;/p&gt;
+  &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;update mysql.user &lt;span class=&quot;built_in&quot;&gt;set&lt;/span&gt; password=PASSWORD(&lt;span class=&quot;string&quot;&gt;&#39;123456&#39;&lt;/span&gt;) &lt;span class=&quot;built_in&quot;&gt;where&lt;/span&gt; User=&lt;span class=&quot;string&quot;&gt;&#39;root&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;flush privileges;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;// 无法查看当前已登录用户的密码&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;杂记&lt;/p&gt;
+  &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mysqld_safe -skip-grant-tables &amp;amp; // 不检查权限启动&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;随便记录几条mysql命令，我用的是xmapp中的mysql，炒鸡好用&quot;&gt;随便记录几条mysql命令，我用的是xmapp中的mysql，炒鸡好用&lt;/h2&gt;&lt;h3 id=&quot;关于登陆&quot;&gt;关于登陆&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;查询当前用户&lt;/p&gt;
+  &lt;figure
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+    
+      <category term="mysql" scheme="http://fredchenjialin.github.io/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>消失的爱人</title>
+    <link href="http://fredchenjialin.github.io/2015/12/06/%E6%B6%88%E5%A4%B1%E7%9A%84%E7%88%B1%E4%BA%BA/"/>
+    <id>http://fredchenjialin.github.io/2015/12/06/消失的爱人/</id>
+    <published>2015-12-06T05:47:14.000Z</published>
+    <updated>2015-12-06T06:10:29.282Z</updated>
+    
+    <content type="html">&lt;p&gt;今天认真看了一遍《消失的爱人》。&lt;/p&gt;
+&lt;h2 id=&quot;表现的是婚姻问题&quot;&gt;表现的是婚姻问题&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;用一种悬疑，刺激的剧情来表现婚姻问题，感觉仅仅是换了一个角度，或者是套了一个新的壳子，让我们看大千世界里面的人有不一样的形态。&lt;/li&gt;
+&lt;li&gt;女主看似很聪明，男主看似很蠢顿，但是感觉总是没有出错的，只是这俩人走到了一起，发生了这样的故事。&lt;/li&gt;
+&lt;li&gt;还是婚姻问题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;关于电影拍摄&quot;&gt;关于电影拍摄&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;妹妹这一角色的设定是龙凤胎，以及我们常常忘了这一角色去困惑为什么妹妹比哥哥还要激动和委屈，尤其是在最后知道了女主怀孕后，妹妹的伤心类似悲痛欲绝。&lt;br&gt;这是男主的理想和显示的两种写照吧。&lt;/li&gt;
+&lt;li&gt;关于女主对男主的陷害手段，称的上是神乎其神，电影中面对众多目光的反应和面对丈夫的坦然，很厉害。但是这也仅仅是在双方斗争手段中的一个演绎。&lt;/li&gt;
+&lt;li&gt;电影设计的这些东西看似很聪明绝伦，但是可能现实更加真实。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;电影里的人物&quot;&gt;电影里的人物&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;男主撩妹技能满分&lt;/li&gt;
+&lt;li&gt;女主真煞费苦心&lt;/li&gt;
+&lt;li&gt;这一对也是有点合适&lt;/li&gt;
+&lt;li&gt;妹妹的角色设定很好&lt;/li&gt;
+&lt;li&gt;记者神烦&lt;/li&gt;
+&lt;li&gt;女警好评&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天认真看了一遍《消失的爱人》。&lt;/p&gt;
+&lt;h2 id=&quot;表现的是婚姻问题&quot;&gt;表现的是婚姻问题&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;用一种悬疑，刺激的剧情来表现婚姻问题，感觉仅仅是换了一个角度，或者是套了一个新的壳子，让我们看大千世界里面的人有不一样的形态。&lt;/li&gt;
+&lt;li&gt;女主看
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+    
+      <category term="消失的爱人" scheme="http://fredchenjialin.github.io/tags/%E6%B6%88%E5%A4%B1%E7%9A%84%E7%88%B1%E4%BA%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习8</title>
+    <link href="http://fredchenjialin.github.io/2015/11/28/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A08/"/>
+    <id>http://fredchenjialin.github.io/2015/11/28/机器学习8/</id>
+    <published>2015-11-28T02:55:29.000Z</published>
+    <updated>2015-11-28T07:57:06.827Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;最近一直在学机器学习，但是没有更新blog原因&quot;&gt;最近一直在学机器学习，但是没有更新blog原因&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;有一个好朋友，介绍了一个新词给我，叫做手账。&lt;/li&gt;
+&lt;li&gt;本不理解这个是什么东西，去查了查，发现是一种记东西的本子，可以记录各种自己想要记录的东西，日记，计划，学习笔记等等。&lt;/li&gt;
+&lt;li&gt;这个东西我认得，我在高中的时候有个很小的本子，就是什么都记在上面（除了大型学习笔记）&lt;/li&gt;
+&lt;li&gt;为什么以前不用了呢，因为我的字迹，排版还有书写真的是太丑了，丑到我拿起我的笔记就想着算了吧，真是丑。。。&lt;/li&gt;
+&lt;li&gt;不过，我这两天学习时是直接在本子上记的笔记，很有效，也很快速，感觉好上很多。&lt;/li&gt;
+&lt;li&gt;问题：&lt;ul&gt;
+&lt;li&gt;字迹不好看&lt;/li&gt;
+&lt;li&gt;多了的话没法存储&lt;/li&gt;
+&lt;li&gt;多了的话没法快速处理&lt;/li&gt;
+&lt;li&gt;没法自动分类&lt;/li&gt;
+&lt;li&gt;要是记录多种东西，就很乱。。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;以后的笔记都是在纸上的，不行的话就拍了照片放在网上好了。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;最近一直在学机器学习，但是没有更新blog原因&quot;&gt;最近一直在学机器学习，但是没有更新blog原因&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;有一个好朋友，介绍了一个新词给我，叫做手账。&lt;/li&gt;
+&lt;li&gt;本不理解这个是什么东西，去查了查，发现是一种记东西的本子，可以记录各种自己想
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+      <category term="机器学习" scheme="http://fredchenjialin.github.io/categories/Diary/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习7</title>
+    <link href="http://fredchenjialin.github.io/2015/11/19/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A07/"/>
+    <id>http://fredchenjialin.github.io/2015/11/19/机器学习7/</id>
+    <published>2015-11-19T05:18:42.000Z</published>
+    <updated>2015-11-19T08:44:11.082Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;支持向量机_SVM_SupportVectorMachine&quot;&gt;支持向量机 SVM SupportVectorMachine&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;支持向量机_SVM_SupportVectorMachine&quot;&gt;支持向量机 SVM SupportVectorMachine&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+      <category term="机器学习" scheme="http://fredchenjialin.github.io/categories/Diary/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS补记</title>
+    <link href="http://fredchenjialin.github.io/2015/11/16/JS%E8%A1%A5%E8%AE%B0/"/>
+    <id>http://fredchenjialin.github.io/2015/11/16/JS补记/</id>
+    <published>2015-11-16T05:43:48.000Z</published>
+    <updated>2015-11-16T07:16:20.728Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;两种实现继承的方式&quot;&gt;两种实现继承的方式&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt; &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;Car&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var self = this;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;self.type = &lt;span class=&quot;string&quot;&gt;&quot;Car&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;self.go = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(&lt;span class=&quot;string&quot;&gt;&quot;Going...&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Toyota = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Toyota.prototype = new Car();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Toyota.prototype.constructor = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var self = this;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;self.type = &lt;span class=&quot;string&quot;&gt;&quot;Toyota&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;self.go = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(&lt;span class=&quot;string&quot;&gt;&quot;A Toyota car is going...&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Toyota.prototype.isJapaneseCar = &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var t = new Toyota();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(t instanceof Toyota);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(t instanceof Car);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt; &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var Car = Class.create(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;initialize: &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.type = &lt;span class=&quot;string&quot;&gt;&quot;Car&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;go: &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(&lt;span class=&quot;string&quot;&gt;&quot;Going...&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var Toyota = Class.create(Car, &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;initialize: &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.type = &lt;span class=&quot;string&quot;&gt;&quot;Toyota&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.isJapaneseCar = &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;go: &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(&lt;span class=&quot;string&quot;&gt;&quot;A Toyota car is going...&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;关于父类调用&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var Toyota = Class.create(Car, &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;initialize: &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.type = &lt;span class=&quot;string&quot;&gt;&quot;Toyota&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.isJapaneseCar = &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;go: &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;variable&quot;&gt;$super&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$super&lt;/span&gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(&lt;span class=&quot;string&quot;&gt;&quot;A Toyota car is going...&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;选择器&quot;&gt;选择器&lt;/h3&gt;&lt;h3 id=&quot;链表实现&quot;&gt;链表实现&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var Node = Class.create(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;initialize: &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (val) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.value = val;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.next = null;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;addChild: &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(node) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.next = node;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var LinkedList = Class.create(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;initialize: &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.root = new Node(null);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.size = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;add: &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (object) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj = this.root&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (obj.next!= null) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj = obj.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.next = new Node(object)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;两种实现继承的方式&quot;&gt;两种实现继承的方式&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt; &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+      <category term="JavaScript" scheme="http://fredchenjialin.github.io/categories/Diary/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="http://fredchenjialin.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习6</title>
+    <link href="http://fredchenjialin.github.io/2015/11/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A06/"/>
+    <id>http://fredchenjialin.github.io/2015/11/12/机器学习6/</id>
+    <published>2015-11-12T05:49:18.000Z</published>
+    <updated>2015-11-16T05:44:29.494Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;评估一个机器学习算法&quot;&gt;评估一个机器学习算法&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;因为我们在提出一个机器学习算法后总是想着要改进和优化它，使其得到最好的学习效果&lt;/li&gt;
+&lt;li&gt;通常我们回想可不可以给我们更多的学习数据&lt;/li&gt;
+&lt;li&gt;但是如果我们有一套科学的评估和诊断的方法，那么对于机器学习是非常有利的&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;过拟合检验_TrainingSet_and_TestSet&quot;&gt;过拟合检验 TrainingSet and TestSet&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;比例是7：3&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;high_bias_and_high_variance_TrainingSet，CrossValidateSet_and_TestSet&quot;&gt;high bias and high variance TrainingSet，CrossValidateSet and TestSet&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;比例是3：2：2&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml6/cvandtest.png&quot; alt=&quot;costfunction&quot;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;相对于high bias 和 high variance，其实是更加相当于underfit 和 overfit&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;不行了，那种没学到东西的感觉越来越强烈了&lt;/p&gt;
+&lt;h2 id=&quot;卧槽，证书没了&quot;&gt;卧槽，证书没了&lt;/h2&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;评估一个机器学习算法&quot;&gt;评估一个机器学习算法&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;因为我们在提出一个机器学习算法后总是想着要改进和优化它，使其得到最好的学习效果&lt;/li&gt;
+&lt;li&gt;通常我们回想可不可以给我们更多的学习数据&lt;/li&gt;
+&lt;li&gt;但是如果我们有一套科学的评估和诊断
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+      <category term="机器学习" scheme="http://fredchenjialin.github.io/categories/Diary/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>最近没学习</title>
+    <link href="http://fredchenjialin.github.io/2015/11/12/%E6%9C%80%E8%BF%91%E6%B2%A1%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://fredchenjialin.github.io/2015/11/12/最近没学习/</id>
+    <published>2015-11-12T05:29:53.000Z</published>
+    <updated>2015-11-12T05:48:29.582Z</updated>
+    
+    <content type="html">&lt;p&gt;这几天我去参加陕西省研究生创新成果展，看到了很多好玩的东西，也学习到了很多，有了收获，长了见识，认识教训。&lt;/p&gt;
+&lt;p&gt;所以我没有学习，而且也不太能学的下，不能够静心。&lt;/p&gt;
+&lt;p&gt;而且，我的手机也是今天也才到我的手上，也算是满足我了我的一个心愿吧，希望诸事安定，可以安心学习了。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这几天我去参加陕西省研究生创新成果展，看到了很多好玩的东西，也学习到了很多，有了收获，长了见识，认识教训。&lt;/p&gt;
+&lt;p&gt;所以我没有学习，而且也不太能学的下，不能够静心。&lt;/p&gt;
+&lt;p&gt;而且，我的手机也是今天也才到我的手上，也算是满足我了我的一个心愿吧，希望诸事安定，可以安
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+    
+      <category term="Nexus5X" scheme="http://fredchenjialin.github.io/tags/Nexus5X/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习5</title>
+    <link href="http://fredchenjialin.github.io/2015/11/01/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A05/"/>
+    <id>http://fredchenjialin.github.io/2015/11/01/机器学习5/</id>
+    <published>2015-11-01T13:31:24.000Z</published>
+    <updated>2015-11-05T14:27:37.827Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;第一节里面讲了一个大而全的针对神经网络的cost_Function&quot;&gt;第一节里面讲了一个大而全的针对神经网络的cost Function&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/costfunction.png&quot; alt=&quot;costfunction&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Backpropagation_Algorithm&quot;&gt;Backpropagation Algorithm&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;想要求导偏导数是比较困难的。以下是前向传播的算法：&lt;br&gt;  &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/Forwardpropagation.png&quot; alt=&quot;Forwardpropagation&quot;&gt;&lt;br&gt;  可以看出会比较繁琐。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;然后这是后向传播&lt;br&gt;  &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/backpropagation.png&quot; alt=&quot;backpropagation&quot;&gt;&lt;br&gt;  &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/backpropagationAch.png&quot; alt=&quot;backpropagation&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下&quot;&gt;NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;说到了一个梯度检验算法，用来证明你做的梯度下降是没有错的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;程序作业&quot;&gt;程序作业&lt;/h2&gt;&lt;h3 id=&quot;第一项_理解多种结果的逻辑回归分类并计算cost_function&quot;&gt;第一项 理解多种结果的逻辑回归分类并计算cost function&lt;/h3&gt;&lt;h4 id=&quot;多种化为传统&quot;&gt;多种化为传统&lt;/h4&gt;&lt;p&gt;在原来的看法中，以0，1为例，我们将产生这两种结果的cost function定义如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/2.png&quot; alt=&quot;LinearOneVariable&quot;&gt;&lt;/p&gt;
+&lt;p&gt;若是y有多种结果，我们可以假想为，若有n种结果&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第一个函数计算 （y == x）&lt;/li&gt;
+&lt;li&gt;第二个函数计算 （y != x）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;如此实现了从多种到传统的过度。&lt;/p&gt;
+&lt;h4 id=&quot;函数整合&quot;&gt;函数整合&lt;/h4&gt;&lt;p&gt;针对两个函数整合到一起的函数使用的是（y）和（1-y）的小技巧，实现了不是第一个函数就是第二个函数的功能。&lt;/p&gt;
+&lt;h4 id=&quot;举例假设&quot;&gt;举例假设&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;有5000个样例，10个分类，所以基本的特征函数产生有5000*10的矩阵A&lt;/li&gt;
+&lt;li&gt;5000个样例有5000个label，针对这些label，处理成为（01）格式,得到5000*10的矩阵B&lt;ul&gt;
+&lt;li&gt;例如 y=5 处理为(0,0,0,0,1,0,0,0,0,0)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;costFunction = -log(A) .&lt;em&gt; B + (-log(1-A)) .&lt;/em&gt; (1-B);&lt;/code&gt;（注意：这里是点乘）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;costFunction = -log(A) .* B + (-log(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;-A)) .* (&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;-B);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;反向传播&quot;&gt;反向传播&lt;/h3&gt;&lt;p&gt;反向传播花了我好长时间，一直想用程序的角度来解决处理矩阵的问题，然后发现多此一举。&lt;/p&gt;
+&lt;p&gt;原来在反向传播中&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;先做一遍正向的推导&lt;/li&gt;
+&lt;li&gt;从后向前计算误差值（关键点是：如果不是处理成向量来做，那么每一层的误差据真是不一样的）&lt;/li&gt;
+&lt;li&gt;计算梯度&lt;/li&gt;
+&lt;li&gt;正规化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;我认为即使我做完了这些题目也没有什么好开心的，因为还是学不到最关键的部分，像是为什么反向传播可以求得costFunction_的导数。&quot;&gt;我认为即使我做完了这些题目也没有什么好开心的，因为还是学不到最关键的部分，像是为什么反向传播可以求得costFunction 的导数。&lt;/h2&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;第一节里面讲了一个大而全的针对神经网络的cost_Function&quot;&gt;第一节里面讲了一个大而全的针对神经网络的cost Function&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/c
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+      <category term="机器学习" scheme="http://fredchenjialin.github.io/categories/Diary/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习4</title>
+    <link href="http://fredchenjialin.github.io/2015/10/31/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A04/"/>
+    <id>http://fredchenjialin.github.io/2015/10/31/机器学习4/</id>
+    <published>2015-10-31T08:27:53.000Z</published>
+    <updated>2015-10-31T08:35:35.020Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;这一期的机器学习讲到了多类分类器和神经网络的铺垫&quot;&gt;这一期的机器学习讲到了多类分类器和神经网络的铺垫&lt;/h3&gt;&lt;p&gt;在原来的两类分类中，我们只是用不是0就是1来分类，现在的n多类分类可以同理为不是x就是其他n-1种，最后对n中的特征的可能性取最大值即可。&lt;/p&gt;
+&lt;p&gt;公式可以参考两类分类中的公式，仅仅略有不同。&lt;/p&gt;
+&lt;p&gt;关于神经网络没有过多涉及，在下一讲中会有更多的体现吧。&lt;/p&gt;
+&lt;p&gt;仅仅说到了三层中，第一层是输入，第三层是输出，中间的层都是隐藏层，每一层由前一层推出，这叫做前向传导，据说后面还有后向传导。&lt;/p&gt;
+&lt;p&gt;没什么好说的，挺简单的。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;这一期的机器学习讲到了多类分类器和神经网络的铺垫&quot;&gt;这一期的机器学习讲到了多类分类器和神经网络的铺垫&lt;/h3&gt;&lt;p&gt;在原来的两类分类中，我们只是用不是0就是1来分类，现在的n多类分类可以同理为不是x就是其他n-1种，最后对n中的特征的可能性取最大值即可。&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+      <category term="机器学习" scheme="http://fredchenjialin.github.io/categories/Diary/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器人运动学0</title>
+    <link href="http://fredchenjialin.github.io/2015/10/31/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BF%90%E5%8A%A8%E5%AD%A60/"/>
+    <id>http://fredchenjialin.github.io/2015/10/31/机器人运动学0/</id>
+    <published>2015-10-31T08:26:52.000Z</published>
+    <updated>2015-10-31T08:37:42.053Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;最近要写与机器人的步态有关的论文，所以记录一下这一块的学习。&quot;&gt;最近要写与机器人的步态有关的论文，所以记录一下这一块的学习。&lt;/h2&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;最近要写与机器人的步态有关的论文，所以记录一下这一块的学习。&quot;&gt;最近要写与机器人的步态有关的论文，所以记录一下这一块的学习。&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+      <category term="机器人运动学" scheme="http://fredchenjialin.github.io/categories/Diary/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BF%90%E5%8A%A8%E5%AD%A6/"/>
+    
+    
+      <category term="步态" scheme="http://fredchenjialin.github.io/tags/%E6%AD%A5%E6%80%81/"/>
+    
+      <category term="运动学" scheme="http://fredchenjialin.github.io/tags/%E8%BF%90%E5%8A%A8%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2015年10月30日周报暨计划调整</title>
+    <link href="http://fredchenjialin.github.io/2015/10/31/2015%E5%B9%B410%E6%9C%8830%E6%97%A5%E5%91%A8%E6%8A%A5%E6%9A%A8%E8%AE%A1%E5%88%92%E8%B0%83%E6%95%B4/"/>
+    <id>http://fredchenjialin.github.io/2015/10/31/2015年10月30日周报暨计划调整/</id>
+    <published>2015-10-31T08:19:07.000Z</published>
+    <updated>2015-10-31T08:23:43.494Z</updated>
+    
+    <content type="html">&lt;p&gt;关于最近的一些想法，一直以来都想做一个自己撸的网站，前端加上后台。在反复浅尝辄止了多个框架，语言后，我发现我离最初的想法差的有点远了。&lt;/p&gt;
+&lt;p&gt;最初我就是想玩玩效果（注：html5），整一整在网站上看着舒服而又高大上的网页（注：css），如果还有各种各种的动画就更好了（注：JS）。&lt;/p&gt;
+&lt;p&gt;所以这么久了，一直没搞清自己在寻找着什么，所以我决定是搞css和js，更加偏重js，结合着算法来搞应该会比较有趣。&lt;/p&gt;
+&lt;p&gt;那么现在的事情总结起来就是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;机器学习&lt;/li&gt;
+&lt;li&gt;步态算法&lt;/li&gt;
+&lt;li&gt;JS+CSS&lt;/li&gt;
+&lt;li&gt;ROS&lt;/li&gt;
+&lt;li&gt;Linux视频+摄像头+图像&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;另外我还发现一点有一个轻量级的blog框架写东西，或者说是用一个好用的工具写技术日记真的要比写技术博客方便好多&quot;&gt;另外我还发现一点有一个轻量级的blog框架写东西，或者说是用一个好用的工具写技术日记真的要比写技术博客方便好多&lt;/h2&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;关于最近的一些想法，一直以来都想做一个自己撸的网站，前端加上后台。在反复浅尝辄止了多个框架，语言后，我发现我离最初的想法差的有点远了。&lt;/p&gt;
+&lt;p&gt;最初我就是想玩玩效果（注：html5），整一整在网站上看着舒服而又高大上的网页（注：css），如果还有各种各种的动画就更好了
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+    
+      <category term="周报" scheme="http://fredchenjialin.github.io/tags/%E5%91%A8%E6%8A%A5/"/>
+    
+      <category term="计划" scheme="http://fredchenjialin.github.io/tags/%E8%AE%A1%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习3</title>
+    <link href="http://fredchenjialin.github.io/2015/10/21/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A03/"/>
+    <id>http://fredchenjialin.github.io/2015/10/21/机器学习3/</id>
+    <published>2015-10-21T09:44:53.000Z</published>
+    <updated>2015-10-24T09:32:37.075Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Logistic_Regression&quot;&gt;Logistic Regression&lt;/h2&gt;&lt;h4 id=&quot;特征方程&quot;&gt;特征方程&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/1.png&quot; alt=&quot;LinearOneVariable&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/CodeCogsEqn.gif&quot; alt=&quot;CodeCogsEqn&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/logisticCostF.png&quot; alt=&quot;logisticCostF&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;Cost_Function&quot;&gt;Cost Function&lt;/h4&gt;&lt;p&gt;若是延用原来的Cost Function，在梯度下降的时候会局限于很多的局部最优解，对全局最优解的寻找产生影响。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/2.png&quot; alt=&quot;LinearOneVariable&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/3.png&quot; alt=&quot;LinearOneVariable&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;求导吧&quot;&gt;求导吧&lt;/h4&gt;&lt;p&gt;首先，用个小技巧把两个情况合二为一。&lt;/p&gt;
+&lt;p&gt;得到如下：&lt;br&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/4.png&quot; alt=&quot;LinearOneVariable&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;正规化&quot;&gt;正规化&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;逻辑回归正规化公式&lt;br&gt;  &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/regularizeRL.png&quot; alt=&quot;regularizeRL&quot;&gt;&lt;/li&gt;
+&lt;li&gt;梯度下降正规化公式&lt;br&gt;  &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/regularizeGR.png&quot; alt=&quot;regularizeGR&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;相关矩阵小技巧&quot;&gt;相关矩阵小技巧&lt;/h3&gt;&lt;p&gt;如果我想要把两个矩阵的对应项相乘，那么是不是只有循环了，但是若是我们考虑一下最终的形式，多数情况下，我们不仅要相乘还有相加，所以不用循环。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Logistic_Regression&quot;&gt;Logistic Regression&lt;/h2&gt;&lt;h4 id=&quot;特征方程&quot;&gt;特征方程&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/1.png&quot;
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+      <category term="机器学习" scheme="http://fredchenjialin.github.io/categories/Diary/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小记</title>
+    <link href="http://fredchenjialin.github.io/2015/10/15/%E5%B0%8F%E8%AE%B0/"/>
+    <id>http://fredchenjialin.github.io/2015/10/15/小记/</id>
+    <published>2015-10-15T02:07:16.000Z</published>
+    <updated>2015-10-15T02:39:30.254Z</updated>
+    
+    <content type="html">&lt;h4 id=&quot;最近研究生的生涯逐渐迈向正轨，然而我自己的生活和心态还基本没有达到我想要达到的状态。&quot;&gt;最近研究生的生涯逐渐迈向正轨，然而我自己的生活和心态还基本没有达到我想要达到的状态。&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;先是列一下事项：&lt;/span&gt;
+&lt;span class=&quot;comment&quot;&gt;事项&lt;/span&gt;&lt;span class=&quot;literal&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;literal&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;literal&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;comment&quot;&gt;动作&lt;/span&gt;&lt;span class=&quot;literal&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;literal&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;literal&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;comment&quot;&gt;优先级&lt;/span&gt;&lt;span class=&quot;literal&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;literal&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;literal&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;comment&quot;&gt;目标&lt;/span&gt;&lt;span class=&quot;literal&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;literal&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;literal&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;comment&quot;&gt;关键&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
+&lt;li&gt;论文——白天研读——重中之重——看下十篇论文后可以有思想去尝试写论文——看框架，流程，和论文写什么&lt;/li&gt;
+&lt;li&gt;英语六级——白天复习——重要——不低于425分——做真题，练听力&lt;/li&gt;
+&lt;li&gt;ML——晚上回宿舍在线观看——必做——12月份拿到证书——坚持&lt;/li&gt;
+&lt;li&gt;论文记载网站——平时研究或周末研究——一般——一个输入显示的网页——go语言&lt;/li&gt;
+&lt;li&gt;WordPress主题——在平时累了或者周末研究前端——一般—写一个自己用的极简主义的theme——坚持和找威仔讨论&lt;/li&gt;
+&lt;li&gt;研究生创新成果展——大概筹划——一般——展出别出岔子——每人做什么事情盯紧就好&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;最近研究生的生涯逐渐迈向正轨，然而我自己的生活和心态还基本没有达到我想要达到的状态。&quot;&gt;最近研究生的生涯逐渐迈向正轨，然而我自己的生活和心态还基本没有达到我想要达到的状态。&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;先是列一下事项：
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+    
+      <category term="计划" scheme="http://fredchenjialin.github.io/tags/%E8%AE%A1%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习2</title>
+    <link href="http://fredchenjialin.github.io/2015/10/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A02/"/>
+    <id>http://fredchenjialin.github.io/2015/10/12/机器学习2/</id>
+    <published>2015-10-12T08:03:38.000Z</published>
+    <updated>2015-10-21T09:40:57.970Z</updated>
+    
+    <content type="html">&lt;h4 id=&quot;本周开始讲了多变量的参数学习。&quot;&gt;本周开始讲了多变量的参数学习。&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;不过我认为，这个东西也就和单变量一个样子。都是对cost &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;&lt;/span&gt;取最小值，最后得到趋向于稳定的参数。
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;特征缩放_Feature_Scaling&quot;&gt;特征缩放 Feature Scaling&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;让所有的特征都处于相同的数量等级，有助于加快回归&lt;/li&gt;
+&lt;li&gt;mean scaling ：（特征-平均值）/（最大-最小）&lt;/li&gt;
+&lt;li&gt;学习速率决定了回归质量&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;标准方程&quot;&gt;标准方程&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;梯度下降和标准方程的比较（在特征规模上的差别）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;一些题目&quot;&gt;一些题目&lt;/h4&gt;&lt;h4 id=&quot;week2-1&quot;&gt;week2-1&lt;/h4&gt;&lt;h4 id=&quot;week2-2&quot;&gt;week2-2&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;^&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;=&lt;span class=&quot;number&quot;&gt;64&lt;/span&gt;
+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;~=&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;%不等于&lt;/span&gt;
+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&amp;amp;&amp;amp;&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;%与&lt;/span&gt;
+xor(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;comment&quot;&gt;%异或&lt;/span&gt;
+PS1(&lt;span class=&quot;string&quot;&gt;&#39;&amp;gt;&amp;gt; &#39;&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;%新起一行&lt;/span&gt;
+&lt;span class=&quot;built_in&quot;&gt;pi&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;%圆周率&lt;/span&gt;
+&lt;span class=&quot;built_in&quot;&gt;disp&lt;/span&gt;() &lt;span class=&quot;comment&quot;&gt;%显示&lt;/span&gt;
+分号 换行
+&lt;span class=&quot;built_in&quot;&gt;ones&lt;/span&gt;(x,y) &lt;span class=&quot;comment&quot;&gt;%x行y列 全1&lt;/span&gt;
+&lt;span class=&quot;built_in&quot;&gt;rand&lt;/span&gt;(x,y) &lt;span class=&quot;comment&quot;&gt;%      任意&lt;/span&gt;
+hist &lt;span class=&quot;comment&quot;&gt;%线图&lt;/span&gt;
+&lt;span class=&quot;built_in&quot;&gt;eye&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;%单位矩阵&lt;/span&gt;
+&lt;span class=&quot;built_in&quot;&gt;size&lt;/span&gt;(矩阵,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;或者&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;) &lt;span class=&quot;comment&quot;&gt;%1是 row 2 is col&lt;/span&gt;
+&lt;span class=&quot;built_in&quot;&gt;size&lt;/span&gt;(矩阵) &lt;span class=&quot;comment&quot;&gt;%vector with 2 var&lt;/span&gt;
+&lt;span class=&quot;built_in&quot;&gt;length&lt;/span&gt;(matrix) &lt;span class=&quot;comment&quot;&gt;%longest length&lt;/span&gt;
+pwd &lt;span class=&quot;comment&quot;&gt;%working path&lt;/span&gt;
+load filename Equal load(&lt;span class=&quot;string&quot;&gt;&#39;filename&#39;&lt;/span&gt;)
+who show the all var
+whos show details of who
+save filename var encode
+: mean every element along that row/col
+&lt;span class=&quot;matrix&quot;&gt;[A B]&lt;/span&gt; row combine
+&lt;span class=&quot;matrix&quot;&gt;[A ; B]&lt;/span&gt; col combine
+A .^ &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt; each element of A ^&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;
+sum(A) sum of A
+prod(A) product of A
+&lt;span class=&quot;built_in&quot;&gt;floor&lt;/span&gt;(A) 
+&lt;span class=&quot;built_in&quot;&gt;ceil&lt;/span&gt;(A) 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;PS:特征缩放那一题是帮助了更快迭代回归，而不是使每一步都更小花费&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;本周开始讲了多变量的参数学习。&quot;&gt;本周开始讲了多变量的参数学习。&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;不过我认为，这个东西也就和单变量一个样子。都是对cost &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+      <category term="机器学习" scheme="http://fredchenjialin.github.io/categories/Diary/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hi</title>
+    <link href="http://fredchenjialin.github.io/2015/10/07/hi/"/>
+    <id>http://fredchenjialin.github.io/2015/10/07/hi/</id>
+    <published>2015-10-07T14:13:15.000Z</published>
+    <updated>2015-10-07T14:22:15.015Z</updated>
+    
+    <content type="html">&lt;p&gt;今天看了会线性代数，感觉自己还可以看的下去。&lt;/p&gt;
+&lt;p&gt;对比我的课本和mit的线性代数的课程内容，我发现了一些顺序上面的不同。&lt;/p&gt;
+&lt;p&gt;mit的课程是先说方程，说消元，说矩阵，我的大学课本是先说行列式，说秩，说运算&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天看了会线性代数，感觉自己还可以看的下去。&lt;/p&gt;
+&lt;p&gt;对比我的课本和mit的线性代数的课程内容，我发现了一些顺序上面的不同。&lt;/p&gt;
+&lt;p&gt;mit的课程是先说方程，说消元，说矩阵，我的大学课本是先说行列式，说秩，说运算&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+    
+      <category term="线性代数" scheme="http://fredchenjialin.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习1</title>
+    <link href="http://fredchenjialin.github.io/2015/10/05/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A01/"/>
+    <id>http://fredchenjialin.github.io/2015/10/05/机器学习1/</id>
+    <published>2015-10-05T09:14:27.000Z</published>
+    <updated>2015-10-12T07:55:05.201Z</updated>
+    
+    <content type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Introduction&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;What is Machine Learning?&lt;/p&gt;
+&lt;p&gt;Two definitions of Machine Learning are offered.&lt;br&gt;Arthur Samuel described it as:&lt;br&gt;“the field of study that gives computers the ability to learn without being explicitly programmed.” This is an older, informal definition.&lt;br&gt;Tom Mitchell provides a more modern definition:&lt;br&gt;“A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.”&lt;/p&gt;
+&lt;p&gt;Example: playing checkers.&lt;br&gt;E = the experience of playing many games of checkers(玩的经验)&lt;br&gt;T = the task of playing checkers.(要做的事情)&lt;br&gt;P = the probability that the program will win the next game.(事情做成的机率)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Supervised Learning&lt;/p&gt;
+&lt;p&gt;In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output.&lt;/p&gt;
+&lt;p&gt;Supervised learning problems are categorized into “regression” and “classification” problems. In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a classification problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;p&gt;Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a continuous output, so this is a regression problem.&lt;/p&gt;
+&lt;p&gt;We could turn this example into a classification problem by instead making our output about whether the house “sells for more or less than the asking price.” Here we are classifying the houses based on price into two discrete categories.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Unsupervised Learning&lt;/p&gt;
+&lt;p&gt;Unsupervised learning, on the other hand, allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don’t necessarily know the effect of the variables.&lt;/p&gt;
+&lt;p&gt;We can derive this structure by clustering the data based on relationships among the variables in the data.&lt;/p&gt;
+&lt;p&gt;With unsupervised learning there is no feedback based on the prediction results, i.e., there is no teacher to correct you. It’s not just about clustering. For example, associative memory is unsupervised learning.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;p&gt;Clustering: Take a collection of 1000 essays written on the US Economy, and find a way to automatically group these essays into a small number that are somehow similar or related by different variables, such as word frequency, sentence length, page count, and so on.&lt;/p&gt;
+&lt;p&gt;Associative: Suppose a doctor over years of experience forms associations in his mind between patient characteristics and illnesses that they have. If a new patient shows up then based on this patient’s characteristics such as symptoms, family medical history, physical attributes, mental outlook, etc the doctor associates possible illness or illnesses based on what the doctor has seen before with similar patients. This is not the same as rule based reasoning as in expert systems. In this case we would like to estimate a mapping function from patient characteristics into illnesses.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;一元线性回归&lt;/p&gt;
+&lt;h3 id=&quot;最为主要的一些公式&quot;&gt;最为主要的一些公式&lt;/h3&gt;&lt;h5 id=&quot;一元线性函数&quot;&gt;一元线性函数&lt;/h5&gt;&lt;p&gt; &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/LinearOneVariable.png&quot; alt=&quot;LinearOneVariable&quot;&gt;&lt;/p&gt;
+&lt;h5 id=&quot;花费函数，也就是用来逼近我们需要的俩个参数的函数&quot;&gt;花费函数，也就是用来逼近我们需要的俩个参数的函数&lt;/h5&gt;&lt;p&gt; &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/CostFunction.png&quot; alt=&quot;CostFunction&quot;&gt;&lt;/p&gt;
+&lt;h5 id=&quot;目的函数，所以对他求导&quot;&gt;目的函数，所以对他求导&lt;/h5&gt;&lt;p&gt; &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/GoalFunction.png&quot; alt=&quot;GoalFunction&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;梯度下降法求解目的函数&lt;/p&gt;
+&lt;h3 id=&quot;从一个猜测的初始值出发，不断的减小目的函数&quot;&gt;从一个猜测的初始值出发，不断的减小目的函数&lt;/h3&gt;&lt;h5 id=&quot;梯度下降算法&quot;&gt;梯度下降算法&lt;/h5&gt;&lt;p&gt; &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/gradient_descent.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h5 id=&quot;具体实现&quot;&gt;具体实现&lt;/h5&gt;&lt;p&gt; &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/Gredientdescentalgorithm.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;第一周顺利结束&lt;/p&gt;
+&lt;h3 id=&quot;感觉还不错，因为原来是看过的，但是还是有一点需要注意的。&quot;&gt;感觉还不错，因为原来是看过的，但是还是有一点需要注意的。&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;梯度下降参数α这个值因为考虑到下降速度的问题还是需要变化的，但是会有不够和过了的问题。&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;还有如下的一些问题：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex1.png&quot; alt=&quot;答案对&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex1_1.png&quot; alt=&quot;答案错&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex2.png&quot; alt=&quot;答案错&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex2_1.png&quot; alt=&quot;答案错&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;补&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;可以找到一个完全匹配的函数。&lt;/li&gt;
+&lt;li&gt;即使找到一个完全匹配的函数，但是不可以说是100%预测成功。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Introduction&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;What is Machine Learning?&lt;/p&gt;
+&lt;p&gt;Two definitions of Machine Learning are offered.&lt;br&gt;Arthur Samuel 
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+      <category term="机器学习" scheme="http://fredchenjialin.github.io/categories/Diary/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一次海淘Nexus5X——纪实</title>
+    <link href="http://fredchenjialin.github.io/2015/10/02/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%B5%B7%E6%B7%98Nexus5X%E2%80%94%E2%80%94%E7%BA%AA%E5%AE%9E/"/>
+    <id>http://fredchenjialin.github.io/2015/10/02/第一次海淘Nexus5X——纪实/</id>
+    <published>2015-10-02T13:06:06.000Z</published>
+    <updated>2015-11-12T05:44:49.978Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;本人第一次海淘，不具有代表性，仅仅给大家一个参考。&quot;&gt;本人第一次海淘，不具有代表性，仅仅给大家一个参考。&lt;/h3&gt;&lt;h2 id=&quot;海淘什么&quot;&gt;海淘什么&lt;/h2&gt;&lt;p&gt;作为一个伪谷粉，对谷歌亲儿子简直是流口水。。&lt;/p&gt;
+&lt;p&gt;在13年的时候，我在淘宝上面买了nexus 4，作为到目前为止nexus系列颜值最高的一台手机，4儿子给了我许许多多的第一次。&lt;/p&gt;
+&lt;h5 id=&quot;第一次用原生系统&quot;&gt;第一次用原生系统&lt;/h5&gt;&lt;h5 id=&quot;第一次刷机&quot;&gt;第一次刷机&lt;/h5&gt;&lt;h5 id=&quot;第一次用双面玻璃的手机&quot;&gt;第一次用双面玻璃的手机&lt;/h5&gt;&lt;h5 id=&quot;第一次对一个手机如此爱护，只让它被摔了三次（两次都碎了，衰！！！！）&quot;&gt;第一次对一个手机如此爱护，只让它被摔了三次（两次都碎了，衰！！！！）&lt;/h5&gt;&lt;h5 id=&quot;第一次感受到一种信仰的力量&quot;&gt;第一次感受到一种信仰的力量&lt;/h5&gt;&lt;p&gt;所以这次nexus5x（应该算是7儿子了）一出，就立刻开始研究海淘。。&lt;/p&gt;
+&lt;h2 id=&quot;为什么是5X，不是6P&quot;&gt;为什么是5X，不是6P&lt;/h2&gt;&lt;p&gt;了解的人都知道这一次的发布，一共有两部亲儿子，一个是LG代工的5X（因为LG还代工了4，5，6是MOTO），另一个是华为代工的6P，这也是nexus系列首次由国产手机厂商代工。&lt;/p&gt;
+&lt;p&gt;但是就我认为，第一由华为打入国内市场或者帮助华为走向国际市场这样的事情是肯定在卖方的考虑范围之内的，有可能，我们入手的nexus就不是一个原生系统的手机了，另外，对华为比较抵触。第二，6P的后盖上有一个大黑条，我觉得不能接受，真是丑。（虽然，5X并不好看到哪里去，长得还有点像小米）&lt;/p&gt;
+&lt;h2 id=&quot;为什么是nexus系列&quot;&gt;为什么是nexus系列&lt;/h2&gt;&lt;p&gt;因为在安卓机器中，原生系统是最靠近这个系统的体验的了。安卓系统的开源，使得这个系统的机器长相各异，形态各异，在原有的系统上加上了很多厂商的思想。&lt;br&gt;原生很方便，直接说道方便这个点不如说是简洁，我们可以随意刷机，随意掌握到很多系统级别的功能，可以感受到最新的系统所带来的改变；&lt;br&gt;原生很好看，我有些时候，会非常受不了厂商定制UI，甚至是android4.0之前的原生界面我都不太可以接受，在android material design被提出来之后，我觉得颜值提高了不少，心里大为开心；&lt;br&gt;原生很快，没有了厂商定制，快是自然而然的。&lt;/p&gt;
+&lt;h3 id=&quot;话痨模式关闭，下面讲讲海淘&quot;&gt;话痨模式关闭，下面讲讲海淘&lt;/h3&gt;&lt;h2 id=&quot;准备&quot;&gt;准备&lt;/h2&gt;&lt;p&gt;第一次海淘，相信大家和我一样有很多地方不明白。&lt;/p&gt;
+&lt;p&gt;海淘就是在境外找一个你“信任”的人帮你买东西，然后把东西寄给你。&lt;/p&gt;
+&lt;p&gt;这其中的一些关键的点在于：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;东西哪里都可以买，为什么是境外？&lt;ul&gt;
+&lt;li&gt;因为有些东西不在中国卖，或者因为关税问题，卖的特别的贵。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;谁值得我们信任？&lt;ul&gt;
+&lt;li&gt;如果是找同学帮忙买东西，自然是非常的方便，但是不是国外没有自己的同学或是认识的人嘛。&lt;/li&gt;
+&lt;li&gt;所以就会去找一下比较负责口碑好的转运公司，这里的信任是比较单方向的，因为你找转运公司，公司肯定是要先收了你的钱才帮你办事情，而且事情砸了，多半是我们自己吃亏倒霉，所以一个靠谱的转运公司非常重要。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;买东西我们怎么付钱？&lt;ul&gt;
+&lt;li&gt;因为是境外，涉及到了汇率和付款的方式，多半的海淘都是双币信用卡或者全币信用卡，有一个叫做全球付的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;寄东西到中国？&lt;ul&gt;
+&lt;li&gt;我们在买东西的时候填的是转运公司的地址，同时把我们在国内的地址发给转运公司就ok了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;步骤&quot;&gt;步骤&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;确定买什么，在哪买&lt;/li&gt;
+&lt;li&gt;确定一家转运公司&lt;/li&gt;
+&lt;li&gt;向卖价提供转运公司的地址，想转运公司提供我们的地址&lt;/li&gt;
+&lt;li&gt;等待发货&lt;/li&gt;
+&lt;li&gt;向转运公司提交包裹信息寄到国内&lt;/li&gt;
+&lt;li&gt;等待我们东西&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;目前我处于4这个状态&quot;&gt;目前我处于4这个状态&lt;/h3&gt;&lt;hr&gt;
+&lt;p&gt;这两天知道了一件新鲜的事情，就是关于在google官网买东西的时候支付的一些细（keng）节（die）。&lt;/p&gt;
+&lt;p&gt;我们想买google的手机，那么在下单的时候是一个预定的过程，可能google为了防止有人预定了不买和有人乱预定，所以就把预定和发货整成了两个步骤。&lt;br&gt;一是预订的时候用信用卡额度来交钱，但是这个钱仅仅是被冻结了而已，并不会从你的信用卡中扣走，二是在发货的时候，才会把钱扣走。&lt;/p&gt;
+&lt;p&gt;了解的同学都知道，我是用全球付付款的，全球付是有一个即时到账的一个特性吧，所以，我在预定的时候，钱就已经被扣走了，那么，用虚拟信用卡买东西就是要交两倍的钱，但是最终会不会退回一份的钱还是一个未知数，静待变数~~&lt;/p&gt;
+&lt;p&gt;希望一切顺利！！&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;我又回来了，带来了好消息&quot;&gt;我又回来了，带来了好消息&lt;/h3&gt;&lt;p&gt;在20号那天我接到一封google store的email，满怀欣喜的以为是发货了，原来我被砍单了！！！！！！！！！！！！！！&lt;br&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-nexus/kandan.png&quot; alt=&quot;砍单&quot;&gt;&lt;/p&gt;
+&lt;p&gt;我的这个心里满满都是悲伤，于是我去哭了一晚上顺便把我的邮寄地址的名字和账户地址的名字改成了一样的又下了一次单（而且颜色还改成了骚骚的ice）&lt;/p&gt;
+&lt;p&gt;谁知道！！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-nexus/success.png&quot; alt=&quot;砍单&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这是无心插柳柳成荫啊！！！本来我都要放弃了！！！&lt;/p&gt;
+&lt;p&gt;so，赶紧去转运网站报备，填资料什么的。&lt;/p&gt;
+&lt;p&gt;接下来就是考虑壳和贴膜的事情了。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;卧槽，我的手机终于到了&quot;&gt;卧槽，我的手机终于到了&lt;/h3&gt;&lt;p&gt;今天11月12号，我的手机历时一个多月终于到手了，非常开心。&lt;/p&gt;
+&lt;p&gt;更新一下历程：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;10月02日 反复下单，最终成功一单，买的黑色的&lt;/li&gt;
+&lt;li&gt;10月20日 通知我被砍单，我立即又下了一单，买的是冰晶蓝色&lt;/li&gt;
+&lt;li&gt;10月22日 通知我发货了，o(&lt;em&gt;￣▽￣&lt;/em&gt;)ブ&lt;/li&gt;
+&lt;li&gt;10月25日 到达海外仓库，我用的是转运四方&lt;/li&gt;
+&lt;li&gt;10月29日 发到洛杉矶后从洛杉矶的仓库出发&lt;/li&gt;
+&lt;li&gt;10月30日 到达新加坡&lt;/li&gt;
+&lt;li&gt;11月02日 离开新加坡，开始发往北京&lt;/li&gt;
+&lt;li&gt;11月04日 到达北京&lt;/li&gt;
+&lt;li&gt;11月05日 开始发往西安&lt;/li&gt;
+&lt;li&gt;11月11日 到达西安&lt;/li&gt;
+&lt;li&gt;11月12日 到手&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;持续更新~&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;本人第一次海淘，不具有代表性，仅仅给大家一个参考。&quot;&gt;本人第一次海淘，不具有代表性，仅仅给大家一个参考。&lt;/h3&gt;&lt;h2 id=&quot;海淘什么&quot;&gt;海淘什么&lt;/h2&gt;&lt;p&gt;作为一个伪谷粉，对谷歌亲儿子简直是流口水。。&lt;/p&gt;
+&lt;p&gt;在13年的时候，我在淘宝上面买了nex
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+    
+      <category term="Nexus5X" scheme="http://fredchenjialin.github.io/tags/Nexus5X/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>machineLearning开课了！！</title>
+    <link href="http://fredchenjialin.github.io/2015/10/02/machineLearning%E5%BC%80%E8%AF%BE%E4%BA%86%EF%BC%81%EF%BC%81/"/>
+    <id>http://fredchenjialin.github.io/2015/10/02/machineLearning开课了！！/</id>
+    <published>2015-10-02T12:57:16.000Z</published>
+    <updated>2015-10-02T13:05:11.339Z</updated>
+    
+    <content type="html">&lt;p&gt;今天有两件开心的事情，第一件事情是成功购买了nexus5x，第二件事情是突然就发现机器学习开课了，好开心。&lt;/p&gt;
+&lt;p&gt;上一次，是在大二下的时候，因为要开始准备去哈尔滨的机器人比赛和电子设计竞赛，所以学了有1/5就放弃了。&lt;/p&gt;
+&lt;p&gt;现在我有时间，又有精力，简直爽翻，我觉得，我肯定可以坚持下去，希望可以在12月27号拿到满分证书。&lt;/p&gt;
+&lt;p&gt;我崇拜的威神在上上一次的开课时就已经拿到了证书，感觉信心又充足了一些！！&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天有两件开心的事情，第一件事情是成功购买了nexus5x，第二件事情是突然就发现机器学习开课了，好开心。&lt;/p&gt;
+&lt;p&gt;上一次，是在大二下的时候，因为要开始准备去哈尔滨的机器人比赛和电子设计竞赛，所以学了有1/5就放弃了。&lt;/p&gt;
+&lt;p&gt;现在我有时间，又有精力，简直爽翻，
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+    
+      <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
+    
+      <category term="Nexus5X" scheme="http://fredchenjialin.github.io/tags/Nexus5X/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nomoney</title>
+    <link href="http://fredchenjialin.github.io/2015/09/30/nomoney/"/>
+    <id>http://fredchenjialin.github.io/2015/09/30/nomoney/</id>
+    <published>2015-09-30T06:03:28.000Z</published>
+    <updated>2015-09-30T07:00:23.898Z</updated>
+    
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;有关符号表 - 已跳&lt;/li&gt;
+&lt;li&gt;感觉这个可以放弃了。。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;Semaphores_信号量&quot;&gt;Semaphores 信号量&lt;/h3&gt;&lt;h3 id=&quot;Locks_锁&quot;&gt;Locks 锁&lt;/h3&gt;&lt;h3 id=&quot;Monitors_信号量_+_锁_+_状态&quot;&gt;Monitors 信号量 + 锁 + 状态&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;有关符号表 - 已跳&lt;/li&gt;
+&lt;li&gt;感觉这个可以放弃了。。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;Semaphores_信号量&quot;&gt;Semaphores 信号量&lt;/h3&gt;&lt;h3 id=&quot;Locks_锁&quot;&gt;Locks 锁&lt;/h3&gt;&lt;h3 id=&quot;Mon
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+    
+      <category term="编译原理" scheme="http://fredchenjialin.github.io/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
+  
+</feed>
