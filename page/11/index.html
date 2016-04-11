@@ -1,4 +1,57 @@
-<!DOCTYPE html><html lang="中文简体"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> MPZ Diary</title><meta name="description" content="使用Hexo搭建的一个Diary。"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon-32x32.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><div id="mask" style="display: none;"><img id="mask-image" src="#" style=" "></div><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon-96x96.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link active">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/fredchenjialin" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/fredchenjialin" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><ul class="home post-list"><li class="post-list-item"><article class="post-block"><h1 class="post-title"><a href="/2015/09/08/hexo下的第一篇blog/" class="post-title-link">hexo下的第一篇blog</a></h1><div class="post-time">Sep 8, 2015</div><div class="post-content-excerpt"><h2 id="自定义图标的问题">自定义图标的问题</h2><p>很多人说将themes/主题名称/layout/_partial/head.ejs中的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link href=<span class="string">"&lt;%- config.root %&gt;favicon.png"</span> rel=<span class="string">"icon"</span>&gt;</span><br></pre></td></tr></table></figure></p>
+<!DOCTYPE html><html lang="中文简体"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> MPZ Diary</title><meta name="description" content="使用Hexo搭建的一个Diary。"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon-32x32.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" type="text/css"><script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></head><body><div id="mask" style="display: none;"><img id="mask-image" src="#" style=" "></div><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon-96x96.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link active">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/fredchenjialin" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/fredchenjialin" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><ul class="home post-list"><li class="post-list-item"><article class="post-block"><h1 class="post-title"><a href="/2015/09/13/pintos学习笔记0/" class="post-title-link">pintos学习笔记0</a></h1><div class="post-time">Sep 13, 2015</div><div class="post-content-excerpt"><p>今天看了一点点的pintos，做了半道网易的运营的<a href="http://multipluso.com/2015/09/wangyi-hiho0/" target="_blank" rel="external">题目</a></p>
+<p>打算写一点计划出来：</p>
+<ol>
+<li>每天三道lintcode上面的题目</li>
+<li>要看书（网络）</li>
+</ol>
+<hr>
+<h2 id="Loading">Loading</h2><h3 id="Loader">Loader</h3><ul>
+<li>BIOS加载Loader（MBR）<ul>
+<li>预留64字节给分区表</li>
+<li>128字节给内核命令行参数</li>
+</ul>
+</li>
+<li>Loader读分区表找到内核<ul>
+<li>找到可启动内核分区</li>
+<li>从分区读入内存128kB（或许更多，但是BIOS不提供超过1MB的大小）</li>
+<li>找到入口（内核的BLF header有个指针指向入口）</li>
+<li>Loader跳去入口</li>
+<li>每次运行内核时插入参数</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="Low-Level_Kernel_Initialization">Low-Level Kernel Initialization</h3><p>入口 start() in threads/start.S</p>
+<h4 id="start()">start()</h4><ul>
+<li>获取机器的内存</li>
+<li>启用A20 line,做64M的内存映射（看不太懂）</li>
+<li>call main()</li>
+</ul>
+<hr>
+<h3 id="High-Level_Kernel_Initialization">High-Level Kernel Initialization</h3><h4 id="调用main()">调用main()</h4><ul>
+<li>call bss_init()          - 清理BSS（被清为0的字段的传统名：在函数外未提供初始化的变量声明，variable goes into the BSS？）</li>
+<li>call read_command_line() - break the kernel command line into arguments</li>
+<li>call parse_options()     - read any options at the beginning of the command line</li>
+<li>call thread_init()       - 因为要用锁，所以就初始化</li>
+<li>initialize the console and print a startup message to the console</li>
+<li>call palloc_init()       - initialize memory system by setting up the <a href="Page Allocator">kernel page allocator</a></li>
+<li>call molloc_init()       - sets up the allocator that handles allocations of arbitrary-size <a href="Block Allocator">blocks</a> of memory</li>
+<li>call paging_init()       - sets up a <a href="Page Table">page table</a> for the kernel<ul>
+<li>在第二节后面还有tss和gdt的初始化</li>
+</ul>
+</li>
+<li>call intr_init()         - sets up the CPU’s interrupt descriptor table (IDT) to ready it for <a href="Interrupt Infrastructure">interrupt handling</a></li>
+<li>call timer_init()        - handling timer interrupt</li>
+<li>call kbd_init()          - handling keyboard interrupt</li>
+<li>call input_init()        - sets up to merge serial and keyboard input into one stream<ul>
+<li>在第二节后面还有用户程序的初始化exception_init() and syscall_init().</li>
+</ul>
+</li>
+<li>start the scheduler with thread_start(),call serial_init_queue() to switch to interrupt-driven serial port I/O</li>
+<li>call timer_calibrate() </li>
+<li>call ide_init() and filesys_init() to initialize the IDE disks and file system<h4 id="Boot_is_complete-">Boot is complete.</h4></li>
+</ul>
+</div><a href="/2015/09/13/pintos学习笔记0/" class="read-more">...阅读全文</a></article></li><li class="post-list-item"><article class="post-block"><h1 class="post-title"><a href="/2015/09/08/hexo下的第一篇blog/" class="post-title-link">hexo下的第一篇blog</a></h1><div class="post-time">Sep 8, 2015</div><div class="post-content-excerpt"><h2 id="自定义图标的问题">自定义图标的问题</h2><p>很多人说将themes/主题名称/layout/_partial/head.ejs中的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link href=<span class="string">"&lt;%- config.root %&gt;favicon.png"</span> rel=<span class="string">"icon"</span>&gt;</span><br></pre></td></tr></table></figure></p>
 <p>替换为<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link href=<span class="string">"&lt;%- config.root %&gt;favicon.ico"</span> rel=<span class="string">"icon"</span> <span class="built_in">type</span>=<span class="string">"image/x-ico"</span>&gt;</span><br></pre></td></tr></table></figure></p>
 <p>好像在hexo3下无效了，因为找不到类似的语句</p>
 <p>我的做法<br>在同样的位置现在的写法是<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (theme.favicon)&#123; %&gt;</span><br><span class="line">  &lt;link rel=<span class="string">"icon"</span> href=<span class="string">"&lt;%- theme.favicon %&gt;"</span>&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
@@ -15,4 +68,4 @@
 <p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
 <h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-</div><a href="/2015/09/08/hello-world/" class="read-more">...阅读全文</a></article></li></ul></section><footer><div class="paginator"><a href="/page/10/" class="prev">上一页</a></div><div class="copyright"><p>© 2015 - 2016 <a href="http://fredchenjialin.github.io">Multipluso</a>, unless otherwise noted.</p></div></footer></div><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>
+</div><a href="/2015/09/08/hello-world/" class="read-more">...阅读全文</a></article></li></ul></section><footer><div class="paginator"><a href="/page/10/" class="prev">上一页</a></div><div class="copyright"><p>© 2015 - 2016 <a href="http://fredchenjialin.github.io">Multipluso</a>, unless otherwise noted.</p></div></footer></div></body></html>

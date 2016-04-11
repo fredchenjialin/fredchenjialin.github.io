@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fredchenjialin.github.io/"/>
-  <updated>2016-04-11T03:13:15.473Z</updated>
+  <updated>2016-04-11T13:48:13.991Z</updated>
   <id>http://fredchenjialin.github.io/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一些数学公式</title>
+    <link href="http://fredchenjialin.github.io/2016/04/11/%E4%B8%80%E4%BA%9B%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
+    <id>http://fredchenjialin.github.io/2016/04/11/一些数学公式/</id>
+    <published>2016-04-11T12:32:21.000Z</published>
+    <updated>2016-04-11T13:48:13.991Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;记录一些数学公式，准备用mathjax来画&quot;&gt;记录一些数学公式，准备用mathjax来画&lt;/h1&gt;&lt;h4 id=&quot;拉格朗日方程（Lagrange_equation）&quot;&gt;拉格朗日方程（Lagrange equation）&lt;/h4&gt;&lt;p&gt;$$\frac{d}{dt}\frac{\partial L}{\partial \dot{q}}-\frac{\partial L}{\partial q}=0$$&lt;/p&gt;
+&lt;p&gt;$L\left ( q, \dot{q}, t \right )$是拉格朗日量，&lt;/p&gt;
+&lt;p&gt;$q=\left (q&lt;em&gt;{1}, q&lt;/em&gt;{2}, q&lt;em&gt;{3},… , q&lt;/em&gt;{N} \right )$是广义坐标，是时间t的函数，&lt;/p&gt;
+&lt;p&gt;\(\dot{q}=\left (\dot{q&lt;em&gt;{1}}, \dot{q&lt;/em&gt;{2}}, \dot{q&lt;em&gt;{3}},… , \dot{q&lt;/em&gt;{N}} \right )\)是广义速度。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;记录一些数学公式，准备用mathjax来画&quot;&gt;记录一些数学公式，准备用mathjax来画&lt;/h1&gt;&lt;h4 id=&quot;拉格朗日方程（Lagrange_equation）&quot;&gt;拉格朗日方程（Lagrange equation）&lt;/h4&gt;&lt;p&gt;$$\frac{d}{dt}\
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+    
+      <category term="Mathjax" scheme="http://fredchenjialin.github.io/tags/Mathjax/"/>
+    
+  </entry>
   
   <entry>
     <title>default-Software</title>
@@ -796,38 +822,6 @@ prod(A) product of A
       <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
     
       <category term="Nexus5X" scheme="http://fredchenjialin.github.io/tags/Nexus5X/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>nomoney</title>
-    <link href="http://fredchenjialin.github.io/2015/09/30/nomoney/"/>
-    <id>http://fredchenjialin.github.io/2015/09/30/nomoney/</id>
-    <published>2015-09-30T06:03:28.000Z</published>
-    <updated>2015-09-30T07:00:23.898Z</updated>
-    
-    <content type="html">&lt;ul&gt;
-&lt;li&gt;有关符号表 - 已跳&lt;/li&gt;
-&lt;li&gt;感觉这个可以放弃了。。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;Semaphores_信号量&quot;&gt;Semaphores 信号量&lt;/h3&gt;&lt;h3 id=&quot;Locks_锁&quot;&gt;Locks 锁&lt;/h3&gt;&lt;h3 id=&quot;Monitors_信号量_+_锁_+_状态&quot;&gt;Monitors 信号量 + 锁 + 状态&lt;/h3&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;ul&gt;
-&lt;li&gt;有关符号表 - 已跳&lt;/li&gt;
-&lt;li&gt;感觉这个可以放弃了。。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;Semaphores_信号量&quot;&gt;Semaphores 信号量&lt;/h3&gt;&lt;h3 id=&quot;Locks_锁&quot;&gt;Locks 锁&lt;/h3&gt;&lt;h3 id=&quot;Mon
-    
-    </summary>
-    
-      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
-    
-    
-      <category term="编译原理" scheme="http://fredchenjialin.github.io/tags/%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86/"/>
     
   </entry>
   
