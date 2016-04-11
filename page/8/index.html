@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="中文简体"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> MPZ Diary</title><meta name="description" content="使用Hexo搭建的一个Diary。"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon-32x32.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><div id="mask" style="display: none;"><img id="mask-image" src="#" style=" "></div><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon-96x96.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link active">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/fredchenjialin" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/fredchenjialin" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><ul class="home post-list"><li class="post-list-item"><article class="post-block"><h1 class="post-title"><a href="/2015/09/25/2015年9月25日周报2/" class="post-title-link">2015年9月25日周报2</a></h1><div class="post-time">Sep 25, 2015</div><div class="post-content-excerpt"><h3 id="本周：">本周：</h3><ul>
+<li>关于保研的事情算是告一段落了，面试完的那天下午看书心都是落下去的。</li>
+<li>附录还在看，感觉后面的说明书的意味更浓</li>
+<li>看了编译原理，感觉不错。看到谈谈Parser还有怎样看王垠的《谈谈Parser》？，感觉厉害的人的想法很多呀！</li>
+</ul>
+<h3 id="下周：">下周：</h3><ul>
+<li>感觉还是看编译原理更乐意，所以还是看编译原理，不过如果看烦了，我就还可以看操作系统和论文o(<em>￣▽￣</em>)ブ。</li>
+</ul>
+<ol>
+<li>每天吃完饭后悔带上耳机面无表情的看一会《The Lord of the Rings》，老吴挺喜欢看的一部巨制，不过我get不到。</li>
+<li>《小森林》看完了（201509251844），非常喜欢，一部关于选择和面对的电影，每一部的中间季节的专场都会有一个主角骑自行车回家的长镜头，从摄像机的跟随到岔路口的镜头自然拉远，每一次看都想流泪，主角做出了她的选择，有一种隐隐的宿命论，但是都是想要好好的活下去。</li>
+<li>这星期还发生了一件让我匪夷所思的事情，我只是单纯的想着，但还是忍不住察觉出了一些不对劲的滋味，这个世界就是这样，我无数次对自己说：有因必有果！Damn it</li>
+</ol>
+</div><a href="/2015/09/25/2015年9月25日周报2/" class="read-more">...阅读全文</a></article></li><li class="post-list-item"><article class="post-block"><h1 class="post-title"><a href="/2015/09/24/yi/" class="post-title-link">yi</a></h1><div class="post-time">Sep 24, 2015</div><div class="post-content-excerpt"><p>09 蘇える巨神兵</p>
+<h3 id="简单的一遍编译器">简单的一遍编译器</h3><ul>
+<li>程序设计语言的定义<ul>
+<li>语法 上下文无关/BNF范式    </li>
+<li>语义 非形式化方法/启发性实例</li>
+</ul>
+</li>
+</ul>
+<h4 id="上下文无关">上下文无关</h4><ul>
+<li>stmt -&gt; if(expr) stmt else stmt<ul>
+<li>终结符集合</li>
+<li>非终结符集合</li>
+<li>产生式集合</li>
+<li>特殊的终结符 - 开始符号</li>
+</ul>
+</li>
+</ul>
+<h4 id="Exercise2-2">Exercise2.2</h4><h5 id="2-2-1">2.2.1</h5><p>S -&gt; SS+|SS*|a</p>
+<ol>
+<li>a是S，所以aa+是一个S，所以aa+a*是一个S </li>
+<li><img src="http://7nj2kj.com1.z0.glb.clouddn.com/e2.2.1.png" alt=""></li>
+<li>仅仅带有加减的后缀表达式</li>
+</ol>
+<h5 id="2-2-2">2.2.2</h5><ul>
+<li>a) S -&gt; 0S1 | 01<ul>
+<li>前面n个0，后面n个1，n&gt;=1</li>
+</ul>
+</li>
+<li>b) S -&gt; +SS | -SS | a<ul>
+<li>仅仅带有加减的前缀表达式</li>
+</ul>
+</li>
+<li>c) S -&gt; S(S)S| null<ul>
+<li>匹配任意范围和递归层数的括号</li>
+</ul>
+</li>
+<li>d) S -&gt; aSbS | bSaS | null<ul>
+<li>拥有相同数量的a和b</li>
+</ul>
+</li>
+<li>e) S -&gt; a | S+S | SS | S* |(S)<ul>
+<li>？</li>
+</ul>
+</li>
+</ul>
+<h5 id="2-2-4">2.2.4</h5><ul>
+<li>1.Arithmetic expressions in postfix notation.<ul>
+<li>E -&gt; E E operation | num</li>
+</ul>
+</li>
+<li>2.Left-associative lists of identifiers separated by commas.<ul>
+<li>list -&gt; list , id | id</li>
+</ul>
+</li>
+<li>3.Right-associative lists of identifiers separated by commas.<ul>
+<li>list -&gt; id , list | id</li>
+</ul>
+</li>
+<li>4.Arithmetic expressions of integers and identifiers with the four binary operators +, -, *, /.<ul>
+<li>d -&gt; d+g | d-g | g</li>
+<li>g -&gt; base*g | base/g | base</li>
+<li>base -&gt; id | num | *</li>
+</ul>
+</li>
+<li>5.Add unary plus and minus to the arithmetic operators of 4.<ul>
+<li>d -&gt; d+g | d-g | g</li>
+<li>g -&gt; g*tmp| g/tmp | tmp</li>
+<li>tmp -&gt; +base | -base | base</li>
+<li>base -&gt; id | num | *</li>
+</ul>
+</li>
+</ul>
+<h5 id="2-2-5">2.2.5</h5><ul>
+<li>num -&gt; 11 | 1001 | num0 | num num<ul>
+<li>证明以此构成的二进制数是可以被3整除的</li>
+</ul>
+</li>
+</ul>
+<p>sum<br>= Σ<sub>n</sub> (2<sup>1</sup> + 2<sup>0</sup>) * 2<sup>n</sup> + Σ<sub>m</sub> (2<sup>3</sup> + 2<sup>2</sup>) * 2<sup>m</sup><br>= Σ<sub>n</sub> 3 * 2 <sup>n</sup> + Σ<sub>m</sub> 9 * 2<sup>m</sup></p>
+</div><a href="/2015/09/24/yi/" class="read-more">...阅读全文</a></article></li><li class="post-list-item"><article class="post-block"><h1 class="post-title"><a href="/2015/09/23/yi/" class="post-title-link">yi</a></h1><div class="post-time">Sep 23, 2015</div><div class="post-content-excerpt"><h3 id="编译原理">编译原理</h3><ul>
+<li>词法分析 - 分词</li>
+<li>层次分析 &amp; 语法分析 要求递归</li>
+<li>语义分析 - 检测，收集，类型检查</li>
+</ul>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/statement_Complier.jpg" alt="编译器的各个阶段"></p>
+<ul>
+<li>符号表管理</li>
+<li>发现错误继续运行 - 发现所有的错误</li>
+<li>代码生成 - 变量的寄存器分配</li>
+</ul>
+<h4 id="预处理器">预处理器</h4><ul>
+<li>宏处理</li>
+<li>文件包含</li>
+<li>“理性”预处理器</li>
+<li>语言扩充</li>
+</ul>
+</div><a href="/2015/09/23/yi/" class="read-more">...阅读全文</a></article></li></ul></section><footer><div class="paginator"><a href="/page/7/" class="prev">上一页</a><a href="/page/9/" class="next">下一页</a></div><div class="copyright"><p>© 2015 - 2016 <a href="http://fredchenjialin.github.io">Multipluso</a>, unless otherwise noted.</p></div></footer></div><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>
