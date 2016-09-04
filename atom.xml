@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fredchenjialin.github.io/"/>
-  <updated>2016-09-04T03:06:01.056Z</updated>
+  <updated>2016-09-04T04:18:18.446Z</updated>
   <id>http://fredchenjialin.github.io/</id>
   
   <author>
@@ -16,73 +16,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>testtest</title>
-    <link href="http://fredchenjialin.github.io/2016/09/04/testtest/"/>
-    <id>http://fredchenjialin.github.io/2016/09/04/testtest/</id>
-    <published>2016-09-04T03:04:56.000Z</published>
-    <updated>2016-09-04T03:06:01.056Z</updated>
+    <title>ubuntu下配置OpenAI</title>
+    <link href="http://fredchenjialin.github.io/2016/09/04/ubuntu%E4%B8%8B%E9%85%8D%E7%BD%AEOpenAI/"/>
+    <id>http://fredchenjialin.github.io/2016/09/04/ubuntu下配置OpenAI/</id>
+    <published>2016-09-04T03:20:02.000Z</published>
+    <updated>2016-09-04T04:18:18.446Z</updated>
     
-    <content type="html">&lt;p&gt;lallalal&lt;/p&gt;
+    <content type="html">&lt;p&gt;研究生开学了，我也再次回到了写生活日记的时期，我觉得以前把现在这种叫做技术日记真是让自己觉得不好意思，&lt;br&gt;且当做生活日记吧。&lt;/p&gt;
+&lt;p&gt;开了学也没干啥，配了个环境OpenAI，关键在于在ubuntu下安装numpy和scipy这两个科学计算库。&lt;/p&gt;
+&lt;p&gt;numpy还好，scipy还需要两个线性代数的库，十分麻烦。&lt;/p&gt;
+&lt;p&gt;因为OpenAI需要指定0.17.1的版本，所以需要下载源码安装。&lt;/p&gt;
+&lt;p&gt;OpenAI主站：&lt;a href=&quot;https://gym.openai.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://gym.openai.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安装scipy：&lt;a href=&quot;http://stackoverflow.com/questions/7496547/does-python-scipy-need-blas&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://stackoverflow.com/questions/7496547/does-python-scipy-need-blas&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;scipy的github：&lt;a href=&quot;https://github.com/scipy/scipy/blob/master/INSTALL.rst.txt#linux&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/scipy/scipy/blob/master/INSTALL.rst.txt#linux&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;md，锐捷流量用的太快。。。&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;lallalal&lt;/p&gt;
-
+      &lt;p&gt;研究生开学了，我也再次回到了写生活日记的时期，我觉得以前把现在这种叫做技术日记真是让自己觉得不好意思，&lt;br&gt;且当做生活日记吧。&lt;/p&gt;
+&lt;p&gt;开了学也没干啥，配了个环境OpenAI，关键在于在ubuntu下安装numpy和scipy这两个科学计算库。&lt;/p&gt;
+&lt;p&gt;num
     
     </summary>
     
       <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
     
     
-      <category term="对自己说" scheme="http://fredchenjialin.github.io/tags/%E5%AF%B9%E8%87%AA%E5%B7%B1%E8%AF%B4/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://fredchenjialin.github.io/2016/09/04/hello-world/"/>
-    <id>http://fredchenjialin.github.io/2016/09/04/hello-world/</id>
-    <published>2016-09-04T02:52:26.430Z</published>
-    <updated>2015-09-08T09:21:08.572Z</updated>
-    
-    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;http://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;http://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;http://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick_Start&quot;&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create_a_new_post&quot;&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run_server_hello&quot;&gt;Run server hello&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Generate_static_files&quot;&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Deploy_to_remote_sites&quot;&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;http://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;http://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;http://hexo.io
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Brain</title>
-    <link href="http://fredchenjialin.github.io/2016/06/03/Brain/"/>
-    <id>http://fredchenjialin.github.io/2016/06/03/Brain/</id>
-    <published>2016-06-03T08:08:44.000Z</published>
-    <updated>2016-06-03T08:41:34.137Z</updated>
-    
-    <content type="html"></content>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
-    
-    
-      <category term="对自己说" scheme="http://fredchenjialin.github.io/tags/%E5%AF%B9%E8%87%AA%E5%B7%B1%E8%AF%B4/"/>
+      <category term="OpenAI" scheme="http://fredchenjialin.github.io/tags/OpenAI/"/>
     
   </entry>
   
@@ -776,6 +737,113 @@ prod(A) product of A
     <summary type="html">
     
       &lt;h4 id=&quot;本周开始讲了多变量的参数学习。&quot;&gt;本周开始讲了多变量的参数学习。&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;不过我认为，这个东西也就和单变量一个样子。都是对cost &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+      <category term="机器学习" scheme="http://fredchenjialin.github.io/categories/Diary/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hi</title>
+    <link href="http://fredchenjialin.github.io/2015/10/07/hi/"/>
+    <id>http://fredchenjialin.github.io/2015/10/07/hi/</id>
+    <published>2015-10-07T14:13:15.000Z</published>
+    <updated>2015-10-07T14:22:15.015Z</updated>
+    
+    <content type="html">&lt;p&gt;今天看了会线性代数，感觉自己还可以看的下去。&lt;/p&gt;
+&lt;p&gt;对比我的课本和mit的线性代数的课程内容，我发现了一些顺序上面的不同。&lt;/p&gt;
+&lt;p&gt;mit的课程是先说方程，说消元，说矩阵，我的大学课本是先说行列式，说秩，说运算&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天看了会线性代数，感觉自己还可以看的下去。&lt;/p&gt;
+&lt;p&gt;对比我的课本和mit的线性代数的课程内容，我发现了一些顺序上面的不同。&lt;/p&gt;
+&lt;p&gt;mit的课程是先说方程，说消元，说矩阵，我的大学课本是先说行列式，说秩，说运算&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+    
+      <category term="线性代数" scheme="http://fredchenjialin.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>机器学习1</title>
+    <link href="http://fredchenjialin.github.io/2015/10/05/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A01/"/>
+    <id>http://fredchenjialin.github.io/2015/10/05/机器学习1/</id>
+    <published>2015-10-05T09:14:27.000Z</published>
+    <updated>2015-10-12T07:55:05.201Z</updated>
+    
+    <content type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Introduction&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;What is Machine Learning?&lt;/p&gt;
+&lt;p&gt;Two definitions of Machine Learning are offered.&lt;br&gt;Arthur Samuel described it as:&lt;br&gt;“the field of study that gives computers the ability to learn without being explicitly programmed.” This is an older, informal definition.&lt;br&gt;Tom Mitchell provides a more modern definition:&lt;br&gt;“A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.”&lt;/p&gt;
+&lt;p&gt;Example: playing checkers.&lt;br&gt;E = the experience of playing many games of checkers(玩的经验)&lt;br&gt;T = the task of playing checkers.(要做的事情)&lt;br&gt;P = the probability that the program will win the next game.(事情做成的机率)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Supervised Learning&lt;/p&gt;
+&lt;p&gt;In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output.&lt;/p&gt;
+&lt;p&gt;Supervised learning problems are categorized into “regression” and “classification” problems. In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a classification problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;p&gt;Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a continuous output, so this is a regression problem.&lt;/p&gt;
+&lt;p&gt;We could turn this example into a classification problem by instead making our output about whether the house “sells for more or less than the asking price.” Here we are classifying the houses based on price into two discrete categories.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Unsupervised Learning&lt;/p&gt;
+&lt;p&gt;Unsupervised learning, on the other hand, allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don’t necessarily know the effect of the variables.&lt;/p&gt;
+&lt;p&gt;We can derive this structure by clustering the data based on relationships among the variables in the data.&lt;/p&gt;
+&lt;p&gt;With unsupervised learning there is no feedback based on the prediction results, i.e., there is no teacher to correct you. It’s not just about clustering. For example, associative memory is unsupervised learning.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;p&gt;Clustering: Take a collection of 1000 essays written on the US Economy, and find a way to automatically group these essays into a small number that are somehow similar or related by different variables, such as word frequency, sentence length, page count, and so on.&lt;/p&gt;
+&lt;p&gt;Associative: Suppose a doctor over years of experience forms associations in his mind between patient characteristics and illnesses that they have. If a new patient shows up then based on this patient’s characteristics such as symptoms, family medical history, physical attributes, mental outlook, etc the doctor associates possible illness or illnesses based on what the doctor has seen before with similar patients. This is not the same as rule based reasoning as in expert systems. In this case we would like to estimate a mapping function from patient characteristics into illnesses.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;一元线性回归&lt;/p&gt;
+&lt;h3 id=&quot;最为主要的一些公式&quot;&gt;最为主要的一些公式&lt;/h3&gt;&lt;h5 id=&quot;一元线性函数&quot;&gt;一元线性函数&lt;/h5&gt;&lt;p&gt; &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/LinearOneVariable.png&quot; alt=&quot;LinearOneVariable&quot;&gt;&lt;/p&gt;
+&lt;h5 id=&quot;花费函数，也就是用来逼近我们需要的俩个参数的函数&quot;&gt;花费函数，也就是用来逼近我们需要的俩个参数的函数&lt;/h5&gt;&lt;p&gt; &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/CostFunction.png&quot; alt=&quot;CostFunction&quot;&gt;&lt;/p&gt;
+&lt;h5 id=&quot;目的函数，所以对他求导&quot;&gt;目的函数，所以对他求导&lt;/h5&gt;&lt;p&gt; &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/GoalFunction.png&quot; alt=&quot;GoalFunction&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;梯度下降法求解目的函数&lt;/p&gt;
+&lt;h3 id=&quot;从一个猜测的初始值出发，不断的减小目的函数&quot;&gt;从一个猜测的初始值出发，不断的减小目的函数&lt;/h3&gt;&lt;h5 id=&quot;梯度下降算法&quot;&gt;梯度下降算法&lt;/h5&gt;&lt;p&gt; &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/gradient_descent.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h5 id=&quot;具体实现&quot;&gt;具体实现&lt;/h5&gt;&lt;p&gt; &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/Gredientdescentalgorithm.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;第一周顺利结束&lt;/p&gt;
+&lt;h3 id=&quot;感觉还不错，因为原来是看过的，但是还是有一点需要注意的。&quot;&gt;感觉还不错，因为原来是看过的，但是还是有一点需要注意的。&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;梯度下降参数α这个值因为考虑到下降速度的问题还是需要变化的，但是会有不够和过了的问题。&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;还有如下的一些问题：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex1.png&quot; alt=&quot;答案对&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex1_1.png&quot; alt=&quot;答案错&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex2.png&quot; alt=&quot;答案错&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex2_1.png&quot; alt=&quot;答案错&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;补&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;可以找到一个完全匹配的函数。&lt;/li&gt;
+&lt;li&gt;即使找到一个完全匹配的函数，但是不可以说是100%预测成功。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Introduction&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;What is Machine Learning?&lt;/p&gt;
+&lt;p&gt;Two definitions of Machine Learning are offered.&lt;br&gt;Arthur Samuel 
     
     </summary>
     
