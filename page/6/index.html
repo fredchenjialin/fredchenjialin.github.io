@@ -1,62 +1,359 @@
-<!DOCTYPE html><html lang="中文简体"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> MPZ Diary</title><meta name="description" content="使用Hexo搭建的一个Diary。"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon-32x32.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" type="text/css"><script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></head><body><div id="mask" style="display: none;"><img id="mask-image" src="#" style=" "></div><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon-96x96.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link active">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/fredchenjialin" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/fredchenjialin" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><ul class="home post-list"><li class="post-list-item"><article class="post-block"><h1 class="post-title"><a href="/2015/10/21/机器学习3/" class="post-title-link">机器学习3</a></h1><div class="post-time">Oct 21, 2015</div><div class="post-content-excerpt"><h2 id="Logistic_Regression">Logistic Regression</h2><h4 id="特征方程">特征方程</h4><p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/1.png" alt="LinearOneVariable"></p>
-<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/CodeCogsEqn.gif" alt="CodeCogsEqn"></p>
-<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/logisticCostF.png" alt="logisticCostF"></p>
-<h4 id="Cost_Function">Cost Function</h4><p>若是延用原来的Cost Function，在梯度下降的时候会局限于很多的局部最优解，对全局最优解的寻找产生影响。</p>
-<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/2.png" alt="LinearOneVariable"></p>
-<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/3.png" alt="LinearOneVariable"></p>
-<h4 id="求导吧">求导吧</h4><p>首先，用个小技巧把两个情况合二为一。</p>
-<p>得到如下：<br><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/4.png" alt="LinearOneVariable"></p>
-<h4 id="正规化">正规化</h4><ul>
-<li>逻辑回归正规化公式<br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/regularizeRL.png" alt="regularizeRL"></li>
-<li>梯度下降正规化公式<br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/regularizeGR.png" alt="regularizeGR"></li>
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="google-site-verification" content="" />
+  
+  <title>page</title>
+  <meta name="author" content="Multipluso">
+   <meta name="description" content="使用Hexo搭建的一个Diary。">
+  
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:site_name" content="MPZ Diary"/>
+ <meta property="og:image" content="undefined"/>
+  
+  <link href="/apple-touch-icon-precomposed.png" sizes="180x180" rel="apple-touch-icon-precomposed">
+  <link rel="alternate" href="/atom.xml" title="MPZ Diary" type="application/atom+xml">
+  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/m.min.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+
+<body>
+  <div id="main">
+    <div class="behind">
+      <div class="back">
+        <a href="/" class="black-color"><i class="fa fa-times" aria-hidden="true"></i></a>
+      </div>
+      <div class="description">
+        &nbsp;By Github Page
+      </div>
+    </div>
+    <div class="container">
+      <nav class="navigator"><nav class="navbar navbar-default navbar-fixed-top">
+  <div class="nav-container">
+
+
+  
+  <ul class="nav navbar-nav navbar-left">
+    <li class="navbar-header">
+      <a href="/" class="navbar-brand">MPZ</a>
+    </li>
+    <li class="dropdown">
+      <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-tags fa-lg"></i>
+      </span></a>
+      <ul class="dropdown-content">
+
+          
+           <li><a href="/categories/Diary/">Diary</a></li><li><a href="/categories/Diary/hexo设置/">hexo设置</a></li><li><a href="/categories/Diary/机器学习/">机器学习</a></li><li><a href="/categories/Diary/JavaScript/">JavaScript</a></li><li><a href="/categories/Diary/机器人运动学/">机器人运动学</a></li>
+
+      </ul>
+    </li>
+  </ul>
+  
+  <div id="site_search" class="">
+  <input type="text" id="local-search-input" name="q" placeholder="search" class="form-control"/>
+</div>
+<div id="local-search-result"></div>
+
+
+  <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+      <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+      <i class="fa fa-link fa-lg"></i>
+      </a>
+      <ul class="dropdown-content">
+        
+          <li>
+            <a href="/links.html">
+        友情链接
+      </a>
+    </li>
+     
+          <li>
+            <a href="https://github.com/fredchenjialin">
+        Github
+      </a>
+    </li>
+     
+          <li>
+            <a href="http://weibo.com/fredchenjialin">
+        微博
+      </a>
+    </li>
+     
+          <li>
+            <a href="https://www.zhihu.com/people/multipluso">
+        知乎
+      </a>
+    </li>
+     
+          <li>
+            <a href="/rss2.xml">
+        rss
+      </a>
+    </li>
+     
+          <li>
+            <a href="/about">
+        关于我
+      </a>
+    </li>
+     
+    </ul>
+    </li>
+    <li class="archives"><a href="/archives">
+      <i class="fa fa-archive fa-lg"></i>
+    </a></li>
+  </ul>
+  </div>
+</nav></nav>
+<ul class="posts">
+  
+    
+<div>
+<li class="post-item">
+  
+  
+    <h1 class="index-title">
+        <a href="/2015/10/31/2015年10月30日周报暨计划调整/">
+            2015年10月30日周报暨计划调整
+        </a>
+    </h1>
+  
+
+
+  <div class="excerpt">
+  
+    关于最近的一些想法，一直以来都想做一个自己撸的网站，前端加上后台。在反复浅尝辄止了多个框架，语言后，我发现我离最初的想法差的有点远了。
+最初我就是想玩玩效果（注：html5），整一整在网站上看着舒服而又高大上的网页（注：css），如果还有各
+  
+  <a href="/2015/10/31/2015年10月30日周报暨计划调整/">
+    更多
+  </a>
+  </div>
+  <div class="index-meta">
+    
+<time datetime="2015-10-31T08:19:07.000Z" itemprop="datePublished">
+  <i class="fa fa-calendar"></i>&nbsp;
+  10-31
+</time>
+
+
+
+    
+    &nbsp;
+    <i class="fa fa-tag"></i>&nbsp;
+    <a href="/categories/Diary/">Diary</a>
+
+
+
+
+    
+    &nbsp;
+    <i class="fa fa-tag"></i>&nbsp;
+    <a href="/tags/周报/">周报</a>·<a href="/tags/计划/">计划</a>
+
+
+  </div>
+</li>
+</div>
+<hr>
+
+
+ 
+
+  
+    
+<div>
+<li class="post-item">
+  
+  
+    <h1 class="index-title">
+        <a href="/2015/10/21/机器学习3/">
+            机器学习3
+        </a>
+    </h1>
+  
+
+
+  <div class="excerpt">
+  
+    Logistic Regression特征方程
+
+
+Cost Function若是延用原来的Cost Function，在梯度下降的时候会局限于很多的局部最优解，对全局最优解的寻找产生影响。
+
+
+求导吧首先，用个小技巧把两个情况合二为一。
+
+  
+  <a href="/2015/10/21/机器学习3/">
+    更多
+  </a>
+  </div>
+  <div class="index-meta">
+    
+<time datetime="2015-10-21T09:44:53.000Z" itemprop="datePublished">
+  <i class="fa fa-calendar"></i>&nbsp;
+  10-21
+</time>
+
+
+
+    
+    &nbsp;
+    <i class="fa fa-tag"></i>&nbsp;
+    <a href="/categories/Diary/">Diary</a>·<a href="/categories/Diary/机器学习/">机器学习</a>
+
+
+
+
+    
+    &nbsp;
+    <i class="fa fa-tag"></i>&nbsp;
+    <a href="/tags/ML/">ML</a>
+
+
+  </div>
+</li>
+</div>
+<hr>
+
+
+ 
+
+  
+    
+<div>
+<li class="post-item">
+  
+  
+    <h1 class="index-title">
+        <a href="/2015/10/15/小记/">
+            小记
+        </a>
+    </h1>
+  
+
+
+  <div class="excerpt">
+  
+    最近研究生的生涯逐渐迈向正轨，然而我自己的生活和心态还基本没有达到我想要达到的状态。先是列一下事项：
+事项---动作---优先级---目标---关键
+
+论文——白天研读——重中之重——看下十篇论文后可以有思想去尝试写论文——看框架，流程，和
+  
+  <a href="/2015/10/15/小记/">
+    更多
+  </a>
+  </div>
+  <div class="index-meta">
+    
+<time datetime="2015-10-15T02:07:16.000Z" itemprop="datePublished">
+  <i class="fa fa-calendar"></i>&nbsp;
+  10-15
+</time>
+
+
+
+    
+    &nbsp;
+    <i class="fa fa-tag"></i>&nbsp;
+    <a href="/categories/Diary/">Diary</a>
+
+
+
+
+    
+    &nbsp;
+    <i class="fa fa-tag"></i>&nbsp;
+    <a href="/tags/计划/">计划</a>
+
+
+  </div>
+</li>
+</div>
+<hr>
+
+
+ 
+
+  
 </ul>
-<h3 id="相关矩阵小技巧">相关矩阵小技巧</h3><p>如果我想要把两个矩阵的对应项相乘，那么是不是只有循环了，但是若是我们考虑一下最终的形式，多数情况下，我们不仅要相乘还有相加，所以不用循环。</p>
-</div><a href="/2015/10/21/机器学习3/" class="read-more">...阅读全文</a></article></li><li class="post-list-item"><article class="post-block"><h1 class="post-title"><a href="/2015/10/15/小记/" class="post-title-link">小记</a></h1><div class="post-time">Oct 15, 2015</div><div class="post-content-excerpt"><h4 id="最近研究生的生涯逐渐迈向正轨，然而我自己的生活和心态还基本没有达到我想要达到的状态。">最近研究生的生涯逐渐迈向正轨，然而我自己的生活和心态还基本没有达到我想要达到的状态。</h4><pre><code><span class="comment">先是列一下事项：</span>
-<span class="comment">事项</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="comment">动作</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="comment">优先级</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="comment">目标</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="comment">关键</span>
-</code></pre><ol>
-<li>论文——白天研读——重中之重——看下十篇论文后可以有思想去尝试写论文——看框架，流程，和论文写什么</li>
-<li>英语六级——白天复习——重要——不低于425分——做真题，练听力</li>
-<li>ML——晚上回宿舍在线观看——必做——12月份拿到证书——坚持</li>
-<li>论文记载网站——平时研究或周末研究——一般——一个输入显示的网页——go语言</li>
-<li>WordPress主题——在平时累了或者周末研究前端——一般—写一个自己用的极简主义的theme——坚持和找威仔讨论</li>
-<li>研究生创新成果展——大概筹划——一般——展出别出岔子——每人做什么事情盯紧就好</li>
-</ol>
-</div><a href="/2015/10/15/小记/" class="read-more">...阅读全文</a></article></li><li class="post-list-item"><article class="post-block"><h1 class="post-title"><a href="/2015/10/12/机器学习2/" class="post-title-link">机器学习2</a></h1><div class="post-time">Oct 12, 2015</div><div class="post-content-excerpt"><h4 id="本周开始讲了多变量的参数学习。">本周开始讲了多变量的参数学习。</h4><pre><code>不过我认为，这个东西也就和单变量一个样子。都是对cost <span class="function"><span class="keyword">function</span></span>取最小值，最后得到趋向于稳定的参数。
-</code></pre><h3 id="特征缩放_Feature_Scaling">特征缩放 Feature Scaling</h3><ol>
-<li>让所有的特征都处于相同的数量等级，有助于加快回归</li>
-<li>mean scaling ：（特征-平均值）/（最大-最小）</li>
-<li>学习速率决定了回归质量</li>
-</ol>
-<h3 id="标准方程">标准方程</h3><ol>
-<li>梯度下降和标准方程的比较（在特征规模上的差别）</li>
-</ol>
-<h4 id="一些题目">一些题目</h4><h4 id="week2-1">week2-1</h4><h4 id="week2-2">week2-2</h4><pre><code><span class="number">2</span>^<span class="number">6</span>=<span class="number">64</span>
-<span class="number">1</span>~=<span class="number">2</span> <span class="comment">%不等于</span>
-<span class="number">1</span>&amp;&amp;<span class="number">0</span> <span class="comment">%与</span>
-xor(<span class="number">1</span>,<span class="number">0</span>) <span class="comment">%异或</span>
-PS1(<span class="string">'&gt;&gt; '</span>); <span class="comment">%新起一行</span>
-<span class="built_in">pi</span> <span class="comment">%圆周率</span>
-<span class="built_in">disp</span>() <span class="comment">%显示</span>
-分号 换行
-<span class="built_in">ones</span>(x,y) <span class="comment">%x行y列 全1</span>
-<span class="built_in">rand</span>(x,y) <span class="comment">%      任意</span>
-hist <span class="comment">%线图</span>
-<span class="built_in">eye</span> <span class="comment">%单位矩阵</span>
-<span class="built_in">size</span>(矩阵,<span class="number">1</span>或者<span class="number">2</span>) <span class="comment">%1是 row 2 is col</span>
-<span class="built_in">size</span>(矩阵) <span class="comment">%vector with 2 var</span>
-<span class="built_in">length</span>(matrix) <span class="comment">%longest length</span>
-pwd <span class="comment">%working path</span>
-load filename Equal load(<span class="string">'filename'</span>)
-who show the all var
-whos show details of who
-save filename var encode
-: mean every element along that row/col
-<span class="matrix">[A B]</span> row combine
-<span class="matrix">[A ; B]</span> col combine
-A .^ <span class="number">2</span> each element of A ^<span class="number">2</span>
-sum(A) sum of A
-prod(A) product of A
-<span class="built_in">floor</span>(A) 
-<span class="built_in">ceil</span>(A) 
-</code></pre><p>PS:特征缩放那一题是帮助了更快迭代回归，而不是使每一步都更小花费</p>
-</div><a href="/2015/10/12/机器学习2/" class="read-more">...阅读全文</a></article></li></ul></section><footer><div class="paginator"><a href="/page/5/" class="prev">上一页</a><a href="/page/7/" class="next">下一页</a></div><div class="copyright"><p>© 2015 - 2016 <a href="http://fredchenjialin.github.io">Multipluso</a>, unless otherwise noted.</p></div></footer></div></body></html>
+<ul class="pager">
+    <a class="extend prev" rel="prev" href="/page/5/">Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/7/">Next</a>
+</ul>
+
+
+    </div>
+  </div>
+  <footer class="page-footer"><div class="clearfix">
+</div>
+<div class="right-foot container">
+    <div class="firstrow">
+        <a href="#top" >
+        <i class="fa fa-arrow-right"></i>
+        </a>
+        © Multipluso 2015-2016
+    </div>
+    <div class="secondrow">
+        <a href="https://github.com/gaoryrt/hexo-theme-pln">
+        Theme Pln
+        </a>
+    </div>
+</div>
+<div class="clearfix">
+</div>
+</footer>
+  <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+
+// comments below to disable loading animation
+function revealOnScroll() {
+  var scrolled = $(window).scrollTop();
+  $(".excerpt, .index-title, .index-meta, p").each(function() {
+    var current = $(this),
+      height = $(window).outerHeight(),
+      offsetTop = current.offset().top;
+    (scrolled + height + 50 > offsetTop) ? current.addClass("animation"):'';
+  });
+}
+$(window).on("scroll", revealOnScroll);
+$(document).ready(revealOnScroll)
+
+// disqus scripts
+
+
+// dropdown scripts
+$(".dropdown").click(function(event) {
+  var current = $(this);
+  event.stopPropagation();
+  $(current).children(".dropdown-content")[($(current).children(".dropdown-content").hasClass("open"))?'removeClass':'addClass']("open")
+});
+$(document).click(function(){
+    $(".dropdown-content").removeClass("open");
+})
+
+// back to top scripts
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, 500);
+  return false;
+});
+
+
+var path = "/search.xml";
+searchFunc(path, 'local-search-input', 'local-search-result');
+
+</script>
+
+</body>
+</html>
