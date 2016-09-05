@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[东搞西搞是没有出路的]]></title>
+      <url>http://fredchenjialin.github.io/2016/09/04/%E4%B8%9C%E6%90%9E%E8%A5%BF%E6%90%9E%E6%98%AF%E6%B2%A1%E6%9C%89%E5%87%BA%E8%B7%AF%E7%9A%84/</url>
+      <content type="html"><![CDATA[<p>最近开了学后一直在实验室待着，但是进展却一直没有头绪，总结一下就是要做事情的话，<br>还是需要专注和专心。我最近又在东搞西搞了，看了几篇用RL避障的论文，又看了下RL里面Q的细节（这个<br>细节还是有很多东西搞不清楚的），看了下为什么DQN为什么用的多，而且火。就看了这些，除此之外的时间<br>都用来看视频，睡觉和刷网页了。</p>
+<p>需要静静心，把我的研究生第一个阶段的任务给完成了，在此，我觉得搞一个像是那种进度表一样的东西会比较有趣，<br>也能够记录下研究生期间我都干了什么。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[ubuntu下配置OpenAI]]></title>
+      <url>http://fredchenjialin.github.io/2016/09/04/ubuntu%E4%B8%8B%E9%85%8D%E7%BD%AEOpenAI/</url>
+      <content type="html"><![CDATA[<p>研究生开学了，我也再次回到了写生活日记的时期，我觉得以前把现在这种叫做技术日记真是让自己觉得不好意思，<br>且当做生活日记吧。</p>
+<p>开了学也没干啥，配了个环境OpenAI，关键在于在ubuntu下安装numpy和scipy这两个科学计算库。</p>
+<p>numpy还好，scipy还需要两个线性代数的库，十分麻烦。</p>
+<p>因为OpenAI需要指定0.17.1的版本，所以需要下载源码安装。</p>
+<p>OpenAI主站：<a href="https://gym.openai.com" target="_blank" rel="external">https://gym.openai.com</a></p>
+<p>安装scipy：<a href="http://stackoverflow.com/questions/7496547/does-python-scipy-need-blas" target="_blank" rel="external">http://stackoverflow.com/questions/7496547/does-python-scipy-need-blas</a></p>
+<p>scipy的github：<a href="https://github.com/scipy/scipy/blob/master/INSTALL.rst.txt#linux" target="_blank" rel="external">https://github.com/scipy/scipy/blob/master/INSTALL.rst.txt#linux</a></p>
+<p>md，锐捷流量用的太快。。。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[对自己说]]></title>
+      <url>http://fredchenjialin.github.io/2016/04/16/%E5%AF%B9%E8%87%AA%E5%B7%B1%E8%AF%B4/</url>
+      <content type="html"><![CDATA[<h1 id="Question_set">Question set</h1><h3 id="Q1:学长在大学期间有哪些成就（成绩，竞赛等等）？_//人物简介">Q1:学长在大学期间有哪些成就（成绩，竞赛等等）？  //人物简介</h3><h3 id="A：">A：</h3><p><em>
+</em><br><em>
+</em></p>
+<h3 id="Q2:对于期末考试学长是怎么看待的？一般是如何备考的？">Q2:对于期末考试学长是怎么看待的？一般是如何备考的？</h3><h3 id="A：-1">A：</h3><ul>
+<li>期末考试怎么看其实是这门课怎么看的问题？</li>
+<li><p>相当于课程分类，按重要程度：</p>
+<ol>
+<li>数学课+专业基础课（这些课的学分通常很高）</li>
+<li><ul>
+<li>上面一类课的进阶（通常就是难度加强版，不过这一类课软件工程专业几乎没有，所以就把面向对象等比较偏方向的课算在里面吧）</li>
+<li>实验课（实验课因为在我们学校，或者说是国内比较水，所以放在第二等，对比国外cs的top高校，基本就是基础加上实验的教学，实验就是万分重要了）</li>
+<li>英语（这个是看不见的重要，但是对于要出国的同学，这个是最最最重要的）</li>
+</ul>
+</li>
+<li>凑学分的课</li>
+<li>不构成学分的课</li>
+</ol>
+</li>
+<li><p>定义 </p>
+<pre><code>突击：在周围进入期末备战期间才开始正规的看书刷题的行为。（并不严谨，不一而论）
+</code></pre></li>
+<li><p>针对1和2中的进阶课程，例如几门数学课，专业课等</p>
+<pre><code>如果不是突击型的学霸，就要在平时好好上课，看书，然后刷题。
+</code></pre><ul>
+<li>本人只要没好好的听课，这门课的分数肯定80以下。（例如，高数2，线代，组成原理，汇编等）</li>
+<li>经过我的观察，突击型学霸可以在刷题时获得洞察buff，即什么重点，难点，易考点了如指掌</li>
+<li>不过只有成功的考出高分才是突击型学霸，这里面包括实力，智力，运气等各种因素很复杂</li>
+<li>最后，好好听课，做好笔记，写作业，答疑</li>
+</ul>
+</li>
+<li><p>针对2中实验课</p>
+<ul>
+<li>好好写代码，好好完成自己的那个部分，就算是抄，也要手动打，别复制。。。</li>
+</ul>
+</li>
+<li><p>针对2中英语</p>
+<ul>
+<li>很重要，我也学不好，没有任何经验，无力。六级431。。。</li>
+</ul>
+</li>
+<li><p>针对3</p>
+<ul>
+<li>有些课是你即使认真听了，到了期末和大家一起背题，分数和只背了题的也差不多，但不一定是高分</li>
+<li>确实有些人可以考出高分，我不能，我也不知道窍门，可能是因为没认真听课</li>
+<li>但是凑学分的课有些学分也是蛮高的</li>
+<li>这些课很神奇，你的努力会有收获，但不一定是从分数上，例如形势与政策</li>
+</ul>
+</li>
+<li><p>针对4</p>
+<ul>
+<li>例如体育课，没什么好说的</li>
+<li>我认为我上的篮球课很好，很有收获，比很多有学分的课都有收获，关键是老师好</li>
+</ul>
+</li>
+<li><p>最后，为了分数！！！</p>
+<ul>
+<li>如果是为了分数，你会发现有一些可以让你迅速拉开距离的东西，像是英语考高分</li>
+<li>。。。。。。</li>
+</ul>
+</li>
+<li><p>如何备考？</p>
+<ul>
+<li>从以上分类的态度就能看出来了！！！</li>
+</ul>
+</li>
+</ul>
+<h3 id="Q3：学长成绩优异，能否和学弟学妹们分享分享学习心得？">Q3：学长成绩优异，能否和学弟学妹们分享分享学习心得？</h3><h3 id="A：-2">A：</h3><h4 id="成绩不优异。心得就是学习认真点，对分数要有追求，但不要本末倒置">成绩不优异。心得就是学习认真点，对分数要有追求，但不要本末倒置</h4><h3 id="Q4：学长能否就自己的学习方向，和后辈们谈谈该方向的职业和就业前景？">Q4：学长能否就自己的学习方向，和后辈们谈谈该方向的职业和就业前景？</h3><h3 id="A：-3">A：</h3><ul>
+<li>本专业的俗称是码农（我对于这个词没有任何的色彩和过分解读），找工作和本科薪资在各个专业里面算是比较靠前的</li>
+<li>算是『服务』行业，是服务于各个行业的行业。说的夸张点，和数学类似，可以发现学数学的可以转到任何专业都不怂，而学计算机的是各个行业都需要，共性是金字塔一样的结构，顶尖的只有一小撮</li>
+<li>关于就业，很广泛，说不好，有兴趣的可以关注软件行业的『青春饭』或常说的互联网泡沫等问题。</li>
+</ul>
+<h3 id="Q5:请问学长在实习中如何处理实际问题和所学知识理论的差异？实习有需要注意哪些问题？">Q5:请问学长在实习中如何处理实际问题和所学知识理论的差异？实习有需要注意哪些问题？</h3><h3 id="A：-4">A：</h3><ul>
+<li>我们学的东西在实习的时候发现没有用的原因我猜测为以下几点<ul>
+<li>学的不深入或者说没有学到如何进行深入的学习</li>
+<li>本来就不是一个领域的东西</li>
+<li>你让一个在学校做了很多安卓开发的去做了windows开发，没有兴趣</li>
+<li>最重要的一点，有些东西确实学校不教，只能在工作中学到。</li>
+</ul>
+</li>
+<li>注意问题：<ul>
+<li>找自己感兴趣的方向</li>
+<li>自己的实力越强，找到的实习越好</li>
+<li>实习就是去找问题的，不要怕遇到问题，要注意区分是什么层面的问题</li>
+</ul>
+</li>
+</ul>
+<h3 id="Q6：学长认为在大学生活中应当如何锻炼自己，去面对以后的社会？对于后辈们有没有什么寄语？">Q6：学长认为在大学生活中应当如何锻炼自己，去面对以后的社会？对于后辈们有没有什么寄语？</h3><h3 id="A：-5">A：</h3><ul>
+<li>我从小向大说：<ul>
+<li>好好学习，努力高分，在中国高校，学分积很重要</li>
+<li>针对本专业，就是好好写代码，实践很重要</li>
+<li>学会如何学习，如何深入学习很重要</li>
+<li>学会与人相处，保持身体健康</li>
+<li>学会做人</li>
+</ul>
+</li>
+</ul>
+<h4 id="没什么寄语，希望看到这个问答的筒子们，你们试着回答一下这些问题，记录下来，对大学生活有帮助！！">没什么寄语，希望看到这个问答的筒子们，你们试着回答一下这些问题，记录下来，对大学生活有帮助！！</h4><h1 id="以上为原文，最后一句也是写给自己！">以上为原文，最后一句也是写给自己！</h1>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[一些数学公式]]></title>
+      <url>http://fredchenjialin.github.io/2016/04/11/%E4%B8%80%E4%BA%9B%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</url>
+      <content type="html"><![CDATA[<h1 id="记录一些数学公式，准备用mathjax来画">记录一些数学公式，准备用mathjax来画</h1><h4 id="拉格朗日方程（Lagrange_equation）">拉格朗日方程（Lagrange equation）</h4><p>$$\frac{d}{dt}\frac{\partial L}{\partial \dot{q}}-\frac{\partial L}{\partial q}=0$$</p>
+<p>$L\left ( q, \dot{q}, t \right )$是拉格朗日量，</p>
+<p>$q=\left (q<em>{1}, q</em>{2}, q<em>{3},… , q</em>{N} \right )$是广义坐标，是时间t的函数，</p>
+<p>\(\dot{q}=\left (\dot{q<em>{1}}, \dot{q</em>{2}}, \dot{q<em>{3}},… , \dot{q</em>{N}} \right )\)是广义速度。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[default-Software]]></title>
+      <url>http://fredchenjialin.github.io/2016/04/11/default-Software/</url>
+      <content type="html"><![CDATA[<h1 id="记录一下一些常用默认软件">记录一下一些常用默认软件</h1><h4 id="论文_Mendeley">论文 Mendeley</h4><h4 id="pdf_SumatraPDF">pdf SumatraPDF</h4><h4 id="编辑器_VScode">编辑器 VScode</h4><h4 id="快速编辑器_Notepad++">快速编辑器 Notepad++</h4><h4 id="字体美化_MacType">字体美化 MacType</h4><h4 id="远程连接_TeamViewer">远程连接 TeamViewer</h4><h4 id="Latex_Texmaker+CTex">Latex Texmaker+CTex</h4><h4 id="本地服务器集成_XAMPP">本地服务器集成 XAMPP</h4><h4 id="视频播放_potplayer">视频播放 potplayer</h4><h4 id="IDE_最著名的那一家Jetbrain">IDE 最著名的那一家Jetbrain</h4>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[mysql小记]]></title>
+      <url>http://fredchenjialin.github.io/2015/12/29/mysql%E5%B0%8F%E8%AE%B0/</url>
+      <content type="html"><![CDATA[<h2 id="随便记录几条mysql命令，我用的是xmapp中的mysql，炒鸡好用">随便记录几条mysql命令，我用的是xmapp中的mysql，炒鸡好用</h2><h3 id="关于登陆">关于登陆</h3><ul>
+<li><p>查询当前用户</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select user();</span><br><span class="line">或者</span><br><span class="line">status;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>一般默认没有密码直接登录</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加密码</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">update mysql.user <span class="built_in">set</span> password=PASSWORD(<span class="string">'123456'</span>) <span class="built_in">where</span> User=<span class="string">'root'</span>;</span><br><span class="line">flush privileges;</span><br><span class="line">// 无法查看当前已登录用户的密码</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>杂记</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld_safe -skip-grant-tables &amp; // 不检查权限启动</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[消失的爱人]]></title>
+      <url>http://fredchenjialin.github.io/2015/12/06/%E6%B6%88%E5%A4%B1%E7%9A%84%E7%88%B1%E4%BA%BA/</url>
+      <content type="html"><![CDATA[<p>今天认真看了一遍《消失的爱人》。</p>
+<h2 id="表现的是婚姻问题">表现的是婚姻问题</h2><ul>
+<li>用一种悬疑，刺激的剧情来表现婚姻问题，感觉仅仅是换了一个角度，或者是套了一个新的壳子，让我们看大千世界里面的人有不一样的形态。</li>
+<li>女主看似很聪明，男主看似很蠢顿，但是感觉总是没有出错的，只是这俩人走到了一起，发生了这样的故事。</li>
+<li>还是婚姻问题。</li>
+</ul>
+<h2 id="关于电影拍摄">关于电影拍摄</h2><ol>
+<li>妹妹这一角色的设定是龙凤胎，以及我们常常忘了这一角色去困惑为什么妹妹比哥哥还要激动和委屈，尤其是在最后知道了女主怀孕后，妹妹的伤心类似悲痛欲绝。<br>这是男主的理想和显示的两种写照吧。</li>
+<li>关于女主对男主的陷害手段，称的上是神乎其神，电影中面对众多目光的反应和面对丈夫的坦然，很厉害。但是这也仅仅是在双方斗争手段中的一个演绎。</li>
+<li>电影设计的这些东西看似很聪明绝伦，但是可能现实更加真实。</li>
+</ol>
+<h2 id="电影里的人物">电影里的人物</h2><ol>
+<li>男主撩妹技能满分</li>
+<li>女主真煞费苦心</li>
+<li>这一对也是有点合适</li>
+<li>妹妹的角色设定很好</li>
+<li>记者神烦</li>
+<li>女警好评</li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[机器学习8]]></title>
+      <url>http://fredchenjialin.github.io/2015/11/28/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A08/</url>
+      <content type="html"><![CDATA[<h3 id="最近一直在学机器学习，但是没有更新blog原因">最近一直在学机器学习，但是没有更新blog原因</h3><ul>
+<li>有一个好朋友，介绍了一个新词给我，叫做手账。</li>
+<li>本不理解这个是什么东西，去查了查，发现是一种记东西的本子，可以记录各种自己想要记录的东西，日记，计划，学习笔记等等。</li>
+<li>这个东西我认得，我在高中的时候有个很小的本子，就是什么都记在上面（除了大型学习笔记）</li>
+<li>为什么以前不用了呢，因为我的字迹，排版还有书写真的是太丑了，丑到我拿起我的笔记就想着算了吧，真是丑。。。</li>
+<li>不过，我这两天学习时是直接在本子上记的笔记，很有效，也很快速，感觉好上很多。</li>
+<li>问题：<ul>
+<li>字迹不好看</li>
+<li>多了的话没法存储</li>
+<li>多了的话没法快速处理</li>
+<li>没法自动分类</li>
+<li>要是记录多种东西，就很乱。。</li>
+</ul>
+</li>
+<li>以后的笔记都是在纸上的，不行的话就拍了照片放在网上好了。</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[机器学习7]]></title>
+      <url>http://fredchenjialin.github.io/2015/11/19/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A07/</url>
+      <content type="html"><![CDATA[<h3 id="支持向量机_SVM_SupportVectorMachine">支持向量机 SVM SupportVectorMachine</h3>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[JS补记]]></title>
+      <url>http://fredchenjialin.github.io/2015/11/16/JS%E8%A1%A5%E8%AE%B0/</url>
+      <content type="html"><![CDATA[<h3 id="两种实现继承的方式">两种实现继承的方式</h3><ol>
+<li> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">Car</span></span>() &#123;</span><br><span class="line">var self = this;</span><br><span class="line">self.type = <span class="string">"Car"</span></span><br><span class="line">self.go = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">console.log(<span class="string">"Going..."</span>);</span><br><span class="line">&#125;;</span><br><span class="line">&#125;;</span><br><span class="line">Toyota = <span class="function"><span class="title">function</span></span>() &#123;&#125;;</span><br><span class="line">Toyota.prototype = new Car();</span><br><span class="line">Toyota.prototype.constructor = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">var self = this;</span><br><span class="line">self.type = <span class="string">"Toyota"</span>;</span><br><span class="line">self.go = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">console.log(<span class="string">"A Toyota car is going..."</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;;</span><br><span class="line">Toyota.prototype.isJapaneseCar = <span class="literal">true</span>;</span><br><span class="line">var t = new Toyota();</span><br><span class="line">console.log(t instanceof Toyota);</span><br><span class="line">console.log(t instanceof Car);</span><br></pre></td></tr></table></figure>
+</li>
+<li> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var Car = Class.create(&#123;</span><br><span class="line">initialize: <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">this.type = <span class="string">"Car"</span>;</span><br><span class="line">&#125;,</span><br><span class="line">go: <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">console.log(<span class="string">"Going..."</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br><span class="line">var Toyota = Class.create(Car, &#123;</span><br><span class="line">initialize: <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">this.type = <span class="string">"Toyota"</span>;</span><br><span class="line">this.isJapaneseCar = <span class="literal">true</span>;</span><br><span class="line">&#125;,</span><br><span class="line">go: <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">console.log(<span class="string">"A Toyota car is going..."</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>关于父类调用<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">var Toyota = Class.create(Car, &#123;</span><br><span class="line">initialize: <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">this.type = <span class="string">"Toyota"</span>;</span><br><span class="line">this.isJapaneseCar = <span class="literal">true</span>;</span><br><span class="line">&#125;,</span><br><span class="line">go: <span class="keyword">function</span>(<span class="variable">$super</span>) &#123;</span><br><span class="line"><span class="variable">$super</span>();</span><br><span class="line">console.log(<span class="string">"A Toyota car is going..."</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="选择器">选择器</h3><h3 id="链表实现">链表实现</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">var Node = Class.create(&#123;</span><br><span class="line">initialize: <span class="keyword">function</span> (val) &#123;</span><br><span class="line">this.value = val;</span><br><span class="line">this.next = null;</span><br><span class="line">&#125;,</span><br><span class="line">addChild: <span class="keyword">function</span>(node) &#123;</span><br><span class="line">this.next = node;</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br><span class="line">var LinkedList = Class.create(&#123;</span><br><span class="line">initialize: <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">this.root = new Node(null);</span><br><span class="line">this.size = <span class="number">0</span>;</span><br><span class="line">&#125;,</span><br><span class="line">add: <span class="keyword">function</span> (object) &#123;</span><br><span class="line">obj = this.root</span><br><span class="line"><span class="keyword">while</span> (obj.next!= null) &#123;</span><br><span class="line">obj = obj.next;</span><br><span class="line">&#125;</span><br><span class="line">obj.next = new Node(object)</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[机器学习6]]></title>
+      <url>http://fredchenjialin.github.io/2015/11/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A06/</url>
+      <content type="html"><![CDATA[<h3 id="评估一个机器学习算法">评估一个机器学习算法</h3><ol>
+<li>因为我们在提出一个机器学习算法后总是想着要改进和优化它，使其得到最好的学习效果</li>
+<li>通常我们回想可不可以给我们更多的学习数据</li>
+<li>但是如果我们有一套科学的评估和诊断的方法，那么对于机器学习是非常有利的</li>
+</ol>
+<h3 id="过拟合检验_TrainingSet_and_TestSet">过拟合检验 TrainingSet and TestSet</h3><ol>
+<li>比例是7：3</li>
+</ol>
+<h3 id="high_bias_and_high_variance_TrainingSet，CrossValidateSet_and_TestSet">high bias and high variance TrainingSet，CrossValidateSet and TestSet</h3><ol>
+<li>比例是3：2：2</li>
+</ol>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml6/cvandtest.png" alt="costfunction"></p>
+<ol>
+<li>相对于high bias 和 high variance，其实是更加相当于underfit 和 overfit</li>
+</ol>
+<p>不行了，那种没学到东西的感觉越来越强烈了</p>
+<h2 id="卧槽，证书没了">卧槽，证书没了</h2>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[最近没学习]]></title>
+      <url>http://fredchenjialin.github.io/2015/11/12/%E6%9C%80%E8%BF%91%E6%B2%A1%E5%AD%A6%E4%B9%A0/</url>
+      <content type="html"><![CDATA[<p>这几天我去参加陕西省研究生创新成果展，看到了很多好玩的东西，也学习到了很多，有了收获，长了见识，认识教训。</p>
+<p>所以我没有学习，而且也不太能学的下，不能够静心。</p>
+<p>而且，我的手机也是今天也才到我的手上，也算是满足我了我的一个心愿吧，希望诸事安定，可以安心学习了。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[机器学习5]]></title>
+      <url>http://fredchenjialin.github.io/2015/11/01/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A05/</url>
+      <content type="html"><![CDATA[<h3 id="第一节里面讲了一个大而全的针对神经网络的cost_Function">第一节里面讲了一个大而全的针对神经网络的cost Function</h3><p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/costfunction.png" alt="costfunction"></p>
+<h3 id="Backpropagation_Algorithm">Backpropagation Algorithm</h3><ul>
+<li><p>想要求导偏导数是比较困难的。以下是前向传播的算法：<br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/Forwardpropagation.png" alt="Forwardpropagation"><br>  可以看出会比较繁琐。</p>
+</li>
+<li><p>然后这是后向传播<br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/backpropagation.png" alt="backpropagation"><br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/backpropagationAch.png" alt="backpropagation"></p>
+</li>
+</ul>
+<h3 id="NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下">NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下</h3><ul>
+<li>说到了一个梯度检验算法，用来证明你做的梯度下降是没有错的。</li>
+</ul>
+<h2 id="程序作业">程序作业</h2><h3 id="第一项_理解多种结果的逻辑回归分类并计算cost_function">第一项 理解多种结果的逻辑回归分类并计算cost function</h3><h4 id="多种化为传统">多种化为传统</h4><p>在原来的看法中，以0，1为例，我们将产生这两种结果的cost function定义如下：</p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/2.png" alt="LinearOneVariable"></p>
+<p>若是y有多种结果，我们可以假想为，若有n种结果</p>
+<ol>
+<li>第一个函数计算 （y == x）</li>
+<li>第二个函数计算 （y != x）</li>
+</ol>
+<p>如此实现了从多种到传统的过度。</p>
+<h4 id="函数整合">函数整合</h4><p>针对两个函数整合到一起的函数使用的是（y）和（1-y）的小技巧，实现了不是第一个函数就是第二个函数的功能。</p>
+<h4 id="举例假设">举例假设</h4><ol>
+<li>有5000个样例，10个分类，所以基本的特征函数产生有5000*10的矩阵A</li>
+<li>5000个样例有5000个label，针对这些label，处理成为（01）格式,得到5000*10的矩阵B<ul>
+<li>例如 y=5 处理为(0,0,0,0,1,0,0,0,0,0)</li>
+</ul>
+</li>
+<li><code>costFunction = -log(A) .<em> B + (-log(1-A)) .</em> (1-B);</code>（注意：这里是点乘）</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">costFunction = -log(A) .* B + (-log(<span class="number">1</span>-A)) .* (<span class="number">1</span>-B);</span><br></pre></td></tr></table></figure>
+<h3 id="反向传播">反向传播</h3><p>反向传播花了我好长时间，一直想用程序的角度来解决处理矩阵的问题，然后发现多此一举。</p>
+<p>原来在反向传播中</p>
+<ul>
+<li>先做一遍正向的推导</li>
+<li>从后向前计算误差值（关键点是：如果不是处理成向量来做，那么每一层的误差据真是不一样的）</li>
+<li>计算梯度</li>
+<li>正规化</li>
+</ul>
+<h2 id="我认为即使我做完了这些题目也没有什么好开心的，因为还是学不到最关键的部分，像是为什么反向传播可以求得costFunction_的导数。">我认为即使我做完了这些题目也没有什么好开心的，因为还是学不到最关键的部分，像是为什么反向传播可以求得costFunction 的导数。</h2>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[机器学习4]]></title>
+      <url>http://fredchenjialin.github.io/2015/10/31/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A04/</url>
+      <content type="html"><![CDATA[<h3 id="这一期的机器学习讲到了多类分类器和神经网络的铺垫">这一期的机器学习讲到了多类分类器和神经网络的铺垫</h3><p>在原来的两类分类中，我们只是用不是0就是1来分类，现在的n多类分类可以同理为不是x就是其他n-1种，最后对n中的特征的可能性取最大值即可。</p>
+<p>公式可以参考两类分类中的公式，仅仅略有不同。</p>
+<p>关于神经网络没有过多涉及，在下一讲中会有更多的体现吧。</p>
+<p>仅仅说到了三层中，第一层是输入，第三层是输出，中间的层都是隐藏层，每一层由前一层推出，这叫做前向传导，据说后面还有后向传导。</p>
+<p>没什么好说的，挺简单的。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[机器人运动学0]]></title>
+      <url>http://fredchenjialin.github.io/2015/10/31/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BF%90%E5%8A%A8%E5%AD%A60/</url>
+      <content type="html"><![CDATA[<h2 id="最近要写与机器人的步态有关的论文，所以记录一下这一块的学习。">最近要写与机器人的步态有关的论文，所以记录一下这一块的学习。</h2>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[2015年10月30日周报暨计划调整]]></title>
+      <url>http://fredchenjialin.github.io/2015/10/31/2015%E5%B9%B410%E6%9C%8830%E6%97%A5%E5%91%A8%E6%8A%A5%E6%9A%A8%E8%AE%A1%E5%88%92%E8%B0%83%E6%95%B4/</url>
+      <content type="html"><![CDATA[<p>关于最近的一些想法，一直以来都想做一个自己撸的网站，前端加上后台。在反复浅尝辄止了多个框架，语言后，我发现我离最初的想法差的有点远了。</p>
+<p>最初我就是想玩玩效果（注：html5），整一整在网站上看着舒服而又高大上的网页（注：css），如果还有各种各种的动画就更好了（注：JS）。</p>
+<p>所以这么久了，一直没搞清自己在寻找着什么，所以我决定是搞css和js，更加偏重js，结合着算法来搞应该会比较有趣。</p>
+<p>那么现在的事情总结起来就是：</p>
+<ul>
+<li>机器学习</li>
+<li>步态算法</li>
+<li>JS+CSS</li>
+<li>ROS</li>
+<li>Linux视频+摄像头+图像</li>
+</ul>
+<h2 id="另外我还发现一点有一个轻量级的blog框架写东西，或者说是用一个好用的工具写技术日记真的要比写技术博客方便好多">另外我还发现一点有一个轻量级的blog框架写东西，或者说是用一个好用的工具写技术日记真的要比写技术博客方便好多</h2>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[机器学习3]]></title>
+      <url>http://fredchenjialin.github.io/2015/10/21/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A03/</url>
+      <content type="html"><![CDATA[<h2 id="Logistic_Regression">Logistic Regression</h2><h4 id="特征方程">特征方程</h4><p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/1.png" alt="LinearOneVariable"></p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/CodeCogsEqn.gif" alt="CodeCogsEqn"></p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/logisticCostF.png" alt="logisticCostF"></p>
+<h4 id="Cost_Function">Cost Function</h4><p>若是延用原来的Cost Function，在梯度下降的时候会局限于很多的局部最优解，对全局最优解的寻找产生影响。</p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/2.png" alt="LinearOneVariable"></p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/3.png" alt="LinearOneVariable"></p>
+<h4 id="求导吧">求导吧</h4><p>首先，用个小技巧把两个情况合二为一。</p>
+<p>得到如下：<br><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/4.png" alt="LinearOneVariable"></p>
+<h4 id="正规化">正规化</h4><ul>
+<li>逻辑回归正规化公式<br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/regularizeRL.png" alt="regularizeRL"></li>
+<li>梯度下降正规化公式<br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/regularizeGR.png" alt="regularizeGR"></li>
+</ul>
+<h3 id="相关矩阵小技巧">相关矩阵小技巧</h3><p>如果我想要把两个矩阵的对应项相乘，那么是不是只有循环了，但是若是我们考虑一下最终的形式，多数情况下，我们不仅要相乘还有相加，所以不用循环。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[小记]]></title>
+      <url>http://fredchenjialin.github.io/2015/10/15/%E5%B0%8F%E8%AE%B0/</url>
+      <content type="html"><![CDATA[<h4 id="最近研究生的生涯逐渐迈向正轨，然而我自己的生活和心态还基本没有达到我想要达到的状态。">最近研究生的生涯逐渐迈向正轨，然而我自己的生活和心态还基本没有达到我想要达到的状态。</h4><pre><code><span class="comment">先是列一下事项：</span>
+<span class="comment">事项</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="comment">动作</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="comment">优先级</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="comment">目标</span><span class="literal">-</span><span class="literal">-</span><span class="literal">-</span><span class="comment">关键</span>
+</code></pre><ol>
+<li>论文——白天研读——重中之重——看下十篇论文后可以有思想去尝试写论文——看框架，流程，和论文写什么</li>
+<li>英语六级——白天复习——重要——不低于425分——做真题，练听力</li>
+<li>ML——晚上回宿舍在线观看——必做——12月份拿到证书——坚持</li>
+<li>论文记载网站——平时研究或周末研究——一般——一个输入显示的网页——go语言</li>
+<li>WordPress主题——在平时累了或者周末研究前端——一般—写一个自己用的极简主义的theme——坚持和找威仔讨论</li>
+<li>研究生创新成果展——大概筹划——一般——展出别出岔子——每人做什么事情盯紧就好</li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[机器学习2]]></title>
+      <url>http://fredchenjialin.github.io/2015/10/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A02/</url>
+      <content type="html"><![CDATA[<h4 id="本周开始讲了多变量的参数学习。">本周开始讲了多变量的参数学习。</h4><pre><code>不过我认为，这个东西也就和单变量一个样子。都是对cost <span class="function"><span class="keyword">function</span></span>取最小值，最后得到趋向于稳定的参数。
+</code></pre><h3 id="特征缩放_Feature_Scaling">特征缩放 Feature Scaling</h3><ol>
+<li>让所有的特征都处于相同的数量等级，有助于加快回归</li>
+<li>mean scaling ：（特征-平均值）/（最大-最小）</li>
+<li>学习速率决定了回归质量</li>
+</ol>
+<h3 id="标准方程">标准方程</h3><ol>
+<li>梯度下降和标准方程的比较（在特征规模上的差别）</li>
+</ol>
+<h4 id="一些题目">一些题目</h4><h4 id="week2-1">week2-1</h4><h4 id="week2-2">week2-2</h4><pre><code><span class="number">2</span>^<span class="number">6</span>=<span class="number">64</span>
+<span class="number">1</span>~=<span class="number">2</span> <span class="comment">%不等于</span>
+<span class="number">1</span>&amp;&amp;<span class="number">0</span> <span class="comment">%与</span>
+xor(<span class="number">1</span>,<span class="number">0</span>) <span class="comment">%异或</span>
+PS1(<span class="string">'&gt;&gt; '</span>); <span class="comment">%新起一行</span>
+<span class="built_in">pi</span> <span class="comment">%圆周率</span>
+<span class="built_in">disp</span>() <span class="comment">%显示</span>
+分号 换行
+<span class="built_in">ones</span>(x,y) <span class="comment">%x行y列 全1</span>
+<span class="built_in">rand</span>(x,y) <span class="comment">%      任意</span>
+hist <span class="comment">%线图</span>
+<span class="built_in">eye</span> <span class="comment">%单位矩阵</span>
+<span class="built_in">size</span>(矩阵,<span class="number">1</span>或者<span class="number">2</span>) <span class="comment">%1是 row 2 is col</span>
+<span class="built_in">size</span>(矩阵) <span class="comment">%vector with 2 var</span>
+<span class="built_in">length</span>(matrix) <span class="comment">%longest length</span>
+pwd <span class="comment">%working path</span>
+load filename Equal load(<span class="string">'filename'</span>)
+who show the all var
+whos show details of who
+save filename var encode
+: mean every element along that row/col
+<span class="matrix">[A B]</span> row combine
+<span class="matrix">[A ; B]</span> col combine
+A .^ <span class="number">2</span> each element of A ^<span class="number">2</span>
+sum(A) sum of A
+prod(A) product of A
+<span class="built_in">floor</span>(A) 
+<span class="built_in">ceil</span>(A) 
+</code></pre><p>PS:特征缩放那一题是帮助了更快迭代回归，而不是使每一步都更小花费</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[hi]]></title>
+      <url>http://fredchenjialin.github.io/2015/10/07/hi/</url>
+      <content type="html"><![CDATA[<p>今天看了会线性代数，感觉自己还可以看的下去。</p>
+<p>对比我的课本和mit的线性代数的课程内容，我发现了一些顺序上面的不同。</p>
+<p>mit的课程是先说方程，说消元，说矩阵，我的大学课本是先说行列式，说秩，说运算</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[机器学习1]]></title>
+      <url>http://fredchenjialin.github.io/2015/10/05/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A01/</url>
+      <content type="html"><![CDATA[<ol>
+<li><p>Introduction</p>
+<ul>
+<li><p>What is Machine Learning?</p>
+<p>Two definitions of Machine Learning are offered.<br>Arthur Samuel described it as:<br>“the field of study that gives computers the ability to learn without being explicitly programmed.” This is an older, informal definition.<br>Tom Mitchell provides a more modern definition:<br>“A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.”</p>
+<p>Example: playing checkers.<br>E = the experience of playing many games of checkers(玩的经验)<br>T = the task of playing checkers.(要做的事情)<br>P = the probability that the program will win the next game.(事情做成的机率)</p>
+</li>
+<li><p>Supervised Learning</p>
+<p>In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output.</p>
+<p>Supervised learning problems are categorized into “regression” and “classification” problems. In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a classification problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into discrete categories.</p>
+<p>Example:</p>
+<p>Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a continuous output, so this is a regression problem.</p>
+<p>We could turn this example into a classification problem by instead making our output about whether the house “sells for more or less than the asking price.” Here we are classifying the houses based on price into two discrete categories.</p>
+</li>
+<li><p>Unsupervised Learning</p>
+<p>Unsupervised learning, on the other hand, allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don’t necessarily know the effect of the variables.</p>
+<p>We can derive this structure by clustering the data based on relationships among the variables in the data.</p>
+<p>With unsupervised learning there is no feedback based on the prediction results, i.e., there is no teacher to correct you. It’s not just about clustering. For example, associative memory is unsupervised learning.</p>
+<p>Example:</p>
+<p>Clustering: Take a collection of 1000 essays written on the US Economy, and find a way to automatically group these essays into a small number that are somehow similar or related by different variables, such as word frequency, sentence length, page count, and so on.</p>
+<p>Associative: Suppose a doctor over years of experience forms associations in his mind between patient characteristics and illnesses that they have. If a new patient shows up then based on this patient’s characteristics such as symptoms, family medical history, physical attributes, mental outlook, etc the doctor associates possible illness or illnesses based on what the doctor has seen before with similar patients. This is not the same as rule based reasoning as in expert systems. In this case we would like to estimate a mapping function from patient characteristics into illnesses.</p>
+</li>
+</ul>
+</li>
+<li><p>一元线性回归</p>
+<h3 id="最为主要的一些公式">最为主要的一些公式</h3><h5 id="一元线性函数">一元线性函数</h5><p> <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/LinearOneVariable.png" alt="LinearOneVariable"></p>
+<h5 id="花费函数，也就是用来逼近我们需要的俩个参数的函数">花费函数，也就是用来逼近我们需要的俩个参数的函数</h5><p> <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/CostFunction.png" alt="CostFunction"></p>
+<h5 id="目的函数，所以对他求导">目的函数，所以对他求导</h5><p> <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/GoalFunction.png" alt="GoalFunction"></p>
+</li>
+<li><p>梯度下降法求解目的函数</p>
+<h3 id="从一个猜测的初始值出发，不断的减小目的函数">从一个猜测的初始值出发，不断的减小目的函数</h3><h5 id="梯度下降算法">梯度下降算法</h5><p> <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/gradient_descent.png" alt=""></p>
+<h5 id="具体实现">具体实现</h5><p> <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/Gredientdescentalgorithm.png" alt=""></p>
+</li>
+<li><p>第一周顺利结束</p>
+<h3 id="感觉还不错，因为原来是看过的，但是还是有一点需要注意的。">感觉还不错，因为原来是看过的，但是还是有一点需要注意的。</h3><ol>
+<li>梯度下降参数α这个值因为考虑到下降速度的问题还是需要变化的，但是会有不够和过了的问题。</li>
+<li><p>还有如下的一些问题：</p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex1.png" alt="答案对"></p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex1_1.png" alt="答案错"></p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex2.png" alt="答案错"></p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml1/ml1_ex2_1.png" alt="答案错"></p>
+</li>
+</ol>
+</li>
+<li><p>补</p>
+<ol>
+<li>可以找到一个完全匹配的函数。</li>
+<li>即使找到一个完全匹配的函数，但是不可以说是100%预测成功。</li>
+</ol>
+</li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[第一次海淘Nexus5X——纪实]]></title>
+      <url>http://fredchenjialin.github.io/2015/10/02/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%B5%B7%E6%B7%98Nexus5X%E2%80%94%E2%80%94%E7%BA%AA%E5%AE%9E/</url>
+      <content type="html"><![CDATA[<h3 id="本人第一次海淘，不具有代表性，仅仅给大家一个参考。">本人第一次海淘，不具有代表性，仅仅给大家一个参考。</h3><h2 id="海淘什么">海淘什么</h2><p>作为一个伪谷粉，对谷歌亲儿子简直是流口水。。</p>
+<p>在13年的时候，我在淘宝上面买了nexus 4，作为到目前为止nexus系列颜值最高的一台手机，4儿子给了我许许多多的第一次。</p>
+<h5 id="第一次用原生系统">第一次用原生系统</h5><h5 id="第一次刷机">第一次刷机</h5><h5 id="第一次用双面玻璃的手机">第一次用双面玻璃的手机</h5><h5 id="第一次对一个手机如此爱护，只让它被摔了三次（两次都碎了，衰！！！！）">第一次对一个手机如此爱护，只让它被摔了三次（两次都碎了，衰！！！！）</h5><h5 id="第一次感受到一种信仰的力量">第一次感受到一种信仰的力量</h5><p>所以这次nexus5x（应该算是7儿子了）一出，就立刻开始研究海淘。。</p>
+<h2 id="为什么是5X，不是6P">为什么是5X，不是6P</h2><p>了解的人都知道这一次的发布，一共有两部亲儿子，一个是LG代工的5X（因为LG还代工了4，5，6是MOTO），另一个是华为代工的6P，这也是nexus系列首次由国产手机厂商代工。</p>
+<p>但是就我认为，第一由华为打入国内市场或者帮助华为走向国际市场这样的事情是肯定在卖方的考虑范围之内的，有可能，我们入手的nexus就不是一个原生系统的手机了，另外，对华为比较抵触。第二，6P的后盖上有一个大黑条，我觉得不能接受，真是丑。（虽然，5X并不好看到哪里去，长得还有点像小米）</p>
+<h2 id="为什么是nexus系列">为什么是nexus系列</h2><p>因为在安卓机器中，原生系统是最靠近这个系统的体验的了。安卓系统的开源，使得这个系统的机器长相各异，形态各异，在原有的系统上加上了很多厂商的思想。<br>原生很方便，直接说道方便这个点不如说是简洁，我们可以随意刷机，随意掌握到很多系统级别的功能，可以感受到最新的系统所带来的改变；<br>原生很好看，我有些时候，会非常受不了厂商定制UI，甚至是android4.0之前的原生界面我都不太可以接受，在android material design被提出来之后，我觉得颜值提高了不少，心里大为开心；<br>原生很快，没有了厂商定制，快是自然而然的。</p>
+<h3 id="话痨模式关闭，下面讲讲海淘">话痨模式关闭，下面讲讲海淘</h3><h2 id="准备">准备</h2><p>第一次海淘，相信大家和我一样有很多地方不明白。</p>
+<p>海淘就是在境外找一个你“信任”的人帮你买东西，然后把东西寄给你。</p>
+<p>这其中的一些关键的点在于：</p>
+<ul>
+<li>东西哪里都可以买，为什么是境外？<ul>
+<li>因为有些东西不在中国卖，或者因为关税问题，卖的特别的贵。</li>
+</ul>
+</li>
+<li>谁值得我们信任？<ul>
+<li>如果是找同学帮忙买东西，自然是非常的方便，但是不是国外没有自己的同学或是认识的人嘛。</li>
+<li>所以就会去找一下比较负责口碑好的转运公司，这里的信任是比较单方向的，因为你找转运公司，公司肯定是要先收了你的钱才帮你办事情，而且事情砸了，多半是我们自己吃亏倒霉，所以一个靠谱的转运公司非常重要。</li>
+</ul>
+</li>
+<li>买东西我们怎么付钱？<ul>
+<li>因为是境外，涉及到了汇率和付款的方式，多半的海淘都是双币信用卡或者全币信用卡，有一个叫做全球付的。</li>
+</ul>
+</li>
+<li>寄东西到中国？<ul>
+<li>我们在买东西的时候填的是转运公司的地址，同时把我们在国内的地址发给转运公司就ok了。</li>
+</ul>
+</li>
+</ul>
+<h2 id="步骤">步骤</h2><ol>
+<li>确定买什么，在哪买</li>
+<li>确定一家转运公司</li>
+<li>向卖价提供转运公司的地址，想转运公司提供我们的地址</li>
+<li>等待发货</li>
+<li>向转运公司提交包裹信息寄到国内</li>
+<li>等待我们东西</li>
+</ol>
+<h3 id="目前我处于4这个状态">目前我处于4这个状态</h3><hr>
+<p>这两天知道了一件新鲜的事情，就是关于在google官网买东西的时候支付的一些细（keng）节（die）。</p>
+<p>我们想买google的手机，那么在下单的时候是一个预定的过程，可能google为了防止有人预定了不买和有人乱预定，所以就把预定和发货整成了两个步骤。<br>一是预订的时候用信用卡额度来交钱，但是这个钱仅仅是被冻结了而已，并不会从你的信用卡中扣走，二是在发货的时候，才会把钱扣走。</p>
+<p>了解的同学都知道，我是用全球付付款的，全球付是有一个即时到账的一个特性吧，所以，我在预定的时候，钱就已经被扣走了，那么，用虚拟信用卡买东西就是要交两倍的钱，但是最终会不会退回一份的钱还是一个未知数，静待变数~~</p>
+<p>希望一切顺利！！</p>
+<hr>
+<h3 id="我又回来了，带来了好消息">我又回来了，带来了好消息</h3><p>在20号那天我接到一封google store的email，满怀欣喜的以为是发货了，原来我被砍单了！！！！！！！！！！！！！！<br><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-nexus/kandan.png" alt="砍单"></p>
+<p>我的这个心里满满都是悲伤，于是我去哭了一晚上顺便把我的邮寄地址的名字和账户地址的名字改成了一样的又下了一次单（而且颜色还改成了骚骚的ice）</p>
+<p>谁知道！！</p>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-nexus/success.png" alt="砍单"></p>
+<p>这是无心插柳柳成荫啊！！！本来我都要放弃了！！！</p>
+<p>so，赶紧去转运网站报备，填资料什么的。</p>
+<p>接下来就是考虑壳和贴膜的事情了。</p>
+<hr>
+<h3 id="卧槽，我的手机终于到了">卧槽，我的手机终于到了</h3><p>今天11月12号，我的手机历时一个多月终于到手了，非常开心。</p>
+<p>更新一下历程：</p>
+<ul>
+<li>10月02日 反复下单，最终成功一单，买的黑色的</li>
+<li>10月20日 通知我被砍单，我立即又下了一单，买的是冰晶蓝色</li>
+<li>10月22日 通知我发货了，o(<em>￣▽￣</em>)ブ</li>
+<li>10月25日 到达海外仓库，我用的是转运四方</li>
+<li>10月29日 发到洛杉矶后从洛杉矶的仓库出发</li>
+<li>10月30日 到达新加坡</li>
+<li>11月02日 离开新加坡，开始发往北京</li>
+<li>11月04日 到达北京</li>
+<li>11月05日 开始发往西安</li>
+<li>11月11日 到达西安</li>
+<li>11月12日 到手</li>
+</ul>
+<p>持续更新~</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[machineLearning开课了！！]]></title>
+      <url>http://fredchenjialin.github.io/2015/10/02/machineLearning%E5%BC%80%E8%AF%BE%E4%BA%86%EF%BC%81%EF%BC%81/</url>
+      <content type="html"><![CDATA[<p>今天有两件开心的事情，第一件事情是成功购买了nexus5x，第二件事情是突然就发现机器学习开课了，好开心。</p>
+<p>上一次，是在大二下的时候，因为要开始准备去哈尔滨的机器人比赛和电子设计竞赛，所以学了有1/5就放弃了。</p>
+<p>现在我有时间，又有精力，简直爽翻，我觉得，我肯定可以坚持下去，希望可以在12月27号拿到满分证书。</p>
+<p>我崇拜的威神在上上一次的开课时就已经拿到了证书，感觉信心又充足了一些！！</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[nomoney]]></title>
+      <url>http://fredchenjialin.github.io/2015/09/30/nomoney/</url>
+      <content type="html"><![CDATA[<ul>
+<li>有关符号表 - 已跳</li>
+<li>感觉这个可以放弃了。。</li>
+</ul>
+<hr>
+<h3 id="Semaphores_信号量">Semaphores 信号量</h3><h3 id="Locks_锁">Locks 锁</h3><h3 id="Monitors_信号量_+_锁_+_状态">Monitors 信号量 + 锁 + 状态</h3>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[前缀中缀后缀语法制导翻译]]></title>
+      <url>http://fredchenjialin.github.io/2015/09/26/%E5%89%8D%E7%BC%80%E4%B8%AD%E7%BC%80%E5%90%8E%E7%BC%80%E8%AF%AD%E6%B3%95%E5%88%B6%E5%AF%BC%E7%BF%BB%E8%AF%91/</url>
+      <content type="html"><![CDATA[<p>其实我表示没有看懂，就是把要转化的形式在适当的位置上加上print。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[2015年9月25日周报2]]></title>
+      <url>http://fredchenjialin.github.io/2015/09/25/2015%E5%B9%B49%E6%9C%8825%E6%97%A5%E5%91%A8%E6%8A%A52/</url>
+      <content type="html"><![CDATA[<h3 id="本周：">本周：</h3><ul>
+<li>关于保研的事情算是告一段落了，面试完的那天下午看书心都是落下去的。</li>
+<li>附录还在看，感觉后面的说明书的意味更浓</li>
+<li>看了编译原理，感觉不错。看到谈谈Parser还有怎样看王垠的《谈谈Parser》？，感觉厉害的人的想法很多呀！</li>
+</ul>
+<h3 id="下周：">下周：</h3><ul>
+<li>感觉还是看编译原理更乐意，所以还是看编译原理，不过如果看烦了，我就还可以看操作系统和论文o(<em>￣▽￣</em>)ブ。</li>
+</ul>
+<ol>
+<li>每天吃完饭后悔带上耳机面无表情的看一会《The Lord of the Rings》，老吴挺喜欢看的一部巨制，不过我get不到。</li>
+<li>《小森林》看完了（201509251844），非常喜欢，一部关于选择和面对的电影，每一部的中间季节的专场都会有一个主角骑自行车回家的长镜头，从摄像机的跟随到岔路口的镜头自然拉远，每一次看都想流泪，主角做出了她的选择，有一种隐隐的宿命论，但是都是想要好好的活下去。</li>
+<li>这星期还发生了一件让我匪夷所思的事情，我只是单纯的想着，但还是忍不住察觉出了一些不对劲的滋味，这个世界就是这样，我无数次对自己说：有因必有果！Damn it</li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[yi]]></title>
+      <url>http://fredchenjialin.github.io/2015/09/24/yi/</url>
+      <content type="html"><![CDATA[<p>09 蘇える巨神兵</p>
+<h3 id="简单的一遍编译器">简单的一遍编译器</h3><ul>
+<li>程序设计语言的定义<ul>
+<li>语法 上下文无关/BNF范式    </li>
+<li>语义 非形式化方法/启发性实例</li>
+</ul>
+</li>
+</ul>
+<h4 id="上下文无关">上下文无关</h4><ul>
+<li>stmt -&gt; if(expr) stmt else stmt<ul>
+<li>终结符集合</li>
+<li>非终结符集合</li>
+<li>产生式集合</li>
+<li>特殊的终结符 - 开始符号</li>
+</ul>
+</li>
+</ul>
+<h4 id="Exercise2-2">Exercise2.2</h4><h5 id="2-2-1">2.2.1</h5><p>S -&gt; SS+|SS*|a</p>
+<ol>
+<li>a是S，所以aa+是一个S，所以aa+a*是一个S </li>
+<li><img src="http://7nj2kj.com1.z0.glb.clouddn.com/e2.2.1.png" alt=""></li>
+<li>仅仅带有加减的后缀表达式</li>
+</ol>
+<h5 id="2-2-2">2.2.2</h5><ul>
+<li>a) S -&gt; 0S1 | 01<ul>
+<li>前面n个0，后面n个1，n&gt;=1</li>
+</ul>
+</li>
+<li>b) S -&gt; +SS | -SS | a<ul>
+<li>仅仅带有加减的前缀表达式</li>
+</ul>
+</li>
+<li>c) S -&gt; S(S)S| null<ul>
+<li>匹配任意范围和递归层数的括号</li>
+</ul>
+</li>
+<li>d) S -&gt; aSbS | bSaS | null<ul>
+<li>拥有相同数量的a和b</li>
+</ul>
+</li>
+<li>e) S -&gt; a | S+S | SS | S* |(S)<ul>
+<li>？</li>
+</ul>
+</li>
+</ul>
+<h5 id="2-2-4">2.2.4</h5><ul>
+<li>1.Arithmetic expressions in postfix notation.<ul>
+<li>E -&gt; E E operation | num</li>
+</ul>
+</li>
+<li>2.Left-associative lists of identifiers separated by commas.<ul>
+<li>list -&gt; list , id | id</li>
+</ul>
+</li>
+<li>3.Right-associative lists of identifiers separated by commas.<ul>
+<li>list -&gt; id , list | id</li>
+</ul>
+</li>
+<li>4.Arithmetic expressions of integers and identifiers with the four binary operators +, -, *, /.<ul>
+<li>d -&gt; d+g | d-g | g</li>
+<li>g -&gt; base*g | base/g | base</li>
+<li>base -&gt; id | num | *</li>
+</ul>
+</li>
+<li>5.Add unary plus and minus to the arithmetic operators of 4.<ul>
+<li>d -&gt; d+g | d-g | g</li>
+<li>g -&gt; g*tmp| g/tmp | tmp</li>
+<li>tmp -&gt; +base | -base | base</li>
+<li>base -&gt; id | num | *</li>
+</ul>
+</li>
+</ul>
+<h5 id="2-2-5">2.2.5</h5><ul>
+<li>num -&gt; 11 | 1001 | num0 | num num<ul>
+<li>证明以此构成的二进制数是可以被3整除的</li>
+</ul>
+</li>
+</ul>
+<p>sum<br>= Σ<sub>n</sub> (2<sup>1</sup> + 2<sup>0</sup>) * 2<sup>n</sup> + Σ<sub>m</sub> (2<sup>3</sup> + 2<sup>2</sup>) * 2<sup>m</sup><br>= Σ<sub>n</sub> 3 * 2 <sup>n</sup> + Σ<sub>m</sub> 9 * 2<sup>m</sup></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[yi]]></title>
+      <url>http://fredchenjialin.github.io/2015/09/23/yi/</url>
+      <content type="html"><![CDATA[<h3 id="编译原理">编译原理</h3><ul>
+<li>词法分析 - 分词</li>
+<li>层次分析 &amp; 语法分析 要求递归</li>
+<li>语义分析 - 检测，收集，类型检查</li>
+</ul>
+<p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/statement_Complier.jpg" alt="编译器的各个阶段"></p>
+<ul>
+<li>符号表管理</li>
+<li>发现错误继续运行 - 发现所有的错误</li>
+<li>代码生成 - 变量的寄存器分配</li>
+</ul>
+<h4 id="预处理器">预处理器</h4><ul>
+<li>宏处理</li>
+<li>文件包含</li>
+<li>“理性”预处理器</li>
+<li>语言扩充</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[小计]]></title>
+      <url>http://fredchenjialin.github.io/2015/09/22/%E5%B0%8F%E8%AE%A1/</url>
+      <content type="html"><![CDATA[<p>今天查到一个命令netstat -ano，可以在win下查看本机的端口占用情况<br>还要给马老板盯着坚果。</p>
+<p>根本不用我关心坚果，jd上面就有卖的。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[复试口语]]></title>
+      <url>http://fredchenjialin.github.io/2015/09/21/%E5%A4%8D%E8%AF%95%E5%8F%A3%E8%AF%AD/</url>
+      <content type="html"><![CDATA[<h2 id="About_self-introduction">About self-introduction</h2><p>Dear Professors, my name is ChenJiaLin, 20 years old.<br>I come from HuaiBei city, Anhui province. In the year of 2012, I entered Northwestern Polytechnical University<br>majoring in Software Engineering. </p>
+<p>日了狗了</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[pintos学习笔记2]]></title>
+      <url>http://fredchenjialin.github.io/2015/09/20/pintos%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02/</url>
+      <content type="html"><![CDATA[<p>今天看了《捉妖记》，真心的不好看，不过里面的汤唯还是挺好看的。<br>另外今天机试。<br>已经下了《指环王》和《蝙蝠侠》准备看，感觉都是恢弘巨制，IMDB上面都是排名很高。</p>
+<p>关于电影这个事情，我就想做一个看电影的记录网站。o(<em>￣▽￣</em>)ブ</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[pintos学习笔记1]]></title>
+      <url>http://fredchenjialin.github.io/2015/09/16/pintos%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/</url>
+      <content type="html"><![CDATA[<p>今天我看了《煎饼侠》和《小森林》夏秋的前面一点点。<br>《煎饼侠》找了挺多人，挺不可思议的，看过一个人写过大鹏。</p>
+<p>很喜欢《小森林》的感觉，像一个梦.</p>
+<h2 id="Thread">Thread</h2><h3 id="struct_thread">struct thread</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span> kB +---------------------------------+</span><br><span class="line">     |          kernel stack           |</span><br><span class="line">     |                |                |</span><br><span class="line">     |                |                |</span><br><span class="line">     |                V                |</span><br><span class="line">     |         grows downward          |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     +---------------------------------+</span><br><span class="line">     |              magic              |</span><br><span class="line">     |                :                |</span><br><span class="line">     |                :                |</span><br><span class="line">     |               name              |</span><br><span class="line">     |              status             |</span><br><span class="line">     |               tid               |</span><br><span class="line"><span class="number">0</span> kB +---------------------------------+</span><br></pre></td></tr></table></figure>
+<h4 id="tid">tid</h4><p>线程标识符<br>tid_t，int类型<br>从1开始，为了初始化进程</p>
+<h4 id="status">status</h4><ul>
+<li>THREAD_RUNNING<ul>
+<li>thread_ current()返回进行中的线程</li>
+</ul>
+</li>
+<li>THREAD_READY<ul>
+<li>doubly LinkedList</li>
+</ul>
+</li>
+<li>THREAD_BLOCKED<ul>
+<li>调用thread_unblock()进入THREAD_READY</li>
+</ul>
+</li>
+<li>THREAD_DYING</li>
+</ul>
+<h4 id="name">name</h4><p>name</p>
+<h4 id="stack">stack</h4><ul>
+<li>uint8_t *</li>
+<li>when the CPU switches to another thread,this member saves the thread’s stack pointer</li>
+<li>When an interrupt occurs, whether in the kernel or a user program, an struct intr_ frame is pushed onto the stack</li>
+</ul>
+<h4 id="int_priority">int priority</h4><ul>
+<li>ranging from PRI_MIN (0) to PRI_MAX (63).</li>
+</ul>
+<h4 id="struct_list_elem_allelem">struct list_elem allelem</h4><ul>
+<li>link the thread into the list of all threads</li>
+</ul>
+<h4 id="struct_list_elem_elem">struct list_elem elem</h4><ul>
+<li>put the thread into doubly linked lists, either ready<em>list (the list of threads ready to run) or a list of threads waiting on a semaphore in sema</em> down()</li>
+</ul>
+<h4 id="uint32_t_*_pagedir">uint32_t * pagedir</h4><h4 id="unsigned_magic">unsigned magic</h4><ul>
+<li>detect stack overﬂow</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[pintos学习笔记1]]></title>
+      <url>http://fredchenjialin.github.io/2015/09/15/pintos%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/</url>
+      <content type="html"><![CDATA[<p>1，实现一个哈希函数<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// HASH_SIZE 哈希参数</span></span><br><span class="line">hashcode(<span class="string">"abcd"</span>) = (ascii(a) * <span class="number">333</span> + ascii(b) * <span class="number">332</span> + ascii(c) *<span class="number">33</span> + ascii(d)) % HASH_SIZE </span><br><span class="line">                 = (<span class="number">97</span>* <span class="number">333</span> + <span class="number">98</span> * <span class="number">332</span> + <span class="number">99</span> * <span class="number">33</span> +<span class="number">100</span>) % HASH_SIZE</span><br><span class="line">                 = <span class="number">3595978</span> % HASH_SIZE</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>注意超界—-模运算<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//(a+b)%c=(a%c+b%c)%c</span></span><br><span class="line"><span class="comment">//(a*b)%c=(a%c*b%c)%c</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">hashCode</span><span class="params">(<span class="built_in">string</span> str,<span class="keyword">int</span> HASH_SIZE)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> leng = str.length();</span><br><span class="line">    <span class="keyword">long</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">long</span> args = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = leng-<span class="number">1</span>;i &gt;= <span class="number">0</span>;i--)</span><br><span class="line">    &#123;</span><br><span class="line">        sum += (str[i]*args%HASH_SIZE);</span><br><span class="line">        args = args*<span class="number">33</span>%HASH_SIZE;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> sum%HASH_SIZE;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>2，一个vector的基本用法<br>3，最多的点过直线</p>
+<hr>
+<p>本来打算今天看thread的，被叫去打撸了。。。。</p>
+<p>今天看了《我是路人甲》，没什么感觉。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[pintos学习笔记0]]></title>
+      <url>http://fredchenjialin.github.io/2015/09/13/pintos%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B00/</url>
+      <content type="html"><![CDATA[<p>今天看了一点点的pintos，做了半道网易的运营的<a href="http://multipluso.com/2015/09/wangyi-hiho0/" target="_blank" rel="external">题目</a></p>
+<p>打算写一点计划出来：</p>
+<ol>
+<li>每天三道lintcode上面的题目</li>
+<li>要看书（网络）</li>
+</ol>
+<hr>
+<h2 id="Loading">Loading</h2><h3 id="Loader">Loader</h3><ul>
+<li>BIOS加载Loader（MBR）<ul>
+<li>预留64字节给分区表</li>
+<li>128字节给内核命令行参数</li>
+</ul>
+</li>
+<li>Loader读分区表找到内核<ul>
+<li>找到可启动内核分区</li>
+<li>从分区读入内存128kB（或许更多，但是BIOS不提供超过1MB的大小）</li>
+<li>找到入口（内核的BLF header有个指针指向入口）</li>
+<li>Loader跳去入口</li>
+<li>每次运行内核时插入参数</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="Low-Level_Kernel_Initialization">Low-Level Kernel Initialization</h3><p>入口 start() in threads/start.S</p>
+<h4 id="start()">start()</h4><ul>
+<li>获取机器的内存</li>
+<li>启用A20 line,做64M的内存映射（看不太懂）</li>
+<li>call main()</li>
+</ul>
+<hr>
+<h3 id="High-Level_Kernel_Initialization">High-Level Kernel Initialization</h3><h4 id="调用main()">调用main()</h4><ul>
+<li>call bss_init()          - 清理BSS（被清为0的字段的传统名：在函数外未提供初始化的变量声明，variable goes into the BSS？）</li>
+<li>call read_command_line() - break the kernel command line into arguments</li>
+<li>call parse_options()     - read any options at the beginning of the command line</li>
+<li>call thread_init()       - 因为要用锁，所以就初始化</li>
+<li>initialize the console and print a startup message to the console</li>
+<li>call palloc_init()       - initialize memory system by setting up the <a href="Page Allocator">kernel page allocator</a></li>
+<li>call molloc_init()       - sets up the allocator that handles allocations of arbitrary-size <a href="Block Allocator">blocks</a> of memory</li>
+<li>call paging_init()       - sets up a <a href="Page Table">page table</a> for the kernel<ul>
+<li>在第二节后面还有tss和gdt的初始化</li>
+</ul>
+</li>
+<li>call intr_init()         - sets up the CPU’s interrupt descriptor table (IDT) to ready it for <a href="Interrupt Infrastructure">interrupt handling</a></li>
+<li>call timer_init()        - handling timer interrupt</li>
+<li>call kbd_init()          - handling keyboard interrupt</li>
+<li>call input_init()        - sets up to merge serial and keyboard input into one stream<ul>
+<li>在第二节后面还有用户程序的初始化exception_init() and syscall_init().</li>
+</ul>
+</li>
+<li>start the scheduler with thread_start(),call serial_init_queue() to switch to interrupt-driven serial port I/O</li>
+<li>call timer_calibrate() </li>
+<li>call ide_init() and filesys_init() to initialize the IDE disks and file system<h4 id="Boot_is_complete-">Boot is complete.</h4></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[hexo下的第一篇blog]]></title>
+      <url>http://fredchenjialin.github.io/2015/09/08/hexo%E4%B8%8B%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87blog/</url>
+      <content type="html"><![CDATA[<h2 id="自定义图标的问题">自定义图标的问题</h2><p>很多人说将themes/主题名称/layout/_partial/head.ejs中的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link href=<span class="string">"&lt;%- config.root %&gt;favicon.png"</span> rel=<span class="string">"icon"</span>&gt;</span><br></pre></td></tr></table></figure></p>
+<p>替换为<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link href=<span class="string">"&lt;%- config.root %&gt;favicon.ico"</span> rel=<span class="string">"icon"</span> <span class="built_in">type</span>=<span class="string">"image/x-ico"</span>&gt;</span><br></pre></td></tr></table></figure></p>
+<p>好像在hexo3下无效了，因为找不到类似的语句</p>
+<p>我的做法<br>在同样的位置现在的写法是<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (theme.favicon)&#123; %&gt;</span><br><span class="line">  &lt;link rel=<span class="string">"icon"</span> href=<span class="string">"&lt;%- theme.favicon %&gt;"</span>&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
+<p>所以在对应位置放一个favicon.ico的图标就可以了，在主题目录的source文件夹下。</p>
+<h2 id="多说评论框设置">多说评论框设置</h2><p>先在_config.yml下添加duoshuo_shortname，在article.ejs中调用</p>
+<p>在主题/layout/_partial/article.ejs的最后一段替换如下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (!index &amp;&amp; post.comments &amp;&amp; config.duoshuo_shortname)&#123; %&gt;</span><br><span class="line">  &lt;section id=<span class="string">"comments"</span>&gt;</span><br><span class="line">    &lt;!-- 多说评论框 start --&gt;</span><br><span class="line">    &lt;div class=<span class="string">"ds-thread"</span> data-thread-key=<span class="string">"&lt;%= post.layout %&gt;-&lt;%= post.slug %&gt;"</span> data-title=<span class="string">"&lt;%= post.title %&gt;"</span> data-url=<span class="string">"&lt;%= page.permalink %&gt;"</span>&gt;&lt;/div&gt;</span><br><span class="line">    &lt;!-- 多说评论框 end --&gt;</span><br><span class="line">    &lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">    var duoshuoQuery = &#123;short_name:<span class="string">'&lt;%= config.duoshuo_shortname %&gt;'</span>&#125;;</span><br><span class="line">      (<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        var ds = document.createElement(<span class="string">'script'</span>);</span><br><span class="line">        ds.type = <span class="string">'text/javascript'</span>;ds.async = <span class="literal">true</span>;</span><br><span class="line">        ds.src = (document.location.protocol == <span class="string">'https:'</span> ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">'//static.duoshuo.com/embed.js'</span>;</span><br><span class="line">        ds.charset = <span class="string">'UTF-8'</span>;</span><br><span class="line">        (document.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>] </span><br><span class="line">         || document.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(ds);</span><br><span class="line">      &#125;)();</span><br><span class="line">      &lt;/script&gt;</span><br><span class="line">    &lt;!-- 多说公共JS代码 end --&gt;</span><br><span class="line">  &lt;/section&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="个人页面添加">个人页面添加</h2><p>在主题/_config.yml中的menu中添加 About: /about</p>
+]]></content>
+    </entry>
+    
+  
+  
+    
+    <entry>
+      <title></title>
+      <url>http://fredchenjialin.github.io/404.html</url>
+      <content type="html"><![CDATA[<p>&lt;!DOCTYPE HTML&gt;</p>
+<html><br><head><br>    <meta charset="UTF-8"><br></head><br><body><br><!--
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>公益404 | 不如</title>
+</head>
+<body>
+#404 Not found By Bruce
+<h1>404 Page Not Found</h1>
+--><br><script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8" homepageurl="http://fredchenjialin.github.io/" homepagename="回到我的主页"></script><br><!--
+公益404介接入地址
+益云公益404 http://yibo.iyiyun.com/Index/web404
+腾讯公益404 http://www.qq.com/404
+失蹤兒童少年資料管理中心404 http://404page.missingkids.org.tw
+--><br></body><br></html>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[about]]></title>
+      <url>http://fredchenjialin.github.io/about/index.html</url>
+      <content type="html"><![CDATA[<p>Multipluso，安徽人，本科西工大。<br>软件工程专业，知道一些计算机常识，写过一点代码，搞过一些应用，上了一些不靠谱的课，水过一次机器人比赛<br>目前是一个写不好算法，整不了数据结构，没做过pintos作业，没看完ML视频，没学过编译原理，没有可以搭建ss的vps全靠<a href="http://jecvay.com" target="_blank" rel="external">jecvay</a>支援翻墙的没有脱离低级趣味的人。</p>
+<p>想法就是把上面没做到的赶紧做了，然后在研究生生涯里可以做做项目，搞搞机器视觉和自主决策，然后找个好下家，热爱生活，么么哒！！！</p>
+<p><a href="http://weibo.com/fredchenjialin" target="_blank" rel="external">微博</a><br><a href="https://github.com/fredchenjialin" target="_blank" rel="external">github</a><br><a href="http://www.multipluso.com/" target="_blank" rel="external">主站</a><br>邮箱: fredchenjialin#gmail</p>
+]]></content>
+    </entry>
+    
+  
+</search>

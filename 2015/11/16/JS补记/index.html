@@ -90,6 +90,9 @@
 <h3 id="选择器">选择器</h3><h3 id="链表实现">链表实现</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">var Node = Class.create(&#123;</span><br><span class="line">initialize: <span class="keyword">function</span> (val) &#123;</span><br><span class="line">this.value = val;</span><br><span class="line">this.next = null;</span><br><span class="line">&#125;,</span><br><span class="line">addChild: <span class="keyword">function</span>(node) &#123;</span><br><span class="line">this.next = node;</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br><span class="line">var LinkedList = Class.create(&#123;</span><br><span class="line">initialize: <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">this.root = new Node(null);</span><br><span class="line">this.size = <span class="number">0</span>;</span><br><span class="line">&#125;,</span><br><span class="line">add: <span class="keyword">function</span> (object) &#123;</span><br><span class="line">obj = this.root</span><br><span class="line"><span class="keyword">while</span> (obj.next!= null) &#123;</span><br><span class="line">obj = obj.next;</span><br><span class="line">&#125;</span><br><span class="line">obj.next = new Node(object)</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
   </article>
+
+
+
   </script>
     <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
   </script>
@@ -100,7 +103,28 @@
   </div>
 
 
- 
+
+
+
+  <section id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="post-JS补记" data-title="JS补记" data-url="http://fredchenjialin.github.io/2015/11/16/JS补记/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'fredchenjialin'};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+    <!-- 多说公共JS代码 end -->
+  </section>
+  
 
     </div>
   </div>
