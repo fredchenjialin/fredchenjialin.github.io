@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>MPZ Diary</title>
-  <subtitle>By Github Page</subtitle>
+  <subtitle>明 光 大 正</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fredchenjialin.github.io/"/>
-  <updated>2016-09-04T12:20:07.880Z</updated>
+  <updated>2016-09-05T07:48:48.431Z</updated>
   <id>http://fredchenjialin.github.io/</id>
   
   <author>
@@ -14,6 +14,47 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>研究生生活（零）</title>
+    <link href="http://fredchenjialin.github.io/2016/09/05/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E6%B4%BB%EF%BC%88%E9%9B%B6%EF%BC%89/"/>
+    <id>http://fredchenjialin.github.io/2016/09/05/研究生生活（零）/</id>
+    <published>2016-09-05T06:21:35.000Z</published>
+    <updated>2016-09-05T07:48:48.431Z</updated>
+    
+    <content type="html">&lt;p&gt;研究生生活这个目录呢，记录研究生期间都在做些什么，生活的状态和一些对于研究生的反思。&lt;/p&gt;
+&lt;p&gt;每一篇都以一段时间的状态来开展，希望能够记录下自己的两年半的时光。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;对于，换电脑写blog的反思：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;software：hexo（nodejs）&lt;/p&gt;
+&lt;p&gt;git：Gitkraken&lt;/p&gt;
+&lt;p&gt;配置文件以及主题：git上传或者云盘吧&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;零_开学&quot;&gt;零 开学&lt;/h2&gt;&lt;p&gt;8.25号研究生报道开学，一直到9.5才要开始正式上课，期间忙了些开学的事，忙了些教研室的事，但是在论文上一直都没有什么进展。&lt;/p&gt;
+&lt;p&gt;今天5号了，我这一阶段的任务是把我的毕设论文改进成一篇要发表的论文。毕设是比较low的东西，发表视水平而定是一件比较难的事情。&lt;/p&gt;
+&lt;p&gt;难点是，&lt;/p&gt;
+&lt;p&gt;一是在RL方向上，13年的时候与DL进行结合导致，DQN在DeepMind团队的手中大火了起来，到了AlphaGo的时候达到了顶峰。&lt;br&gt;因此，问题在于，在这些方法的改进上这些人以及跟风的人提出了很多各种各样的方法，不仅多而且高端。&lt;/p&gt;
+&lt;p&gt;二是如果想要达到理想的效果，实验不好跑，甚至是跑不出来，o(╯□╰)o。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;梳理本科论文&lt;/li&gt;
+&lt;li&gt;梳理Atari那篇&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;研究生生活这个目录呢，记录研究生期间都在做些什么，生活的状态和一些对于研究生的反思。&lt;/p&gt;
+&lt;p&gt;每一篇都以一段时间的状态来开展，希望能够记录下自己的两年半的时光。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;对于，换电脑写blog的反思：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;softwa
+    
+    </summary>
+    
+      <category term="研究生生活" scheme="http://fredchenjialin.github.io/categories/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="Init" scheme="http://fredchenjialin.github.io/tags/Init/"/>
+    
+  </entry>
   
   <entry>
     <title>东搞西搞是没有出路的</title>
@@ -44,7 +85,7 @@
     <link href="http://fredchenjialin.github.io/2016/09/04/ubuntu%E4%B8%8B%E9%85%8D%E7%BD%AEOpenAI/"/>
     <id>http://fredchenjialin.github.io/2016/09/04/ubuntu下配置OpenAI/</id>
     <published>2016-09-04T03:20:02.000Z</published>
-    <updated>2016-09-04T04:18:18.446Z</updated>
+    <updated>2016-09-05T07:01:45.609Z</updated>
     
     <content type="html">&lt;p&gt;研究生开学了，我也再次回到了写生活日记的时期，我觉得以前把现在这种叫做技术日记真是让自己觉得不好意思，&lt;br&gt;且当做生活日记吧。&lt;/p&gt;
 &lt;p&gt;开了学也没干啥，配了个环境OpenAI，关键在于在ubuntu下安装numpy和scipy这两个科学计算库。&lt;/p&gt;
@@ -770,34 +811,6 @@ prod(A) product of A
     
     
       <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hi</title>
-    <link href="http://fredchenjialin.github.io/2015/10/07/hi/"/>
-    <id>http://fredchenjialin.github.io/2015/10/07/hi/</id>
-    <published>2015-10-07T14:13:15.000Z</published>
-    <updated>2015-10-07T14:22:15.015Z</updated>
-    
-    <content type="html">&lt;p&gt;今天看了会线性代数，感觉自己还可以看的下去。&lt;/p&gt;
-&lt;p&gt;对比我的课本和mit的线性代数的课程内容，我发现了一些顺序上面的不同。&lt;/p&gt;
-&lt;p&gt;mit的课程是先说方程，说消元，说矩阵，我的大学课本是先说行列式，说秩，说运算&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天看了会线性代数，感觉自己还可以看的下去。&lt;/p&gt;
-&lt;p&gt;对比我的课本和mit的线性代数的课程内容，我发现了一些顺序上面的不同。&lt;/p&gt;
-&lt;p&gt;mit的课程是先说方程，说消元，说矩阵，我的大学课本是先说行列式，说秩，说运算&lt;/p&gt;
-
-    
-    </summary>
-    
-      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
-    
-    
-      <category term="线性代数" scheme="http://fredchenjialin.github.io/tags/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
     
   </entry>
   
