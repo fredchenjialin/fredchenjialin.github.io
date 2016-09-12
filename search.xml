@@ -4,6 +4,14 @@
   
     
     <entry>
+      <title><![CDATA[策略梯度]]></title>
+      <url>http://fredchenjialin.github.io/2016/09/12/%E7%AD%96%E7%95%A5%E6%A2%AF%E5%BA%A6/</url>
+      <content type="html"><![CDATA[<h2 id="策略梯度">策略梯度</h2><p>策略梯度以一种不同的方式给出了衰减期望的目标函数。<br>$$L(\theta )=E(r<em>{1}+\gamma r</em>{2}+\gamma^{1} r_{3}+…|\pi (,\theta))$$</p>
+<p>构造损失函数<br>$$L(\theta )=\sum log\pi(a|s,\theta)f(s,a)$$</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[研究生生活（零）]]></title>
       <url>http://fredchenjialin.github.io/2016/09/05/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E6%B4%BB%EF%BC%88%E9%9B%B6%EF%BC%89/</url>
       <content type="html"><![CDATA[<p>研究生生活这个目录呢，记录研究生期间都在做些什么，生活的状态和一些对于研究生的反思。</p>
@@ -895,22 +903,22 @@ prod(A) product of A
       <title></title>
       <url>http://fredchenjialin.github.io/404.html</url>
       <content type="html"><![CDATA[<p>&lt;!DOCTYPE HTML&gt;</p>
-<html><br><head><br>    <meta charset="UTF-8"><br></head><br><body><br><!--
+<html><br><head><br>    <meta charset="UTF-8"><br></head><br><body><br><!-- hexo-inject:begin --><!-- hexo-inject:end --><!--
 <!DOCTYPE HTML>
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>公益404 | 不如</title>
-</head>
+    <title>公益404 | 不如</title><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
 <body>
-#404 Not found By Bruce
+<!-- hexo-inject:begin --><!-- hexo-inject:end -->#404 Not found By Bruce
 <h1>404 Page Not Found</h1>
 --><br><script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8" homepageurl="http://fredchenjialin.github.io/" homepagename="回到我的主页"></script><br><!--
 公益404介接入地址
 益云公益404 http://yibo.iyiyun.com/Index/web404
 腾讯公益404 http://www.qq.com/404
 失蹤兒童少年資料管理中心404 http://404page.missingkids.org.tw
---><br></body><br></html>]]></content>
+--><br><!-- hexo-inject:begin --><!-- hexo-inject:end --></body><br></body></html>]]></content>
     </entry>
     
     <entry>
