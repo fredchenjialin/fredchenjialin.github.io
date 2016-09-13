@@ -7,12 +7,12 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="google-site-verification" content="" />
   
-  <title>page</title>
+  <title>hexo下使用mathjax的相关问题</title>
   <meta name="author" content="Multipluso">
    <meta name="description" content="使用Hexo搭建的一个Diary。">
   
 
-  
+  <meta property="og:title" content="hexo下使用mathjax的相关问题"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:site_name" content="MPZ Diary"/>
  <meta property="og:image" content="undefined"/>
@@ -36,154 +36,93 @@
       </div>
     </div>
     <div class="container">
-      <nav class="navigator"><nav class="navbar navbar-default navbar-fixed-top">
-  <div class="nav-container">
+      
 
-
+  <article class="standard post">
+    <div class="title">
+      
   
-  <ul class="nav navbar-nav navbar-left">
-    <li class="navbar-header">
-      <a href="/" class="navbar-brand">MPZ</a>
-    </li>
-    <li class="dropdown">
-      <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        <i class="fa fa-tags fa-lg"></i>
-      </span></a>
-      <ul class="dropdown-content">
-
-          
-           <li><a href="/categories/Diary/">Diary</a></li><li><a href="/categories/Diary/hexo设置/">hexo设置</a></li><li><a href="/categories/机器学习/">机器学习</a></li><li><a href="/categories/研究生生活/">研究生生活</a></li><li><a href="/categories/Diary/机器学习/">机器学习</a></li><li><a href="/categories/Diary/JavaScript/">JavaScript</a></li><li><a href="/categories/Diary/机器人运动学/">机器人运动学</a></li>
-
-      </ul>
-    </li>
-  </ul>
+    <h1 class="page-title center">
+        hexo下使用mathjax的相关问题
+    </h1>
   
-  <div id="site_search" class="">
-  <input type="text" id="local-search-input" name="q" placeholder="search" class="form-control"/>
-</div>
-<div id="local-search-result"></div>
 
 
-  <ul class="nav navbar-nav navbar-right">
-    <li class="dropdown">
-      <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-      <i class="fa fa-link fa-lg"></i>
-      </a>
-      <ul class="dropdown-content">
-        
-          <li>
-            <a href="https://jecvay.com">
-        链接
-      </a>
-    </li>
-     
-          <li>
-            <a href="https://github.com/fredchenjialin">
-        Github
-      </a>
-    </li>
-     
-          <li>
-            <a href="http://weibo.com/fredchenjialin">
-        微博
-      </a>
-    </li>
-     
-          <li>
-            <a href="/rss2.xml">
-        rss
-      </a>
-    </li>
-     
-          <li>
-            <a href="/about">
-        关于我
-      </a>
-    </li>
-     
-    </ul>
-    </li>
-    <li class="archives"><a href="/archives">
-      <i class="fa fa-archive fa-lg"></i>
-    </a></li>
-  </ul>
+    </div>
+    <div class="meta center">
+      
+<time datetime="2016-09-13T01:39:22.000Z">
+  <i class="fa fa-calendar"></i>&nbsp;
+  2016-09-13
+</time>
+
+
+
+    
+    &nbsp;
+    <i class="fa fa-tag"></i>&nbsp;
+    <a href="/categories/Diary/">Diary</a>·<a href="/categories/Diary/hexo设置/">hexo设置</a>
+
+
+
+
+    
+    &nbsp;
+    <i class="fa fa-tag"></i>&nbsp;
+    <a href="/tags/mathjax/">mathjax</a>
+
+
+    </div>
+    <hr>
+    <div class="picture-container">
+      
+    </div>
+    <p>在blog中插入公式，mathjax是一个十分好用的工具。</p>
+<p>以往都是直接在hexo的主题的某个模块上直接修改代码，现在只需要安装一个hexo-math就可以自动使用。</p>
+<p><a href="https://github.com/akfish/hexo-math" target="_blank" rel="external">hexo-math的github</a><br><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-<span class="built_in">math</span> <span class="comment">--save</span></span><br><span class="line">$ hexo <span class="built_in">math</span> install</span><br><span class="line"></span><br><span class="line">在_config.yml中添加</span><br><span class="line">plugins: hexo-<span class="built_in">math</span></span><br></pre></td></tr></table></figure></p>
+<p>使用中，内联是一个‘$’符号，一行是两个。</p>
+<h3 id="使用说明">使用说明</h3><ul>
+<li>我从<a href="https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn" target="_blank" rel="external">这里</a>复制公式源码到vs code里面，总是发现<br>会有斜体出现，原来以为是vs code里面的代码显示的bug，后来明白过来估计是，复制的时候把斜体的形式也复制了过来。</li>
+<li>为了不出现斜体，在打好公式后，从网页的下方选LaTeX后复制公式即可。</li>
+</ul>
+
+
+  </article>
+
+
+
+  </script>
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+  <div class="busuanzi center">
+    页阅读量:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+    站访问量:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+    站访客数:&nbsp;<span id="busuanzi_value_site_uv"></span>
   </div>
-</nav></nav>
 
 
-<h1 class="archive-title  category">
+
+
+
+  <section id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="post-hexo下使用mathjax的相关问题" data-title="hexo下使用mathjax的相关问题" data-url="http://fredchenjialin.github.io/2016/09/13/hexo下使用mathjax的相关问题/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'fredchenjialin'};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+    <!-- 多说公共JS代码 end -->
+  </section>
   
-  <i class="fa fa-tag"></i>
-  
-  Diary
-</h1>
-<div class="archive-num">
-  该分类共 3 篇文章
-</div>
-<div class="archive">
-  
-    
-      
-
-      
-
-        
-
-        
-
-        
-
-        </ul></section>
-        <section data-link="year-2015" class="section-year">
-            <h2>2015</h2>
-            <ul class="archive-list">
-                <div class="archive-item">
-                    <div class="archive-time">
-                      09-23
-                    </div>
-                    <div class="archive-detail">
-                      <a href="/2015/09/23/yi/" class="archive-link">
-                        yi
-                      </a>
-                    </div>
-                </div>
-                <hr>
-                
-    
-      
-
-      
-                <div class="archive-item">
-                    <div class="archive-time">
-                      09-22
-                    </div>
-                    <div class="archive-detail">
-                      <a href="/2015/09/22/小计/" class="archive-link">
-                        小计
-                      </a>
-                    </div>
-                </div>
-                <hr>
-      
-    
-      
-
-      
-                <div class="archive-item">
-                    <div class="archive-time">
-                      09-21
-                    </div>
-                    <div class="archive-detail">
-                      <a href="/2015/09/21/复试口语/" class="archive-link">
-                        复试口语
-                      </a>
-                    </div>
-                </div>
-                <hr>
-      
-    
-</div>
-
 
     </div>
   </div>

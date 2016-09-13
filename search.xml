@@ -4,9 +4,24 @@
   
     
     <entry>
+      <title><![CDATA[hexo下使用mathjax的相关问题]]></title>
+      <url>http://fredchenjialin.github.io/2016/09/13/hexo%E4%B8%8B%E4%BD%BF%E7%94%A8mathjax%E7%9A%84%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</url>
+      <content type="html"><![CDATA[<p>在blog中插入公式，mathjax是一个十分好用的工具。</p>
+<p>以往都是直接在hexo的主题的某个模块上直接修改代码，现在只需要安装一个hexo-math就可以自动使用。</p>
+<p><a href="https://github.com/akfish/hexo-math" target="_blank" rel="external">hexo-math的github</a><br><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-<span class="built_in">math</span> <span class="comment">--save</span></span><br><span class="line">$ hexo <span class="built_in">math</span> install</span><br><span class="line"></span><br><span class="line">在_config.yml中添加</span><br><span class="line">plugins: hexo-<span class="built_in">math</span></span><br></pre></td></tr></table></figure></p>
+<p>使用中，内联是一个‘$’符号，一行是两个。</p>
+<h3 id="使用说明">使用说明</h3><ul>
+<li>我从<a href="https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn" target="_blank" rel="external">这里</a>复制公式源码到vs code里面，总是发现<br>会有斜体出现，原来以为是vs code里面的代码显示的bug，后来明白过来估计是，复制的时候把斜体的形式也复制了过来。</li>
+<li>为了不出现斜体，在打好公式后，从网页的下方选LaTeX后复制公式即可。</li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[策略梯度]]></title>
       <url>http://fredchenjialin.github.io/2016/09/12/%E7%AD%96%E7%95%A5%E6%A2%AF%E5%BA%A6/</url>
-      <content type="html"><![CDATA[<h2 id="策略梯度">策略梯度</h2><p>策略梯度以一种不同的方式给出了衰减期望的目标函数。<br>$$L(\theta )=E(r<em>{1}+\gamma r</em>{2}+\gamma^{1} r_{3}+…|\pi (,\theta))$$</p>
+      <content type="html"><![CDATA[<h2 id="策略梯度">策略梯度</h2><p>策略梯度以一种不同的方式给出了衰减期望的目标函数。</p>
+<p>$$L(\theta )=E(r {1} +\gamma r {2} + \gamma^{1} r_{3}+…|\pi (,\theta))$$</p>
 <p>构造损失函数<br>$$L(\theta )=\sum log\pi(a|s,\theta)f(s,a)$$</p>
 ]]></content>
     </entry>
@@ -161,9 +176,9 @@
       <title><![CDATA[一些数学公式]]></title>
       <url>http://fredchenjialin.github.io/2016/04/11/%E4%B8%80%E4%BA%9B%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</url>
       <content type="html"><![CDATA[<h1 id="记录一些数学公式，准备用mathjax来画">记录一些数学公式，准备用mathjax来画</h1><h4 id="拉格朗日方程（Lagrange_equation）">拉格朗日方程（Lagrange equation）</h4><p>$$\frac{d}{dt}\frac{\partial L}{\partial \dot{q}}-\frac{\partial L}{\partial q}=0$$</p>
-<p>$L\left ( q, \dot{q}, t \right )$是拉格朗日量，</p>
-<p>$q=\left (q<em>{1}, q</em>{2}, q<em>{3},… , q</em>{N} \right )$是广义坐标，是时间t的函数，</p>
-<p>\(\dot{q}=\left (\dot{q<em>{1}}, \dot{q</em>{2}}, \dot{q<em>{3}},… , \dot{q</em>{N}} \right )\)是广义速度。</p>
+<p>$ L\left ( q, \dot{q}, t \right )$是拉格朗日量，</p>
+<p>$q=\left (q{1}, q{2}, q{3},… , q{N} \right )$是广义坐标，是时间t的函数，</p>
+<p>$ \dot{q}=\left (\dot{q{1}}, \dot{q{2}}, \dot{q{3}},… , \dot{q{N}} \right )$是广义速度。</p>
 ]]></content>
     </entry>
     
