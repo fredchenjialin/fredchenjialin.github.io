@@ -78,9 +78,9 @@
       
     </div>
     <h2 id="策略梯度">策略梯度</h2><p>策略梯度以一种不同的方式给出了衰减期望的目标函数。</p>
-<p>$L(\theta )=E(r<em>{1} +\gamma r</em>{2} + \gamma^{1} r_{3}+…|\pi (,\theta))$</p>
-<p>构造损失函数<br>$L(\theta )=\sum log\pi(a|s,\theta)f(s,a)$</p>
-<p>损失函数推导：<br>$$<br>\bigtriangledown<em>{\theta}E</em>{x}\left [ f(x) \right ] =\bigtriangledown<em>{\theta}\sum</em>{x}^{ } p(x)f(x)<br>=\sum<em>{x}^{ }\bigtriangledown</em>{\theta}p(x)f(x)<br>=\sum<em>{x}^{ }p(x)\frac{\bigtriangledown</em>{\theta}p(x)}{p(x)}f(x)<br>=\sum<em>{x}^{ }p(x)\bigtriangledown</em>{\theta}logp(x)f(x)<br>=E<em>{x}[f(x)\bigtriangledown</em>{\theta}logp(x)]<br>$$</p>
+<p>$$L(\theta )=E(r_{1} +\gamma r_{2} + \gamma^{2} r_{3}+…|\pi (,\theta))$$</p>
+<p>构造损失函数<br>$$L(\theta )=\sum log\pi(a|s,\theta)f(s,a)$$</p>
+<p>损失函数推导：<br>$$\bigtriangledown_{\theta}E_{x}\left [ f(x) \right ] =\bigtriangledown_{\theta}\sum_{x}^{ } p(x)f(x)\\<br>=\sum_{x}^{ }\bigtriangledown_{\theta}p(x)f(x)\\<br>=\sum_{x}^{ }p(x)\frac{\bigtriangledown_{\theta}p(x)}{p(x)}f(x)\\<br>=\sum_{x}^{ }p(x)\bigtriangledown_{\theta}logp(x)f(x)\\<br>=E_{x}[f(x)\bigtriangledown_{\theta}logp(x)]$$</p>
 
 
   </article>

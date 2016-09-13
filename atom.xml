@@ -57,18 +57,19 @@
     <link href="http://fredchenjialin.github.io/2016/09/12/%E7%AD%96%E7%95%A5%E6%A2%AF%E5%BA%A6/"/>
     <id>http://fredchenjialin.github.io/2016/09/12/策略梯度/</id>
     <published>2016-09-12T02:11:38.000Z</published>
-    <updated>2016-09-13T03:33:14.633Z</updated>
+    <updated>2016-09-13T13:58:06.763Z</updated>
     
     <content type="html">&lt;h2 id=&quot;策略梯度&quot;&gt;策略梯度&lt;/h2&gt;&lt;p&gt;策略梯度以一种不同的方式给出了衰减期望的目标函数。&lt;/p&gt;
-&lt;p&gt;$L(\theta )=E(r&lt;em&gt;{1} +\gamma r&lt;/em&gt;{2} + \gamma^{1} r_{3}+…|\pi (,\theta))$&lt;/p&gt;
-&lt;p&gt;构造损失函数&lt;br&gt;$L(\theta )=\sum log\pi(a|s,\theta)f(s,a)$&lt;/p&gt;
-&lt;p&gt;损失函数推导：&lt;br&gt;$$&lt;br&gt;\bigtriangledown&lt;em&gt;{\theta}E&lt;/em&gt;{x}\left [ f(x) \right ] =\bigtriangledown&lt;em&gt;{\theta}\sum&lt;/em&gt;{x}^{ } p(x)f(x)&lt;br&gt;=\sum&lt;em&gt;{x}^{ }\bigtriangledown&lt;/em&gt;{\theta}p(x)f(x)&lt;br&gt;=\sum&lt;em&gt;{x}^{ }p(x)\frac{\bigtriangledown&lt;/em&gt;{\theta}p(x)}{p(x)}f(x)&lt;br&gt;=\sum&lt;em&gt;{x}^{ }p(x)\bigtriangledown&lt;/em&gt;{\theta}logp(x)f(x)&lt;br&gt;=E&lt;em&gt;{x}[f(x)\bigtriangledown&lt;/em&gt;{\theta}logp(x)]&lt;br&gt;$$&lt;/p&gt;
+&lt;p&gt;$$L(\theta )=E(r_{1} +\gamma r_{2} + \gamma^{2} r_{3}+…|\pi (,\theta))$$&lt;/p&gt;
+&lt;p&gt;构造损失函数&lt;br&gt;$$L(\theta )=\sum log\pi(a|s,\theta)f(s,a)$$&lt;/p&gt;
+&lt;p&gt;损失函数推导：&lt;br&gt;$$\bigtriangledown_{\theta}E_{x}\left [ f(x) \right ] =\bigtriangledown_{\theta}\sum_{x}^{ } p(x)f(x)\\&lt;br&gt;=\sum_{x}^{ }\bigtriangledown_{\theta}p(x)f(x)\\&lt;br&gt;=\sum_{x}^{ }p(x)\frac{\bigtriangledown_{\theta}p(x)}{p(x)}f(x)\\&lt;br&gt;=\sum_{x}^{ }p(x)\bigtriangledown_{\theta}logp(x)f(x)\\&lt;br&gt;=E_{x}[f(x)\bigtriangledown_{\theta}logp(x)]$$&lt;/p&gt;
 </content>
     
     <summary type="html">
     
       &lt;h2 id=&quot;策略梯度&quot;&gt;策略梯度&lt;/h2&gt;&lt;p&gt;策略梯度以一种不同的方式给出了衰减期望的目标函数。&lt;/p&gt;
-&lt;p&gt;$L(\theta )=E(r&lt;em&gt;{1} +\gamma r&lt;/em&gt;{2} + \gamma^{1} r_{3}+…|\pi (,\theta))$&lt;/p&gt;
+&lt;p&gt;$$L(\theta )=E(r_{1} +\gamma r_{2} + \gamma^{2} r_{3}+…|\pi (,\theta))$$&lt;/p&gt;
+&lt;p&gt;构
     
     </summary>
     
