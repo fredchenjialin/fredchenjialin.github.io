@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fredchenjialin.github.io/"/>
-  <updated>2016-09-13T01:56:37.709Z</updated>
+  <updated>2016-09-13T03:01:08.563Z</updated>
   <id>http://fredchenjialin.github.io/</id>
   
   <author>
@@ -20,15 +20,18 @@
     <link href="http://fredchenjialin.github.io/2016/09/13/hexo%E4%B8%8B%E4%BD%BF%E7%94%A8mathjax%E7%9A%84%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/"/>
     <id>http://fredchenjialin.github.io/2016/09/13/hexo下使用mathjax的相关问题/</id>
     <published>2016-09-13T01:39:22.000Z</published>
-    <updated>2016-09-13T01:56:37.709Z</updated>
+    <updated>2016-09-13T03:01:08.563Z</updated>
     
     <content type="html">&lt;p&gt;在blog中插入公式，mathjax是一个十分好用的工具。&lt;/p&gt;
 &lt;p&gt;以往都是直接在hexo的主题的某个模块上直接修改代码，现在只需要安装一个hexo-math就可以自动使用。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/akfish/hexo-math&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo-math的github&lt;/a&gt;&lt;br&gt;&lt;figure class=&quot;highlight lua&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install hexo-&lt;span class=&quot;built_in&quot;&gt;math&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;--save&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ hexo &lt;span class=&quot;built_in&quot;&gt;math&lt;/span&gt; install&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;在_config.yml中添加&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;plugins: hexo-&lt;span class=&quot;built_in&quot;&gt;math&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;使用中，内联是一个‘$’符号，一行是两个。&lt;/p&gt;
 &lt;h3 id=&quot;使用说明&quot;&gt;使用说明&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;我从&lt;a href=&quot;https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;复制公式源码到vs code里面，总是发现&lt;br&gt;会有斜体出现，原来以为是vs code里面的代码显示的bug，后来明白过来估计是，复制的时候把斜体的形式也复制了过来。&lt;/li&gt;
-&lt;li&gt;为了不出现斜体，在打好公式后，从网页的下方选LaTeX后复制公式即可。&lt;/li&gt;
+&lt;li&gt;我从&lt;a href=&quot;https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;复制公式源码到vs code里面，总是发现会有斜体出现，原来以为是vs code里面的代码显示的bug，后来明白过来估计是，复制的时候把斜体的形式也复制了过来。&lt;ul&gt;
+&lt;li&gt;PS:问题找到了，是下标在mathjax渲染后变成了某个html标签，导致了公式显示失效&lt;/li&gt;
+&lt;li&gt;解决方法是：在_之前添加\，一切ok。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     
@@ -54,18 +57,18 @@
     <link href="http://fredchenjialin.github.io/2016/09/12/%E7%AD%96%E7%95%A5%E6%A2%AF%E5%BA%A6/"/>
     <id>http://fredchenjialin.github.io/2016/09/12/策略梯度/</id>
     <published>2016-09-12T02:11:38.000Z</published>
-    <updated>2016-09-13T01:33:41.265Z</updated>
+    <updated>2016-09-13T03:33:14.633Z</updated>
     
     <content type="html">&lt;h2 id=&quot;策略梯度&quot;&gt;策略梯度&lt;/h2&gt;&lt;p&gt;策略梯度以一种不同的方式给出了衰减期望的目标函数。&lt;/p&gt;
-&lt;p&gt;$$L(\theta )=E(r {1} +\gamma r {2} + \gamma^{1} r_{3}+…|\pi (,\theta))$$&lt;/p&gt;
-&lt;p&gt;构造损失函数&lt;br&gt;$$L(\theta )=\sum log\pi(a|s,\theta)f(s,a)$$&lt;/p&gt;
+&lt;p&gt;$L(\theta )=E(r&lt;em&gt;{1} +\gamma r&lt;/em&gt;{2} + \gamma^{1} r_{3}+…|\pi (,\theta))$&lt;/p&gt;
+&lt;p&gt;构造损失函数&lt;br&gt;$L(\theta )=\sum log\pi(a|s,\theta)f(s,a)$&lt;/p&gt;
+&lt;p&gt;损失函数推导：&lt;br&gt;$$&lt;br&gt;\bigtriangledown&lt;em&gt;{\theta}E&lt;/em&gt;{x}\left [ f(x) \right ] =\bigtriangledown&lt;em&gt;{\theta}\sum&lt;/em&gt;{x}^{ } p(x)f(x)&lt;br&gt;=\sum&lt;em&gt;{x}^{ }\bigtriangledown&lt;/em&gt;{\theta}p(x)f(x)&lt;br&gt;=\sum&lt;em&gt;{x}^{ }p(x)\frac{\bigtriangledown&lt;/em&gt;{\theta}p(x)}{p(x)}f(x)&lt;br&gt;=\sum&lt;em&gt;{x}^{ }p(x)\bigtriangledown&lt;/em&gt;{\theta}logp(x)f(x)&lt;br&gt;=E&lt;em&gt;{x}[f(x)\bigtriangledown&lt;/em&gt;{\theta}logp(x)]&lt;br&gt;$$&lt;/p&gt;
 </content>
     
     <summary type="html">
     
       &lt;h2 id=&quot;策略梯度&quot;&gt;策略梯度&lt;/h2&gt;&lt;p&gt;策略梯度以一种不同的方式给出了衰减期望的目标函数。&lt;/p&gt;
-&lt;p&gt;$$L(\theta )=E(r {1} +\gamma r {2} + \gamma^{1} r_{3}+…|\pi (,\theta))$$&lt;/p&gt;
-&lt;p&gt;构
+&lt;p&gt;$L(\theta )=E(r&lt;em&gt;{1} +\gamma r&lt;/em&gt;{2} + \gamma^{1} r_{3}+…|\pi (,\theta))$&lt;/p&gt;
     
     </summary>
     
@@ -296,12 +299,12 @@
     <link href="http://fredchenjialin.github.io/2016/04/11/%E4%B8%80%E4%BA%9B%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
     <id>http://fredchenjialin.github.io/2016/04/11/一些数学公式/</id>
     <published>2016-04-11T12:32:21.000Z</published>
-    <updated>2016-09-13T01:33:07.028Z</updated>
+    <updated>2016-09-13T02:57:59.720Z</updated>
     
     <content type="html">&lt;h1 id=&quot;记录一些数学公式，准备用mathjax来画&quot;&gt;记录一些数学公式，准备用mathjax来画&lt;/h1&gt;&lt;h4 id=&quot;拉格朗日方程（Lagrange_equation）&quot;&gt;拉格朗日方程（Lagrange equation）&lt;/h4&gt;&lt;p&gt;$$\frac{d}{dt}\frac{\partial L}{\partial \dot{q}}-\frac{\partial L}{\partial q}=0$$&lt;/p&gt;
 &lt;p&gt;$ L\left ( q, \dot{q}, t \right )$是拉格朗日量，&lt;/p&gt;
-&lt;p&gt;$q=\left (q{1}, q{2}, q{3},… , q{N} \right )$是广义坐标，是时间t的函数，&lt;/p&gt;
-&lt;p&gt;$ \dot{q}=\left (\dot{q{1}}, \dot{q{2}}, \dot{q{3}},… , \dot{q{N}} \right )$是广义速度。&lt;/p&gt;
+&lt;p&gt;$q=\left (q_{1}, q_{2}, q_{3},… , q_{N} \right )$是广义坐标，是时间t的函数，&lt;/p&gt;
+&lt;p&gt;$ \dot{q}=\left (\dot{q_{1}}, \dot{q_{2}}, \dot{q_{3}},… , \dot{q_{N}} \right )$是广义速度。&lt;/p&gt;
 </content>
     
     <summary type="html">

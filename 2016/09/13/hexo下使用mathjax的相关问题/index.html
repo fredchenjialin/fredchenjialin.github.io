@@ -82,8 +82,11 @@
 <p><a href="https://github.com/akfish/hexo-math" target="_blank" rel="external">hexo-math的github</a><br><figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-<span class="built_in">math</span> <span class="comment">--save</span></span><br><span class="line">$ hexo <span class="built_in">math</span> install</span><br><span class="line"></span><br><span class="line">在_config.yml中添加</span><br><span class="line">plugins: hexo-<span class="built_in">math</span></span><br></pre></td></tr></table></figure></p>
 <p>使用中，内联是一个‘$’符号，一行是两个。</p>
 <h3 id="使用说明">使用说明</h3><ul>
-<li>我从<a href="https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn" target="_blank" rel="external">这里</a>复制公式源码到vs code里面，总是发现<br>会有斜体出现，原来以为是vs code里面的代码显示的bug，后来明白过来估计是，复制的时候把斜体的形式也复制了过来。</li>
-<li>为了不出现斜体，在打好公式后，从网页的下方选LaTeX后复制公式即可。</li>
+<li>我从<a href="https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn" target="_blank" rel="external">这里</a>复制公式源码到vs code里面，总是发现会有斜体出现，原来以为是vs code里面的代码显示的bug，后来明白过来估计是，复制的时候把斜体的形式也复制了过来。<ul>
+<li>PS:问题找到了，是下标在mathjax渲染后变成了某个html标签，导致了公式显示失效</li>
+<li>解决方法是：在_之前添加\，一切ok。</li>
+</ul>
+</li>
 </ul>
 
 
