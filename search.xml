@@ -4,6 +4,16 @@
   
     
     <entry>
+      <title><![CDATA[关于虚拟机Ubuntu安装Tensorflow]]></title>
+      <url>http://fredchenjialin.github.io/2016/09/14/%E5%85%B3%E4%BA%8E%E8%99%9A%E6%8B%9F%E6%9C%BAUbuntu%E5%AE%89%E8%A3%85Tensorflow/</url>
+      <content type="html"><![CDATA[<h3 id="今天的安装非常顺利，没有遇到奇奇怪怪的问题，因为写DQN需要Tensorflow这个库，所以在我的虚拟机内安装一下。">今天的安装非常顺利，没有遇到奇奇怪怪的问题，因为写DQN需要Tensorflow这个库，所以在我的虚拟机内安装一下。</h3><p><a href="http://www.cnblogs.com/lanxuezaipiao/p/3613497.html" target="_blank" rel="external">http://www.cnblogs.com/lanxuezaipiao/p/3613497.html</a>这个教程非常的好。</p>
+<p>固定ip后，在tensorflow官网查看安装命令，使用pip安装</p>
+<p>连接到我本机的代理后，可以正常下载</p>
+<p>$ sudo pip install –proxy=<a href="http://yourproxy:yourport" target="_blank" rel="external">http://yourproxy:yourport</a> package_name</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[hexo下使用mathjax的相关问题]]></title>
       <url>http://fredchenjialin.github.io/2016/09/13/hexo%E4%B8%8B%E4%BD%BF%E7%94%A8mathjax%E7%9A%84%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</url>
       <content type="html"><![CDATA[<p>在blog中插入公式，mathjax是一个十分好用的工具。</p>

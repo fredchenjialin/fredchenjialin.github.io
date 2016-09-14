@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fredchenjialin.github.io/"/>
-  <updated>2016-09-13T03:01:08.563Z</updated>
+  <updated>2016-09-14T13:23:25.890Z</updated>
   <id>http://fredchenjialin.github.io/</id>
   
   <author>
@@ -14,6 +14,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于虚拟机Ubuntu安装Tensorflow</title>
+    <link href="http://fredchenjialin.github.io/2016/09/14/%E5%85%B3%E4%BA%8E%E8%99%9A%E6%8B%9F%E6%9C%BAUbuntu%E5%AE%89%E8%A3%85Tensorflow/"/>
+    <id>http://fredchenjialin.github.io/2016/09/14/关于虚拟机Ubuntu安装Tensorflow/</id>
+    <published>2016-09-14T13:19:30.000Z</published>
+    <updated>2016-09-14T13:23:25.890Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;今天的安装非常顺利，没有遇到奇奇怪怪的问题，因为写DQN需要Tensorflow这个库，所以在我的虚拟机内安装一下。&quot;&gt;今天的安装非常顺利，没有遇到奇奇怪怪的问题，因为写DQN需要Tensorflow这个库，所以在我的虚拟机内安装一下。&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/lanxuezaipiao/p/3613497.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.cnblogs.com/lanxuezaipiao/p/3613497.html&lt;/a&gt;这个教程非常的好。&lt;/p&gt;
+&lt;p&gt;固定ip后，在tensorflow官网查看安装命令，使用pip安装&lt;/p&gt;
+&lt;p&gt;连接到我本机的代理后，可以正常下载&lt;/p&gt;
+&lt;p&gt;$ sudo pip install –proxy=&lt;a href=&quot;http://yourproxy:yourport&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://yourproxy:yourport&lt;/a&gt; package_name&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;今天的安装非常顺利，没有遇到奇奇怪怪的问题，因为写DQN需要Tensorflow这个库，所以在我的虚拟机内安装一下。&quot;&gt;今天的安装非常顺利，没有遇到奇奇怪怪的问题，因为写DQN需要Tensorflow这个库，所以在我的虚拟机内安装一下。&lt;/h3&gt;&lt;p&gt;&lt;a hre
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+    
+      <category term="OpenAI" scheme="http://fredchenjialin.github.io/tags/OpenAI/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo下使用mathjax的相关问题</title>
@@ -745,43 +771,6 @@
       <category term="周报" scheme="http://fredchenjialin.github.io/tags/%E5%91%A8%E6%8A%A5/"/>
     
       <category term="计划" scheme="http://fredchenjialin.github.io/tags/%E8%AE%A1%E5%88%92/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器学习3</title>
-    <link href="http://fredchenjialin.github.io/2015/10/21/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A03/"/>
-    <id>http://fredchenjialin.github.io/2015/10/21/机器学习3/</id>
-    <published>2015-10-21T09:44:53.000Z</published>
-    <updated>2015-10-24T09:32:37.075Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Logistic_Regression&quot;&gt;Logistic Regression&lt;/h2&gt;&lt;h4 id=&quot;特征方程&quot;&gt;特征方程&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/1.png&quot; alt=&quot;LinearOneVariable&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/CodeCogsEqn.gif&quot; alt=&quot;CodeCogsEqn&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/logisticCostF.png&quot; alt=&quot;logisticCostF&quot;&gt;&lt;/p&gt;
-&lt;h4 id=&quot;Cost_Function&quot;&gt;Cost Function&lt;/h4&gt;&lt;p&gt;若是延用原来的Cost Function，在梯度下降的时候会局限于很多的局部最优解，对全局最优解的寻找产生影响。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/2.png&quot; alt=&quot;LinearOneVariable&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/3.png&quot; alt=&quot;LinearOneVariable&quot;&gt;&lt;/p&gt;
-&lt;h4 id=&quot;求导吧&quot;&gt;求导吧&lt;/h4&gt;&lt;p&gt;首先，用个小技巧把两个情况合二为一。&lt;/p&gt;
-&lt;p&gt;得到如下：&lt;br&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/4.png&quot; alt=&quot;LinearOneVariable&quot;&gt;&lt;/p&gt;
-&lt;h4 id=&quot;正规化&quot;&gt;正规化&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;逻辑回归正规化公式&lt;br&gt;  &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/regularizeRL.png&quot; alt=&quot;regularizeRL&quot;&gt;&lt;/li&gt;
-&lt;li&gt;梯度下降正规化公式&lt;br&gt;  &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/regularizeGR.png&quot; alt=&quot;regularizeGR&quot;&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;相关矩阵小技巧&quot;&gt;相关矩阵小技巧&lt;/h3&gt;&lt;p&gt;如果我想要把两个矩阵的对应项相乘，那么是不是只有循环了，但是若是我们考虑一下最终的形式，多数情况下，我们不仅要相乘还有相加，所以不用循环。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Logistic_Regression&quot;&gt;Logistic Regression&lt;/h2&gt;&lt;h4 id=&quot;特征方程&quot;&gt;特征方程&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/1.png&quot;
-    
-    </summary>
-    
-      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
-    
-      <category term="机器学习" scheme="http://fredchenjialin.github.io/categories/Diary/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-    
-    
-      <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
     
   </entry>
   
