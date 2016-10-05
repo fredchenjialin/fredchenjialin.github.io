@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="google-site-verification" content="" />
+  
+  <title>论文结构学习一</title>
+  <meta name="author" content="Multipluso">
+   <meta name="description" content="使用Hexo搭建的一个Diary。">
+  
+
+  <meta property="og:title" content="论文结构学习一"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:site_name" content="MPZ Diary"/>
+ <meta property="og:image" content="undefined"/>
+  
+  <link href="/apple-touch-icon-precomposed.png" sizes="180x180" rel="apple-touch-icon-precomposed">
+  <link rel="alternate" href="/atom.xml" title="MPZ Diary" type="application/atom+xml">
+  <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/m.min.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+
+<body>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="main">
+    <div class="behind">
+      <div class="back">
+        <a href="/" class="black-color"><i class="fa fa-times" aria-hidden="true"></i></a>
+      </div>
+      <div class="description">
+        &nbsp;明 光 大 正
+      </div>
+    </div>
+    <div class="container">
+      
+
+  <article class="standard post">
+    <div class="title">
+      
+  
+    <h1 class="page-title center">
+        论文结构学习一
+    </h1>
+  
+
+
+    </div>
+    <div class="meta center">
+      
+<time datetime="2016-09-22T02:35:15.000Z">
+  <i class="fa fa-calendar"></i>&nbsp;
+  2016-09-22
+</time>
+
+
+
+    
+    &nbsp;
+    <i class="fa fa-tag"></i>&nbsp;
+    <a href="/categories/Diary/">Diary</a>
+
+
+
+
+    
+    &nbsp;
+    <i class="fa fa-tag"></i>&nbsp;
+    <a href="/tags/论文结构学习/">论文结构学习</a>
+
+
+    </div>
+    <hr>
+    <div class="picture-container">
+      
+    </div>
+    <p>本篇学习目标是《<a href="http://128.84.21.199/abs/1609.05143v1" target="_blank" rel="external">Target-driven Visual Navigation in Indoor Scenes using Deep Reinforcement Learning</a>》</p>
+<h2 id="关于Introduction">关于Introduction</h2><h4 id="介绍背景和做了哪些东西，现有的不足以及我们实现的效果,如下：">介绍背景和做了哪些东西，现有的不足以及我们实现的效果,如下：</h4><blockquote>
+<p>Since the 1970s, there have been various attempts to build a system that can understand such relationships. Recently, with the rise of deep learning models, learning-based approaches have gained wide popularity [1], [2].</p>
+</blockquote>
+<p>说到了一部分的背景。</p>
+<blockquote>
+<p>In order to achieve higher adaptability and flexibility, we introduce a target-driven model.</p>
+</blockquote>
+<p>说到了具体的工作。</p>
+<blockquote>
+<p>Unfortunately, training and quantitatively evaluating DRL algorithms in real environments is often tedious.</p>
+</blockquote>
+<p>不足。</p>
+<blockquote>
+<p>We evaluate our method for the following tasks: (1) Target generalization, where the goal is to navigate to targets that have not been used during training within a scene. (2) Scene generalization, where the goal is to navigate to targets in scenes not used for training. (3) Real-world generalization, where we demonstrate navigation to targets using a real robot. </p>
+</blockquote>
+<p>目标。</p>
+<blockquote>
+<p>In summary, …</p>
+</blockquote>
+<p>总结。</p>
+<h2 id="关于RELATED_WORK">关于RELATED WORK</h2><p>相关工作介绍了很多已有的技术和方法。给予地图的方法需要地图，然后说说我们的方法不用地图。对于无地图的导航，关注点基本都在给定输入图像的避障，我们侧重在无图，也不基于3D重建。</p>
+<p>接着说到了强化学习，说到了直升机的那个，还有DRL的开山之作，玩Atari游戏，我们的输入更复杂，而且可以迁移知识。</p>
+<h2 id="接下来介绍了实验平台，也就是实验需要的环境，相当于介绍实验背景">接下来介绍了实验平台，也就是实验需要的环境，相当于介绍实验背景</h2><p>仿真系统的好处就是可伸缩性scalable</p>
+<blockquote>
+<p>The advantage of using a physics engine for modeling the world is that it is highly scalable (training a robot in real houses is not easily scalable).</p>
+</blockquote>
+<h2 id="说到了目标导向的模型以及用于模型的框架deep_siamese_actor-critic_network">说到了目标导向的模型以及用于模型的框架deep siamese actor-critic network</h2><ul>
+<li>A先说是问题状态，这里是分析场景以及确定模型的作用：学习从2d图像到三维场景动作的映射。</li>
+<li>B是问题设想。关于泛化能力的分析，对于新目标不需要重新训练的补充。</li>
+<li>C是学习的设置。关键点在模型。</li>
+<li>D是模型。他们的模型嵌入了一个什么的层，这种模型使得场景共用一个层，目标共用一个层。<strong>不懂</strong></li>
+<li>E是训练的方法。</li>
+</ul>
+
+
+  </article>
+
+
+
+  </script>
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+  </script>
+  <div class="busuanzi center">
+    页阅读量:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
+    站访问量:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
+    站访客数:&nbsp;<span id="busuanzi_value_site_uv"></span>
+  </div>
+
+
+
+
+
+  <section id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="post-论文结构学习一" data-title="论文结构学习一" data-url="http://fredchenjialin.github.io/2016/09/22/论文结构学习一/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'fredchenjialin'};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+    <!-- 多说公共JS代码 end -->
+  </section>
+  
+
+    </div>
+  </div>
+  <footer class="page-footer"><div class="clearfix">
+</div>
+<div class="right-foot container">
+    <div class="firstrow">
+        <a href="#top" >
+        <i class="fa fa-arrow-right"></i>
+        </a>
+        © Multipluso 2015-2016
+    </div>
+    <div class="secondrow">
+        <a href="https://github.com/gaoryrt/hexo-theme-pln">
+        Theme Pln
+        </a>
+    </div>
+</div>
+<div class="clearfix">
+</div>
+</footer>
+  <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+
+// comments below to disable loading animation
+function revealOnScroll() {
+  var scrolled = $(window).scrollTop();
+  $(".excerpt, .index-title, .index-meta, p").each(function() {
+    var current = $(this),
+      height = $(window).outerHeight(),
+      offsetTop = current.offset().top;
+    (scrolled + height + 50 > offsetTop) ? current.addClass("animation"):'';
+  });
+}
+$(window).on("scroll", revealOnScroll);
+$(document).ready(revealOnScroll)
+
+// disqus scripts
+
+
+// dropdown scripts
+$(".dropdown").click(function(event) {
+  var current = $(this);
+  event.stopPropagation();
+  $(current).children(".dropdown-content")[($(current).children(".dropdown-content").hasClass("open"))?'removeClass':'addClass']("open")
+});
+$(document).click(function(){
+    $(".dropdown-content").removeClass("open");
+})
+
+// back to top scripts
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, 500);
+  return false;
+});
+
+
+var path = "/search.xml";
+searchFunc(path, 'local-search-input', 'local-search-result');
+
+</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
+
+</body>
+</html>

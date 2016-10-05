@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fredchenjialin.github.io/"/>
-  <updated>2016-09-14T13:23:25.890Z</updated>
+  <updated>2016-10-05T14:16:14.628Z</updated>
   <id>http://fredchenjialin.github.io/</id>
   
   <author>
@@ -14,6 +14,97 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>goodbye，Nexus！</title>
+    <link href="http://fredchenjialin.github.io/2016/10/05/goodbye%EF%BC%8CNexus%EF%BC%81/"/>
+    <id>http://fredchenjialin.github.io/2016/10/05/goodbye，Nexus！/</id>
+    <published>2016-10-05T13:54:06.000Z</published>
+    <updated>2016-10-05T14:16:14.628Z</updated>
+    
+    <content type="html">&lt;h3 id=&quot;再见了，Nexus！！！&quot;&gt;再见了，Nexus！！！&lt;/h3&gt;&lt;p&gt;上了大学的第一天，同寝室的人问我，你是多少学号，我说不知道唉！他说你没有查一查吗，我说不知道在哪里查这种信息。&lt;br&gt;他说网上就有通知啊。&lt;/p&gt;
+&lt;p&gt;于是我拿出我的第一款手机，oppo，查来查去，浏览器进不去，室友说，来，我帮你看看。&lt;/p&gt;
+&lt;p&gt;他掏出了一台手机，一台我觉得在那个时候超级好看，高端，充满了未来感，又和平时见到的手机完全不一样的手机。后来我知道它叫做Nexus。&lt;/p&gt;
+&lt;p&gt;室友的Nexus是三星代工的第三代，也是多代Nexus中品控上乘的一代，Nexus S深深的影响到了我对于手机的审美。&lt;/p&gt;
+&lt;p&gt;我的第一台Nexus是LG代工的第四代，购买的时候已经是发售后将近一年了，在淘宝上面买的。N4是双面玻璃背板，正面是一整块玻璃，背面是玻璃下有一层科技花纹，非常亮眼。&lt;/p&gt;
+&lt;p&gt;我的N4在使用期间一共摔过三次，两次都摔碎了屏幕，可见我的小心和双面玻璃的脆弱。第一次摔碎时，从淘宝上&lt;br&gt;买来屏幕总成自己对着换屏视频换了屏幕，新屏幕完美使用。后来屏幕又摔碎了一次，因为成本问题，就放弃了。&lt;/p&gt;
+&lt;p&gt;N4摔坏了以后因为经济问题，换了小米的红米手机，除了稍显卡顿，并没有什么不满，原因是当时我买了ipad，有得玩。&lt;/p&gt;
+&lt;p&gt;这期间，Nexus发布了5（LG），6（MOTO），塑料背壳，我感到很辛运是在N4的时候我可以有钱买到它。&lt;/p&gt;
+&lt;p&gt;大四的时候，因为错误的判断以及信仰，在N5X（LG）发布一个月后自己海淘购买了5X，虽然相当于是借钱买的，但是我并不后悔，这确实是最后一代的Nexus了。&lt;br&gt;对了，和N5X同时发布的同时也发了一个高端型号，Nexus6P（华为）。&lt;/p&gt;
+&lt;p&gt;今天凌晨，google开发布会公布了从“mobile first”到“AI first”的转变，同时发布了由HTC代工的新一代google手机，pixel和pixel XL。&lt;/p&gt;
+&lt;p&gt;所以，Nexus，再见了。&lt;/p&gt;
+&lt;p&gt;个人认为最好看的N4和最后收官的N5X，满足了，哈！&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;再见了，Nexus！！！&quot;&gt;再见了，Nexus！！！&lt;/h3&gt;&lt;p&gt;上了大学的第一天，同寝室的人问我，你是多少学号，我说不知道唉！他说你没有查一查吗，我说不知道在哪里查这种信息。&lt;br&gt;他说网上就有通知啊。&lt;/p&gt;
+&lt;p&gt;于是我拿出我的第一款手机，oppo，查来查
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+    
+      <category term="Nexus" scheme="http://fredchenjialin.github.io/tags/Nexus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>论文结构学习一</title>
+    <link href="http://fredchenjialin.github.io/2016/09/22/%E8%AE%BA%E6%96%87%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E4%B8%80/"/>
+    <id>http://fredchenjialin.github.io/2016/09/22/论文结构学习一/</id>
+    <published>2016-09-22T02:35:15.000Z</published>
+    <updated>2016-09-24T13:42:11.731Z</updated>
+    
+    <content type="html">&lt;p&gt;本篇学习目标是《&lt;a href=&quot;http://128.84.21.199/abs/1609.05143v1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Target-driven Visual Navigation in Indoor Scenes using Deep Reinforcement Learning&lt;/a&gt;》&lt;/p&gt;
+&lt;h2 id=&quot;关于Introduction&quot;&gt;关于Introduction&lt;/h2&gt;&lt;h4 id=&quot;介绍背景和做了哪些东西，现有的不足以及我们实现的效果,如下：&quot;&gt;介绍背景和做了哪些东西，现有的不足以及我们实现的效果,如下：&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;Since the 1970s, there have been various attempts to build a system that can understand such relationships. Recently, with the rise of deep learning models, learning-based approaches have gained wide popularity [1], [2].&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;说到了一部分的背景。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In order to achieve higher adaptability and flexibility, we introduce a target-driven model.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;说到了具体的工作。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Unfortunately, training and quantitatively evaluating DRL algorithms in real environments is often tedious.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;不足。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We evaluate our method for the following tasks: (1) Target generalization, where the goal is to navigate to targets that have not been used during training within a scene. (2) Scene generalization, where the goal is to navigate to targets in scenes not used for training. (3) Real-world generalization, where we demonstrate navigation to targets using a real robot. &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;目标。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In summary, …&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;总结。&lt;/p&gt;
+&lt;h2 id=&quot;关于RELATED_WORK&quot;&gt;关于RELATED WORK&lt;/h2&gt;&lt;p&gt;相关工作介绍了很多已有的技术和方法。给予地图的方法需要地图，然后说说我们的方法不用地图。对于无地图的导航，关注点基本都在给定输入图像的避障，我们侧重在无图，也不基于3D重建。&lt;/p&gt;
+&lt;p&gt;接着说到了强化学习，说到了直升机的那个，还有DRL的开山之作，玩Atari游戏，我们的输入更复杂，而且可以迁移知识。&lt;/p&gt;
+&lt;h2 id=&quot;接下来介绍了实验平台，也就是实验需要的环境，相当于介绍实验背景&quot;&gt;接下来介绍了实验平台，也就是实验需要的环境，相当于介绍实验背景&lt;/h2&gt;&lt;p&gt;仿真系统的好处就是可伸缩性scalable&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The advantage of using a physics engine for modeling the world is that it is highly scalable (training a robot in real houses is not easily scalable).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;说到了目标导向的模型以及用于模型的框架deep_siamese_actor-critic_network&quot;&gt;说到了目标导向的模型以及用于模型的框架deep siamese actor-critic network&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;A先说是问题状态，这里是分析场景以及确定模型的作用：学习从2d图像到三维场景动作的映射。&lt;/li&gt;
+&lt;li&gt;B是问题设想。关于泛化能力的分析，对于新目标不需要重新训练的补充。&lt;/li&gt;
+&lt;li&gt;C是学习的设置。关键点在模型。&lt;/li&gt;
+&lt;li&gt;D是模型。他们的模型嵌入了一个什么的层，这种模型使得场景共用一个层，目标共用一个层。&lt;strong&gt;不懂&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;E是训练的方法。&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本篇学习目标是《&lt;a href=&quot;http://128.84.21.199/abs/1609.05143v1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Target-driven Visual Navigation in Indoor Scenes u
+    
+    </summary>
+    
+      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+    
+    
+      <category term="论文结构学习" scheme="http://fredchenjialin.github.io/tags/%E8%AE%BA%E6%96%87%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>关于虚拟机Ubuntu安装Tensorflow</title>
@@ -709,68 +800,6 @@
     
     
       <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器人运动学0</title>
-    <link href="http://fredchenjialin.github.io/2015/10/31/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BF%90%E5%8A%A8%E5%AD%A60/"/>
-    <id>http://fredchenjialin.github.io/2015/10/31/机器人运动学0/</id>
-    <published>2015-10-31T08:26:52.000Z</published>
-    <updated>2015-10-31T08:37:42.053Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;最近要写与机器人的步态有关的论文，所以记录一下这一块的学习。&quot;&gt;最近要写与机器人的步态有关的论文，所以记录一下这一块的学习。&lt;/h2&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;最近要写与机器人的步态有关的论文，所以记录一下这一块的学习。&quot;&gt;最近要写与机器人的步态有关的论文，所以记录一下这一块的学习。&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
-    
-      <category term="机器人运动学" scheme="http://fredchenjialin.github.io/categories/Diary/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BF%90%E5%8A%A8%E5%AD%A6/"/>
-    
-    
-      <category term="步态" scheme="http://fredchenjialin.github.io/tags/%E6%AD%A5%E6%80%81/"/>
-    
-      <category term="运动学" scheme="http://fredchenjialin.github.io/tags/%E8%BF%90%E5%8A%A8%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2015年10月30日周报暨计划调整</title>
-    <link href="http://fredchenjialin.github.io/2015/10/31/2015%E5%B9%B410%E6%9C%8830%E6%97%A5%E5%91%A8%E6%8A%A5%E6%9A%A8%E8%AE%A1%E5%88%92%E8%B0%83%E6%95%B4/"/>
-    <id>http://fredchenjialin.github.io/2015/10/31/2015年10月30日周报暨计划调整/</id>
-    <published>2015-10-31T08:19:07.000Z</published>
-    <updated>2015-10-31T08:23:43.494Z</updated>
-    
-    <content type="html">&lt;p&gt;关于最近的一些想法，一直以来都想做一个自己撸的网站，前端加上后台。在反复浅尝辄止了多个框架，语言后，我发现我离最初的想法差的有点远了。&lt;/p&gt;
-&lt;p&gt;最初我就是想玩玩效果（注：html5），整一整在网站上看着舒服而又高大上的网页（注：css），如果还有各种各种的动画就更好了（注：JS）。&lt;/p&gt;
-&lt;p&gt;所以这么久了，一直没搞清自己在寻找着什么，所以我决定是搞css和js，更加偏重js，结合着算法来搞应该会比较有趣。&lt;/p&gt;
-&lt;p&gt;那么现在的事情总结起来就是：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;机器学习&lt;/li&gt;
-&lt;li&gt;步态算法&lt;/li&gt;
-&lt;li&gt;JS+CSS&lt;/li&gt;
-&lt;li&gt;ROS&lt;/li&gt;
-&lt;li&gt;Linux视频+摄像头+图像&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;另外我还发现一点有一个轻量级的blog框架写东西，或者说是用一个好用的工具写技术日记真的要比写技术博客方便好多&quot;&gt;另外我还发现一点有一个轻量级的blog框架写东西，或者说是用一个好用的工具写技术日记真的要比写技术博客方便好多&lt;/h2&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;关于最近的一些想法，一直以来都想做一个自己撸的网站，前端加上后台。在反复浅尝辄止了多个框架，语言后，我发现我离最初的想法差的有点远了。&lt;/p&gt;
-&lt;p&gt;最初我就是想玩玩效果（注：html5），整一整在网站上看着舒服而又高大上的网页（注：css），如果还有各种各种的动画就更好了
-    
-    </summary>
-    
-      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
-    
-    
-      <category term="周报" scheme="http://fredchenjialin.github.io/tags/%E5%91%A8%E6%8A%A5/"/>
-    
-      <category term="计划" scheme="http://fredchenjialin.github.io/tags/%E8%AE%A1%E5%88%92/"/>
     
   </entry>
   
