@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fredchenjialin.github.io/"/>
-  <updated>2016-10-05T14:22:27.629Z</updated>
+  <updated>2016-10-07T10:29:31.958Z</updated>
   <id>http://fredchenjialin.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://fredchenjialin.github.io/2016/10/05/goodbye%EF%BC%8CNexus%EF%BC%81/"/>
     <id>http://fredchenjialin.github.io/2016/10/05/goodbye，Nexus！/</id>
     <published>2016-10-05T13:54:06.000Z</published>
-    <updated>2016-10-05T14:22:27.629Z</updated>
+    <updated>2016-10-07T10:29:31.958Z</updated>
     
     <content type="html">&lt;h3 id=&quot;再见了，Nexus！！！&quot;&gt;再见了，Nexus！！！&lt;/h3&gt;&lt;p&gt;上了大学的第一天，同寝室的人问我，你是多少学号，我说不知道唉！他说你没有查一查吗，我说不知道在哪里查这种信息。&lt;br&gt;他说网上就有通知啊。&lt;/p&gt;
 &lt;p&gt;于是我拿出我的第一款手机，oppo，查来查去，浏览器进不去，室友说，来，我帮你看看。&lt;/p&gt;
@@ -43,10 +43,8 @@
     
     </summary>
     
-      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+      <category term="Nexus" scheme="http://fredchenjialin.github.io/categories/Nexus/"/>
     
-    
-      <category term="Nexus" scheme="http://fredchenjialin.github.io/tags/Nexus/"/>
     
   </entry>
   
@@ -55,7 +53,7 @@
     <link href="http://fredchenjialin.github.io/2016/09/22/%E8%AE%BA%E6%96%87%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E4%B8%80/"/>
     <id>http://fredchenjialin.github.io/2016/09/22/论文结构学习一/</id>
     <published>2016-09-22T02:35:15.000Z</published>
-    <updated>2016-09-24T13:42:11.731Z</updated>
+    <updated>2016-10-07T10:29:23.344Z</updated>
     
     <content type="html">&lt;p&gt;本篇学习目标是《&lt;a href=&quot;http://128.84.21.199/abs/1609.05143v1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Target-driven Visual Navigation in Indoor Scenes using Deep Reinforcement Learning&lt;/a&gt;》&lt;/p&gt;
 &lt;h2 id=&quot;关于Introduction&quot;&gt;关于Introduction&lt;/h2&gt;&lt;h4 id=&quot;介绍背景和做了哪些东西，现有的不足以及我们实现的效果,如下：&quot;&gt;介绍背景和做了哪些东西，现有的不足以及我们实现的效果,如下：&lt;/h4&gt;&lt;blockquote&gt;
@@ -99,10 +97,8 @@
     
     </summary>
     
-      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+      <category term="研究生生活" scheme="http://fredchenjialin.github.io/categories/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E6%B4%BB/"/>
     
-    
-      <category term="论文结构学习" scheme="http://fredchenjialin.github.io/tags/%E8%AE%BA%E6%96%87%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -111,7 +107,7 @@
     <link href="http://fredchenjialin.github.io/2016/09/14/%E5%85%B3%E4%BA%8E%E8%99%9A%E6%8B%9F%E6%9C%BAUbuntu%E5%AE%89%E8%A3%85Tensorflow/"/>
     <id>http://fredchenjialin.github.io/2016/09/14/关于虚拟机Ubuntu安装Tensorflow/</id>
     <published>2016-09-14T13:19:30.000Z</published>
-    <updated>2016-09-14T13:23:25.890Z</updated>
+    <updated>2016-10-07T10:28:32.277Z</updated>
     
     <content type="html">&lt;h3 id=&quot;今天的安装非常顺利，没有遇到奇奇怪怪的问题，因为写DQN需要Tensorflow这个库，所以在我的虚拟机内安装一下。&quot;&gt;今天的安装非常顺利，没有遇到奇奇怪怪的问题，因为写DQN需要Tensorflow这个库，所以在我的虚拟机内安装一下。&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/lanxuezaipiao/p/3613497.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.cnblogs.com/lanxuezaipiao/p/3613497.html&lt;/a&gt;这个教程非常的好。&lt;/p&gt;
 &lt;p&gt;固定ip后，在tensorflow官网查看安装命令，使用pip安装&lt;/p&gt;
@@ -125,10 +121,8 @@
     
     </summary>
     
-      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+      <category term="OpenAI" scheme="http://fredchenjialin.github.io/categories/OpenAI/"/>
     
-    
-      <category term="OpenAI" scheme="http://fredchenjialin.github.io/tags/OpenAI/"/>
     
   </entry>
   
@@ -137,7 +131,7 @@
     <link href="http://fredchenjialin.github.io/2016/09/13/hexo%E4%B8%8B%E4%BD%BF%E7%94%A8mathjax%E7%9A%84%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/"/>
     <id>http://fredchenjialin.github.io/2016/09/13/hexo下使用mathjax的相关问题/</id>
     <published>2016-09-13T01:39:22.000Z</published>
-    <updated>2016-10-07T09:17:30.737Z</updated>
+    <updated>2016-10-07T10:28:23.223Z</updated>
     
     <content type="html">&lt;p&gt;在blog中插入公式，mathjax是一个十分好用的工具。&lt;/p&gt;
 &lt;p&gt;以往都是直接在hexo的主题的某个模块上直接修改代码，现在只需要安装一个hexo-math就可以自动使用。&lt;/p&gt;
@@ -163,8 +157,6 @@
       <category term="hexo设置" scheme="http://fredchenjialin.github.io/categories/hexo%E8%AE%BE%E7%BD%AE/"/>
     
     
-      <category term="mathjax" scheme="http://fredchenjialin.github.io/tags/mathjax/"/>
-    
   </entry>
   
   <entry>
@@ -172,7 +164,7 @@
     <link href="http://fredchenjialin.github.io/2016/09/12/%E7%AD%96%E7%95%A5%E6%A2%AF%E5%BA%A6/"/>
     <id>http://fredchenjialin.github.io/2016/09/12/策略梯度/</id>
     <published>2016-09-12T02:11:38.000Z</published>
-    <updated>2016-09-13T13:58:06.763Z</updated>
+    <updated>2016-10-07T10:28:16.442Z</updated>
     
     <content type="html">&lt;h2 id=&quot;策略梯度&quot;&gt;策略梯度&lt;/h2&gt;&lt;p&gt;策略梯度以一种不同的方式给出了衰减期望的目标函数。&lt;/p&gt;
 &lt;p&gt;$$L(\theta )=E(r_{1} +\gamma r_{2} + \gamma^{2} r_{3}+…|\pi (,\theta))$$&lt;/p&gt;
@@ -188,10 +180,8 @@
     
     </summary>
     
-      <category term="机器学习" scheme="http://fredchenjialin.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="ML" scheme="http://fredchenjialin.github.io/categories/ML/"/>
     
-    
-      <category term="Policy Gradient" scheme="http://fredchenjialin.github.io/tags/Policy-Gradient/"/>
     
   </entry>
   
@@ -200,7 +190,7 @@
     <link href="http://fredchenjialin.github.io/2016/09/05/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E6%B4%BB%EF%BC%88%E9%9B%B6%EF%BC%89/"/>
     <id>http://fredchenjialin.github.io/2016/09/05/研究生生活（零）/</id>
     <published>2016-09-05T06:21:35.000Z</published>
-    <updated>2016-09-05T07:48:48.431Z</updated>
+    <updated>2016-10-07T10:28:09.175Z</updated>
     
     <content type="html">&lt;p&gt;研究生生活这个目录呢，记录研究生期间都在做些什么，生活的状态和一些对于研究生的反思。&lt;/p&gt;
 &lt;p&gt;每一篇都以一段时间的状态来开展，希望能够记录下自己的两年半的时光。&lt;/p&gt;
@@ -232,8 +222,6 @@
       <category term="研究生生活" scheme="http://fredchenjialin.github.io/categories/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E6%B4%BB/"/>
     
     
-      <category term="Init" scheme="http://fredchenjialin.github.io/tags/Init/"/>
-    
   </entry>
   
   <entry>
@@ -241,7 +229,7 @@
     <link href="http://fredchenjialin.github.io/2016/09/04/%E4%B8%9C%E6%90%9E%E8%A5%BF%E6%90%9E%E6%98%AF%E6%B2%A1%E6%9C%89%E5%87%BA%E8%B7%AF%E7%9A%84/"/>
     <id>http://fredchenjialin.github.io/2016/09/04/东搞西搞是没有出路的/</id>
     <published>2016-09-04T12:14:23.000Z</published>
-    <updated>2016-09-04T12:20:07.880Z</updated>
+    <updated>2016-10-07T10:28:01.730Z</updated>
     
     <content type="html">&lt;p&gt;最近开了学后一直在实验室待着，但是进展却一直没有头绪，总结一下就是要做事情的话，&lt;br&gt;还是需要专注和专心。我最近又在东搞西搞了，看了几篇用RL避障的论文，又看了下RL里面Q的细节（这个&lt;br&gt;细节还是有很多东西搞不清楚的），看了下为什么DQN为什么用的多，而且火。就看了这些，除此之外的时间&lt;br&gt;都用来看视频，睡觉和刷网页了。&lt;/p&gt;
 &lt;p&gt;需要静静心，把我的研究生第一个阶段的任务给完成了，在此，我觉得搞一个像是那种进度表一样的东西会比较有趣，&lt;br&gt;也能够记录下研究生期间我都干了什么。&lt;/p&gt;
@@ -256,8 +244,6 @@
       <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
     
     
-      <category term="对自己说" scheme="http://fredchenjialin.github.io/tags/%E5%AF%B9%E8%87%AA%E5%B7%B1%E8%AF%B4/"/>
-    
   </entry>
   
   <entry>
@@ -265,7 +251,7 @@
     <link href="http://fredchenjialin.github.io/2016/09/04/ubuntu%E4%B8%8B%E9%85%8D%E7%BD%AEOpenAI/"/>
     <id>http://fredchenjialin.github.io/2016/09/04/ubuntu下配置OpenAI/</id>
     <published>2016-09-04T03:20:02.000Z</published>
-    <updated>2016-09-05T07:01:45.609Z</updated>
+    <updated>2016-10-07T10:27:57.122Z</updated>
     
     <content type="html">&lt;p&gt;研究生开学了，我也再次回到了写生活日记的时期，我觉得以前把现在这种叫做技术日记真是让自己觉得不好意思，&lt;br&gt;且当做生活日记吧。&lt;/p&gt;
 &lt;p&gt;开了学也没干啥，配了个环境OpenAI，关键在于在ubuntu下安装numpy和scipy这两个科学计算库。&lt;/p&gt;
@@ -285,10 +271,8 @@
     
     </summary>
     
-      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+      <category term="OpenAI" scheme="http://fredchenjialin.github.io/categories/OpenAI/"/>
     
-    
-      <category term="OpenAI" scheme="http://fredchenjialin.github.io/tags/OpenAI/"/>
     
   </entry>
   
@@ -297,7 +281,7 @@
     <link href="http://fredchenjialin.github.io/2016/04/16/%E5%AF%B9%E8%87%AA%E5%B7%B1%E8%AF%B4/"/>
     <id>http://fredchenjialin.github.io/2016/04/16/对自己说/</id>
     <published>2016-04-16T08:33:34.000Z</published>
-    <updated>2016-04-16T08:36:28.508Z</updated>
+    <updated>2016-10-07T10:27:48.012Z</updated>
     
     <content type="html">&lt;h1 id=&quot;Question_set&quot;&gt;Question set&lt;/h1&gt;&lt;h3 id=&quot;Q1:学长在大学期间有哪些成就（成绩，竞赛等等）？_//人物简介&quot;&gt;Q1:学长在大学期间有哪些成就（成绩，竞赛等等）？  //人物简介&lt;/h3&gt;&lt;h3 id=&quot;A：&quot;&gt;A：&lt;/h3&gt;&lt;p&gt;&lt;em&gt;
 &lt;/em&gt;&lt;br&gt;&lt;em&gt;
@@ -406,8 +390,6 @@
       <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
     
     
-      <category term="对自己说" scheme="http://fredchenjialin.github.io/tags/%E5%AF%B9%E8%87%AA%E5%B7%B1%E8%AF%B4/"/>
-    
   </entry>
   
   <entry>
@@ -415,7 +397,7 @@
     <link href="http://fredchenjialin.github.io/2016/04/11/%E4%B8%80%E4%BA%9B%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/"/>
     <id>http://fredchenjialin.github.io/2016/04/11/一些数学公式/</id>
     <published>2016-04-11T12:32:21.000Z</published>
-    <updated>2016-09-13T02:57:59.720Z</updated>
+    <updated>2016-10-07T10:27:43.186Z</updated>
     
     <content type="html">&lt;h1 id=&quot;记录一些数学公式，准备用mathjax来画&quot;&gt;记录一些数学公式，准备用mathjax来画&lt;/h1&gt;&lt;h4 id=&quot;拉格朗日方程（Lagrange_equation）&quot;&gt;拉格朗日方程（Lagrange equation）&lt;/h4&gt;&lt;p&gt;$$\frac{d}{dt}\frac{\partial L}{\partial \dot{q}}-\frac{\partial L}{\partial q}=0$$&lt;/p&gt;
 &lt;p&gt;$ L\left ( q, \dot{q}, t \right )$是拉格朗日量，&lt;/p&gt;
@@ -432,8 +414,6 @@
       <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
     
     
-      <category term="Mathjax" scheme="http://fredchenjialin.github.io/tags/Mathjax/"/>
-    
   </entry>
   
   <entry>
@@ -441,7 +421,7 @@
     <link href="http://fredchenjialin.github.io/2016/04/11/default-Software/"/>
     <id>http://fredchenjialin.github.io/2016/04/11/default-Software/</id>
     <published>2016-04-11T02:08:55.000Z</published>
-    <updated>2016-04-11T03:13:15.473Z</updated>
+    <updated>2016-10-07T10:27:29.421Z</updated>
     
     <content type="html">&lt;h1 id=&quot;记录一下一些常用默认软件&quot;&gt;记录一下一些常用默认软件&lt;/h1&gt;&lt;h4 id=&quot;论文_Mendeley&quot;&gt;论文 Mendeley&lt;/h4&gt;&lt;h4 id=&quot;pdf_SumatraPDF&quot;&gt;pdf SumatraPDF&lt;/h4&gt;&lt;h4 id=&quot;编辑器_VScode&quot;&gt;编辑器 VScode&lt;/h4&gt;&lt;h4 id=&quot;快速编辑器_Notepad++&quot;&gt;快速编辑器 Notepad++&lt;/h4&gt;&lt;h4 id=&quot;字体美化_MacType&quot;&gt;字体美化 MacType&lt;/h4&gt;&lt;h4 id=&quot;远程连接_TeamViewer&quot;&gt;远程连接 TeamViewer&lt;/h4&gt;&lt;h4 id=&quot;Latex_Texmaker+CTex&quot;&gt;Latex Texmaker+CTex&lt;/h4&gt;&lt;h4 id=&quot;本地服务器集成_XAMPP&quot;&gt;本地服务器集成 XAMPP&lt;/h4&gt;&lt;h4 id=&quot;视频播放_potplayer&quot;&gt;视频播放 potplayer&lt;/h4&gt;&lt;h4 id=&quot;IDE_最著名的那一家Jetbrain&quot;&gt;IDE 最著名的那一家Jetbrain&lt;/h4&gt;</content>
     
@@ -454,8 +434,6 @@
       <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
     
     
-      <category term="Software" scheme="http://fredchenjialin.github.io/tags/Software/"/>
-    
   </entry>
   
   <entry>
@@ -463,7 +441,7 @@
     <link href="http://fredchenjialin.github.io/2015/12/29/mysql%E5%B0%8F%E8%AE%B0/"/>
     <id>http://fredchenjialin.github.io/2015/12/29/mysql小记/</id>
     <published>2015-12-29T08:12:38.000Z</published>
-    <updated>2015-12-29T08:38:37.037Z</updated>
+    <updated>2016-10-07T10:27:25.059Z</updated>
     
     <content type="html">&lt;h2 id=&quot;随便记录几条mysql命令，我用的是xmapp中的mysql，炒鸡好用&quot;&gt;随便记录几条mysql命令，我用的是xmapp中的mysql，炒鸡好用&lt;/h2&gt;&lt;h3 id=&quot;关于登陆&quot;&gt;关于登陆&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;查询当前用户&lt;/p&gt;
@@ -489,10 +467,8 @@
     
     </summary>
     
-      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
+      <category term="mysql" scheme="http://fredchenjialin.github.io/categories/mysql/"/>
     
-    
-      <category term="mysql" scheme="http://fredchenjialin.github.io/tags/mysql/"/>
     
   </entry>
   
@@ -501,7 +477,7 @@
     <link href="http://fredchenjialin.github.io/2015/12/06/%E6%B6%88%E5%A4%B1%E7%9A%84%E7%88%B1%E4%BA%BA/"/>
     <id>http://fredchenjialin.github.io/2015/12/06/消失的爱人/</id>
     <published>2015-12-06T05:47:14.000Z</published>
-    <updated>2015-12-06T06:10:29.282Z</updated>
+    <updated>2016-10-07T10:27:09.723Z</updated>
     
     <content type="html">&lt;p&gt;今天认真看了一遍《消失的爱人》。&lt;/p&gt;
 &lt;h2 id=&quot;表现的是婚姻问题&quot;&gt;表现的是婚姻问题&lt;/h2&gt;&lt;ul&gt;
@@ -536,8 +512,6 @@
       <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
     
     
-      <category term="消失的爱人" scheme="http://fredchenjialin.github.io/tags/%E6%B6%88%E5%A4%B1%E7%9A%84%E7%88%B1%E4%BA%BA/"/>
-    
   </entry>
   
   <entry>
@@ -545,7 +519,7 @@
     <link href="http://fredchenjialin.github.io/2015/11/28/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A08/"/>
     <id>http://fredchenjialin.github.io/2015/11/28/机器学习8/</id>
     <published>2015-11-28T02:55:29.000Z</published>
-    <updated>2016-10-07T09:16:56.353Z</updated>
+    <updated>2016-10-07T10:27:04.400Z</updated>
     
     <content type="html">&lt;h3 id=&quot;最近一直在学机器学习，但是没有更新blog原因&quot;&gt;最近一直在学机器学习，但是没有更新blog原因&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;有一个好朋友，介绍了一个新词给我，叫做手账。&lt;/li&gt;
@@ -573,10 +547,8 @@
     
     </summary>
     
-      <category term="机器学习" scheme="http://fredchenjialin.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="ML" scheme="http://fredchenjialin.github.io/categories/ML/"/>
     
-    
-      <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
     
   </entry>
   
@@ -585,7 +557,7 @@
     <link href="http://fredchenjialin.github.io/2015/11/19/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A07/"/>
     <id>http://fredchenjialin.github.io/2015/11/19/机器学习7/</id>
     <published>2015-11-19T05:18:42.000Z</published>
-    <updated>2016-10-07T09:16:51.602Z</updated>
+    <updated>2016-10-07T10:27:00.115Z</updated>
     
     <content type="html">&lt;h3 id=&quot;支持向量机_SVM_SupportVectorMachine&quot;&gt;支持向量机 SVM SupportVectorMachine&lt;/h3&gt;</content>
     
@@ -595,10 +567,8 @@
     
     </summary>
     
-      <category term="机器学习" scheme="http://fredchenjialin.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="ML" scheme="http://fredchenjialin.github.io/categories/ML/"/>
     
-    
-      <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
     
   </entry>
   
@@ -607,7 +577,7 @@
     <link href="http://fredchenjialin.github.io/2015/11/16/JS%E8%A1%A5%E8%AE%B0/"/>
     <id>http://fredchenjialin.github.io/2015/11/16/JS补记/</id>
     <published>2015-11-16T05:43:48.000Z</published>
-    <updated>2016-10-07T09:16:47.921Z</updated>
+    <updated>2016-10-07T10:31:02.015Z</updated>
     
     <content type="html">&lt;h3 id=&quot;两种实现继承的方式&quot;&gt;两种实现继承的方式&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt; &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;Car&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var self = this;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;self.type = &lt;span class=&quot;string&quot;&gt;&quot;Car&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;self.go = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(&lt;span class=&quot;string&quot;&gt;&quot;Going...&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Toyota = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Toyota.prototype = new Car();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Toyota.prototype.constructor = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var self = this;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;self.type = &lt;span class=&quot;string&quot;&gt;&quot;Toyota&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;self.go = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(&lt;span class=&quot;string&quot;&gt;&quot;A Toyota car is going...&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Toyota.prototype.isJapaneseCar = &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var t = new Toyota();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(t instanceof Toyota);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(t instanceof Car);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -631,8 +601,6 @@
       <category term="JavaScript" scheme="http://fredchenjialin.github.io/categories/JavaScript/"/>
     
     
-      <category term="JavaScript" scheme="http://fredchenjialin.github.io/tags/JavaScript/"/>
-    
   </entry>
   
   <entry>
@@ -640,7 +608,7 @@
     <link href="http://fredchenjialin.github.io/2015/11/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A06/"/>
     <id>http://fredchenjialin.github.io/2015/11/12/机器学习6/</id>
     <published>2015-11-12T05:49:18.000Z</published>
-    <updated>2016-10-07T09:16:43.261Z</updated>
+    <updated>2016-10-07T10:26:56.735Z</updated>
     
     <content type="html">&lt;h3 id=&quot;评估一个机器学习算法&quot;&gt;评估一个机器学习算法&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;因为我们在提出一个机器学习算法后总是想着要改进和优化它，使其得到最好的学习效果&lt;/li&gt;
@@ -669,10 +637,8 @@
     
     </summary>
     
-      <category term="机器学习" scheme="http://fredchenjialin.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="ML" scheme="http://fredchenjialin.github.io/categories/ML/"/>
     
-    
-      <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
     
   </entry>
   
@@ -681,7 +647,7 @@
     <link href="http://fredchenjialin.github.io/2015/11/12/%E6%9C%80%E8%BF%91%E6%B2%A1%E5%AD%A6%E4%B9%A0/"/>
     <id>http://fredchenjialin.github.io/2015/11/12/最近没学习/</id>
     <published>2015-11-12T05:29:53.000Z</published>
-    <updated>2015-11-12T05:48:29.582Z</updated>
+    <updated>2016-10-07T10:30:54.550Z</updated>
     
     <content type="html">&lt;p&gt;这几天我去参加陕西省研究生创新成果展，看到了很多好玩的东西，也学习到了很多，有了收获，长了见识，认识教训。&lt;/p&gt;
 &lt;p&gt;所以我没有学习，而且也不太能学的下，不能够静心。&lt;/p&gt;
@@ -699,8 +665,6 @@
       <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
     
     
-      <category term="Nexus5X" scheme="http://fredchenjialin.github.io/tags/Nexus5X/"/>
-    
   </entry>
   
   <entry>
@@ -708,7 +672,7 @@
     <link href="http://fredchenjialin.github.io/2015/11/01/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A05/"/>
     <id>http://fredchenjialin.github.io/2015/11/01/机器学习5/</id>
     <published>2015-11-01T13:31:24.000Z</published>
-    <updated>2016-10-07T09:16:37.503Z</updated>
+    <updated>2016-10-07T10:26:52.777Z</updated>
     
     <content type="html">&lt;h3 id=&quot;第一节里面讲了一个大而全的针对神经网络的cost_Function&quot;&gt;第一节里面讲了一个大而全的针对神经网络的cost Function&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/costfunction.png&quot; alt=&quot;costfunction&quot;&gt;&lt;/p&gt;
 &lt;h3 id=&quot;Backpropagation_Algorithm&quot;&gt;Backpropagation Algorithm&lt;/h3&gt;&lt;ul&gt;
@@ -754,10 +718,8 @@
     
     </summary>
     
-      <category term="机器学习" scheme="http://fredchenjialin.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="ML" scheme="http://fredchenjialin.github.io/categories/ML/"/>
     
-    
-      <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
     
   </entry>
   
@@ -766,7 +728,7 @@
     <link href="http://fredchenjialin.github.io/2015/10/31/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A04/"/>
     <id>http://fredchenjialin.github.io/2015/10/31/机器学习4/</id>
     <published>2015-10-31T08:27:53.000Z</published>
-    <updated>2016-10-07T09:16:31.813Z</updated>
+    <updated>2016-10-07T10:26:49.219Z</updated>
     
     <content type="html">&lt;h3 id=&quot;这一期的机器学习讲到了多类分类器和神经网络的铺垫&quot;&gt;这一期的机器学习讲到了多类分类器和神经网络的铺垫&lt;/h3&gt;&lt;p&gt;在原来的两类分类中，我们只是用不是0就是1来分类，现在的n多类分类可以同理为不是x就是其他n-1种，最后对n中的特征的可能性取最大值即可。&lt;/p&gt;
 &lt;p&gt;公式可以参考两类分类中的公式，仅仅略有不同。&lt;/p&gt;
@@ -782,10 +744,8 @@
     
     </summary>
     
-      <category term="机器学习" scheme="http://fredchenjialin.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="ML" scheme="http://fredchenjialin.github.io/categories/ML/"/>
     
-    
-      <category term="ML" scheme="http://fredchenjialin.github.io/tags/ML/"/>
     
   </entry>
   
