@@ -2,16 +2,100 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://fredchenjialin.github.io/2015/10/31/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BF%90%E5%8A%A8%E5%AD%A60/</loc>
+    <loc>http://fredchenjialin.github.io/2016/10/05/goodbye%EF%BC%8CNexus%EF%BC%81/</loc>
     
-    <lastmod>2016-10-07T11:57:38.240Z</lastmod>
+    <lastmod>2016-10-08T01:55:50.079Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fredchenjialin.github.io/2016/09/14/%E5%85%B3%E4%BA%8E%E8%99%9A%E6%8B%9F%E6%9C%BAUbuntu%E5%AE%89%E8%A3%85Tensorflow/</loc>
+    
+    <lastmod>2016-10-08T01:55:27.301Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fredchenjialin.github.io/2016/09/04/ubuntu%E4%B8%8B%E9%85%8D%E7%BD%AEOpenAI/</loc>
+    
+    <lastmod>2016-10-08T01:54:51.231Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fredchenjialin.github.io/2015/12/29/mysql%E5%B0%8F%E8%AE%B0/</loc>
+    
+    <lastmod>2016-10-08T01:54:22.306Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://fredchenjialin.github.io/2015/11/16/JS%E8%A1%A5%E8%AE%B0/</loc>
     
-    <lastmod>2016-10-07T10:31:02.015Z</lastmod>
+    <lastmod>2016-10-08T01:54:06.080Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fredchenjialin.github.io/2015/10/31/2015%E5%B9%B410%E6%9C%8830%E6%97%A5%E5%91%A8%E6%8A%A5%E6%9A%A8%E8%AE%A1%E5%88%92%E8%B0%83%E6%95%B4/</loc>
+    
+    <lastmod>2016-10-08T01:53:47.981Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fredchenjialin.github.io/2015/10/02/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%B5%B7%E6%B7%98Nexus5X%E2%80%94%E2%80%94%E7%BA%AA%E5%AE%9E/</loc>
+    
+    <lastmod>2016-10-08T01:53:22.701Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fredchenjialin.github.io/2015/09/25/2015%E5%B9%B49%E6%9C%8825%E6%97%A5%E5%91%A8%E6%8A%A52/</loc>
+    
+    <lastmod>2016-10-08T01:52:11.807Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fredchenjialin.github.io/2015/09/21/%E5%A4%8D%E8%AF%95%E5%8F%A3%E8%AF%AD/</loc>
+    
+    <lastmod>2016-10-08T01:51:17.169Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fredchenjialin.github.io/2015/09/20/pintos%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02/</loc>
+    
+    <lastmod>2016-10-08T01:50:58.960Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fredchenjialin.github.io/2015/09/16/pintos%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/</loc>
+    
+    <lastmod>2016-10-08T01:50:52.725Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fredchenjialin.github.io/2015/09/15/pintos%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/</loc>
+    
+    <lastmod>2016-10-08T01:50:48.010Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fredchenjialin.github.io/2015/09/13/pintos%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B00/</loc>
+    
+    <lastmod>2016-10-08T01:48:49.477Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fredchenjialin.github.io/2015/10/31/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%BF%90%E5%8A%A8%E5%AD%A60/</loc>
+    
+    <lastmod>2016-10-07T11:57:38.240Z</lastmod>
     
   </url>
   
@@ -23,23 +107,9 @@
   </url>
   
   <url>
-    <loc>http://fredchenjialin.github.io/2015/10/31/2015%E5%B9%B410%E6%9C%8830%E6%97%A5%E5%91%A8%E6%8A%A5%E6%9A%A8%E8%AE%A1%E5%88%92%E8%B0%83%E6%95%B4/</loc>
-    
-    <lastmod>2016-10-07T10:30:38.933Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fredchenjialin.github.io/2015/10/15/%E5%B0%8F%E8%AE%B0/</loc>
     
     <lastmod>2016-10-07T10:30:29.334Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fredchenjialin.github.io/2015/10/02/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%B5%B7%E6%B7%98Nexus5X%E2%80%94%E2%80%94%E7%BA%AA%E5%AE%9E/</loc>
-    
-    <lastmod>2016-10-07T10:30:13.695Z</lastmod>
     
   </url>
   
@@ -51,23 +121,9 @@
   </url>
   
   <url>
-    <loc>http://fredchenjialin.github.io/2016/10/05/goodbye%EF%BC%8CNexus%EF%BC%81/</loc>
-    
-    <lastmod>2016-10-07T10:29:31.958Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fredchenjialin.github.io/2016/09/22/%E8%AE%BA%E6%96%87%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E4%B8%80/</loc>
     
     <lastmod>2016-10-07T10:29:23.344Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fredchenjialin.github.io/2016/09/14/%E5%85%B3%E4%BA%8E%E8%99%9A%E6%8B%9F%E6%9C%BAUbuntu%E5%AE%89%E8%A3%85Tensorflow/</loc>
-    
-    <lastmod>2016-10-07T10:28:32.277Z</lastmod>
     
   </url>
   
@@ -100,13 +156,6 @@
   </url>
   
   <url>
-    <loc>http://fredchenjialin.github.io/2016/09/04/ubuntu%E4%B8%8B%E9%85%8D%E7%BD%AEOpenAI/</loc>
-    
-    <lastmod>2016-10-07T10:27:57.122Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fredchenjialin.github.io/2016/04/16/%E5%AF%B9%E8%87%AA%E5%B7%B1%E8%AF%B4/</loc>
     
     <lastmod>2016-10-07T10:27:48.012Z</lastmod>
@@ -124,13 +173,6 @@
     <loc>http://fredchenjialin.github.io/2016/04/11/default-Software/</loc>
     
     <lastmod>2016-10-07T10:27:29.421Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fredchenjialin.github.io/2015/12/29/mysql%E5%B0%8F%E8%AE%B0/</loc>
-    
-    <lastmod>2016-10-07T10:27:25.059Z</lastmod>
     
   </url>
   
@@ -226,13 +268,6 @@
   </url>
   
   <url>
-    <loc>http://fredchenjialin.github.io/2015/09/25/2015%E5%B9%B49%E6%9C%8825%E6%97%A5%E5%91%A8%E6%8A%A52/</loc>
-    
-    <lastmod>2016-10-07T10:25:25.472Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fredchenjialin.github.io/2015/09/24/yi/</loc>
     
     <lastmod>2016-10-07T10:25:16.654Z</lastmod>
@@ -250,41 +285,6 @@
     <loc>http://fredchenjialin.github.io/2015/09/22/%E5%B0%8F%E8%AE%A1/</loc>
     
     <lastmod>2016-10-07T10:24:56.263Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fredchenjialin.github.io/2015/09/21/%E5%A4%8D%E8%AF%95%E5%8F%A3%E8%AF%AD/</loc>
-    
-    <lastmod>2016-10-07T10:24:51.723Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fredchenjialin.github.io/2015/09/20/pintos%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B02/</loc>
-    
-    <lastmod>2016-10-07T10:24:46.928Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fredchenjialin.github.io/2015/09/16/pintos%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/</loc>
-    
-    <lastmod>2016-10-07T10:24:43.383Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fredchenjialin.github.io/2015/09/15/pintos%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/</loc>
-    
-    <lastmod>2016-10-07T10:24:39.502Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fredchenjialin.github.io/2015/09/13/pintos%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B00/</loc>
-    
-    <lastmod>2016-10-07T10:24:26.940Z</lastmod>
     
   </url>
   
