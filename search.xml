@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title><![CDATA[ROS的坑]]></title>
+      <url>http://fredchenjialin.github.io/2016/10/08/ROS%E7%9A%84%E5%9D%91/</url>
+      <content type="html"><![CDATA[<h2 id="主要是为了记录踩过的坑">主要是为了记录踩过的坑</h2><p>最近google开源了他的工程性的SLAM算法。所以我就赶紧学一学ROS。</p>
+<p>环境是Ubuntu14.04，准备安装Jade。</p>
+<ul>
+<li><p><a href="http://wiki.ros.org/cn/jade/Installation/Ubuntu" target="_blank" rel="external">初始化rosdep</a></p>
+<p>在网上找到了这个<a href="http://answers.ros.org/question/146731/hello-when-i-run-rosdep-update-i-get-timed-out/" target="_blank" rel="external">http://answers.ros.org/question/146731/hello-when-i-run-rosdep-update-i-get-timed-out/</a></p>
+<p>这里面的人说了一句:</p>
+<blockquote>
+<p>I update success after 2-day’s time repeating exacuted ‘rosdep update’.. and finally i don’t even know why it suddenly works.. anyway，thank you a lot～</p>
+</blockquote>
+<p>我深以为然！！其实我觉得就是不能翻墙的问题。</p>
+</li>
+<li><p>每次都可以配置好ROS的环境变量</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">"source /opt/ros/jade/setup.bash"</span> &gt;&gt; ~/.bashrc </span><br><span class="line"><span class="built_in">source</span> ~/.bashrc</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>常用命令集合</p>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># rospack find [包名称]</span></span><br><span class="line"><span class="comment"># roscd [本地包名称[/子目录]]  切换至包目录</span></span><br><span class="line"><span class="comment"># rosls [本地包名称[/子目录]]</span></span><br><span class="line"><span class="variable">$ </span>rospack depends1 beginner_tutorials 列出依赖包</span><br><span class="line"><span class="variable">$ </span>roscore 运行一切命令之前的命令</span><br><span class="line"><span class="variable">$ </span>rosnode list 查看都运行了什么</span><br><span class="line"><span class="variable">$ </span>rosnode info /rosout 查看指定程序情况</span><br><span class="line"><span class="variable">$ </span>rosrun 使用包名运行包内节点</span><br><span class="line"><span class="variable">$ </span>rosrun rqt_graph rqt_graph 查看当前节点之间的通信话题</span><br><span class="line"><span class="variable">$ </span>rostopic -h</span><br></pre></td></tr></table></figure>
+</li>
+<li></li>
+</ul>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[goodbye，Nexus！]]></title>
       <url>http://fredchenjialin.github.io/2016/10/05/goodbye%EF%BC%8CNexus%EF%BC%81/</url>
       <content type="html"><![CDATA[<h3 id="再见了，Nexus！！！">再见了，Nexus！！！</h3><p>上了大学的第一天，同寝室的人问我，你是多少学号，我说不知道唉！他说你没有查一查吗，我说不知道在哪里查这种信息。<br>他说网上就有通知啊。</p>

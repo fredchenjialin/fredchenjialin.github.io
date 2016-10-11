@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fredchenjialin.github.io/"/>
-  <updated>2016-10-08T01:55:50.079Z</updated>
+  <updated>2016-10-10T01:50:38.724Z</updated>
   <id>http://fredchenjialin.github.io/</id>
   
   <author>
@@ -14,6 +14,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ROS的坑</title>
+    <link href="http://fredchenjialin.github.io/2016/10/08/ROS%E7%9A%84%E5%9D%91/"/>
+    <id>http://fredchenjialin.github.io/2016/10/08/ROS的坑/</id>
+    <published>2016-10-08T11:17:17.000Z</published>
+    <updated>2016-10-10T01:50:38.724Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;主要是为了记录踩过的坑&quot;&gt;主要是为了记录踩过的坑&lt;/h2&gt;&lt;p&gt;最近google开源了他的工程性的SLAM算法。所以我就赶紧学一学ROS。&lt;/p&gt;
+&lt;p&gt;环境是Ubuntu14.04，准备安装Jade。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://wiki.ros.org/cn/jade/Installation/Ubuntu&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;初始化rosdep&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在网上找到了这个&lt;a href=&quot;http://answers.ros.org/question/146731/hello-when-i-run-rosdep-update-i-get-timed-out/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://answers.ros.org/question/146731/hello-when-i-run-rosdep-update-i-get-timed-out/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这里面的人说了一句:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I update success after 2-day’s time repeating exacuted ‘rosdep update’.. and finally i don’t even know why it suddenly works.. anyway，thank you a lot～&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我深以为然！！其实我觉得就是不能翻墙的问题。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;每次都可以配置好ROS的环境变量&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;source /opt/ros/jade/setup.bash&quot;&lt;/span&gt; &amp;gt;&amp;gt; ~/.bashrc &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;source&lt;/span&gt; ~/.bashrc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;常用命令集合&lt;/p&gt;
+&lt;figure class=&quot;highlight crystal&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# rospack find [包名称]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# roscd [本地包名称[/子目录]]  切换至包目录&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# rosls [本地包名称[/子目录]]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$ &lt;/span&gt;rospack depends1 beginner_tutorials 列出依赖包&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$ &lt;/span&gt;roscore 运行一切命令之前的命令&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$ &lt;/span&gt;rosnode list 查看都运行了什么&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$ &lt;/span&gt;rosnode info /rosout 查看指定程序情况&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$ &lt;/span&gt;rosrun 使用包名运行包内节点&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$ &lt;/span&gt;rosrun rqt_graph rqt_graph 查看当前节点之间的通信话题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;variable&quot;&gt;$ &lt;/span&gt;rostopic -h&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;主要是为了记录踩过的坑&quot;&gt;主要是为了记录踩过的坑&lt;/h2&gt;&lt;p&gt;最近google开源了他的工程性的SLAM算法。所以我就赶紧学一学ROS。&lt;/p&gt;
+&lt;p&gt;环境是Ubuntu14.04，准备安装Jade。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http:
+    
+    </summary>
+    
+      <category term="ROS" scheme="http://fredchenjialin.github.io/categories/ROS/"/>
+    
+    
+      <category term="ROS" scheme="http://fredchenjialin.github.io/tags/ROS/"/>
+    
+  </entry>
   
   <entry>
     <title>goodbye，Nexus！</title>
@@ -725,32 +769,6 @@
     <summary type="html">
     
       &lt;h3 id=&quot;第一节里面讲了一个大而全的针对神经网络的cost_Function&quot;&gt;第一节里面讲了一个大而全的针对神经网络的cost Function&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/c
-    
-    </summary>
-    
-      <category term="ML" scheme="http://fredchenjialin.github.io/categories/ML/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>机器学习4</title>
-    <link href="http://fredchenjialin.github.io/2015/10/31/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A04/"/>
-    <id>http://fredchenjialin.github.io/2015/10/31/机器学习4/</id>
-    <published>2015-10-31T08:27:53.000Z</published>
-    <updated>2016-10-07T10:26:49.219Z</updated>
-    
-    <content type="html">&lt;h3 id=&quot;这一期的机器学习讲到了多类分类器和神经网络的铺垫&quot;&gt;这一期的机器学习讲到了多类分类器和神经网络的铺垫&lt;/h3&gt;&lt;p&gt;在原来的两类分类中，我们只是用不是0就是1来分类，现在的n多类分类可以同理为不是x就是其他n-1种，最后对n中的特征的可能性取最大值即可。&lt;/p&gt;
-&lt;p&gt;公式可以参考两类分类中的公式，仅仅略有不同。&lt;/p&gt;
-&lt;p&gt;关于神经网络没有过多涉及，在下一讲中会有更多的体现吧。&lt;/p&gt;
-&lt;p&gt;仅仅说到了三层中，第一层是输入，第三层是输出，中间的层都是隐藏层，每一层由前一层推出，这叫做前向传导，据说后面还有后向传导。&lt;/p&gt;
-&lt;p&gt;没什么好说的，挺简单的。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;这一期的机器学习讲到了多类分类器和神经网络的铺垫&quot;&gt;这一期的机器学习讲到了多类分类器和神经网络的铺垫&lt;/h3&gt;&lt;p&gt;在原来的两类分类中，我们只是用不是0就是1来分类，现在的n多类分类可以同理为不是x就是其他n-1种，最后对n中的特征的可能性取最大值即可。&lt;/p&gt;
-
     
     </summary>
     
