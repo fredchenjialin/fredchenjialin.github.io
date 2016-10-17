@@ -66,6 +66,11 @@
 
 
 
+    
+    &nbsp;
+    <i class="fa fa-tag"></i>&nbsp;
+    <a href="/tags/paper/">paper</a>
+
 
     </div>
     <hr>
@@ -73,7 +78,7 @@
       
     </div>
     <p>本篇学习目标是《<a href="http://128.84.21.199/abs/1609.05143v1" target="_blank" rel="external">Target-driven Visual Navigation in Indoor Scenes using Deep Reinforcement Learning</a>》</p>
-<h2 id="关于Introduction">关于Introduction</h2><h4 id="介绍背景和做了哪些东西，现有的不足以及我们实现的效果,如下：">介绍背景和做了哪些东西，现有的不足以及我们实现的效果,如下：</h4><blockquote>
+<h2 id="关于Introduction"><a href="#关于Introduction" class="headerlink" title="关于Introduction"></a>关于Introduction</h2><h4 id="介绍背景和做了哪些东西，现有的不足以及我们实现的效果-如下："><a href="#介绍背景和做了哪些东西，现有的不足以及我们实现的效果-如下：" class="headerlink" title="介绍背景和做了哪些东西，现有的不足以及我们实现的效果,如下："></a>介绍背景和做了哪些东西，现有的不足以及我们实现的效果,如下：</h4><blockquote>
 <p>Since the 1970s, there have been various attempts to build a system that can understand such relationships. Recently, with the rise of deep learning models, learning-based approaches have gained wide popularity [1], [2].</p>
 </blockquote>
 <p>说到了一部分的背景。</p>
@@ -93,13 +98,13 @@
 <p>In summary, …</p>
 </blockquote>
 <p>总结。</p>
-<h2 id="关于RELATED_WORK">关于RELATED WORK</h2><p>相关工作介绍了很多已有的技术和方法。给予地图的方法需要地图，然后说说我们的方法不用地图。对于无地图的导航，关注点基本都在给定输入图像的避障，我们侧重在无图，也不基于3D重建。</p>
+<h2 id="关于RELATED-WORK"><a href="#关于RELATED-WORK" class="headerlink" title="关于RELATED WORK"></a>关于RELATED WORK</h2><p>相关工作介绍了很多已有的技术和方法。给予地图的方法需要地图，然后说说我们的方法不用地图。对于无地图的导航，关注点基本都在给定输入图像的避障，我们侧重在无图，也不基于3D重建。</p>
 <p>接着说到了强化学习，说到了直升机的那个，还有DRL的开山之作，玩Atari游戏，我们的输入更复杂，而且可以迁移知识。</p>
-<h2 id="接下来介绍了实验平台，也就是实验需要的环境，相当于介绍实验背景">接下来介绍了实验平台，也就是实验需要的环境，相当于介绍实验背景</h2><p>仿真系统的好处就是可伸缩性scalable</p>
+<h2 id="接下来介绍了实验平台，也就是实验需要的环境，相当于介绍实验背景"><a href="#接下来介绍了实验平台，也就是实验需要的环境，相当于介绍实验背景" class="headerlink" title="接下来介绍了实验平台，也就是实验需要的环境，相当于介绍实验背景"></a>接下来介绍了实验平台，也就是实验需要的环境，相当于介绍实验背景</h2><p>仿真系统的好处就是可伸缩性scalable</p>
 <blockquote>
 <p>The advantage of using a physics engine for modeling the world is that it is highly scalable (training a robot in real houses is not easily scalable).</p>
 </blockquote>
-<h2 id="说到了目标导向的模型以及用于模型的框架deep_siamese_actor-critic_network">说到了目标导向的模型以及用于模型的框架deep siamese actor-critic network</h2><ul>
+<h2 id="说到了目标导向的模型以及用于模型的框架deep-siamese-actor-critic-network"><a href="#说到了目标导向的模型以及用于模型的框架deep-siamese-actor-critic-network" class="headerlink" title="说到了目标导向的模型以及用于模型的框架deep siamese actor-critic network"></a>说到了目标导向的模型以及用于模型的框架deep siamese actor-critic network</h2><ul>
 <li>A先说是问题状态，这里是分析场景以及确定模型的作用：学习从2d图像到三维场景动作的映射。</li>
 <li>B是问题设想。关于泛化能力的分析，对于新目标不需要重新训练的补充。</li>
 <li>C是学习的设置。关键点在模型。</li>

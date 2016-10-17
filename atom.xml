@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fredchenjialin.github.io/"/>
-  <updated>2016-10-10T01:50:38.724Z</updated>
+  <updated>2016-10-17T01:26:21.000Z</updated>
   <id>http://fredchenjialin.github.io/</id>
   
   <author>
@@ -16,13 +16,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Double-Q</title>
+    <link href="http://fredchenjialin.github.io/2016/10/17/Double-Q/"/>
+    <id>http://fredchenjialin.github.io/2016/10/17/Double-Q/</id>
+    <published>2016-10-17T01:26:21.000Z</published>
+    <updated>2016-10-17T01:26:21.000Z</updated>
+    
+    <content type="html">&lt;p&gt;$Q_{t+1}(s_{t},a_{t}) = Q_{t}(s_{t},a_{t})+\alpha_{(s_{t},a_{t})}(r_{t}+\gamma\underset{a}{max}Q_{t}(s_{t+1},a_{t})-Q_{t}(s_{t},a_{t}))$&lt;/p&gt;
+&lt;p&gt;$R_{sa}^{s’}=E\{r_{t}|(s,a,s’)=(s_{t},a_{t},s_{t+1})\}$&lt;/p&gt;
+&lt;p&gt;$\forall s,a : Q^{&lt;em&gt;}(s,a) = \sum_{s’}P_{sa}^{s’}(R_{sa}^{s’}+\gamma\underset{a}{max} Q^{\\\&lt;/em&gt;}(s’,a)$&lt;/p&gt;
+&lt;p&gt;折扣因子 $\gamma \in [0,1)$ 的两点含义，一是立即反馈的权重大，二是可证明在有限的情况下Q学习达到最优。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;$Q_{t+1}(s_{t},a_{t}) = Q_{t}(s_{t},a_{t})+\alpha_{(s_{t},a_{t})}(r_{t}+\gamma\underset{a}{max}Q_{t}(s_{t+1},a_{t})-Q_{t}(s_{t},a_{t}))$&lt;
+    
+    </summary>
+    
+      <category term="研究生生活" scheme="http://fredchenjialin.github.io/categories/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="paper" scheme="http://fredchenjialin.github.io/tags/paper/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ROS的坑</title>
     <link href="http://fredchenjialin.github.io/2016/10/08/ROS%E7%9A%84%E5%9D%91/"/>
     <id>http://fredchenjialin.github.io/2016/10/08/ROS的坑/</id>
     <published>2016-10-08T11:17:17.000Z</published>
     <updated>2016-10-10T01:50:38.724Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;主要是为了记录踩过的坑&quot;&gt;主要是为了记录踩过的坑&lt;/h2&gt;&lt;p&gt;最近google开源了他的工程性的SLAM算法。所以我就赶紧学一学ROS。&lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;主要是为了记录踩过的坑&quot;&gt;&lt;a href=&quot;#主要是为了记录踩过的坑&quot; class=&quot;headerlink&quot; title=&quot;主要是为了记录踩过的坑&quot;&gt;&lt;/a&gt;主要是为了记录踩过的坑&lt;/h2&gt;&lt;p&gt;最近google开源了他的工程性的SLAM算法。所以我就赶紧学一学ROS。&lt;/p&gt;
 &lt;p&gt;环境是Ubuntu14.04，准备安装Jade。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&quot;http://wiki.ros.org/cn/jade/Installation/Ubuntu&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;初始化rosdep&lt;/a&gt;&lt;/p&gt;
@@ -45,10 +71,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;主要是为了记录踩过的坑&quot;&gt;主要是为了记录踩过的坑&lt;/h2&gt;&lt;p&gt;最近google开源了他的工程性的SLAM算法。所以我就赶紧学一学ROS。&lt;/p&gt;
-&lt;p&gt;环境是Ubuntu14.04，准备安装Jade。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&quot;http:
+      &lt;h2 id=&quot;主要是为了记录踩过的坑&quot;&gt;&lt;a href=&quot;#主要是为了记录踩过的坑&quot; class=&quot;headerlink&quot; title=&quot;主要是为了记录踩过的坑&quot;&gt;&lt;/a&gt;主要是为了记录踩过的坑&lt;/h2&gt;&lt;p&gt;最近google开源了他的工程性的SLAM算法。所以我就赶紧学一学R
     
     </summary>
     
@@ -66,7 +89,7 @@
     <published>2016-10-05T13:54:06.000Z</published>
     <updated>2016-10-08T01:55:50.079Z</updated>
     
-    <content type="html">&lt;h3 id=&quot;再见了，Nexus！！！&quot;&gt;再见了，Nexus！！！&lt;/h3&gt;&lt;p&gt;上了大学的第一天，同寝室的人问我，你是多少学号，我说不知道唉！他说你没有查一查吗，我说不知道在哪里查这种信息。&lt;br&gt;他说网上就有通知啊。&lt;/p&gt;
+    <content type="html">&lt;h3 id=&quot;再见了，Nexus！！！&quot;&gt;&lt;a href=&quot;#再见了，Nexus！！！&quot; class=&quot;headerlink&quot; title=&quot;再见了，Nexus！！！&quot;&gt;&lt;/a&gt;再见了，Nexus！！！&lt;/h3&gt;&lt;p&gt;上了大学的第一天，同寝室的人问我，你是多少学号，我说不知道唉！他说你没有查一查吗，我说不知道在哪里查这种信息。&lt;br&gt;他说网上就有通知啊。&lt;/p&gt;
 &lt;p&gt;于是我拿出我的第一款手机，oppo，查来查去，浏览器进不去，室友说，来，我帮你看看。&lt;/p&gt;
 &lt;p&gt;他掏出了一台手机，一台我觉得在那个时候超级好看，高端，充满了未来感，又和平时见到的手机完全不一样的手机。后来我知道它叫做Nexus。&lt;/p&gt;
 &lt;p&gt;室友的Nexus是三星代工的第三代，也是多代Nexus中品控上乘的一代，Nexus S深深的影响到了我对于手机的审美。&lt;/p&gt;
@@ -82,8 +105,7 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;再见了，Nexus！！！&quot;&gt;再见了，Nexus！！！&lt;/h3&gt;&lt;p&gt;上了大学的第一天，同寝室的人问我，你是多少学号，我说不知道唉！他说你没有查一查吗，我说不知道在哪里查这种信息。&lt;br&gt;他说网上就有通知啊。&lt;/p&gt;
-&lt;p&gt;于是我拿出我的第一款手机，oppo，查来查
+      &lt;h3 id=&quot;再见了，Nexus！！！&quot;&gt;&lt;a href=&quot;#再见了，Nexus！！！&quot; class=&quot;headerlink&quot; title=&quot;再见了，Nexus！！！&quot;&gt;&lt;/a&gt;再见了，Nexus！！！&lt;/h3&gt;&lt;p&gt;上了大学的第一天，同寝室的人问我，你是多少学号，我说不知道唉
     
     </summary>
     
@@ -99,10 +121,10 @@
     <link href="http://fredchenjialin.github.io/2016/09/22/%E8%AE%BA%E6%96%87%E7%BB%93%E6%9E%84%E5%AD%A6%E4%B9%A0%E4%B8%80/"/>
     <id>http://fredchenjialin.github.io/2016/09/22/论文结构学习一/</id>
     <published>2016-09-22T02:35:15.000Z</published>
-    <updated>2016-10-07T10:29:23.344Z</updated>
+    <updated>2016-10-17T01:30:41.062Z</updated>
     
     <content type="html">&lt;p&gt;本篇学习目标是《&lt;a href=&quot;http://128.84.21.199/abs/1609.05143v1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Target-driven Visual Navigation in Indoor Scenes using Deep Reinforcement Learning&lt;/a&gt;》&lt;/p&gt;
-&lt;h2 id=&quot;关于Introduction&quot;&gt;关于Introduction&lt;/h2&gt;&lt;h4 id=&quot;介绍背景和做了哪些东西，现有的不足以及我们实现的效果,如下：&quot;&gt;介绍背景和做了哪些东西，现有的不足以及我们实现的效果,如下：&lt;/h4&gt;&lt;blockquote&gt;
+&lt;h2 id=&quot;关于Introduction&quot;&gt;&lt;a href=&quot;#关于Introduction&quot; class=&quot;headerlink&quot; title=&quot;关于Introduction&quot;&gt;&lt;/a&gt;关于Introduction&lt;/h2&gt;&lt;h4 id=&quot;介绍背景和做了哪些东西，现有的不足以及我们实现的效果-如下：&quot;&gt;&lt;a href=&quot;#介绍背景和做了哪些东西，现有的不足以及我们实现的效果-如下：&quot; class=&quot;headerlink&quot; title=&quot;介绍背景和做了哪些东西，现有的不足以及我们实现的效果,如下：&quot;&gt;&lt;/a&gt;介绍背景和做了哪些东西，现有的不足以及我们实现的效果,如下：&lt;/h4&gt;&lt;blockquote&gt;
 &lt;p&gt;Since the 1970s, there have been various attempts to build a system that can understand such relationships. Recently, with the rise of deep learning models, learning-based approaches have gained wide popularity [1], [2].&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;说到了一部分的背景。&lt;/p&gt;
@@ -122,13 +144,13 @@
 &lt;p&gt;In summary, …&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;总结。&lt;/p&gt;
-&lt;h2 id=&quot;关于RELATED_WORK&quot;&gt;关于RELATED WORK&lt;/h2&gt;&lt;p&gt;相关工作介绍了很多已有的技术和方法。给予地图的方法需要地图，然后说说我们的方法不用地图。对于无地图的导航，关注点基本都在给定输入图像的避障，我们侧重在无图，也不基于3D重建。&lt;/p&gt;
+&lt;h2 id=&quot;关于RELATED-WORK&quot;&gt;&lt;a href=&quot;#关于RELATED-WORK&quot; class=&quot;headerlink&quot; title=&quot;关于RELATED WORK&quot;&gt;&lt;/a&gt;关于RELATED WORK&lt;/h2&gt;&lt;p&gt;相关工作介绍了很多已有的技术和方法。给予地图的方法需要地图，然后说说我们的方法不用地图。对于无地图的导航，关注点基本都在给定输入图像的避障，我们侧重在无图，也不基于3D重建。&lt;/p&gt;
 &lt;p&gt;接着说到了强化学习，说到了直升机的那个，还有DRL的开山之作，玩Atari游戏，我们的输入更复杂，而且可以迁移知识。&lt;/p&gt;
-&lt;h2 id=&quot;接下来介绍了实验平台，也就是实验需要的环境，相当于介绍实验背景&quot;&gt;接下来介绍了实验平台，也就是实验需要的环境，相当于介绍实验背景&lt;/h2&gt;&lt;p&gt;仿真系统的好处就是可伸缩性scalable&lt;/p&gt;
+&lt;h2 id=&quot;接下来介绍了实验平台，也就是实验需要的环境，相当于介绍实验背景&quot;&gt;&lt;a href=&quot;#接下来介绍了实验平台，也就是实验需要的环境，相当于介绍实验背景&quot; class=&quot;headerlink&quot; title=&quot;接下来介绍了实验平台，也就是实验需要的环境，相当于介绍实验背景&quot;&gt;&lt;/a&gt;接下来介绍了实验平台，也就是实验需要的环境，相当于介绍实验背景&lt;/h2&gt;&lt;p&gt;仿真系统的好处就是可伸缩性scalable&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;The advantage of using a physics engine for modeling the world is that it is highly scalable (training a robot in real houses is not easily scalable).&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&quot;说到了目标导向的模型以及用于模型的框架deep_siamese_actor-critic_network&quot;&gt;说到了目标导向的模型以及用于模型的框架deep siamese actor-critic network&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id=&quot;说到了目标导向的模型以及用于模型的框架deep-siamese-actor-critic-network&quot;&gt;&lt;a href=&quot;#说到了目标导向的模型以及用于模型的框架deep-siamese-actor-critic-network&quot; class=&quot;headerlink&quot; title=&quot;说到了目标导向的模型以及用于模型的框架deep siamese actor-critic network&quot;&gt;&lt;/a&gt;说到了目标导向的模型以及用于模型的框架deep siamese actor-critic network&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;A先说是问题状态，这里是分析场景以及确定模型的作用：学习从2d图像到三维场景动作的映射。&lt;/li&gt;
 &lt;li&gt;B是问题设想。关于泛化能力的分析，对于新目标不需要重新训练的补充。&lt;/li&gt;
 &lt;li&gt;C是学习的设置。关键点在模型。&lt;/li&gt;
@@ -146,6 +168,8 @@
       <category term="研究生生活" scheme="http://fredchenjialin.github.io/categories/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E6%B4%BB/"/>
     
     
+      <category term="paper" scheme="http://fredchenjialin.github.io/tags/paper/"/>
+    
   </entry>
   
   <entry>
@@ -155,15 +179,15 @@
     <published>2016-09-14T13:19:30.000Z</published>
     <updated>2016-10-08T01:55:27.301Z</updated>
     
-    <content type="html">&lt;h3 id=&quot;今天的安装非常顺利，没有遇到奇奇怪怪的问题，因为写DQN需要Tensorflow这个库，所以在我的虚拟机内安装一下。&quot;&gt;今天的安装非常顺利，没有遇到奇奇怪怪的问题，因为写DQN需要Tensorflow这个库，所以在我的虚拟机内安装一下。&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/lanxuezaipiao/p/3613497.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.cnblogs.com/lanxuezaipiao/p/3613497.html&lt;/a&gt;这个教程非常的好。&lt;/p&gt;
+    <content type="html">&lt;h3 id=&quot;今天的安装非常顺利，没有遇到奇奇怪怪的问题，因为写DQN需要Tensorflow这个库，所以在我的虚拟机内安装一下。&quot;&gt;&lt;a href=&quot;#今天的安装非常顺利，没有遇到奇奇怪怪的问题，因为写DQN需要Tensorflow这个库，所以在我的虚拟机内安装一下。&quot; class=&quot;headerlink&quot; title=&quot;今天的安装非常顺利，没有遇到奇奇怪怪的问题，因为写DQN需要Tensorflow这个库，所以在我的虚拟机内安装一下。&quot;&gt;&lt;/a&gt;今天的安装非常顺利，没有遇到奇奇怪怪的问题，因为写DQN需要Tensorflow这个库，所以在我的虚拟机内安装一下。&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;http://www.cnblogs.com/lanxuezaipiao/p/3613497.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.cnblogs.com/lanxuezaipiao/p/3613497.html&lt;/a&gt;这个教程非常的好。&lt;/p&gt;
 &lt;p&gt;固定ip后，在tensorflow官网查看安装命令，使用pip安装&lt;/p&gt;
 &lt;p&gt;连接到我本机的代理后，可以正常下载&lt;/p&gt;
-&lt;p&gt;$ sudo pip install –proxy=&lt;a href=&quot;http://yourproxy:yourport&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://yourproxy:yourport&lt;/a&gt; package_name&lt;/p&gt;
+&lt;p&gt;$ sudo pip install —proxy=&lt;a href=&quot;http://yourproxy:yourport&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://yourproxy:yourport&lt;/a&gt; package_name&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;今天的安装非常顺利，没有遇到奇奇怪怪的问题，因为写DQN需要Tensorflow这个库，所以在我的虚拟机内安装一下。&quot;&gt;今天的安装非常顺利，没有遇到奇奇怪怪的问题，因为写DQN需要Tensorflow这个库，所以在我的虚拟机内安装一下。&lt;/h3&gt;&lt;p&gt;&lt;a hre
+      &lt;h3 id=&quot;今天的安装非常顺利，没有遇到奇奇怪怪的问题，因为写DQN需要Tensorflow这个库，所以在我的虚拟机内安装一下。&quot;&gt;&lt;a href=&quot;#今天的安装非常顺利，没有遇到奇奇怪怪的问题，因为写DQN需要Tensorflow这个库，所以在我的虚拟机内安装一下。&quot; cl
     
     </summary>
     
@@ -185,7 +209,7 @@
 &lt;p&gt;以往都是直接在hexo的主题的某个模块上直接修改代码，现在只需要安装一个hexo-math就可以自动使用。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/akfish/hexo-math&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo-math的github&lt;/a&gt;&lt;br&gt;&lt;figure class=&quot;highlight lua&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install hexo-&lt;span class=&quot;built_in&quot;&gt;math&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;--save&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ hexo &lt;span class=&quot;built_in&quot;&gt;math&lt;/span&gt; install&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;在_config.yml中添加&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;plugins: hexo-&lt;span class=&quot;built_in&quot;&gt;math&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;使用中，内联是一个‘$’符号，一行是两个。&lt;/p&gt;
-&lt;h3 id=&quot;使用说明&quot;&gt;使用说明&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&quot;使用说明&quot;&gt;&lt;a href=&quot;#使用说明&quot; class=&quot;headerlink&quot; title=&quot;使用说明&quot;&gt;&lt;/a&gt;使用说明&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;我从&lt;a href=&quot;https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;这里&lt;/a&gt;复制公式源码到vs code里面，总是发现会有斜体出现，原来以为是vs code里面的代码显示的bug，后来明白过来估计是，复制的时候把斜体的形式也复制了过来。&lt;ul&gt;
 &lt;li&gt;PS:问题找到了，是下标在mathjax渲染后变成了某个html标签，导致了公式显示失效&lt;/li&gt;
 &lt;li&gt;解决方法是：在_之前添加\，一切ok。&lt;/li&gt;
@@ -214,17 +238,19 @@
     <published>2016-09-12T02:11:38.000Z</published>
     <updated>2016-10-07T10:28:16.442Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;策略梯度&quot;&gt;策略梯度&lt;/h2&gt;&lt;p&gt;策略梯度以一种不同的方式给出了衰减期望的目标函数。&lt;/p&gt;
-&lt;p&gt;$$L(\theta )=E(r_{1} +\gamma r_{2} + \gamma^{2} r_{3}+…|\pi (,\theta))$$&lt;/p&gt;
-&lt;p&gt;构造损失函数&lt;br&gt;$$L(\theta )=\sum log\pi(a|s,\theta)f(s,a)$$&lt;/p&gt;
-&lt;p&gt;损失函数推导：&lt;br&gt;$$\bigtriangledown_{\theta}E_{x}\left [ f(x) \right ] =\bigtriangledown_{\theta}\sum_{x}^{ } p(x)f(x)\\&lt;br&gt;=\sum_{x}^{ }\bigtriangledown_{\theta}p(x)f(x)\\&lt;br&gt;=\sum_{x}^{ }p(x)\frac{\bigtriangledown_{\theta}p(x)}{p(x)}f(x)\\&lt;br&gt;=\sum_{x}^{ }p(x)\bigtriangledown_{\theta}logp(x)f(x)\\&lt;br&gt;=E_{x}[f(x)\bigtriangledown_{\theta}logp(x)]$$&lt;/p&gt;
-</content>
+    <content type="html">&lt;h2 id=&quot;策略梯度&quot;&gt;&lt;a href=&quot;#策略梯度&quot; class=&quot;headerlink&quot; title=&quot;策略梯度&quot;&gt;&lt;/a&gt;策略梯度&lt;/h2&gt;&lt;p&gt;策略梯度以一种不同的方式给出了衰减期望的目标函数。&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;L(\theta )=E(r\_{1} +\gamma r\_{2} + \gamma^{2} r\_{3}+…|\pi (,\theta))&lt;/script&gt;&lt;p&gt;构造损失函数&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;L(\theta )=\sum log\pi(a|s,\theta)f(s,a)&lt;/script&gt;&lt;p&gt;损失函数推导：&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\bigtriangledown\_{\theta}E\_{x}\left [ f(x) \right ] =\bigtriangledown\_{\theta}\sum\_{x}^{ } p(x)f(x)\\\\
+=\sum\_{x}^{ }\bigtriangledown\_{\theta}p(x)f(x)\\\\
+=\sum\_{x}^{ }p(x)\frac{\bigtriangledown\_{\theta}p(x)}{p(x)}f(x)\\\\
+=\sum\_{x}^{ }p(x)\bigtriangledown\_{\theta}logp(x)f(x)\\\\
+=E\_{x}[f(x)\bigtriangledown\_{\theta}logp(x)]&lt;/script&gt;</content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;策略梯度&quot;&gt;策略梯度&lt;/h2&gt;&lt;p&gt;策略梯度以一种不同的方式给出了衰减期望的目标函数。&lt;/p&gt;
-&lt;p&gt;$$L(\theta )=E(r_{1} +\gamma r_{2} + \gamma^{2} r_{3}+…|\pi (,\theta))$$&lt;/p&gt;
-&lt;p&gt;构
+      &lt;h2 id=&quot;策略梯度&quot;&gt;&lt;a href=&quot;#策略梯度&quot; class=&quot;headerlink&quot; title=&quot;策略梯度&quot;&gt;&lt;/a&gt;策略梯度&lt;/h2&gt;&lt;p&gt;策略梯度以一种不同的方式给出了衰减期望的目标函数。&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=dis
     
     </summary>
     
@@ -238,7 +264,7 @@
     <link href="http://fredchenjialin.github.io/2016/09/05/%E7%A0%94%E7%A9%B6%E7%94%9F%E7%94%9F%E6%B4%BB%EF%BC%88%E9%9B%B6%EF%BC%89/"/>
     <id>http://fredchenjialin.github.io/2016/09/05/研究生生活（零）/</id>
     <published>2016-09-05T06:21:35.000Z</published>
-    <updated>2016-10-07T10:28:09.175Z</updated>
+    <updated>2016-10-17T01:30:03.499Z</updated>
     
     <content type="html">&lt;p&gt;研究生生活这个目录呢，记录研究生期间都在做些什么，生活的状态和一些对于研究生的反思。&lt;/p&gt;
 &lt;p&gt;每一篇都以一段时间的状态来开展，希望能够记录下自己的两年半的时光。&lt;/p&gt;
@@ -247,7 +273,7 @@
 &lt;p&gt;git：Gitkraken&lt;/p&gt;
 &lt;p&gt;配置文件以及主题：git上传或者云盘吧&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;零_开学&quot;&gt;零 开学&lt;/h2&gt;&lt;p&gt;8.25号研究生报道开学，一直到9.5才要开始正式上课，期间忙了些开学的事，忙了些教研室的事，但是在论文上一直都没有什么进展。&lt;/p&gt;
+&lt;h2 id=&quot;零-开学&quot;&gt;&lt;a href=&quot;#零-开学&quot; class=&quot;headerlink&quot; title=&quot;零 开学&quot;&gt;&lt;/a&gt;零 开学&lt;/h2&gt;&lt;p&gt;8.25号研究生报道开学，一直到9.5才要开始正式上课，期间忙了些开学的事，忙了些教研室的事，但是在论文上一直都没有什么进展。&lt;/p&gt;
 &lt;p&gt;今天5号了，我这一阶段的任务是把我的毕设论文改进成一篇要发表的论文。毕设是比较low的东西，发表视水平而定是一件比较难的事情。&lt;/p&gt;
 &lt;p&gt;难点是，&lt;/p&gt;
 &lt;p&gt;一是在RL方向上，13年的时候与DL进行结合导致，DQN在DeepMind团队的手中大火了起来，到了AlphaGo的时候达到了顶峰。&lt;br&gt;因此，问题在于，在这些方法的改进上这些人以及跟风的人提出了很多各种各样的方法，不仅多而且高端。&lt;/p&gt;
@@ -256,6 +282,7 @@
 &lt;li&gt;梳理本科论文&lt;/li&gt;
 &lt;li&gt;梳理Atari那篇&lt;/li&gt;
 &lt;/ol&gt;
+&lt;p&gt;这个目录是研究生生活，所以本章是零，接下来到下一个状态的都是只有研究生生活这个Categories，没有大标题，这样的效果是，在这个Categories中，直接就是以大标题做了分割。&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -333,10 +360,10 @@
     <published>2016-04-16T08:33:34.000Z</published>
     <updated>2016-10-07T10:27:48.012Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;Question_set&quot;&gt;Question set&lt;/h1&gt;&lt;h3 id=&quot;Q1:学长在大学期间有哪些成就（成绩，竞赛等等）？_//人物简介&quot;&gt;Q1:学长在大学期间有哪些成就（成绩，竞赛等等）？  //人物简介&lt;/h3&gt;&lt;h3 id=&quot;A：&quot;&gt;A：&lt;/h3&gt;&lt;p&gt;&lt;em&gt;
+    <content type="html">&lt;h1 id=&quot;Question-set&quot;&gt;&lt;a href=&quot;#Question-set&quot; class=&quot;headerlink&quot; title=&quot;Question set&quot;&gt;&lt;/a&gt;Question set&lt;/h1&gt;&lt;h3 id=&quot;Q1-学长在大学期间有哪些成就（成绩，竞赛等等）？-人物简介&quot;&gt;&lt;a href=&quot;#Q1-学长在大学期间有哪些成就（成绩，竞赛等等）？-人物简介&quot; class=&quot;headerlink&quot; title=&quot;Q1:学长在大学期间有哪些成就（成绩，竞赛等等）？  //人物简介&quot;&gt;&lt;/a&gt;Q1:学长在大学期间有哪些成就（成绩，竞赛等等）？  //人物简介&lt;/h3&gt;&lt;h3 id=&quot;A：&quot;&gt;&lt;a href=&quot;#A：&quot; class=&quot;headerlink&quot; title=&quot;A：&quot;&gt;&lt;/a&gt;A：&lt;/h3&gt;&lt;p&gt;&lt;em&gt;
 &lt;/em&gt;&lt;br&gt;&lt;em&gt;
 &lt;/em&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Q2:对于期末考试学长是怎么看待的？一般是如何备考的？&quot;&gt;Q2:对于期末考试学长是怎么看待的？一般是如何备考的？&lt;/h3&gt;&lt;h3 id=&quot;A：-1&quot;&gt;A：&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&quot;Q2-对于期末考试学长是怎么看待的？一般是如何备考的？&quot;&gt;&lt;a href=&quot;#Q2-对于期末考试学长是怎么看待的？一般是如何备考的？&quot; class=&quot;headerlink&quot; title=&quot;Q2:对于期末考试学长是怎么看待的？一般是如何备考的？&quot;&gt;&lt;/a&gt;Q2:对于期末考试学长是怎么看待的？一般是如何备考的？&lt;/h3&gt;&lt;h3 id=&quot;A：-1&quot;&gt;&lt;a href=&quot;#A：-1&quot; class=&quot;headerlink&quot; title=&quot;A：&quot;&gt;&lt;/a&gt;A：&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;期末考试怎么看其实是这门课怎么看的问题？&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;相当于课程分类，按重要程度：&lt;/p&gt;
 &lt;ol&gt;
@@ -352,10 +379,10 @@
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;定义 &lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;突击：在周围进入期末备战期间才开始正规的看书刷题的行为。（并不严谨，不一而论）
+&lt;pre&gt;&lt;code&gt;  突击：在周围进入期末备战期间才开始正规的看书刷题的行为。（并不严谨，不一而论）
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;针对1和2中的进阶课程，例如几门数学课，专业课等&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;如果不是突击型的学霸，就要在平时好好上课，看书，然后刷题。
+&lt;pre&gt;&lt;code&gt;  如果不是突击型的学霸，就要在平时好好上课，看书，然后刷题。
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;本人只要没好好的听课，这门课的分数肯定80以下。（例如，高数2，线代，组成原理，汇编等）&lt;/li&gt;
 &lt;li&gt;经过我的观察，突击型学霸可以在刷题时获得洞察buff，即什么重点，难点，易考点了如指掌&lt;/li&gt;
@@ -399,12 +426,12 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;Q3：学长成绩优异，能否和学弟学妹们分享分享学习心得？&quot;&gt;Q3：学长成绩优异，能否和学弟学妹们分享分享学习心得？&lt;/h3&gt;&lt;h3 id=&quot;A：-2&quot;&gt;A：&lt;/h3&gt;&lt;h4 id=&quot;成绩不优异。心得就是学习认真点，对分数要有追求，但不要本末倒置&quot;&gt;成绩不优异。心得就是学习认真点，对分数要有追求，但不要本末倒置&lt;/h4&gt;&lt;h3 id=&quot;Q4：学长能否就自己的学习方向，和后辈们谈谈该方向的职业和就业前景？&quot;&gt;Q4：学长能否就自己的学习方向，和后辈们谈谈该方向的职业和就业前景？&lt;/h3&gt;&lt;h3 id=&quot;A：-3&quot;&gt;A：&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&quot;Q3：学长成绩优异，能否和学弟学妹们分享分享学习心得？&quot;&gt;&lt;a href=&quot;#Q3：学长成绩优异，能否和学弟学妹们分享分享学习心得？&quot; class=&quot;headerlink&quot; title=&quot;Q3：学长成绩优异，能否和学弟学妹们分享分享学习心得？&quot;&gt;&lt;/a&gt;Q3：学长成绩优异，能否和学弟学妹们分享分享学习心得？&lt;/h3&gt;&lt;h3 id=&quot;A：-2&quot;&gt;&lt;a href=&quot;#A：-2&quot; class=&quot;headerlink&quot; title=&quot;A：&quot;&gt;&lt;/a&gt;A：&lt;/h3&gt;&lt;h4 id=&quot;成绩不优异。心得就是学习认真点，对分数要有追求，但不要本末倒置&quot;&gt;&lt;a href=&quot;#成绩不优异。心得就是学习认真点，对分数要有追求，但不要本末倒置&quot; class=&quot;headerlink&quot; title=&quot;成绩不优异。心得就是学习认真点，对分数要有追求，但不要本末倒置&quot;&gt;&lt;/a&gt;成绩不优异。心得就是学习认真点，对分数要有追求，但不要本末倒置&lt;/h4&gt;&lt;h3 id=&quot;Q4：学长能否就自己的学习方向，和后辈们谈谈该方向的职业和就业前景？&quot;&gt;&lt;a href=&quot;#Q4：学长能否就自己的学习方向，和后辈们谈谈该方向的职业和就业前景？&quot; class=&quot;headerlink&quot; title=&quot;Q4：学长能否就自己的学习方向，和后辈们谈谈该方向的职业和就业前景？&quot;&gt;&lt;/a&gt;Q4：学长能否就自己的学习方向，和后辈们谈谈该方向的职业和就业前景？&lt;/h3&gt;&lt;h3 id=&quot;A：-3&quot;&gt;&lt;a href=&quot;#A：-3&quot; class=&quot;headerlink&quot; title=&quot;A：&quot;&gt;&lt;/a&gt;A：&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;本专业的俗称是码农（我对于这个词没有任何的色彩和过分解读），找工作和本科薪资在各个专业里面算是比较靠前的&lt;/li&gt;
 &lt;li&gt;算是『服务』行业，是服务于各个行业的行业。说的夸张点，和数学类似，可以发现学数学的可以转到任何专业都不怂，而学计算机的是各个行业都需要，共性是金字塔一样的结构，顶尖的只有一小撮&lt;/li&gt;
 &lt;li&gt;关于就业，很广泛，说不好，有兴趣的可以关注软件行业的『青春饭』或常说的互联网泡沫等问题。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;Q5:请问学长在实习中如何处理实际问题和所学知识理论的差异？实习有需要注意哪些问题？&quot;&gt;Q5:请问学长在实习中如何处理实际问题和所学知识理论的差异？实习有需要注意哪些问题？&lt;/h3&gt;&lt;h3 id=&quot;A：-4&quot;&gt;A：&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&quot;Q5-请问学长在实习中如何处理实际问题和所学知识理论的差异？实习有需要注意哪些问题？&quot;&gt;&lt;a href=&quot;#Q5-请问学长在实习中如何处理实际问题和所学知识理论的差异？实习有需要注意哪些问题？&quot; class=&quot;headerlink&quot; title=&quot;Q5:请问学长在实习中如何处理实际问题和所学知识理论的差异？实习有需要注意哪些问题？&quot;&gt;&lt;/a&gt;Q5:请问学长在实习中如何处理实际问题和所学知识理论的差异？实习有需要注意哪些问题？&lt;/h3&gt;&lt;h3 id=&quot;A：-4&quot;&gt;&lt;a href=&quot;#A：-4&quot; class=&quot;headerlink&quot; title=&quot;A：&quot;&gt;&lt;/a&gt;A：&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;我们学的东西在实习的时候发现没有用的原因我猜测为以下几点&lt;ul&gt;
 &lt;li&gt;学的不深入或者说没有学到如何进行深入的学习&lt;/li&gt;
 &lt;li&gt;本来就不是一个领域的东西&lt;/li&gt;
@@ -419,7 +446,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;Q6：学长认为在大学生活中应当如何锻炼自己，去面对以后的社会？对于后辈们有没有什么寄语？&quot;&gt;Q6：学长认为在大学生活中应当如何锻炼自己，去面对以后的社会？对于后辈们有没有什么寄语？&lt;/h3&gt;&lt;h3 id=&quot;A：-5&quot;&gt;A：&lt;/h3&gt;&lt;ul&gt;
+&lt;h3 id=&quot;Q6：学长认为在大学生活中应当如何锻炼自己，去面对以后的社会？对于后辈们有没有什么寄语？&quot;&gt;&lt;a href=&quot;#Q6：学长认为在大学生活中应当如何锻炼自己，去面对以后的社会？对于后辈们有没有什么寄语？&quot; class=&quot;headerlink&quot; title=&quot;Q6：学长认为在大学生活中应当如何锻炼自己，去面对以后的社会？对于后辈们有没有什么寄语？&quot;&gt;&lt;/a&gt;Q6：学长认为在大学生活中应当如何锻炼自己，去面对以后的社会？对于后辈们有没有什么寄语？&lt;/h3&gt;&lt;h3 id=&quot;A：-5&quot;&gt;&lt;a href=&quot;#A：-5&quot; class=&quot;headerlink&quot; title=&quot;A：&quot;&gt;&lt;/a&gt;A：&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;我从小向大说：&lt;ul&gt;
 &lt;li&gt;好好学习，努力高分，在中国高校，学分积很重要&lt;/li&gt;
 &lt;li&gt;针对本专业，就是好好写代码，实践很重要&lt;/li&gt;
@@ -429,11 +456,11 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&quot;没什么寄语，希望看到这个问答的筒子们，你们试着回答一下这些问题，记录下来，对大学生活有帮助！！&quot;&gt;没什么寄语，希望看到这个问答的筒子们，你们试着回答一下这些问题，记录下来，对大学生活有帮助！！&lt;/h4&gt;&lt;h1 id=&quot;以上为原文，最后一句也是写给自己！&quot;&gt;以上为原文，最后一句也是写给自己！&lt;/h1&gt;</content>
+&lt;h4 id=&quot;没什么寄语，希望看到这个问答的筒子们，你们试着回答一下这些问题，记录下来，对大学生活有帮助！！&quot;&gt;&lt;a href=&quot;#没什么寄语，希望看到这个问答的筒子们，你们试着回答一下这些问题，记录下来，对大学生活有帮助！！&quot; class=&quot;headerlink&quot; title=&quot;没什么寄语，希望看到这个问答的筒子们，你们试着回答一下这些问题，记录下来，对大学生活有帮助！！&quot;&gt;&lt;/a&gt;没什么寄语，希望看到这个问答的筒子们，你们试着回答一下这些问题，记录下来，对大学生活有帮助！！&lt;/h4&gt;&lt;h1 id=&quot;以上为原文，最后一句也是写给自己！&quot;&gt;&lt;a href=&quot;#以上为原文，最后一句也是写给自己！&quot; class=&quot;headerlink&quot; title=&quot;以上为原文，最后一句也是写给自己！&quot;&gt;&lt;/a&gt;以上为原文，最后一句也是写给自己！&lt;/h1&gt;</content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;Question_set&quot;&gt;Question set&lt;/h1&gt;&lt;h3 id=&quot;Q1:学长在大学期间有哪些成就（成绩，竞赛等等）？_//人物简介&quot;&gt;Q1:学长在大学期间有哪些成就（成绩，竞赛等等）？  //人物简介&lt;/h3&gt;&lt;h3 id=&quot;A：&quot;&gt;A：&lt;/h3&gt;&lt;p
+      &lt;h1 id=&quot;Question-set&quot;&gt;&lt;a href=&quot;#Question-set&quot; class=&quot;headerlink&quot; title=&quot;Question set&quot;&gt;&lt;/a&gt;Question set&lt;/h1&gt;&lt;h3 id=&quot;Q1-学长在大学期间有哪些成就（成绩，竞赛等等）？
     
     </summary>
     
@@ -449,15 +476,14 @@
     <published>2016-04-11T12:32:21.000Z</published>
     <updated>2016-10-07T10:27:43.186Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;记录一些数学公式，准备用mathjax来画&quot;&gt;记录一些数学公式，准备用mathjax来画&lt;/h1&gt;&lt;h4 id=&quot;拉格朗日方程（Lagrange_equation）&quot;&gt;拉格朗日方程（Lagrange equation）&lt;/h4&gt;&lt;p&gt;$$\frac{d}{dt}\frac{\partial L}{\partial \dot{q}}-\frac{\partial L}{\partial q}=0$$&lt;/p&gt;
-&lt;p&gt;$ L\left ( q, \dot{q}, t \right )$是拉格朗日量，&lt;/p&gt;
+    <content type="html">&lt;h1 id=&quot;记录一些数学公式，准备用mathjax来画&quot;&gt;&lt;a href=&quot;#记录一些数学公式，准备用mathjax来画&quot; class=&quot;headerlink&quot; title=&quot;记录一些数学公式，准备用mathjax来画&quot;&gt;&lt;/a&gt;记录一些数学公式，准备用mathjax来画&lt;/h1&gt;&lt;h4 id=&quot;拉格朗日方程（Lagrange-equation）&quot;&gt;&lt;a href=&quot;#拉格朗日方程（Lagrange-equation）&quot; class=&quot;headerlink&quot; title=&quot;拉格朗日方程（Lagrange equation）&quot;&gt;&lt;/a&gt;拉格朗日方程（Lagrange equation）&lt;/h4&gt;&lt;script type=&quot;math/tex; mode=display&quot;&gt;\frac{d}{dt}\frac{\partial L}{\partial \dot{q}}-\frac{\partial L}{\partial q}=0&lt;/script&gt;&lt;p&gt;$ L\left ( q, \dot{q}, t \right )$是拉格朗日量，&lt;/p&gt;
 &lt;p&gt;$q=\left (q_{1}, q_{2}, q_{3},… , q_{N} \right )$是广义坐标，是时间t的函数，&lt;/p&gt;
 &lt;p&gt;$ \dot{q}=\left (\dot{q_{1}}, \dot{q_{2}}, \dot{q_{3}},… , \dot{q_{N}} \right )$是广义速度。&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;记录一些数学公式，准备用mathjax来画&quot;&gt;记录一些数学公式，准备用mathjax来画&lt;/h1&gt;&lt;h4 id=&quot;拉格朗日方程（Lagrange_equation）&quot;&gt;拉格朗日方程（Lagrange equation）&lt;/h4&gt;&lt;p&gt;$$\frac{d}{dt}\
+      &lt;h1 id=&quot;记录一些数学公式，准备用mathjax来画&quot;&gt;&lt;a href=&quot;#记录一些数学公式，准备用mathjax来画&quot; class=&quot;headerlink&quot; title=&quot;记录一些数学公式，准备用mathjax来画&quot;&gt;&lt;/a&gt;记录一些数学公式，准备用mathjax来画&lt;/
     
     </summary>
     
@@ -473,11 +499,11 @@
     <published>2016-04-11T02:08:55.000Z</published>
     <updated>2016-10-07T10:27:29.421Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;记录一下一些常用默认软件&quot;&gt;记录一下一些常用默认软件&lt;/h1&gt;&lt;h4 id=&quot;论文_Mendeley&quot;&gt;论文 Mendeley&lt;/h4&gt;&lt;h4 id=&quot;pdf_SumatraPDF&quot;&gt;pdf SumatraPDF&lt;/h4&gt;&lt;h4 id=&quot;编辑器_VScode&quot;&gt;编辑器 VScode&lt;/h4&gt;&lt;h4 id=&quot;快速编辑器_Notepad++&quot;&gt;快速编辑器 Notepad++&lt;/h4&gt;&lt;h4 id=&quot;字体美化_MacType&quot;&gt;字体美化 MacType&lt;/h4&gt;&lt;h4 id=&quot;远程连接_TeamViewer&quot;&gt;远程连接 TeamViewer&lt;/h4&gt;&lt;h4 id=&quot;Latex_Texmaker+CTex&quot;&gt;Latex Texmaker+CTex&lt;/h4&gt;&lt;h4 id=&quot;本地服务器集成_XAMPP&quot;&gt;本地服务器集成 XAMPP&lt;/h4&gt;&lt;h4 id=&quot;视频播放_potplayer&quot;&gt;视频播放 potplayer&lt;/h4&gt;&lt;h4 id=&quot;IDE_最著名的那一家Jetbrain&quot;&gt;IDE 最著名的那一家Jetbrain&lt;/h4&gt;</content>
+    <content type="html">&lt;h1 id=&quot;记录一下一些常用默认软件&quot;&gt;&lt;a href=&quot;#记录一下一些常用默认软件&quot; class=&quot;headerlink&quot; title=&quot;记录一下一些常用默认软件&quot;&gt;&lt;/a&gt;记录一下一些常用默认软件&lt;/h1&gt;&lt;h4 id=&quot;论文-Mendeley&quot;&gt;&lt;a href=&quot;#论文-Mendeley&quot; class=&quot;headerlink&quot; title=&quot;论文 Mendeley&quot;&gt;&lt;/a&gt;论文 Mendeley&lt;/h4&gt;&lt;h4 id=&quot;pdf-SumatraPDF&quot;&gt;&lt;a href=&quot;#pdf-SumatraPDF&quot; class=&quot;headerlink&quot; title=&quot;pdf SumatraPDF&quot;&gt;&lt;/a&gt;pdf SumatraPDF&lt;/h4&gt;&lt;h4 id=&quot;编辑器-VScode&quot;&gt;&lt;a href=&quot;#编辑器-VScode&quot; class=&quot;headerlink&quot; title=&quot;编辑器 VScode&quot;&gt;&lt;/a&gt;编辑器 VScode&lt;/h4&gt;&lt;h4 id=&quot;快速编辑器-Notepad&quot;&gt;&lt;a href=&quot;#快速编辑器-Notepad&quot; class=&quot;headerlink&quot; title=&quot;快速编辑器 Notepad++&quot;&gt;&lt;/a&gt;快速编辑器 Notepad++&lt;/h4&gt;&lt;h4 id=&quot;字体美化-MacType&quot;&gt;&lt;a href=&quot;#字体美化-MacType&quot; class=&quot;headerlink&quot; title=&quot;字体美化 MacType&quot;&gt;&lt;/a&gt;字体美化 MacType&lt;/h4&gt;&lt;h4 id=&quot;远程连接-TeamViewer&quot;&gt;&lt;a href=&quot;#远程连接-TeamViewer&quot; class=&quot;headerlink&quot; title=&quot;远程连接 TeamViewer&quot;&gt;&lt;/a&gt;远程连接 TeamViewer&lt;/h4&gt;&lt;h4 id=&quot;Latex-Texmaker-CTex&quot;&gt;&lt;a href=&quot;#Latex-Texmaker-CTex&quot; class=&quot;headerlink&quot; title=&quot;Latex Texmaker+CTex&quot;&gt;&lt;/a&gt;Latex Texmaker+CTex&lt;/h4&gt;&lt;h4 id=&quot;本地服务器集成-XAMPP&quot;&gt;&lt;a href=&quot;#本地服务器集成-XAMPP&quot; class=&quot;headerlink&quot; title=&quot;本地服务器集成 XAMPP&quot;&gt;&lt;/a&gt;本地服务器集成 XAMPP&lt;/h4&gt;&lt;h4 id=&quot;视频播放-potplayer&quot;&gt;&lt;a href=&quot;#视频播放-potplayer&quot; class=&quot;headerlink&quot; title=&quot;视频播放 potplayer&quot;&gt;&lt;/a&gt;视频播放 potplayer&lt;/h4&gt;&lt;h4 id=&quot;IDE-最著名的那一家Jetbrain&quot;&gt;&lt;a href=&quot;#IDE-最著名的那一家Jetbrain&quot; class=&quot;headerlink&quot; title=&quot;IDE 最著名的那一家Jetbrain&quot;&gt;&lt;/a&gt;IDE 最著名的那一家Jetbrain&lt;/h4&gt;</content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;记录一下一些常用默认软件&quot;&gt;记录一下一些常用默认软件&lt;/h1&gt;&lt;h4 id=&quot;论文_Mendeley&quot;&gt;论文 Mendeley&lt;/h4&gt;&lt;h4 id=&quot;pdf_SumatraPDF&quot;&gt;pdf SumatraPDF&lt;/h4&gt;&lt;h4 id=&quot;编辑器_VScode&quot;&gt;编
+      &lt;h1 id=&quot;记录一下一些常用默认软件&quot;&gt;&lt;a href=&quot;#记录一下一些常用默认软件&quot; class=&quot;headerlink&quot; title=&quot;记录一下一些常用默认软件&quot;&gt;&lt;/a&gt;记录一下一些常用默认软件&lt;/h1&gt;&lt;h4 id=&quot;论文-Mendeley&quot;&gt;&lt;a href=&quot;#论文
     
     </summary>
     
@@ -493,7 +519,7 @@
     <published>2015-12-29T08:12:38.000Z</published>
     <updated>2016-10-08T01:54:22.306Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;随便记录几条mysql命令，我用的是xmapp中的mysql，炒鸡好用&quot;&gt;随便记录几条mysql命令，我用的是xmapp中的mysql，炒鸡好用&lt;/h2&gt;&lt;h3 id=&quot;关于登陆&quot;&gt;关于登陆&lt;/h3&gt;&lt;ul&gt;
+    <content type="html">&lt;h2 id=&quot;随便记录几条mysql命令，我用的是xmapp中的mysql，炒鸡好用&quot;&gt;&lt;a href=&quot;#随便记录几条mysql命令，我用的是xmapp中的mysql，炒鸡好用&quot; class=&quot;headerlink&quot; title=&quot;随便记录几条mysql命令，我用的是xmapp中的mysql，炒鸡好用&quot;&gt;&lt;/a&gt;随便记录几条mysql命令，我用的是xmapp中的mysql，炒鸡好用&lt;/h2&gt;&lt;h3 id=&quot;关于登陆&quot;&gt;&lt;a href=&quot;#关于登陆&quot; class=&quot;headerlink&quot; title=&quot;关于登陆&quot;&gt;&lt;/a&gt;关于登陆&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;p&gt;查询当前用户&lt;/p&gt;
   &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;select user();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;或者&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;status;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
@@ -511,9 +537,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;随便记录几条mysql命令，我用的是xmapp中的mysql，炒鸡好用&quot;&gt;随便记录几条mysql命令，我用的是xmapp中的mysql，炒鸡好用&lt;/h2&gt;&lt;h3 id=&quot;关于登陆&quot;&gt;关于登陆&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;查询当前用户&lt;/p&gt;
-  &lt;figure
+      &lt;h2 id=&quot;随便记录几条mysql命令，我用的是xmapp中的mysql，炒鸡好用&quot;&gt;&lt;a href=&quot;#随便记录几条mysql命令，我用的是xmapp中的mysql，炒鸡好用&quot; class=&quot;headerlink&quot; title=&quot;随便记录几条mysql命令，我用的是xmap
     
     </summary>
     
@@ -532,17 +556,17 @@
     <updated>2016-10-07T10:27:09.723Z</updated>
     
     <content type="html">&lt;p&gt;今天认真看了一遍《消失的爱人》。&lt;/p&gt;
-&lt;h2 id=&quot;表现的是婚姻问题&quot;&gt;表现的是婚姻问题&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id=&quot;表现的是婚姻问题&quot;&gt;&lt;a href=&quot;#表现的是婚姻问题&quot; class=&quot;headerlink&quot; title=&quot;表现的是婚姻问题&quot;&gt;&lt;/a&gt;表现的是婚姻问题&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;用一种悬疑，刺激的剧情来表现婚姻问题，感觉仅仅是换了一个角度，或者是套了一个新的壳子，让我们看大千世界里面的人有不一样的形态。&lt;/li&gt;
 &lt;li&gt;女主看似很聪明，男主看似很蠢顿，但是感觉总是没有出错的，只是这俩人走到了一起，发生了这样的故事。&lt;/li&gt;
 &lt;li&gt;还是婚姻问题。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;关于电影拍摄&quot;&gt;关于电影拍摄&lt;/h2&gt;&lt;ol&gt;
+&lt;h2 id=&quot;关于电影拍摄&quot;&gt;&lt;a href=&quot;#关于电影拍摄&quot; class=&quot;headerlink&quot; title=&quot;关于电影拍摄&quot;&gt;&lt;/a&gt;关于电影拍摄&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;妹妹这一角色的设定是龙凤胎，以及我们常常忘了这一角色去困惑为什么妹妹比哥哥还要激动和委屈，尤其是在最后知道了女主怀孕后，妹妹的伤心类似悲痛欲绝。&lt;br&gt;这是男主的理想和显示的两种写照吧。&lt;/li&gt;
 &lt;li&gt;关于女主对男主的陷害手段，称的上是神乎其神，电影中面对众多目光的反应和面对丈夫的坦然，很厉害。但是这也仅仅是在双方斗争手段中的一个演绎。&lt;/li&gt;
 &lt;li&gt;电影设计的这些东西看似很聪明绝伦，但是可能现实更加真实。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;电影里的人物&quot;&gt;电影里的人物&lt;/h2&gt;&lt;ol&gt;
+&lt;h2 id=&quot;电影里的人物&quot;&gt;&lt;a href=&quot;#电影里的人物&quot; class=&quot;headerlink&quot; title=&quot;电影里的人物&quot;&gt;&lt;/a&gt;电影里的人物&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;男主撩妹技能满分&lt;/li&gt;
 &lt;li&gt;女主真煞费苦心&lt;/li&gt;
 &lt;li&gt;这一对也是有点合适&lt;/li&gt;
@@ -555,9 +579,8 @@
     <summary type="html">
     
       &lt;p&gt;今天认真看了一遍《消失的爱人》。&lt;/p&gt;
-&lt;h2 id=&quot;表现的是婚姻问题&quot;&gt;表现的是婚姻问题&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;用一种悬疑，刺激的剧情来表现婚姻问题，感觉仅仅是换了一个角度，或者是套了一个新的壳子，让我们看大千世界里面的人有不一样的形态。&lt;/li&gt;
-&lt;li&gt;女主看
+&lt;h2 id=&quot;表现的是婚姻问题&quot;&gt;&lt;a href=&quot;#表现的是婚姻问题&quot; class=&quot;headerlink&quot; title=&quot;表现的是婚姻问题&quot;&gt;&lt;/a&gt;表现的是婚姻问题&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;用一种悬疑，刺激的剧情来表现婚姻
     
     </summary>
     
@@ -573,7 +596,7 @@
     <published>2015-11-28T02:55:29.000Z</published>
     <updated>2016-10-07T10:27:04.400Z</updated>
     
-    <content type="html">&lt;h3 id=&quot;最近一直在学机器学习，但是没有更新blog原因&quot;&gt;最近一直在学机器学习，但是没有更新blog原因&lt;/h3&gt;&lt;ul&gt;
+    <content type="html">&lt;h3 id=&quot;最近一直在学机器学习，但是没有更新blog原因&quot;&gt;&lt;a href=&quot;#最近一直在学机器学习，但是没有更新blog原因&quot; class=&quot;headerlink&quot; title=&quot;最近一直在学机器学习，但是没有更新blog原因&quot;&gt;&lt;/a&gt;最近一直在学机器学习，但是没有更新blog原因&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;有一个好朋友，介绍了一个新词给我，叫做手账。&lt;/li&gt;
 &lt;li&gt;本不理解这个是什么东西，去查了查，发现是一种记东西的本子，可以记录各种自己想要记录的东西，日记，计划，学习笔记等等。&lt;/li&gt;
 &lt;li&gt;这个东西我认得，我在高中的时候有个很小的本子，就是什么都记在上面（除了大型学习笔记）&lt;/li&gt;
@@ -593,9 +616,7 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;最近一直在学机器学习，但是没有更新blog原因&quot;&gt;最近一直在学机器学习，但是没有更新blog原因&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;有一个好朋友，介绍了一个新词给我，叫做手账。&lt;/li&gt;
-&lt;li&gt;本不理解这个是什么东西，去查了查，发现是一种记东西的本子，可以记录各种自己想
+      &lt;h3 id=&quot;最近一直在学机器学习，但是没有更新blog原因&quot;&gt;&lt;a href=&quot;#最近一直在学机器学习，但是没有更新blog原因&quot; class=&quot;headerlink&quot; title=&quot;最近一直在学机器学习，但是没有更新blog原因&quot;&gt;&lt;/a&gt;最近一直在学机器学习，但是没有更新
     
     </summary>
     
@@ -611,11 +632,11 @@
     <published>2015-11-19T05:18:42.000Z</published>
     <updated>2016-10-07T10:27:00.115Z</updated>
     
-    <content type="html">&lt;h3 id=&quot;支持向量机_SVM_SupportVectorMachine&quot;&gt;支持向量机 SVM SupportVectorMachine&lt;/h3&gt;</content>
+    <content type="html">&lt;h3 id=&quot;支持向量机-SVM-SupportVectorMachine&quot;&gt;&lt;a href=&quot;#支持向量机-SVM-SupportVectorMachine&quot; class=&quot;headerlink&quot; title=&quot;支持向量机 SVM SupportVectorMachine&quot;&gt;&lt;/a&gt;支持向量机 SVM SupportVectorMachine&lt;/h3&gt;</content>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;支持向量机_SVM_SupportVectorMachine&quot;&gt;支持向量机 SVM SupportVectorMachine&lt;/h3&gt;
+      &lt;h3 id=&quot;支持向量机-SVM-SupportVectorMachine&quot;&gt;&lt;a href=&quot;#支持向量机-SVM-SupportVectorMachine&quot; class=&quot;headerlink&quot; title=&quot;支持向量机 SVM SupportVectorMachine&quot;&gt;
     
     </summary>
     
@@ -631,7 +652,7 @@
     <published>2015-11-16T05:43:48.000Z</published>
     <updated>2016-10-08T01:54:06.080Z</updated>
     
-    <content type="html">&lt;h3 id=&quot;两种实现继承的方式&quot;&gt;两种实现继承的方式&lt;/h3&gt;&lt;ol&gt;
+    <content type="html">&lt;h3 id=&quot;两种实现继承的方式&quot;&gt;&lt;a href=&quot;#两种实现继承的方式&quot; class=&quot;headerlink&quot; title=&quot;两种实现继承的方式&quot;&gt;&lt;/a&gt;两种实现继承的方式&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt; &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;Car&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var self = this;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;self.type = &lt;span class=&quot;string&quot;&gt;&quot;Car&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;self.go = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(&lt;span class=&quot;string&quot;&gt;&quot;Going...&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Toyota = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Toyota.prototype = new Car();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Toyota.prototype.constructor = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var self = this;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;self.type = &lt;span class=&quot;string&quot;&gt;&quot;Toyota&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;self.go = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(&lt;span class=&quot;string&quot;&gt;&quot;A Toyota car is going...&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Toyota.prototype.isJapaneseCar = &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var t = new Toyota();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(t instanceof Toyota);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(t instanceof Car);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
 &lt;li&gt; &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var Car = Class.create(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;initialize: &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.type = &lt;span class=&quot;string&quot;&gt;&quot;Car&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;go: &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(&lt;span class=&quot;string&quot;&gt;&quot;Going...&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var Toyota = Class.create(Car, &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;initialize: &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.type = &lt;span class=&quot;string&quot;&gt;&quot;Toyota&quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.isJapaneseCar = &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;go: &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt;() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;console.log(&lt;span class=&quot;string&quot;&gt;&quot;A Toyota car is going...&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -641,12 +662,12 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&quot;选择器&quot;&gt;选择器&lt;/h3&gt;&lt;h3 id=&quot;链表实现&quot;&gt;链表实现&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var Node = Class.create(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;initialize: &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (val) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.value = val;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.next = null;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;addChild: &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(node) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.next = node;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var LinkedList = Class.create(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;initialize: &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.root = new Node(null);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.size = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;add: &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (object) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj = this.root&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (obj.next!= null) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj = obj.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.next = new Node(object)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+&lt;h3 id=&quot;选择器&quot;&gt;&lt;a href=&quot;#选择器&quot; class=&quot;headerlink&quot; title=&quot;选择器&quot;&gt;&lt;/a&gt;选择器&lt;/h3&gt;&lt;h3 id=&quot;链表实现&quot;&gt;&lt;a href=&quot;#链表实现&quot; class=&quot;headerlink&quot; title=&quot;链表实现&quot;&gt;&lt;/a&gt;链表实现&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var Node = Class.create(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;initialize: &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (val) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.value = val;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.next = null;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;addChild: &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(node) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.next = node;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;var LinkedList = Class.create(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;initialize: &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;title&quot;&gt;function&lt;/span&gt;&lt;/span&gt; () &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.root = new Node(null);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;this.size = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;add: &lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (object) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj = this.root&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;while&lt;/span&gt; (obj.next!= null) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj = obj.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.next = new Node(object)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;两种实现继承的方式&quot;&gt;两种实现继承的方式&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt; &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;
+      &lt;h3 id=&quot;两种实现继承的方式&quot;&gt;&lt;a href=&quot;#两种实现继承的方式&quot; class=&quot;headerlink&quot; title=&quot;两种实现继承的方式&quot;&gt;&lt;/a&gt;两种实现继承的方式&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt; &lt;figure class=&quot;highlight bash&quot;&gt;&lt;tab
     
     </summary>
     
@@ -664,15 +685,15 @@
     <published>2015-11-12T05:49:18.000Z</published>
     <updated>2016-10-07T10:26:56.735Z</updated>
     
-    <content type="html">&lt;h3 id=&quot;评估一个机器学习算法&quot;&gt;评估一个机器学习算法&lt;/h3&gt;&lt;ol&gt;
+    <content type="html">&lt;h3 id=&quot;评估一个机器学习算法&quot;&gt;&lt;a href=&quot;#评估一个机器学习算法&quot; class=&quot;headerlink&quot; title=&quot;评估一个机器学习算法&quot;&gt;&lt;/a&gt;评估一个机器学习算法&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;因为我们在提出一个机器学习算法后总是想着要改进和优化它，使其得到最好的学习效果&lt;/li&gt;
 &lt;li&gt;通常我们回想可不可以给我们更多的学习数据&lt;/li&gt;
 &lt;li&gt;但是如果我们有一套科学的评估和诊断的方法，那么对于机器学习是非常有利的&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&quot;过拟合检验_TrainingSet_and_TestSet&quot;&gt;过拟合检验 TrainingSet and TestSet&lt;/h3&gt;&lt;ol&gt;
+&lt;h3 id=&quot;过拟合检验-TrainingSet-and-TestSet&quot;&gt;&lt;a href=&quot;#过拟合检验-TrainingSet-and-TestSet&quot; class=&quot;headerlink&quot; title=&quot;过拟合检验 TrainingSet and TestSet&quot;&gt;&lt;/a&gt;过拟合检验 TrainingSet and TestSet&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;比例是7：3&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&quot;high_bias_and_high_variance_TrainingSet，CrossValidateSet_and_TestSet&quot;&gt;high bias and high variance TrainingSet，CrossValidateSet and TestSet&lt;/h3&gt;&lt;ol&gt;
+&lt;h3 id=&quot;high-bias-and-high-variance-TrainingSet，CrossValidateSet-and-TestSet&quot;&gt;&lt;a href=&quot;#high-bias-and-high-variance-TrainingSet，CrossValidateSet-and-TestSet&quot; class=&quot;headerlink&quot; title=&quot;high bias and high variance TrainingSet，CrossValidateSet and TestSet&quot;&gt;&lt;/a&gt;high bias and high variance TrainingSet，CrossValidateSet and TestSet&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;比例是3：2：2&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml6/cvandtest.png&quot; alt=&quot;costfunction&quot;&gt;&lt;/p&gt;
@@ -680,14 +701,12 @@
 &lt;li&gt;相对于high bias 和 high variance，其实是更加相当于underfit 和 overfit&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;不行了，那种没学到东西的感觉越来越强烈了&lt;/p&gt;
-&lt;h2 id=&quot;卧槽，证书没了&quot;&gt;卧槽，证书没了&lt;/h2&gt;</content>
+&lt;h2 id=&quot;卧槽，证书没了&quot;&gt;&lt;a href=&quot;#卧槽，证书没了&quot; class=&quot;headerlink&quot; title=&quot;卧槽，证书没了&quot;&gt;&lt;/a&gt;卧槽，证书没了&lt;/h2&gt;</content>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;评估一个机器学习算法&quot;&gt;评估一个机器学习算法&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;因为我们在提出一个机器学习算法后总是想着要改进和优化它，使其得到最好的学习效果&lt;/li&gt;
-&lt;li&gt;通常我们回想可不可以给我们更多的学习数据&lt;/li&gt;
-&lt;li&gt;但是如果我们有一套科学的评估和诊断
+      &lt;h3 id=&quot;评估一个机器学习算法&quot;&gt;&lt;a href=&quot;#评估一个机器学习算法&quot; class=&quot;headerlink&quot; title=&quot;评估一个机器学习算法&quot;&gt;&lt;/a&gt;评估一个机器学习算法&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;因为我们在提出一个机器学习算法后总是想着要改进和优化它，使其得到
     
     </summary>
     
@@ -717,62 +736,6 @@
     </summary>
     
       <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>机器学习5</title>
-    <link href="http://fredchenjialin.github.io/2015/11/01/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A05/"/>
-    <id>http://fredchenjialin.github.io/2015/11/01/机器学习5/</id>
-    <published>2015-11-01T13:31:24.000Z</published>
-    <updated>2016-10-07T10:26:52.777Z</updated>
-    
-    <content type="html">&lt;h3 id=&quot;第一节里面讲了一个大而全的针对神经网络的cost_Function&quot;&gt;第一节里面讲了一个大而全的针对神经网络的cost Function&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/costfunction.png&quot; alt=&quot;costfunction&quot;&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Backpropagation_Algorithm&quot;&gt;Backpropagation Algorithm&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;想要求导偏导数是比较困难的。以下是前向传播的算法：&lt;br&gt;  &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/Forwardpropagation.png&quot; alt=&quot;Forwardpropagation&quot;&gt;&lt;br&gt;  可以看出会比较繁琐。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;然后这是后向传播&lt;br&gt;  &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/backpropagation.png&quot; alt=&quot;backpropagation&quot;&gt;&lt;br&gt;  &lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/backpropagationAch.png&quot; alt=&quot;backpropagation&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&quot;NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下&quot;&gt;NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;说到了一个梯度检验算法，用来证明你做的梯度下降是没有错的。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;程序作业&quot;&gt;程序作业&lt;/h2&gt;&lt;h3 id=&quot;第一项_理解多种结果的逻辑回归分类并计算cost_function&quot;&gt;第一项 理解多种结果的逻辑回归分类并计算cost function&lt;/h3&gt;&lt;h4 id=&quot;多种化为传统&quot;&gt;多种化为传统&lt;/h4&gt;&lt;p&gt;在原来的看法中，以0，1为例，我们将产生这两种结果的cost function定义如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/2.png&quot; alt=&quot;LinearOneVariable&quot;&gt;&lt;/p&gt;
-&lt;p&gt;若是y有多种结果，我们可以假想为，若有n种结果&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;第一个函数计算 （y == x）&lt;/li&gt;
-&lt;li&gt;第二个函数计算 （y != x）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;如此实现了从多种到传统的过度。&lt;/p&gt;
-&lt;h4 id=&quot;函数整合&quot;&gt;函数整合&lt;/h4&gt;&lt;p&gt;针对两个函数整合到一起的函数使用的是（y）和（1-y）的小技巧，实现了不是第一个函数就是第二个函数的功能。&lt;/p&gt;
-&lt;h4 id=&quot;举例假设&quot;&gt;举例假设&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;有5000个样例，10个分类，所以基本的特征函数产生有5000*10的矩阵A&lt;/li&gt;
-&lt;li&gt;5000个样例有5000个label，针对这些label，处理成为（01）格式,得到5000*10的矩阵B&lt;ul&gt;
-&lt;li&gt;例如 y=5 处理为(0,0,0,0,1,0,0,0,0,0)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;costFunction = -log(A) .&lt;em&gt; B + (-log(1-A)) .&lt;/em&gt; (1-B);&lt;/code&gt;（注意：这里是点乘）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;costFunction = -log(A) .* B + (-log(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;-A)) .* (&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;-B);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;反向传播&quot;&gt;反向传播&lt;/h3&gt;&lt;p&gt;反向传播花了我好长时间，一直想用程序的角度来解决处理矩阵的问题，然后发现多此一举。&lt;/p&gt;
-&lt;p&gt;原来在反向传播中&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;先做一遍正向的推导&lt;/li&gt;
-&lt;li&gt;从后向前计算误差值（关键点是：如果不是处理成向量来做，那么每一层的误差据真是不一样的）&lt;/li&gt;
-&lt;li&gt;计算梯度&lt;/li&gt;
-&lt;li&gt;正规化&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;我认为即使我做完了这些题目也没有什么好开心的，因为还是学不到最关键的部分，像是为什么反向传播可以求得costFunction_的导数。&quot;&gt;我认为即使我做完了这些题目也没有什么好开心的，因为还是学不到最关键的部分，像是为什么反向传播可以求得costFunction 的导数。&lt;/h2&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;第一节里面讲了一个大而全的针对神经网络的cost_Function&quot;&gt;第一节里面讲了一个大而全的针对神经网络的cost Function&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/c
-    
-    </summary>
-    
-      <category term="ML" scheme="http://fredchenjialin.github.io/categories/ML/"/>
     
     
   </entry>

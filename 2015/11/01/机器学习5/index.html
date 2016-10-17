@@ -72,17 +72,17 @@
     <div class="picture-container">
       
     </div>
-    <h3 id="第一节里面讲了一个大而全的针对神经网络的cost_Function">第一节里面讲了一个大而全的针对神经网络的cost Function</h3><p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/costfunction.png" alt="costfunction"></p>
-<h3 id="Backpropagation_Algorithm">Backpropagation Algorithm</h3><ul>
+    <h3 id="第一节里面讲了一个大而全的针对神经网络的cost-Function"><a href="#第一节里面讲了一个大而全的针对神经网络的cost-Function" class="headerlink" title="第一节里面讲了一个大而全的针对神经网络的cost Function"></a>第一节里面讲了一个大而全的针对神经网络的cost Function</h3><p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/costfunction.png" alt="costfunction"></p>
+<h3 id="Backpropagation-Algorithm"><a href="#Backpropagation-Algorithm" class="headerlink" title="Backpropagation Algorithm"></a>Backpropagation Algorithm</h3><ul>
 <li><p>想要求导偏导数是比较困难的。以下是前向传播的算法：<br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/Forwardpropagation.png" alt="Forwardpropagation"><br>  可以看出会比较繁琐。</p>
 </li>
 <li><p>然后这是后向传播<br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/backpropagation.png" alt="backpropagation"><br>  <img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml5/backpropagationAch.png" alt="backpropagation"></p>
 </li>
 </ul>
-<h3 id="NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下">NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下</h3><ul>
+<h3 id="NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下"><a href="#NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下" class="headerlink" title="NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下"></a>NG说了back的这个也是相当的复杂的，所以，我再说一节给大家感受一下</h3><ul>
 <li>说到了一个梯度检验算法，用来证明你做的梯度下降是没有错的。</li>
 </ul>
-<h2 id="程序作业">程序作业</h2><h3 id="第一项_理解多种结果的逻辑回归分类并计算cost_function">第一项 理解多种结果的逻辑回归分类并计算cost function</h3><h4 id="多种化为传统">多种化为传统</h4><p>在原来的看法中，以0，1为例，我们将产生这两种结果的cost function定义如下：</p>
+<h2 id="程序作业"><a href="#程序作业" class="headerlink" title="程序作业"></a>程序作业</h2><h3 id="第一项-理解多种结果的逻辑回归分类并计算cost-function"><a href="#第一项-理解多种结果的逻辑回归分类并计算cost-function" class="headerlink" title="第一项 理解多种结果的逻辑回归分类并计算cost function"></a>第一项 理解多种结果的逻辑回归分类并计算cost function</h3><h4 id="多种化为传统"><a href="#多种化为传统" class="headerlink" title="多种化为传统"></a>多种化为传统</h4><p>在原来的看法中，以0，1为例，我们将产生这两种结果的cost function定义如下：</p>
 <p><img src="http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml3/2.png" alt="LinearOneVariable"></p>
 <p>若是y有多种结果，我们可以假想为，若有n种结果</p>
 <ol>
@@ -90,8 +90,8 @@
 <li>第二个函数计算 （y != x）</li>
 </ol>
 <p>如此实现了从多种到传统的过度。</p>
-<h4 id="函数整合">函数整合</h4><p>针对两个函数整合到一起的函数使用的是（y）和（1-y）的小技巧，实现了不是第一个函数就是第二个函数的功能。</p>
-<h4 id="举例假设">举例假设</h4><ol>
+<h4 id="函数整合"><a href="#函数整合" class="headerlink" title="函数整合"></a>函数整合</h4><p>针对两个函数整合到一起的函数使用的是（y）和（1-y）的小技巧，实现了不是第一个函数就是第二个函数的功能。</p>
+<h4 id="举例假设"><a href="#举例假设" class="headerlink" title="举例假设"></a>举例假设</h4><ol>
 <li>有5000个样例，10个分类，所以基本的特征函数产生有5000*10的矩阵A</li>
 <li>5000个样例有5000个label，针对这些label，处理成为（01）格式,得到5000*10的矩阵B<ul>
 <li>例如 y=5 处理为(0,0,0,0,1,0,0,0,0,0)</li>
@@ -100,7 +100,7 @@
 <li><code>costFunction = -log(A) .<em> B + (-log(1-A)) .</em> (1-B);</code>（注意：这里是点乘）</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">costFunction = -log(A) .* B + (-log(<span class="number">1</span>-A)) .* (<span class="number">1</span>-B);</span><br></pre></td></tr></table></figure>
-<h3 id="反向传播">反向传播</h3><p>反向传播花了我好长时间，一直想用程序的角度来解决处理矩阵的问题，然后发现多此一举。</p>
+<h3 id="反向传播"><a href="#反向传播" class="headerlink" title="反向传播"></a>反向传播</h3><p>反向传播花了我好长时间，一直想用程序的角度来解决处理矩阵的问题，然后发现多此一举。</p>
 <p>原来在反向传播中</p>
 <ul>
 <li>先做一遍正向的推导</li>
@@ -108,7 +108,7 @@
 <li>计算梯度</li>
 <li>正规化</li>
 </ul>
-<h2 id="我认为即使我做完了这些题目也没有什么好开心的，因为还是学不到最关键的部分，像是为什么反向传播可以求得costFunction_的导数。">我认为即使我做完了这些题目也没有什么好开心的，因为还是学不到最关键的部分，像是为什么反向传播可以求得costFunction 的导数。</h2>
+<h2 id="我认为即使我做完了这些题目也没有什么好开心的，因为还是学不到最关键的部分，像是为什么反向传播可以求得costFunction-的导数。"><a href="#我认为即使我做完了这些题目也没有什么好开心的，因为还是学不到最关键的部分，像是为什么反向传播可以求得costFunction-的导数。" class="headerlink" title="我认为即使我做完了这些题目也没有什么好开心的，因为还是学不到最关键的部分，像是为什么反向传播可以求得costFunction 的导数。"></a>我认为即使我做完了这些题目也没有什么好开心的，因为还是学不到最关键的部分，像是为什么反向传播可以求得costFunction 的导数。</h2>
 
   </article>
 

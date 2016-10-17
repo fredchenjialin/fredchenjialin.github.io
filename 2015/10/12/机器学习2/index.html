@@ -72,43 +72,43 @@
     <div class="picture-container">
       
     </div>
-    <h4 id="本周开始讲了多变量的参数学习。">本周开始讲了多变量的参数学习。</h4><pre><code>不过我认为，这个东西也就和单变量一个样子。都是对cost <span class="function"><span class="keyword">function</span></span>取最小值，最后得到趋向于稳定的参数。
-</code></pre><h3 id="特征缩放_Feature_Scaling">特征缩放 Feature Scaling</h3><ol>
+    <h4 id="本周开始讲了多变量的参数学习。"><a href="#本周开始讲了多变量的参数学习。" class="headerlink" title="本周开始讲了多变量的参数学习。"></a>本周开始讲了多变量的参数学习。</h4><pre><code>不过我认为，这个东西也就和单变量一个样子。都是对cost function取最小值，最后得到趋向于稳定的参数。
+</code></pre><h3 id="特征缩放-Feature-Scaling"><a href="#特征缩放-Feature-Scaling" class="headerlink" title="特征缩放 Feature Scaling"></a>特征缩放 Feature Scaling</h3><ol>
 <li>让所有的特征都处于相同的数量等级，有助于加快回归</li>
 <li>mean scaling ：（特征-平均值）/（最大-最小）</li>
 <li>学习速率决定了回归质量</li>
 </ol>
-<h3 id="标准方程">标准方程</h3><ol>
+<h3 id="标准方程"><a href="#标准方程" class="headerlink" title="标准方程"></a>标准方程</h3><ol>
 <li>梯度下降和标准方程的比较（在特征规模上的差别）</li>
 </ol>
-<h4 id="一些题目">一些题目</h4><h4 id="week2-1">week2-1</h4><h4 id="week2-2">week2-2</h4><pre><code><span class="number">2</span>^<span class="number">6</span>=<span class="number">64</span>
-<span class="number">1</span>~=<span class="number">2</span> <span class="comment">%不等于</span>
-<span class="number">1</span>&amp;&amp;<span class="number">0</span> <span class="comment">%与</span>
-xor(<span class="number">1</span>,<span class="number">0</span>) <span class="comment">%异或</span>
-PS1(<span class="string">'&gt;&gt; '</span>); <span class="comment">%新起一行</span>
-<span class="built_in">pi</span> <span class="comment">%圆周率</span>
-<span class="built_in">disp</span>() <span class="comment">%显示</span>
+<h4 id="一些题目"><a href="#一些题目" class="headerlink" title="一些题目"></a>一些题目</h4><h4 id="week2-1"><a href="#week2-1" class="headerlink" title="week2-1"></a>week2-1</h4><h4 id="week2-2"><a href="#week2-2" class="headerlink" title="week2-2"></a>week2-2</h4><pre><code>2^6=64
+1~=2 %不等于
+1&amp;&amp;0 %与
+xor(1,0) %异或
+PS1(&#39;&gt;&gt; &#39;); %新起一行
+pi %圆周率
+disp() %显示
 分号 换行
-<span class="built_in">ones</span>(x,y) <span class="comment">%x行y列 全1</span>
-<span class="built_in">rand</span>(x,y) <span class="comment">%      任意</span>
-hist <span class="comment">%线图</span>
-<span class="built_in">eye</span> <span class="comment">%单位矩阵</span>
-<span class="built_in">size</span>(矩阵,<span class="number">1</span>或者<span class="number">2</span>) <span class="comment">%1是 row 2 is col</span>
-<span class="built_in">size</span>(矩阵) <span class="comment">%vector with 2 var</span>
-<span class="built_in">length</span>(matrix) <span class="comment">%longest length</span>
-pwd <span class="comment">%working path</span>
-load filename Equal load(<span class="string">'filename'</span>)
+ones(x,y) %x行y列 全1
+rand(x,y) %      任意
+hist %线图
+eye %单位矩阵
+size(矩阵,1或者2) %1是 row 2 is col
+size(矩阵) %vector with 2 var
+length(matrix) %longest length
+pwd %working path
+load filename Equal load(&#39;filename&#39;)
 who show the all var
 whos show details of who
 save filename var encode
 : mean every element along that row/col
-<span class="matrix">[A B]</span> row combine
-<span class="matrix">[A ; B]</span> col combine
-A .^ <span class="number">2</span> each element of A ^<span class="number">2</span>
+[A B] row combine
+[A ; B] col combine
+A .^ 2 each element of A ^2
 sum(A) sum of A
 prod(A) product of A
-<span class="built_in">floor</span>(A) 
-<span class="built_in">ceil</span>(A) 
+floor(A) 
+ceil(A) 
 </code></pre><p>PS:特征缩放那一题是帮助了更快迭代回归，而不是使每一步都更小花费</p>
 
 

@@ -7,12 +7,12 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="google-site-verification" content="" />
   
-  <title>pintos学习笔记0</title>
+  <title>Double-Q</title>
   <meta name="author" content="Multipluso">
    <meta name="description" content="使用Hexo搭建的一个Diary。">
   
 
-  <meta property="og:title" content="pintos学习笔记0"/>
+  <meta property="og:title" content="Double-Q"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:site_name" content="MPZ Diary"/>
  <meta property="og:image" content="undefined"/>
@@ -43,7 +43,7 @@
       
   
     <h1 class="page-title center">
-        pintos学习笔记0
+        Double-Q
     </h1>
   
 
@@ -51,9 +51,9 @@
     </div>
     <div class="meta center">
       
-<time datetime="2015-09-13T02:14:48.000Z">
+<time datetime="2016-10-17T01:26:21.000Z">
   <i class="fa fa-calendar"></i>&nbsp;
-  2015-09-13
+  2016-10-17
 </time>
 
 
@@ -61,7 +61,7 @@
     
     &nbsp;
     <i class="fa fa-tag"></i>&nbsp;
-    <a href="/categories/pintos/">pintos</a>
+    <a href="/categories/研究生生活/">研究生生活</a>
 
 
 
@@ -69,7 +69,7 @@
     
     &nbsp;
     <i class="fa fa-tag"></i>&nbsp;
-    <a href="/tags/pintos/">pintos</a>
+    <a href="/tags/paper/">paper</a>
 
 
     </div>
@@ -77,59 +77,10 @@
     <div class="picture-container">
       
     </div>
-    <p>今天看了一点点的pintos，做了半道网易的运营的<a href="http://multipluso.com/2015/09/wangyi-hiho0/" target="_blank" rel="external">题目</a></p>
-<p>打算写一点计划出来：</p>
-<ol>
-<li>每天三道lintcode上面的题目</li>
-<li>要看书（网络）</li>
-</ol>
-<hr>
-<h2 id="Loading"><a href="#Loading" class="headerlink" title="Loading"></a>Loading</h2><h3 id="Loader"><a href="#Loader" class="headerlink" title="Loader"></a>Loader</h3><ul>
-<li>BIOS加载Loader（MBR）<ul>
-<li>预留64字节给分区表</li>
-<li>128字节给内核命令行参数</li>
-</ul>
-</li>
-<li>Loader读分区表找到内核<ul>
-<li>找到可启动内核分区</li>
-<li>从分区读入内存128kB（或许更多，但是BIOS不提供超过1MB的大小）</li>
-<li>找到入口（内核的BLF header有个指针指向入口）</li>
-<li>Loader跳去入口</li>
-<li>每次运行内核时插入参数</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h3 id="Low-Level-Kernel-Initialization"><a href="#Low-Level-Kernel-Initialization" class="headerlink" title="Low-Level Kernel Initialization"></a>Low-Level Kernel Initialization</h3><p>入口 start() in threads/start.S</p>
-<h4 id="start"><a href="#start" class="headerlink" title="start()"></a>start()</h4><ul>
-<li>获取机器的内存</li>
-<li>启用A20 line,做64M的内存映射（看不太懂）</li>
-<li>call main()</li>
-</ul>
-<hr>
-<h3 id="High-Level-Kernel-Initialization"><a href="#High-Level-Kernel-Initialization" class="headerlink" title="High-Level Kernel Initialization"></a>High-Level Kernel Initialization</h3><h4 id="调用main"><a href="#调用main" class="headerlink" title="调用main()"></a>调用main()</h4><ul>
-<li>call bss_init()          - 清理BSS（被清为0的字段的传统名：在函数外未提供初始化的变量声明，variable goes into the BSS？）</li>
-<li>call read_command_line() - break the kernel command line into arguments</li>
-<li>call parse_options()     - read any options at the beginning of the command line</li>
-<li>call thread_init()       - 因为要用锁，所以就初始化</li>
-<li>initialize the console and print a startup message to the console</li>
-<li>call palloc_init()       - initialize memory system by setting up the <a href="Page Allocator">kernel page allocator</a></li>
-<li>call molloc_init()       - sets up the allocator that handles allocations of arbitrary-size <a href="Block Allocator">blocks</a> of memory</li>
-<li>call paging_init()       - sets up a <a href="Page Table">page table</a> for the kernel<ul>
-<li>在第二节后面还有tss和gdt的初始化</li>
-</ul>
-</li>
-<li>call intr_init()         - sets up the CPU’s interrupt descriptor table (IDT) to ready it for <a href="Interrupt Infrastructure">interrupt handling</a></li>
-<li>call timer_init()        - handling timer interrupt</li>
-<li>call kbd_init()          - handling keyboard interrupt</li>
-<li>call input_init()        - sets up to merge serial and keyboard input into one stream<ul>
-<li>在第二节后面还有用户程序的初始化exception_init() and syscall_init().</li>
-</ul>
-</li>
-<li>start the scheduler with thread_start(),call serial_init_queue() to switch to interrupt-driven serial port I/O</li>
-<li>call timer_calibrate() </li>
-<li>call ide_init() and filesys_init() to initialize the IDE disks and file system<h4 id="Boot-is-complete"><a href="#Boot-is-complete" class="headerlink" title="Boot is complete."></a>Boot is complete.</h4></li>
-</ul>
+    <p>$Q_{t+1}(s_{t},a_{t}) = Q_{t}(s_{t},a_{t})+\alpha_{(s_{t},a_{t})}(r_{t}+\gamma\underset{a}{max}Q_{t}(s_{t+1},a_{t})-Q_{t}(s_{t},a_{t}))$</p>
+<p>$R_{sa}^{s’}=E\{r_{t}|(s,a,s’)=(s_{t},a_{t},s_{t+1})\}$</p>
+<p>$\forall s,a : Q^{<em>}(s,a) = \sum_{s’}P_{sa}^{s’}(R_{sa}^{s’}+\gamma\underset{a}{max} Q^{\\\</em>}(s’,a)$</p>
+<p>折扣因子 $\gamma \in [0,1)$ 的两点含义，一是立即反馈的权重大，二是可证明在有限的情况下Q学习达到最优。</p>
 
 
   </article>
@@ -151,7 +102,7 @@
 
   <section id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="post-pintos学习笔记0" data-title="pintos学习笔记0" data-url="http://fredchenjialin.github.io/2015/09/13/pintos学习笔记0/"></div>
+    <div class="ds-thread" data-thread-key="post-Double-Q" data-title="Double-Q" data-url="http://fredchenjialin.github.io/2016/10/17/Double-Q/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">

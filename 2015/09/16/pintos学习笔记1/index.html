@@ -79,9 +79,9 @@
     </div>
     <p>今天我看了《煎饼侠》和《小森林》夏秋的前面一点点。<br>《煎饼侠》找了挺多人，挺不可思议的，看过一个人写过大鹏。</p>
 <p>很喜欢《小森林》的感觉，像一个梦.</p>
-<h2 id="Thread">Thread</h2><h3 id="struct_thread">struct thread</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span> kB +---------------------------------+</span><br><span class="line">     |          kernel stack           |</span><br><span class="line">     |                |                |</span><br><span class="line">     |                |                |</span><br><span class="line">     |                V                |</span><br><span class="line">     |         grows downward          |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     +---------------------------------+</span><br><span class="line">     |              magic              |</span><br><span class="line">     |                :                |</span><br><span class="line">     |                :                |</span><br><span class="line">     |               name              |</span><br><span class="line">     |              status             |</span><br><span class="line">     |               tid               |</span><br><span class="line"><span class="number">0</span> kB +---------------------------------+</span><br></pre></td></tr></table></figure>
-<h4 id="tid">tid</h4><p>线程标识符<br>tid_t，int类型<br>从1开始，为了初始化进程</p>
-<h4 id="status">status</h4><ul>
+<h2 id="Thread"><a href="#Thread" class="headerlink" title="Thread"></a>Thread</h2><h3 id="struct-thread"><a href="#struct-thread" class="headerlink" title="struct thread"></a>struct thread</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span> kB +---------------------------------+</span><br><span class="line">     |          kernel stack           |</span><br><span class="line">     |                |                |</span><br><span class="line">     |                |                |</span><br><span class="line">     |                V                |</span><br><span class="line">     |         grows downward          |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     |                                 |</span><br><span class="line">     +---------------------------------+</span><br><span class="line">     |              magic              |</span><br><span class="line">     |                :                |</span><br><span class="line">     |                :                |</span><br><span class="line">     |               name              |</span><br><span class="line">     |              status             |</span><br><span class="line">     |               tid               |</span><br><span class="line"><span class="number">0</span> kB +---------------------------------+</span><br></pre></td></tr></table></figure>
+<h4 id="tid"><a href="#tid" class="headerlink" title="tid"></a>tid</h4><p>线程标识符<br>tid_t，int类型<br>从1开始，为了初始化进程</p>
+<h4 id="status"><a href="#status" class="headerlink" title="status"></a>status</h4><ul>
 <li>THREAD_RUNNING<ul>
 <li>thread_ current()返回进行中的线程</li>
 </ul>
@@ -96,22 +96,22 @@
 </li>
 <li>THREAD_DYING</li>
 </ul>
-<h4 id="name">name</h4><p>name</p>
-<h4 id="stack">stack</h4><ul>
+<h4 id="name"><a href="#name" class="headerlink" title="name"></a>name</h4><p>name</p>
+<h4 id="stack"><a href="#stack" class="headerlink" title="stack"></a>stack</h4><ul>
 <li>uint8_t *</li>
 <li>when the CPU switches to another thread,this member saves the thread’s stack pointer</li>
 <li>When an interrupt occurs, whether in the kernel or a user program, an struct intr_ frame is pushed onto the stack</li>
 </ul>
-<h4 id="int_priority">int priority</h4><ul>
+<h4 id="int-priority"><a href="#int-priority" class="headerlink" title="int priority"></a>int priority</h4><ul>
 <li>ranging from PRI_MIN (0) to PRI_MAX (63).</li>
 </ul>
-<h4 id="struct_list_elem_allelem">struct list_elem allelem</h4><ul>
+<h4 id="struct-list-elem-allelem"><a href="#struct-list-elem-allelem" class="headerlink" title="struct list_elem allelem"></a>struct list_elem allelem</h4><ul>
 <li>link the thread into the list of all threads</li>
 </ul>
-<h4 id="struct_list_elem_elem">struct list_elem elem</h4><ul>
+<h4 id="struct-list-elem-elem"><a href="#struct-list-elem-elem" class="headerlink" title="struct list_elem elem"></a>struct list_elem elem</h4><ul>
 <li>put the thread into doubly linked lists, either ready<em>list (the list of threads ready to run) or a list of threads waiting on a semaphore in sema</em> down()</li>
 </ul>
-<h4 id="uint32_t_*_pagedir">uint32_t * pagedir</h4><h4 id="unsigned_magic">unsigned magic</h4><ul>
+<h4 id="uint32-t-pagedir"><a href="#uint32-t-pagedir" class="headerlink" title="uint32_t * pagedir"></a>uint32_t * pagedir</h4><h4 id="unsigned-magic"><a href="#unsigned-magic" class="headerlink" title="unsigned magic"></a>unsigned magic</h4><ul>
 <li>detect stack overﬂow</li>
 </ul>
 
