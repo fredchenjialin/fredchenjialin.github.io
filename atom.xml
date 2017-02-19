@@ -22,15 +22,19 @@
     <published>2016-10-17T01:26:21.000Z</published>
     <updated>2016-10-17T01:26:21.000Z</updated>
     
-    <content type="html">&lt;p&gt;$Q_{t+1}(s_{t},a_{t}) = Q_{t}(s_{t},a_{t})+\alpha_{(s_{t},a_{t})}(r_{t}+\gamma\underset{a}{max}Q_{t}(s_{t+1},a_{t})-Q_{t}(s_{t},a_{t}))$&lt;/p&gt;
-&lt;p&gt;$R_{sa}^{s’}=E\{r_{t}|(s,a,s’)=(s_{t},a_{t},s_{t+1})\}$&lt;/p&gt;
-&lt;p&gt;$\forall s,a : Q^{&lt;em&gt;}(s,a) = \sum_{s’}P_{sa}^{s’}(R_{sa}^{s’}+\gamma\underset{a}{max} Q^{\\\&lt;/em&gt;}(s’,a)$&lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;这是一篇Double-Q-learning的论文，很关键啊&quot;&gt;&lt;a href=&quot;#这是一篇Double-Q-learning的论文，很关键啊&quot; class=&quot;headerlink&quot; title=&quot;这是一篇Double Q-learning的论文，很关键啊&quot;&gt;&lt;/a&gt;这是一篇Double Q-learning的论文，很关键啊&lt;/h2&gt;&lt;p&gt;$Q_{t+1}(s_{t},a_{t}) = Q_{t}(s_{t},a_{t})+\alpha_{(s_{t},a_{t})}(r_{t}+\gamma\underset{a}{max}Q_{t}(s_{t+1},a_{t})-Q_{t}(s_{t},a_{t})) （1）$&lt;/p&gt;
+&lt;p&gt;上式中的 $R_{sa}^{s’}=E\{r_{t}|(s,a,s’)=(s_{t},a_{t},s_{t+1})\}$&lt;/p&gt;
+&lt;p&gt;$\forall s,a : Q^{星号}(s,a) = \sum_{s’}P_{sa}^{s’}(R_{sa}^{s’}+\gamma\underset{a}{max} Q^{星号}(s’,a)) （2）$&lt;/p&gt;
 &lt;p&gt;折扣因子 $\gamma \in [0,1)$ 的两点含义，一是立即反馈的权重大，二是可证明在有限的情况下Q学习达到最优。&lt;/p&gt;
-</content>
+&lt;p&gt;过度估计的原因：使用max操作去决定下一状态的价值。&lt;/p&gt;
+&lt;h4 id=&quot;下面是见证奇迹的时刻。&quot;&gt;&lt;a href=&quot;#下面是见证奇迹的时刻。&quot; class=&quot;headerlink&quot; title=&quot;下面是见证奇迹的时刻。&quot;&gt;&lt;/a&gt;下面是见证奇迹的时刻。&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;假定&lt;script type=&quot;math/tex&quot;&gt;M&lt;/script&gt;个随机变量，&lt;script type=&quot;math/tex&quot;&gt;X=\left \{ X_{1},...,X_{M}, \right \}&lt;/script&gt;，有一类问题是关注最大期望&lt;br&gt;$\underset{i}{max}E \{ X_{i}  \} （3）$，&lt;br&gt;但是在函数形式和分布情况不确定的情况下，这个东西没法证明。&lt;br&gt;我们让&lt;script type=&quot;math/tex&quot;&gt;S=\bigcup_{i=1}^{M}S_{i}&lt;/script&gt;，&lt;script type=&quot;math/tex&quot;&gt;S_{i}&lt;/script&gt;中是&lt;script type=&quot;math/tex&quot;&gt;X_{i}&lt;/script&gt;的集合。&lt;script type=&quot;math/tex&quot;&gt;S_{i}&lt;/script&gt;变量之间相互独立且同分布。&lt;br&gt;期望值的无偏估计可以通过计算每一个变量的样本均值求得：&lt;br&gt;$E\{X_{i}\} = E\{\mu_{i}\}\approx \mu _{i}(S)= \frac{1}{|S_{i}|}\sum_{s\in S_{i}}s$，其中&lt;script type=&quot;math/tex&quot;&gt;\mu_{i}是X_{i}的估计量&lt;/script&gt;。&lt;br&gt;每一个样本&lt;script type=&quot;math/tex&quot;&gt;s\in S_{i}&lt;/script&gt;都是&lt;script type=&quot;math/tex&quot;&gt;E\left \{X_{i}\right \}&lt;/script&gt;的无偏估计，所以上式逼近是无偏的。&lt;br&gt;那么近似误差就由估计量的方差构成，并且随样本增多而减小。&lt;br&gt;然后定义一下概率密度函数PDF&lt;script type=&quot;math/tex&quot;&gt;f_{i}&lt;/script&gt;和分布函数CDF&lt;script type=&quot;math/tex&quot;&gt;F_{i}(x)=\int_{-\infty }^{x}f_{i}(x)dx&lt;/script&gt;,那么最大期望即是&lt;script type=&quot;math/tex&quot;&gt;max_{i}E\left \{ X_{i} \right \}=max_{i}\int_{-\infty }^{+\infty }xf_{i}(x)dx&lt;/script&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;单一估计量&quot;&gt;&lt;a href=&quot;#单一估计量&quot; class=&quot;headerlink&quot; title=&quot;单一估计量&quot;&gt;&lt;/a&gt;单一估计量&lt;/h4&gt;</content>
     
     <summary type="html">
     
-      &lt;p&gt;$Q_{t+1}(s_{t},a_{t}) = Q_{t}(s_{t},a_{t})+\alpha_{(s_{t},a_{t})}(r_{t}+\gamma\underset{a}{max}Q_{t}(s_{t+1},a_{t})-Q_{t}(s_{t},a_{t}))$&lt;
+      &lt;h2 id=&quot;这是一篇Double-Q-learning的论文，很关键啊&quot;&gt;&lt;a href=&quot;#这是一篇Double-Q-learning的论文，很关键啊&quot; class=&quot;headerlink&quot; title=&quot;这是一篇Double Q-learning的论文，很关键啊&quot;&gt;&lt;/a
     
     </summary>
     

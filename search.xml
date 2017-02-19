@@ -6,11 +6,15 @@
     <entry>
       <title><![CDATA[Double-Q]]></title>
       <url>http://fredchenjialin.github.io/2016/10/17/Double-Q/</url>
-      <content type="html"><![CDATA[<p>$Q_{t+1}(s_{t},a_{t}) = Q_{t}(s_{t},a_{t})+\alpha_{(s_{t},a_{t})}(r_{t}+\gamma\underset{a}{max}Q_{t}(s_{t+1},a_{t})-Q_{t}(s_{t},a_{t}))$</p>
-<p>$R_{sa}^{s’}=E\{r_{t}|(s,a,s’)=(s_{t},a_{t},s_{t+1})\}$</p>
-<p>$\forall s,a : Q^{<em>}(s,a) = \sum_{s’}P_{sa}^{s’}(R_{sa}^{s’}+\gamma\underset{a}{max} Q^{\\\</em>}(s’,a)$</p>
+      <content type="html"><![CDATA[<h2 id="这是一篇Double-Q-learning的论文，很关键啊"><a href="#这是一篇Double-Q-learning的论文，很关键啊" class="headerlink" title="这是一篇Double Q-learning的论文，很关键啊"></a>这是一篇Double Q-learning的论文，很关键啊</h2><p>$Q_{t+1}(s_{t},a_{t}) = Q_{t}(s_{t},a_{t})+\alpha_{(s_{t},a_{t})}(r_{t}+\gamma\underset{a}{max}Q_{t}(s_{t+1},a_{t})-Q_{t}(s_{t},a_{t})) （1）$</p>
+<p>上式中的 $R_{sa}^{s’}=E\{r_{t}|(s,a,s’)=(s_{t},a_{t},s_{t+1})\}$</p>
+<p>$\forall s,a : Q^{星号}(s,a) = \sum_{s’}P_{sa}^{s’}(R_{sa}^{s’}+\gamma\underset{a}{max} Q^{星号}(s’,a)) （2）$</p>
 <p>折扣因子 $\gamma \in [0,1)$ 的两点含义，一是立即反馈的权重大，二是可证明在有限的情况下Q学习达到最优。</p>
-]]></content>
+<p>过度估计的原因：使用max操作去决定下一状态的价值。</p>
+<h4 id="下面是见证奇迹的时刻。"><a href="#下面是见证奇迹的时刻。" class="headerlink" title="下面是见证奇迹的时刻。"></a>下面是见证奇迹的时刻。</h4><blockquote>
+<p>假定<script type="math/tex">M</script>个随机变量，<script type="math/tex">X=\left \{ X_{1},...,X_{M}, \right \}</script>，有一类问题是关注最大期望<br>$\underset{i}{max}E \{ X_{i}  \} （3）$，<br>但是在函数形式和分布情况不确定的情况下，这个东西没法证明。<br>我们让<script type="math/tex">S=\bigcup_{i=1}^{M}S_{i}</script>，<script type="math/tex">S_{i}</script>中是<script type="math/tex">X_{i}</script>的集合。<script type="math/tex">S_{i}</script>变量之间相互独立且同分布。<br>期望值的无偏估计可以通过计算每一个变量的样本均值求得：<br>$E\{X_{i}\} = E\{\mu_{i}\}\approx \mu _{i}(S)= \frac{1}{|S_{i}|}\sum_{s\in S_{i}}s$，其中<script type="math/tex">\mu_{i}是X_{i}的估计量</script>。<br>每一个样本<script type="math/tex">s\in S_{i}</script>都是<script type="math/tex">E\left \{X_{i}\right \}</script>的无偏估计，所以上式逼近是无偏的。<br>那么近似误差就由估计量的方差构成，并且随样本增多而减小。<br>然后定义一下概率密度函数PDF<script type="math/tex">f_{i}</script>和分布函数CDF<script type="math/tex">F_{i}(x)=\int_{-\infty }^{x}f_{i}(x)dx</script>,那么最大期望即是<script type="math/tex">max_{i}E\left \{ X_{i} \right \}=max_{i}\int_{-\infty }^{+\infty }xf_{i}(x)dx</script></p>
+</blockquote>
+<h4 id="单一估计量"><a href="#单一估计量" class="headerlink" title="单一估计量"></a>单一估计量</h4>]]></content>
     </entry>
     
     <entry>
@@ -1018,6 +1022,17 @@ ceil(A)
 <h2 id="多说评论框设置"><a href="#多说评论框设置" class="headerlink" title="多说评论框设置"></a>多说评论框设置</h2><p>先在_config.yml下添加duoshuo_shortname，在article.ejs中调用</p>
 <p>在主题/layout/_partial/article.ejs的最后一段替换如下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span> (!index &amp;&amp; post.comments &amp;&amp; config.duoshuo_shortname)&#123; %&gt;</span><br><span class="line">  &lt;section id=<span class="string">"comments"</span>&gt;</span><br><span class="line">    &lt;!-- 多说评论框 start --&gt;</span><br><span class="line">    &lt;div class=<span class="string">"ds-thread"</span> data-thread-key=<span class="string">"&lt;%= post.layout %&gt;-&lt;%= post.slug %&gt;"</span> data-title=<span class="string">"&lt;%= post.title %&gt;"</span> data-url=<span class="string">"&lt;%= page.permalink %&gt;"</span>&gt;&lt;/div&gt;</span><br><span class="line">    &lt;!-- 多说评论框 end --&gt;</span><br><span class="line">    &lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">    var duoshuoQuery = &#123;short_name:<span class="string">'&lt;%= config.duoshuo_shortname %&gt;'</span>&#125;;</span><br><span class="line">      (<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        var ds = document.createElement(<span class="string">'script'</span>);</span><br><span class="line">        ds.type = <span class="string">'text/javascript'</span>;ds.async = <span class="literal">true</span>;</span><br><span class="line">        ds.src = (document.location.protocol == <span class="string">'https:'</span> ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">'//static.duoshuo.com/embed.js'</span>;</span><br><span class="line">        ds.charset = <span class="string">'UTF-8'</span>;</span><br><span class="line">        (document.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>] </span><br><span class="line">         || document.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(ds);</span><br><span class="line">      &#125;)();</span><br><span class="line">      &lt;/script&gt;</span><br><span class="line">    &lt;!-- 多说公共JS代码 end --&gt;</span><br><span class="line">  &lt;/section&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
 <h2 id="个人页面添加"><a href="#个人页面添加" class="headerlink" title="个人页面添加"></a>个人页面添加</h2><p>在主题/_config.yml中的menu中添加 About: /about</p>
+<h2 id="我这个页面的mathjax规则"><a href="#我这个页面的mathjax规则" class="headerlink" title="我这个页面的mathjax规则"></a>我这个页面的mathjax规则</h2><p>在单行模式下，也就是两个美元符号之间，</p>
+<ul>
+<li>下划线需要转义</li>
+<li>大括号是用两个反斜杠转义</li>
+</ul>
+<p>在插入模式下，也就是四个美元符号之间，</p>
+<ul>
+<li>可以直接用latex的大括号</li>
+<li>下滑线不用转义</li>
+<li>包含于符号需要空格</li>
+</ul>
 ]]></content>
     </entry>
     
@@ -1052,6 +1067,7 @@ ceil(A)
       <content type="html"><![CDATA[<p>Multipluso，安徽人，本科西工大。<br>软件工程专业，知道一些计算机常识，写过一点代码，搞过一些应用，上了一些不靠谱的课，水过一次机器人比赛<br>目前是一个写不好算法，整不了数据结构，没做过pintos作业，没看完ML视频，没学过编译原理，没有可以搭建ss的vps全靠<a href="http://jecvay.com" target="_blank" rel="external">jecvay</a>支援翻墙的没有脱离低级趣味的人。</p>
 <p>想法就是把上面没做到的赶紧做了，然后在研究生生涯里可以做做项目，搞搞机器视觉和自主决策，然后找个好下家，热爱生活，么么哒！！！</p>
 <p><a href="http://weibo.com/fredchenjialin" target="_blank" rel="external">微博</a><br><a href="https://github.com/fredchenjialin" target="_blank" rel="external">github</a><br><a href="http://www.multipluso.com/" target="_blank" rel="external">主站</a><br>邮箱: fredchenjialin#gmail</p>
+<h2 id="关于mathjax的问题-2016-10-17"><a href="#关于mathjax的问题-2016-10-17" class="headerlink" title="关于mathjax的问题 2016.10.17"></a>关于mathjax的问题 2016.10.17</h2><p>mathjax和marked有冲突，导致了很多什么下划线，星号都变成了<em></em>，所以有问题。。。</p>
 ]]></content>
     </entry>
     

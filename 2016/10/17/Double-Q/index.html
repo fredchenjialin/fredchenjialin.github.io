@@ -77,11 +77,15 @@
     <div class="picture-container">
       
     </div>
-    <p>$Q_{t+1}(s_{t},a_{t}) = Q_{t}(s_{t},a_{t})+\alpha_{(s_{t},a_{t})}(r_{t}+\gamma\underset{a}{max}Q_{t}(s_{t+1},a_{t})-Q_{t}(s_{t},a_{t}))$</p>
-<p>$R_{sa}^{s’}=E\{r_{t}|(s,a,s’)=(s_{t},a_{t},s_{t+1})\}$</p>
-<p>$\forall s,a : Q^{<em>}(s,a) = \sum_{s’}P_{sa}^{s’}(R_{sa}^{s’}+\gamma\underset{a}{max} Q^{\\\</em>}(s’,a)$</p>
+    <h2 id="这是一篇Double-Q-learning的论文，很关键啊"><a href="#这是一篇Double-Q-learning的论文，很关键啊" class="headerlink" title="这是一篇Double Q-learning的论文，很关键啊"></a>这是一篇Double Q-learning的论文，很关键啊</h2><p>$Q_{t+1}(s_{t},a_{t}) = Q_{t}(s_{t},a_{t})+\alpha_{(s_{t},a_{t})}(r_{t}+\gamma\underset{a}{max}Q_{t}(s_{t+1},a_{t})-Q_{t}(s_{t},a_{t})) （1）$</p>
+<p>上式中的 $R_{sa}^{s’}=E\{r_{t}|(s,a,s’)=(s_{t},a_{t},s_{t+1})\}$</p>
+<p>$\forall s,a : Q^{星号}(s,a) = \sum_{s’}P_{sa}^{s’}(R_{sa}^{s’}+\gamma\underset{a}{max} Q^{星号}(s’,a)) （2）$</p>
 <p>折扣因子 $\gamma \in [0,1)$ 的两点含义，一是立即反馈的权重大，二是可证明在有限的情况下Q学习达到最优。</p>
-
+<p>过度估计的原因：使用max操作去决定下一状态的价值。</p>
+<h4 id="下面是见证奇迹的时刻。"><a href="#下面是见证奇迹的时刻。" class="headerlink" title="下面是见证奇迹的时刻。"></a>下面是见证奇迹的时刻。</h4><blockquote>
+<p>假定<script type="math/tex">M</script>个随机变量，<script type="math/tex">X=\left \{ X_{1},...,X_{M}, \right \}</script>，有一类问题是关注最大期望<br>$\underset{i}{max}E \{ X_{i}  \} （3）$，<br>但是在函数形式和分布情况不确定的情况下，这个东西没法证明。<br>我们让<script type="math/tex">S=\bigcup_{i=1}^{M}S_{i}</script>，<script type="math/tex">S_{i}</script>中是<script type="math/tex">X_{i}</script>的集合。<script type="math/tex">S_{i}</script>变量之间相互独立且同分布。<br>期望值的无偏估计可以通过计算每一个变量的样本均值求得：<br>$E\{X_{i}\} = E\{\mu_{i}\}\approx \mu _{i}(S)= \frac{1}{|S_{i}|}\sum_{s\in S_{i}}s$，其中<script type="math/tex">\mu_{i}是X_{i}的估计量</script>。<br>每一个样本<script type="math/tex">s\in S_{i}</script>都是<script type="math/tex">E\left \{X_{i}\right \}</script>的无偏估计，所以上式逼近是无偏的。<br>那么近似误差就由估计量的方差构成，并且随样本增多而减小。<br>然后定义一下概率密度函数PDF<script type="math/tex">f_{i}</script>和分布函数CDF<script type="math/tex">F_{i}(x)=\int_{-\infty }^{x}f_{i}(x)dx</script>,那么最大期望即是<script type="math/tex">max_{i}E\left \{ X_{i} \right \}=max_{i}\int_{-\infty }^{+\infty }xf_{i}(x)dx</script></p>
+</blockquote>
+<h4 id="单一估计量"><a href="#单一估计量" class="headerlink" title="单一估计量"></a>单一估计量</h4>
 
   </article>
 
