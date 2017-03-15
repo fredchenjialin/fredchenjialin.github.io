@@ -4,6 +4,17 @@
   
     
     <entry>
+      <title><![CDATA[一些改变，我回来了]]></title>
+      <url>http://fredchenjialin.github.io/2017/02/19/%E4%B8%80%E4%BA%9B%E6%94%B9%E5%8F%98%EF%BC%8C%E6%88%91%E5%9B%9E%E6%9D%A5%E4%BA%86/</url>
+      <content type="html"><![CDATA[<h2 id="想着再回来分享一些，记录一些东西"><a href="#想着再回来分享一些，记录一些东西" class="headerlink" title="想着再回来分享一些，记录一些东西"></a>想着再回来分享一些，记录一些东西</h2><p>看了下上次文章的时间，16年的10月17号。我上次断了diary的时候分别是15年的12月29和16年的4月16，都是在四五个月后才回来的，不过特点都是放了假，寒假<br>或者是暑假，这次也不例外，时间上也很相同，间隔也很相同，同样也是因为放了寒假。</p>
+<p>于是，这个记录的方式还是有问题的，不过呢，这个和记录的载体也还不太一样，好朋友老刘的blog停在了去年的8月，不过他是写完整blog的，工作后也很忙了。</p>
+<p>这几个月，发生了一些翻天覆地的变化，一是国庆节前的一桩事，其实算是喜事。二是国庆节后的一桩事，真的是一件喜事，遇见了她。</p>
+<h2 id="UNREAL-unsupervised-reinforcement-auxiliary-learning"><a href="#UNREAL-unsupervised-reinforcement-auxiliary-learning" class="headerlink" title="UNREAL unsupervised reinforcement auxiliary learning"></a>UNREAL unsupervised reinforcement auxiliary learning</h2><p>16年11月份DeepMind的文章，讲述了DL和RL的最新结合力作，在Atari上的效果优于人类8倍，在一个3D仿真实验场景下到达了人类水平的87%，当真也是翻天覆地的改变。</p>
+<p>针对反馈难以观察，而且就算额外反馈很多，sensorimotor stream中也会含有很多可能的学习目标，同时对于非监督性学习来说，适用于重建学习目标，像是前后帧间的像素。</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Double-Q]]></title>
       <url>http://fredchenjialin.github.io/2016/10/17/Double-Q/</url>
       <content type="html"><![CDATA[<h2 id="这是一篇Double-Q-learning的论文，很关键啊"><a href="#这是一篇Double-Q-learning的论文，很关键啊" class="headerlink" title="这是一篇Double Q-learning的论文，很关键啊"></a>这是一篇Double Q-learning的论文，很关键啊</h2><p>$Q_{t+1}(s_{t},a_{t}) = Q_{t}(s_{t},a_{t})+\alpha_{(s_{t},a_{t})}(r_{t}+\gamma\underset{a}{max}Q_{t}(s_{t+1},a_{t})-Q_{t}(s_{t},a_{t})) （1）$</p>

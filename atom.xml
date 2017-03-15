@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fredchenjialin.github.io/"/>
-  <updated>2016-10-17T01:26:21.000Z</updated>
+  <updated>2017-02-19T12:46:36.000Z</updated>
   <id>http://fredchenjialin.github.io/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一些改变，我回来了</title>
+    <link href="http://fredchenjialin.github.io/2017/02/19/%E4%B8%80%E4%BA%9B%E6%94%B9%E5%8F%98%EF%BC%8C%E6%88%91%E5%9B%9E%E6%9D%A5%E4%BA%86/"/>
+    <id>http://fredchenjialin.github.io/2017/02/19/一些改变，我回来了/</id>
+    <published>2017-02-19T12:46:36.000Z</published>
+    <updated>2017-02-19T12:46:36.000Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;想着再回来分享一些，记录一些东西&quot;&gt;&lt;a href=&quot;#想着再回来分享一些，记录一些东西&quot; class=&quot;headerlink&quot; title=&quot;想着再回来分享一些，记录一些东西&quot;&gt;&lt;/a&gt;想着再回来分享一些，记录一些东西&lt;/h2&gt;&lt;p&gt;看了下上次文章的时间，16年的10月17号。我上次断了diary的时候分别是15年的12月29和16年的4月16，都是在四五个月后才回来的，不过特点都是放了假，寒假&lt;br&gt;或者是暑假，这次也不例外，时间上也很相同，间隔也很相同，同样也是因为放了寒假。&lt;/p&gt;
+&lt;p&gt;于是，这个记录的方式还是有问题的，不过呢，这个和记录的载体也还不太一样，好朋友老刘的blog停在了去年的8月，不过他是写完整blog的，工作后也很忙了。&lt;/p&gt;
+&lt;p&gt;这几个月，发生了一些翻天覆地的变化，一是国庆节前的一桩事，其实算是喜事。二是国庆节后的一桩事，真的是一件喜事，遇见了她。&lt;/p&gt;
+&lt;h2 id=&quot;UNREAL-unsupervised-reinforcement-auxiliary-learning&quot;&gt;&lt;a href=&quot;#UNREAL-unsupervised-reinforcement-auxiliary-learning&quot; class=&quot;headerlink&quot; title=&quot;UNREAL unsupervised reinforcement auxiliary learning&quot;&gt;&lt;/a&gt;UNREAL unsupervised reinforcement auxiliary learning&lt;/h2&gt;&lt;p&gt;16年11月份DeepMind的文章，讲述了DL和RL的最新结合力作，在Atari上的效果优于人类8倍，在一个3D仿真实验场景下到达了人类水平的87%，当真也是翻天覆地的改变。&lt;/p&gt;
+&lt;p&gt;针对反馈难以观察，而且就算额外反馈很多，sensorimotor stream中也会含有很多可能的学习目标，同时对于非监督性学习来说，适用于重建学习目标，像是前后帧间的像素。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;想着再回来分享一些，记录一些东西&quot;&gt;&lt;a href=&quot;#想着再回来分享一些，记录一些东西&quot; class=&quot;headerlink&quot; title=&quot;想着再回来分享一些，记录一些东西&quot;&gt;&lt;/a&gt;想着再回来分享一些，记录一些东西&lt;/h2&gt;&lt;p&gt;看了下上次文章的时间，16年
+    
+    </summary>
+    
+      <category term="生活" scheme="http://fredchenjialin.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Double-Q</title>
@@ -715,31 +740,6 @@
     </summary>
     
       <category term="ML" scheme="http://fredchenjialin.github.io/categories/ML/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>最近没学习</title>
-    <link href="http://fredchenjialin.github.io/2015/11/12/%E6%9C%80%E8%BF%91%E6%B2%A1%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://fredchenjialin.github.io/2015/11/12/最近没学习/</id>
-    <published>2015-11-12T05:29:53.000Z</published>
-    <updated>2016-10-07T10:30:54.550Z</updated>
-    
-    <content type="html">&lt;p&gt;这几天我去参加陕西省研究生创新成果展，看到了很多好玩的东西，也学习到了很多，有了收获，长了见识，认识教训。&lt;/p&gt;
-&lt;p&gt;所以我没有学习，而且也不太能学的下，不能够静心。&lt;/p&gt;
-&lt;p&gt;而且，我的手机也是今天也才到我的手上，也算是满足我了我的一个心愿吧，希望诸事安定，可以安心学习了。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这几天我去参加陕西省研究生创新成果展，看到了很多好玩的东西，也学习到了很多，有了收获，长了见识，认识教训。&lt;/p&gt;
-&lt;p&gt;所以我没有学习，而且也不太能学的下，不能够静心。&lt;/p&gt;
-&lt;p&gt;而且，我的手机也是今天也才到我的手上，也算是满足我了我的一个心愿吧，希望诸事安定，可以安
-    
-    </summary>
-    
-      <category term="Diary" scheme="http://fredchenjialin.github.io/categories/Diary/"/>
     
     
   </entry>
