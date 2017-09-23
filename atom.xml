@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fredchenjialin.github.io/"/>
-  <updated>2017-02-19T12:46:36.000Z</updated>
+  <updated>2017-03-15T12:42:57.000Z</updated>
   <id>http://fredchenjialin.github.io/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SLAM</title>
+    <link href="http://fredchenjialin.github.io/2017/03/15/SLAM/"/>
+    <id>http://fredchenjialin.github.io/2017/03/15/SLAM/</id>
+    <published>2017-03-15T12:42:57.000Z</published>
+    <updated>2017-03-15T12:42:57.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;slam第一篇&quot;&gt;&lt;a href=&quot;#slam第一篇&quot; class=&quot;headerlink&quot; title=&quot;slam第一篇&quot;&gt;&lt;/a&gt;slam第一篇&lt;/h1&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;slam第一篇&quot;&gt;&lt;a href=&quot;#slam第一篇&quot; class=&quot;headerlink&quot; title=&quot;slam第一篇&quot;&gt;&lt;/a&gt;slam第一篇&lt;/h1&gt;
+    
+    </summary>
+    
+      <category term="ROS" scheme="http://fredchenjialin.github.io/categories/ROS/"/>
+    
+    
+      <category term="SLAM" scheme="http://fredchenjialin.github.io/tags/SLAM/"/>
+    
+  </entry>
   
   <entry>
     <title>一些改变，我回来了</title>
@@ -37,6 +59,8 @@
     
       <category term="生活" scheme="http://fredchenjialin.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
     
+    
+      <category term="UNREAL" scheme="http://fredchenjialin.github.io/tags/UNREAL/"/>
     
   </entry>
   
@@ -704,43 +728,6 @@
     
     
       <category term="Javascript" scheme="http://fredchenjialin.github.io/tags/Javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>机器学习6</title>
-    <link href="http://fredchenjialin.github.io/2015/11/12/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A06/"/>
-    <id>http://fredchenjialin.github.io/2015/11/12/机器学习6/</id>
-    <published>2015-11-12T05:49:18.000Z</published>
-    <updated>2016-10-07T10:26:56.735Z</updated>
-    
-    <content type="html">&lt;h3 id=&quot;评估一个机器学习算法&quot;&gt;&lt;a href=&quot;#评估一个机器学习算法&quot; class=&quot;headerlink&quot; title=&quot;评估一个机器学习算法&quot;&gt;&lt;/a&gt;评估一个机器学习算法&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;因为我们在提出一个机器学习算法后总是想着要改进和优化它，使其得到最好的学习效果&lt;/li&gt;
-&lt;li&gt;通常我们回想可不可以给我们更多的学习数据&lt;/li&gt;
-&lt;li&gt;但是如果我们有一套科学的评估和诊断的方法，那么对于机器学习是非常有利的&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&quot;过拟合检验-TrainingSet-and-TestSet&quot;&gt;&lt;a href=&quot;#过拟合检验-TrainingSet-and-TestSet&quot; class=&quot;headerlink&quot; title=&quot;过拟合检验 TrainingSet and TestSet&quot;&gt;&lt;/a&gt;过拟合检验 TrainingSet and TestSet&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;比例是7：3&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&quot;high-bias-and-high-variance-TrainingSet，CrossValidateSet-and-TestSet&quot;&gt;&lt;a href=&quot;#high-bias-and-high-variance-TrainingSet，CrossValidateSet-and-TestSet&quot; class=&quot;headerlink&quot; title=&quot;high bias and high variance TrainingSet，CrossValidateSet and TestSet&quot;&gt;&lt;/a&gt;high bias and high variance TrainingSet，CrossValidateSet and TestSet&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;比例是3：2：2&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;http://7nj2kj.com1.z0.glb.clouddn.com/ML-ml6/cvandtest.png&quot; alt=&quot;costfunction&quot;&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;相对于high bias 和 high variance，其实是更加相当于underfit 和 overfit&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;不行了，那种没学到东西的感觉越来越强烈了&lt;/p&gt;
-&lt;h2 id=&quot;卧槽，证书没了&quot;&gt;&lt;a href=&quot;#卧槽，证书没了&quot; class=&quot;headerlink&quot; title=&quot;卧槽，证书没了&quot;&gt;&lt;/a&gt;卧槽，证书没了&lt;/h2&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;评估一个机器学习算法&quot;&gt;&lt;a href=&quot;#评估一个机器学习算法&quot; class=&quot;headerlink&quot; title=&quot;评估一个机器学习算法&quot;&gt;&lt;/a&gt;评估一个机器学习算法&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;因为我们在提出一个机器学习算法后总是想着要改进和优化它，使其得到
-    
-    </summary>
-    
-      <category term="ML" scheme="http://fredchenjialin.github.io/categories/ML/"/>
-    
     
   </entry>
   
